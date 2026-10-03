@@ -1,0 +1,629 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Coordinate Geometry | Golu Coaching</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f5f7fb;
+    color:#222;
+    line-height:1.6;
+}
+
+header{
+    background:linear-gradient(135deg,#1e3c72,#2a5298);
+    color:white;
+    text-align:center;
+    padding:35px 15px;
+    position:relative;
+}
+
+header h1{
+    font-size:32px;
+}
+
+header p{
+    margin-top:8px;
+}
+
+.language{
+    position:absolute;
+    top:15px;
+    right:20px;
+}
+
+.language button{
+    border:none;
+    background:white;
+    color:#1e3c72;
+    padding:7px 12px;
+    margin-left:4px;
+    border-radius:6px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.container{
+    width:90%;
+    max-width:1000px;
+    margin:30px auto;
+}
+
+.back{
+    display:inline-block;
+    text-decoration:none;
+    background:#1e3c72;
+    color:white;
+    padding:10px 18px;
+    border-radius:8px;
+    margin-bottom:25px;
+}
+
+.section{
+    background:white;
+    padding:25px;
+    margin-bottom:22px;
+    border-radius:14px;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+
+.section h2{
+    color:#1e3c72;
+    margin-bottom:12px;
+}
+
+.section h3{
+    color:#2a5298;
+    margin-top:18px;
+    margin-bottom:8px;
+}
+
+.formula{
+    background:#eef3ff;
+    padding:15px;
+    border-left:5px solid #1e3c72;
+    margin:12px 0;
+    font-weight:bold;
+    overflow-x:auto;
+}
+
+.example{
+    background:#f8f9fa;
+    padding:15px;
+    border-radius:8px;
+    margin-top:12px;
+}
+
+.example strong{
+    color:#1e3c72;
+}
+
+ul{
+    padding-left:25px;
+}
+
+.practice{
+    background:#fff8e6;
+    padding:20px;
+    border-radius:10px;
+}
+
+footer{
+    background:#1e3c72;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+@media(max-width:700px){
+
+    header h1{
+        font-size:26px;
+    }
+
+    .container{
+        width:94%;
+    }
+
+    .language{
+        position:static;
+        margin-bottom:12px;
+    }
+
+    .section{
+        padding:20px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="language">
+<button onclick="setLanguage('hi')">हिन्दी</button>
+<button onclick="setLanguage('en')">English</button>
+</div>
+
+<h1 id="title">Chapter 7 – Coordinate Geometry</h1>
+
+<p id="subtitle">
+Class 10 Mathematics | Golu Coaching
+</p>
+
+</header>
+
+<div class="container">
+
+<a href="class10.html" class="back" id="back">
+← Back to Class 10
+</a>
+
+
+<!-- INTRODUCTION -->
+
+<div class="section">
+
+<h2 id="introTitle">Introduction</h2>
+
+<p id="introText">
+Coordinate Geometry is the study of geometry using coordinates
+on the Cartesian plane. In this chapter we learn distance,
+section and area formulas.
+</p>
+
+</div>
+
+
+<!-- MAIN TOPICS -->
+
+<div class="section">
+
+<h2 id="topicsTitle">Main Topics</h2>
+
+<ul id="topics">
+<li>Distance Formula</li>
+<li>Section Formula</li>
+<li>Midpoint Formula</li>
+<li>Area of a Triangle</li>
+<li>Collinearity of Points</li>
+</ul>
+
+</div>
+
+
+<!-- DISTANCE FORMULA -->
+
+<div class="section">
+
+<h2 id="distanceTitle">1. Distance Formula</h2>
+
+<p id="distanceText">
+The distance between two points A(x₁,y₁) and B(x₂,y₂) is:
+</p>
+
+<div class="formula">
+d = √[(x₂ − x₁)² + (y₂ − y₁)²]
+</div>
+
+<div class="example">
+
+<strong id="distanceExampleTitle">Solved Example:</strong>
+
+<p id="distanceExample">
+Find the distance between A(2,3) and B(5,7).
+</p>
+
+<div class="formula">
+d = √[(5−2)² + (7−3)²]
+<br>
+= √[3² + 4²]
+<br>
+= √25
+<br>
+= 5
+</div>
+
+<p id="distanceAnswer">
+Answer: The distance is 5 units.
+</p>
+
+</div>
+
+</div>
+
+
+<!-- SECTION FORMULA -->
+
+<div class="section">
+
+<h2 id="sectionTitle">2. Section Formula</h2>
+
+<p id="sectionText">
+If a point P(x,y) divides the line segment joining
+A(x₁,y₁) and B(x₂,y₂) internally in the ratio m:n, then:
+</p>
+
+<div class="formula">
+x = (mx₂ + nx₁) / (m+n)
+<br><br>
+y = (my₂ + ny₁) / (m+n)
+</div>
+
+<div class="example">
+
+<strong id="sectionExampleTitle">Solved Example:</strong>
+
+<p id="sectionExample">
+Find the point which divides A(2,3) and B(8,9)
+in the ratio 1:2.
+</p>
+
+<div class="formula">
+x = [1(8) + 2(2)] / 3
+<br>
+= 12/3 = 4
+<br><br>
+
+y = [1(9) + 2(3)] / 3
+<br>
+= 15/3 = 5
+</div>
+
+<p id="sectionAnswer">
+Answer: The required point is (4,5).
+</p>
+
+</div>
+
+</div>
+
+
+<!-- MIDPOINT -->
+
+<div class="section">
+
+<h2 id="midpointTitle">3. Midpoint Formula</h2>
+
+<p id="midpointText">
+The midpoint of A(x₁,y₁) and B(x₂,y₂) is:
+</p>
+
+<div class="formula">
+Midpoint = ((x₁+x₂)/2 , (y₁+y₂)/2)
+</div>
+
+<div class="example">
+
+<strong id="midpointExampleTitle">Solved Example:</strong>
+
+<p id="midpointExample">
+Find the midpoint of A(2,4) and B(6,8).
+</p>
+
+<div class="formula">
+Midpoint = ((2+6)/2 , (4+8)/2)
+<br>
+= (8/2 , 12/2)
+<br>
+= (4,6)
+</div>
+
+<p id="midpointAnswer">
+Answer: The midpoint is (4,6).
+</p>
+
+</div>
+
+</div>
+
+
+<!-- AREA -->
+
+<div class="section">
+
+<h2 id="areaTitle">4. Area of a Triangle</h2>
+
+<p id="areaText">
+The area of a triangle whose vertices are
+(x₁,y₁), (x₂,y₂) and (x₃,y₃) is:
+</p>
+
+<div class="formula">
+Area = 1/2 |x₁(y₂−y₃)
++ x₂(y₃−y₁)
++ x₃(y₁−y₂)|
+</div>
+
+<div class="example">
+
+<strong id="areaExampleTitle">Solved Example:</strong>
+
+<p id="areaExample">
+Find the area of the triangle with vertices
+(0,0), (4,0) and (0,3).
+</p>
+
+<div class="formula">
+Area = 1/2 |0(0−3) + 4(3−0) + 0(0−0)|
+<br>
+= 1/2 × 12
+<br>
+= 6
+</div>
+
+<p id="areaAnswer">
+Answer: Area = 6 square units.
+</p>
+
+</div>
+
+</div>
+
+
+<!-- COLLINEAR -->
+
+<div class="section">
+
+<h2 id="collinearTitle">5. Collinearity of Points</h2>
+
+<p id="collinearText">
+Three points are collinear if the area of the triangle
+formed by them is zero.
+</p>
+
+<div class="formula">
+Area of Triangle = 0
+</div>
+
+<div class="example">
+
+<strong id="collinearExampleTitle">Important Idea:</strong>
+
+<p id="collinearExample">
+To check whether three points are collinear,
+use the area formula. If the area is 0,
+the three points lie on the same straight line.
+</p>
+
+</div>
+
+</div>
+
+
+<!-- IMPORTANT -->
+
+<div class="section">
+
+<h2 id="importantTitle">Important Points for Exam</h2>
+
+<ul id="important">
+<li>Remember the Distance Formula.</li>
+<li>Remember the Section Formula carefully.</li>
+<li>Midpoint is a special case of Section Formula.</li>
+<li>For collinear points, area of triangle is zero.</li>
+<li>Always write the formula before solving.</li>
+<li>Check signs carefully while substituting coordinates.</li>
+</ul>
+
+</div>
+
+
+<!-- PRACTICE -->
+
+<div class="section">
+
+<h2 id="practiceTitle">Practice Questions</h2>
+
+<div class="practice">
+
+<ol id="practice">
+
+<li>Find the distance between (1,2) and (4,6).</li>
+
+<li>Find the midpoint of (3,5) and (7,9).</li>
+
+<li>Find the point dividing (2,4) and (8,10) in the ratio 1:2.</li>
+
+<li>Find the area of the triangle whose vertices are
+(1,2), (4,6) and (7,2).</li>
+
+<li>Check whether the points (1,2), (3,4) and (5,6)
+are collinear.</li>
+
+</ol>
+
+</div>
+
+</div>
+
+
+<!-- NEXT -->
+
+<div class="section">
+
+<h2 id="nextTitle">Next Step</h2>
+
+<p id="nextText">
+After studying these formulas, practice numerical questions
+based on Distance Formula, Section Formula and Area of Triangle.
+</p>
+
+</div>
+
+</div>
+
+
+<footer>
+
+<p id="footer">
+© 2026 Golu Coaching | Class 10 Mathematics
+</p>
+
+</footer>
+
+
+<script>
+
+function setLanguage(lang){
+
+if(lang === "hi"){
+
+document.getElementById("title").innerText =
+"अध्याय 7 – निर्देशांक ज्यामिति";
+
+document.getElementById("subtitle").innerText =
+"कक्षा 10 गणित | Golu Coaching";
+
+document.getElementById("back").innerText =
+"← कक्षा 10 पर वापस जाएँ";
+
+document.getElementById("introTitle").innerText =
+"परिचय";
+
+document.getElementById("introText").innerText =
+"निर्देशांक ज्यामिति में Cartesian Plane पर निर्देशांकों की सहायता से ज्यामिति का अध्ययन किया जाता है। इस अध्याय में दूरी, विभाजन और त्रिभुज के क्षेत्रफल के सूत्र पढ़े जाते हैं।";
+
+document.getElementById("topicsTitle").innerText =
+"मुख्य विषय";
+
+document.getElementById("topics").innerHTML = `
+<li>दूरी सूत्र</li>
+<li>विभाजन सूत्र</li>
+<li>मध्य-बिंदु सूत्र</li>
+<li>त्रिभुज का क्षेत्रफल</li>
+<li>बिंदुओं की समरेखीयता</li>
+`;
+
+document.getElementById("distanceTitle").innerText =
+"1. दूरी सूत्र";
+
+document.getElementById("distanceText").innerText =
+"दो बिंदुओं A(x₁,y₁) और B(x₂,y₂) के बीच की दूरी:";
+
+document.getElementById("distanceExampleTitle").innerText =
+"हल किया गया उदाहरण:";
+
+document.getElementById("distanceExample").innerText =
+"A(2,3) और B(5,7) के बीच की दूरी ज्ञात कीजिए।";
+
+document.getElementById("distanceAnswer").innerText =
+"उत्तर: दूरी = 5 इकाई।";
+
+document.getElementById("sectionTitle").innerText =
+"2. विभाजन सूत्र";
+
+document.getElementById("sectionText").innerText =
+"यदि P(x,y), A(x₁,y₁) और B(x₂,y₂) को m:n के अनुपात में आंतरिक रूप से विभाजित करता है, तो:";
+
+document.getElementById("sectionExampleTitle").innerText =
+"हल किया गया उदाहरण:";
+
+document.getElementById("sectionExample").innerText =
+"A(2,3) और B(8,9) को 1:2 के अनुपात में विभाजित करने वाले बिंदु को ज्ञात कीजिए।";
+
+document.getElementById("sectionAnswer").innerText =
+"उत्तर: आवश्यक बिंदु (4,5) है।";
+
+document.getElementById("midpointTitle").innerText =
+"3. मध्य-बिंदु सूत्र";
+
+document.getElementById("midpointText").innerText =
+"A(x₁,y₁) और B(x₂,y₂) का मध्य-बिंदु:";
+
+document.getElementById("midpointExampleTitle").innerText =
+"हल किया गया उदाहरण:";
+
+document.getElementById("midpointExample").innerText =
+"A(2,4) और B(6,8) का मध्य-बिंदु ज्ञात कीजिए।";
+
+document.getElementById("midpointAnswer").innerText =
+"उत्तर: मध्य-बिंदु (4,6) है।";
+
+document.getElementById("areaTitle").innerText =
+"4. त्रिभुज का क्षेत्रफल";
+
+document.getElementById("areaText").innerText =
+"यदि त्रिभुज के शीर्ष (x₁,y₁), (x₂,y₂) और (x₃,y₃) हैं, तो:";
+
+document.getElementById("areaExampleTitle").innerText =
+"हल किया गया उदाहरण:";
+
+document.getElementById("areaExample").innerText =
+"(0,0), (4,0) और (0,3) शीर्षों वाले त्रिभुज का क्षेत्रफल ज्ञात कीजिए।";
+
+document.getElementById("areaAnswer").innerText =
+"उत्तर: क्षेत्रफल = 6 वर्ग इकाई।";
+
+document.getElementById("collinearTitle").innerText =
+"5. बिंदुओं की समरेखीयता";
+
+document.getElementById("collinearText").innerText =
+"तीन बिंदु समरेखीय होते हैं यदि उनसे बने त्रिभुज का क्षेत्रफल शून्य हो।";
+
+document.getElementById("collinearExampleTitle").innerText =
+"महत्वपूर्ण बात:";
+
+document.getElementById("collinearExample").innerText =
+"तीन बिंदुओं की समरेखीयता जाँचने के लिए क्षेत्रफल सूत्र का प्रयोग करें। यदि क्षेत्रफल 0 है, तो तीनों बिंदु एक ही सीधी रेखा पर हैं।";
+
+document.getElementById("importantTitle").innerText =
+"परीक्षा के लिए महत्वपूर्ण बातें";
+
+document.getElementById("important").innerHTML = `
+<li>दूरी सूत्र याद रखें।</li>
+<li>विभाजन सूत्र को ध्यान से याद करें।</li>
+<li>मध्य-बिंदु, विभाजन सूत्र का विशेष रूप है।</li>
+<li>समरेखीय बिंदुओं के लिए त्रिभुज का क्षेत्रफल 0 होता है।</li>
+<li>प्रश्न हल करने से पहले सूत्र जरूर लिखें।</li>
+<li>Coordinates रखते समय + और − चिन्ह ध्यान से देखें।</li>
+`;
+
+document.getElementById("practiceTitle").innerText =
+"अभ्यास प्रश्न";
+
+document.getElementById("practice").innerHTML = `
+<li>(1,2) और (4,6) के बीच की दूरी ज्ञात कीजिए।</li>
+<li>(3,5) और (7,9) का मध्य-बिंदु ज्ञात कीजिए।</li>
+<li>(2,4) और (8,10) को 1:2 के अनुपात में विभाजित करने वाले बिंदु को ज्ञात कीजिए।</li>
+<li>(1,2), (4,6) और (7,2) शीर्षों वाले त्रिभुज का क्षेत्रफल ज्ञात कीजिए।</li>
+<li>जाँच कीजिए कि (1,2), (3,4) और (5,6) समरेखीय हैं या नहीं।</li>
+`;
+
+document.getElementById("nextTitle").innerText =
+"अगला कदम";
+
+document.getElementById("nextText").innerText =
+"अब दूरी सूत्र, विभाजन सूत्र और त्रिभुज के क्षेत्रफल पर आधारित Numerical Questions का अभ्यास करें।";
+
+document.getElementById("footer").innerText =
+"© 2026 Golu Coaching | कक्षा 10 गणित";
+
+}
+
+else{
+
+location.reload();
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
+

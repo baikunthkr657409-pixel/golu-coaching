@@ -1,0 +1,705 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Triangles | Golu Coaching</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f5f7fb;
+    color:#222;
+    line-height:1.6;
+}
+
+header{
+    background:linear-gradient(135deg,#1e3c72,#2a5298);
+    color:white;
+    text-align:center;
+    padding:30px 15px;
+    position:relative;
+}
+
+header h1{
+    font-size:32px;
+}
+
+header p{
+    margin-top:5px;
+}
+
+.language{
+    position:absolute;
+    top:15px;
+    right:15px;
+    display:flex;
+    gap:5px;
+}
+
+.language button{
+    border:none;
+    padding:7px 11px;
+    border-radius:20px;
+    cursor:pointer;
+    background:white;
+    color:#1e3c72;
+    font-weight:bold;
+}
+
+.language button.active{
+    background:#ffd54f;
+    color:#222;
+}
+
+.container{
+    width:90%;
+    max-width:1000px;
+    margin:30px auto;
+}
+
+.back{
+    display:inline-block;
+    text-decoration:none;
+    background:#1e3c72;
+    color:white;
+    padding:10px 18px;
+    border-radius:8px;
+    margin-bottom:25px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    margin-bottom:22px;
+    border-radius:14px;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+
+.card h2{
+    color:#1e3c72;
+    margin-bottom:12px;
+}
+
+.card h3{
+    color:#2a5298;
+    margin-top:18px;
+    margin-bottom:8px;
+}
+
+ul,ol{
+    padding-left:25px;
+}
+
+li{
+    margin:7px 0;
+}
+
+.formula{
+    background:#eef4ff;
+    padding:15px;
+    border-left:5px solid #2a5298;
+    border-radius:8px;
+    margin-top:12px;
+    font-weight:bold;
+}
+
+.example{
+    background:#f8fbff;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+
+.important{
+    background:#fff8e1;
+    border-left:5px solid #f4b400;
+    padding:15px;
+    border-radius:8px;
+    margin-top:15px;
+}
+
+footer{
+    background:#1e3c72;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+@media(max-width:600px){
+    header{
+        padding-top:65px;
+    }
+
+    header h1{
+        font-size:26px;
+    }
+
+    .language{
+        top:12px;
+        right:10px;
+    }
+
+    .container{
+        width:94%;
+    }
+
+    .card{
+        padding:18px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="language">
+    <button id="hiBtn" onclick="setLanguage('hi')">हिन्दी</button>
+    <button id="enBtn" class="active" onclick="setLanguage('en')">English</button>
+</div>
+
+<h1 id="pageTitle">
+Chapter 6 – Triangles
+</h1>
+
+<p id="pageSubtitle">
+Class 10 Mathematics | Golu Coaching
+</p>
+
+</header>
+
+<div class="container">
+
+<a href="class10.html" class="back" id="backBtn">
+← Back to Class 10
+</a>
+
+<div class="card">
+<h2 id="introTitle">📘 Chapter Introduction</h2>
+
+<p id="introText">
+In this chapter, we will learn about similar triangles,
+their properties, important theorems and Pythagoras theorem.
+</p>
+</div>
+
+<div class="card">
+
+<h2 id="topicsTitle">📚 Main Topics</h2>
+
+<ul id="topicsList">
+<li>Similarity of Triangles</li>
+<li>Basic Proportionality Theorem</li>
+<li>Criteria for Similarity</li>
+<li>Areas of Similar Triangles</li>
+<li>Pythagoras Theorem</li>
+<li>Converse of Pythagoras Theorem</li>
+</ul>
+
+</div>
+
+<!-- BPT -->
+
+<div class="card">
+
+<h2 id="bptTitle">📐 Basic Proportionality Theorem</h2>
+
+<p id="bptText">
+If a line is drawn parallel to one side of a triangle,
+it divides the other two sides proportionally.
+</p>
+
+<div class="formula">
+DE ∥ BC ⇒ AD / DB = AE / EC
+</div>
+
+<h3 id="bptExampleTitle">✏️ Solved Example</h3>
+
+<p id="bptExample">
+In triangle ABC, DE ∥ BC. If AD = 3 cm, DB = 2 cm
+and AE = 6 cm, find EC.
+</p>
+
+<div class="formula">
+AD / DB = AE / EC
+
+<br><br>
+
+3 / 2 = 6 / EC
+
+<br><br>
+
+3 × EC = 12
+
+<br><br>
+
+EC = 4 cm
+</div>
+
+</div>
+
+<!-- SIMILARITY -->
+
+<div class="card">
+
+<h2 id="similarTitle">🔺 Similarity of Triangles</h2>
+
+<p id="similarText">
+Two triangles are similar when their corresponding angles
+are equal and corresponding sides are proportional.
+</p>
+
+<h3>AA / AAA Criterion</h3>
+
+<div class="formula">
+If two corresponding angles are equal,
+the triangles are similar.
+</div>
+
+<h3>SSS Criterion</h3>
+
+<div class="formula">
+If corresponding sides of two triangles are proportional,
+the triangles are similar.
+</div>
+
+<h3>SAS Criterion</h3>
+
+<div class="formula">
+If one angle is equal and the corresponding sides
+including that angle are proportional, the triangles are similar.
+</div>
+
+<h3 id="similarExampleTitle">✏️ Solved Example</h3>
+
+<p id="similarExample">
+Two triangles have sides 3, 4, 5 and 6, 8, 10.
+Check whether they are similar.
+</p>
+
+<div class="formula">
+3 / 6 = 4 / 8 = 5 / 10
+
+<br><br>
+
+1 / 2 = 1 / 2 = 1 / 2
+
+<br><br>
+
+Therefore, the triangles are similar by SSS criterion.
+</div>
+
+</div>
+
+<!-- CORRESPONDING SIDES -->
+
+<div class="card">
+
+<h2 id="sideTitle">📏 Corresponding Sides</h2>
+
+<p id="sideText">
+If two triangles are similar, their corresponding sides are proportional.
+</p>
+
+<div class="formula">
+AB / DE = BC / EF = AC / DF
+</div>
+
+<h3 id="sideExampleTitle">✏️ Solved Example</h3>
+
+<p id="sideExample">
+If two similar triangles have corresponding sides
+6 cm and 9 cm, and another side of the smaller triangle is 8 cm,
+find the corresponding side of the larger triangle.
+</p>
+
+<div class="formula">
+6 / 9 = 8 / x
+
+<br><br>
+
+6x = 72
+
+<br><br>
+
+x = 12 cm
+</div>
+
+</div>
+
+<!-- AREA -->
+
+<div class="card">
+
+<h2 id="areaTitle">📊 Areas of Similar Triangles</h2>
+
+<p id="areaText">
+The ratio of the areas of two similar triangles is equal to
+the square of the ratio of their corresponding sides.
+</p>
+
+<div class="formula">
+Area₁ / Area₂ = (Corresponding side₁ / Corresponding side₂)²
+</div>
+
+<h3 id="areaExampleTitle">✏️ Solved Example</h3>
+
+<p id="areaExample">
+The corresponding sides of two similar triangles are
+4 cm and 6 cm. Find the ratio of their areas.
+</p>
+
+<div class="formula">
+Area₁ / Area₂ = (4 / 6)²
+
+<br><br>
+
+= (2 / 3)²
+
+<br><br>
+
+= 4 / 9
+
+<br><br>
+
+Therefore, Area₁ : Area₂ = 4 : 9
+</div>
+
+</div>
+
+<!-- PYTHAGORAS -->
+
+<div class="card">
+
+<h2 id="pythTitle">📐 Pythagoras Theorem</h2>
+
+<p id="pythText">
+In a right-angled triangle, the square of the hypotenuse
+is equal to the sum of the squares of the other two sides.
+</p>
+
+<div class="formula">
+Hypotenuse² = Base² + Perpendicular²
+
+<br><br>
+
+c² = a² + b²
+</div>
+
+<h3 id="pythExampleTitle">✏️ Solved Example</h3>
+
+<p id="pythExample">
+A right-angled triangle has base 6 cm and perpendicular 8 cm.
+Find the hypotenuse.
+</p>
+
+<div class="formula">
+c² = 6² + 8²
+
+<br><br>
+
+c² = 36 + 64
+
+<br><br>
+
+c² = 100
+
+<br><br>
+
+c = 10 cm
+</div>
+
+</div>
+
+<!-- CONVERSE -->
+
+<div class="card">
+
+<h2 id="converseTitle">🔄 Converse of Pythagoras Theorem</h2>
+
+<p id="converseText">
+If the square of the largest side of a triangle is equal to
+the sum of the squares of the other two sides, then the triangle
+is right-angled.
+</p>
+
+<div class="formula">
+If c² = a² + b²,
+then the triangle is right-angled.
+</div>
+
+<h3 id="converseExampleTitle">✏️ Solved Example</h3>
+
+<p id="converseExample">
+A triangle has sides 5 cm, 12 cm and 13 cm.
+Check whether it is a right-angled triangle.
+</p>
+
+<div class="formula">
+13² = 5² + 12²
+
+<br><br>
+
+169 = 25 + 144
+
+<br><br>
+
+169 = 169
+
+<br><br>
+
+Therefore, the triangle is right-angled.
+</div>
+
+</div>
+
+<!-- IMPORTANT -->
+
+<div class="card">
+
+<h2 id="importantTitle">🎯 Exam Important Points</h2>
+
+<div class="important" id="point1">
+⭐ Learn all three similarity criteria: AA, SSS and SAS.
+</div>
+
+<div class="important" id="point2">
+⭐ Remember the Basic Proportionality Theorem.
+</div>
+
+<div class="important" id="point3">
+⭐ Practice questions based on areas of similar triangles.
+</div>
+
+<div class="important" id="point4">
+⭐ Pythagoras theorem is very important for numericals.
+</div>
+
+</div>
+
+<!-- PRACTICE -->
+
+<div class="card">
+
+<h2 id="practiceTitle">📝 Practice Questions</h2>
+
+<ol id="practiceList">
+
+<li>State the Basic Proportionality Theorem.</li>
+
+<li>Check whether triangles with sides 5, 12, 13 and
+10, 24, 26 are similar.</li>
+
+<li>If two similar triangles have corresponding sides
+3 cm and 6 cm, find the ratio of their areas.</li>
+
+<li>Find the hypotenuse of a right triangle whose
+sides are 9 cm and 12 cm.</li>
+
+<li>Check whether a triangle with sides 7 cm, 24 cm and
+25 cm is right-angled.</li>
+
+</ol>
+
+</div>
+
+<div class="card">
+
+<h2 id="nextTitle">🚀 Next Step</h2>
+
+<p id="nextText">
+Learn the theorems carefully and practice numerical questions.
+</p>
+
+<div class="important" id="tipText">
+💡 Draw the triangle figure whenever possible. It makes
+the question easier to understand.
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+<p id="footerText">
+© 2026 Golu Coaching | Class 10 Mathematics
+</p>
+
+</footer>
+
+<script>
+
+function setLanguage(language){
+
+const hiBtn=document.getElementById("hiBtn");
+const enBtn=document.getElementById("enBtn");
+
+if(language==="hi"){
+
+document.documentElement.lang="hi";
+
+hiBtn.classList.add("active");
+enBtn.classList.remove("active");
+
+document.getElementById("pageTitle").innerText=
+"अध्याय 6 – त्रिभुज";
+
+document.getElementById("pageSubtitle").innerText=
+"कक्षा 10 गणित | Golu Coaching";
+
+document.getElementById("backBtn").innerText=
+"← कक्षा 10 पर वापस जाएँ";
+
+document.getElementById("introTitle").innerText=
+"📘 अध्याय परिचय";
+
+document.getElementById("introText").innerText=
+"इस अध्याय में हम समरूप त्रिभुज, उनके गुण, महत्वपूर्ण प्रमेय और पाइथागोरस प्रमेय के बारे में सीखेंगे।";
+
+document.getElementById("topicsTitle").innerText=
+"📚 मुख्य विषय";
+
+document.getElementById("topicsList").innerHTML=`
+<li>त्रिभुजों की समरूपता</li>
+<li>मूल समानुपात प्रमेय</li>
+<li>समरूपता की कसौटियाँ</li>
+<li>समरूप त्रिभुजों के क्षेत्रफल</li>
+<li>पाइथागोरस प्रमेय</li>
+<li>पाइथागोरस प्रमेय का विलोम</li>
+`;
+
+document.getElementById("bptTitle").innerText=
+"📐 मूल समानुपात प्रमेय";
+
+document.getElementById("bptText").innerText=
+"यदि किसी त्रिभुज की एक भुजा के समानांतर रेखा खींची जाए, तो वह अन्य दो भुजाओं को समानुपात में विभाजित करती है।";
+
+document.getElementById("bptExampleTitle").innerText=
+"✏️ हल किया हुआ उदाहरण";
+
+document.getElementById("bptExample").innerText=
+"त्रिभुज ABC में DE ∥ BC है। यदि AD = 3 cm, DB = 2 cm और AE = 6 cm है, तो EC ज्ञात कीजिए।";
+
+document.getElementById("similarTitle").innerText=
+"🔺 त्रिभुजों की समरूपता";
+
+document.getElementById("similarText").innerText=
+"दो त्रिभुज समरूप होते हैं जब उनके संगत कोण बराबर और संगत भुजाएँ समानुपाती होती हैं।";
+
+document.getElementById("similarExampleTitle").innerText=
+"✏️ हल किया हुआ उदाहरण";
+
+document.getElementById("similarExample").innerText=
+"दो त्रिभुजों की भुजाएँ 3, 4, 5 और 6, 8, 10 हैं। जाँच कीजिए कि क्या वे समरूप हैं।";
+
+document.getElementById("sideTitle").innerText=
+"📏 संगत भुजाएँ";
+
+document.getElementById("sideText").innerText=
+"यदि दो त्रिभुज समरूप हैं, तो उनकी संगत भुजाएँ समानुपाती होती हैं।";
+
+document.getElementById("sideExampleTitle").innerText=
+"✏️ हल किया हुआ उदाहरण";
+
+document.getElementById("sideExample").innerText=
+"यदि दो समरूप त्रिभुजों की संगत भुजाएँ 6 cm और 9 cm हैं तथा छोटे त्रिभुज की दूसरी भुजा 8 cm है, तो बड़े त्रिभुज की संगत भुजा ज्ञात कीजिए।";
+
+document.getElementById("areaTitle").innerText=
+"📊 समरूप त्रिभुजों के क्षेत्रफल";
+
+document.getElementById("areaText").innerText=
+"दो समरूप त्रिभुजों के क्षेत्रफलों का अनुपात उनकी संगत भुजाओं के अनुपात के वर्ग के बराबर होता है।";
+
+document.getElementById("areaExampleTitle").innerText=
+"✏️ हल किया हुआ उदाहरण";
+
+document.getElementById("areaExample").innerText=
+"दो समरूप त्रिभुजों की संगत भुजाएँ 4 cm और 6 cm हैं। उनके क्षेत्रफलों का अनुपात ज्ञात कीजिए।";
+
+document.getElementById("pythTitle").innerText=
+"📐 पाइथागोरस प्रमेय";
+
+document.getElementById("pythText").innerText=
+"समकोण त्रिभुज में कर्ण का वर्ग अन्य दो भुजाओं के वर्गों के योग के बराबर होता है।";
+
+document.getElementById("pythExampleTitle").innerText=
+"✏️ हल किया हुआ उदाहरण";
+
+document.getElementById("pythExample").innerText=
+"एक समकोण त्रिभुज का आधार 6 cm और लंब 8 cm है। कर्ण ज्ञात कीजिए।";
+
+document.getElementById("converseTitle").innerText=
+"🔄 पाइथागोरस प्रमेय का विलोम";
+
+document.getElementById("converseText").innerText=
+"यदि किसी त्रिभुज की सबसे बड़ी भुजा का वर्ग अन्य दो भुजाओं के वर्गों के योग के बराबर है, तो वह त्रिभुज समकोण त्रिभुज होता है।";
+
+document.getElementById("converseExampleTitle").innerText=
+"✏️ हल किया हुआ उदाहरण";
+
+document.getElementById("converseExample").innerText=
+"एक त्रिभुज की भुजाएँ 5 cm, 12 cm और 13 cm हैं। जाँच कीजिए कि क्या यह समकोण त्रिभुज है।";
+
+document.getElementById("importantTitle").innerText=
+"🎯 परीक्षा के लिए महत्वपूर्ण बातें";
+
+document.getElementById("point1").innerText=
+"⭐ समरूपता की तीनों कसौटियाँ AA, SSS और SAS सीखें।";
+
+document.getElementById("point2").innerText=
+"⭐ मूल समानुपात प्रमेय याद रखें।";
+
+document.getElementById("point3").innerText=
+"⭐ समरूप त्रिभुजों के क्षेत्रफल पर आधारित प्रश्नों का अभ्यास करें।";
+
+document.getElementById("point4").innerText=
+"⭐ पाइथागोरस प्रमेय संख्यात्मक प्रश्नों के लिए बहुत महत्वपूर्ण है।";
+
+document.getElementById("practiceTitle").innerText=
+"📝 अभ्यास प्रश्न";
+
+document.getElementById("practiceList").innerHTML=`
+<li>मूल समानुपात प्रमेय लिखिए।</li>
+<li>जाँच कीजिए कि 5, 12, 13 और 10, 24, 26 भुजाओं वाले त्रिभुज समरूप हैं या नहीं।</li>
+<li>दो समरूप त्रिभुजों की संगत भुजाएँ 3 cm और 6 cm हैं। उनके क्षेत्रफलों का अनुपात ज्ञात कीजिए।</li>
+<li>9 cm और 12 cm भुजाओं वाले समकोण त्रिभुज का कर्ण ज्ञात कीजिए।</li>
+<li>जाँच कीजिए कि 7 cm, 24 cm और 25 cm भुजाओं वाला त्रिभुज समकोण त्रिभुज है या नहीं।</li>
+`;
+
+document.getElementById("nextTitle").innerText=
+"🚀 अगला कदम";
+
+document.getElementById("nextText").innerText=
+"प्रमेयों को अच्छी तरह सीखें और संख्यात्मक प्रश्नों का अभ्यास करें।";
+
+document.getElementById("tipText").innerText=
+"💡 जहाँ संभव हो त्रिभुज का चित्र बनाएँ। इससे प्रश्न समझना आसान होता है।";
+
+document.getElementById("footerText").innerText=
+"© 2026 Golu Coaching | कक्षा 10 गणित";
+
+}else{
+
+location.reload();
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
+

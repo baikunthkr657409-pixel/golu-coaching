@@ -1,0 +1,1641 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Introduction to Trigonometry | Golu Coaching Center</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    color:#222;
+    line-height:1.7;
+}
+
+header{
+    background:linear-gradient(135deg,#1e3c72,#2a5298);
+    color:white;
+    padding:30px 20px;
+    text-align:center;
+    position:relative;
+}
+
+header h1{
+    font-size:34px;
+    margin-bottom:5px;
+}
+
+header p{
+    font-size:17px;
+}
+
+.language{
+    position:absolute;
+    right:20px;
+    top:20px;
+}
+
+.language button{
+    border:none;
+    padding:8px 13px;
+    margin-left:5px;
+    border-radius:20px;
+    cursor:pointer;
+    font-weight:bold;
+    background:white;
+    color:#1e3c72;
+}
+
+.container{
+    max-width:1050px;
+    margin:30px auto;
+    padding:0 15px;
+}
+
+.section{
+    background:white;
+    margin-bottom:25px;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 18px rgba(0,0,0,0.08);
+}
+
+.section h2{
+    color:#1e3c72;
+    margin-bottom:15px;
+    border-left:5px solid #2a5298;
+    padding-left:12px;
+}
+
+.section h3{
+    color:#2a5298;
+    margin-top:18px;
+    margin-bottom:8px;
+}
+
+.formula{
+    background:#eaf3ff;
+    border-left:5px solid #2a5298;
+    padding:15px;
+    margin:15px 0;
+    border-radius:8px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.note{
+    background:#fff8d9;
+    border-left:5px solid #e0b000;
+    padding:15px;
+    margin:15px 0;
+    border-radius:8px;
+}
+
+.example{
+    background:#f0fff4;
+    border-left:5px solid #28a745;
+    padding:18px;
+    margin:15px 0;
+    border-radius:8px;
+}
+
+.warning{
+    background:#fff0f0;
+    border-left:5px solid #dc3545;
+    padding:15px;
+    margin:15px 0;
+    border-radius:8px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin:18px 0;
+}
+
+th,td{
+    border:1px solid #ddd;
+    padding:12px;
+    text-align:center;
+}
+
+th{
+    background:#1e3c72;
+    color:white;
+}
+
+tr:nth-child(even){
+    background:#f7f9fc;
+}
+
+ul,ol{
+    padding-left:25px;
+    margin:10px 0;
+}
+
+li{
+    margin:5px 0;
+}
+
+.question{
+    background:#f8f9fa;
+    border:1px solid #ddd;
+    padding:15px;
+    border-radius:10px;
+    margin:10px 0;
+}
+
+.answer{
+    color:#18752b;
+    font-weight:bold;
+    margin-top:6px;
+}
+
+.mcq{
+    background:#f5f8ff;
+    padding:15px;
+    border-radius:10px;
+    margin:12px 0;
+}
+
+.badge{
+    display:inline-block;
+    background:#2a5298;
+    color:white;
+    padding:5px 10px;
+    border-radius:20px;
+    margin:3px;
+    font-size:14px;
+}
+
+.back{
+    text-align:center;
+    margin:30px 0;
+}
+
+.back a{
+    text-decoration:none;
+    background:#1e3c72;
+    color:white;
+    padding:12px 22px;
+    border-radius:25px;
+    display:inline-block;
+}
+
+footer{
+    background:#1e3c72;
+    color:white;
+    text-align:center;
+    padding:25px 15px;
+    margin-top:40px;
+}
+
+.hidden{
+    display:none;
+}
+
+@media(max-width:700px){
+
+    header h1{
+        font-size:25px;
+        padding-top:30px;
+    }
+
+    header p{
+        font-size:14px;
+    }
+
+    .language{
+        position:static;
+        margin-top:15px;
+    }
+
+    .section{
+        padding:18px;
+    }
+
+    table{
+        font-size:13px;
+    }
+
+    th,td{
+        padding:8px 5px;
+    }
+
+    .formula{
+        font-size:16px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="language">
+<button onclick="showEnglish()">English</button>
+<button onclick="showHindi()">हिन्दी</button>
+</div>
+
+<h1>Introduction to Trigonometry</h1>
+<p>Class 10 Mathematics | Chapter 8</p>
+
+</header>
+
+
+<div class="container">
+
+
+<!-- ENGLISH CONTENT -->
+
+<div id="english">
+
+
+<div class="section">
+
+<h2>1. Introduction</h2>
+
+<p>
+Trigonometry is an important branch of Mathematics that deals with the
+relationship between the angles and sides of a triangle.
+</p>
+
+<p>
+The word Trigonometry comes from Greek words meaning
+<strong>measurement of triangles</strong>.
+</p>
+
+<div class="note">
+<strong>Class 10 Tip:</strong>
+Learn the basic ratios, standard values and identities carefully.
+These are very important for solving numerical questions.
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>2. Right-Angled Triangle</h2>
+
+<p>
+A triangle having one angle equal to 90° is called a
+<strong>right-angled triangle</strong>.
+</p>
+
+<h3>Important Parts</h3>
+
+<ul>
+<li><strong>Hypotenuse:</strong> Side opposite the 90° angle. It is the longest side.</li>
+<li><strong>Perpendicular:</strong> Side opposite the selected angle.</li>
+<li><strong>Base:</strong> The remaining side adjacent to the selected angle.</li>
+</ul>
+
+<div class="formula">
+Hypotenuse = Longest side of a right-angled triangle
+</div>
+
+<div class="note">
+For a selected angle θ, always identify the perpendicular,
+base and hypotenuse correctly before applying a trigonometric ratio.
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>3. Trigonometric Ratios</h2>
+
+<p>
+For an acute angle θ in a right-angled triangle, six trigonometric ratios
+are defined.
+</p>
+
+<table>
+
+<tr>
+<th>Ratio</th>
+<th>Formula</th>
+<th>Meaning</th>
+</tr>
+
+<tr>
+<td>sin θ</td>
+<td>Perpendicular / Hypotenuse</td>
+<td>P / H</td>
+</tr>
+
+<tr>
+<td>cos θ</td>
+<td>Base / Hypotenuse</td>
+<td>B / H</td>
+</tr>
+
+<tr>
+<td>tan θ</td>
+<td>Perpendicular / Base</td>
+<td>P / B</td>
+</tr>
+
+<tr>
+<td>cosec θ</td>
+<td>Hypotenuse / Perpendicular</td>
+<td>H / P</td>
+</tr>
+
+<tr>
+<td>sec θ</td>
+<td>Hypotenuse / Base</td>
+<td>H / B</td>
+</tr>
+
+<tr>
+<td>cot θ</td>
+<td>Base / Perpendicular</td>
+<td>B / P</td>
+</tr>
+
+</table>
+
+<div class="formula">
+sin θ = P/H
+<br><br>
+cos θ = B/H
+<br><br>
+tan θ = P/B
+<br><br>
+cosec θ = H/P
+<br><br>
+sec θ = H/B
+<br><br>
+cot θ = B/P
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>4. Easy Way to Remember Ratios</h2>
+
+<div class="formula">
+SOH → Sin = Opposite / Hypotenuse
+<br><br>
+CAH → Cos = Adjacent / Hypotenuse
+<br><br>
+TOA → Tan = Opposite / Adjacent
+</div>
+
+<p>
+Here:
+</p>
+
+<ul>
+<li>Opposite = Perpendicular</li>
+<li>Adjacent = Base</li>
+<li>Hypotenuse = Longest side</li>
+</ul>
+
+<div class="note">
+Remember: <strong>SOH – CAH – TOA</strong>
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>5. Reciprocal Relationships</h2>
+
+<p>
+Some trigonometric ratios are reciprocals of each other.
+</p>
+
+<div class="formula">
+cosec θ = 1 / sin θ
+<br><br>
+sec θ = 1 / cos θ
+<br><br>
+cot θ = 1 / tan θ
+</div>
+
+<p>Therefore:</p>
+
+<div class="formula">
+sin θ × cosec θ = 1
+<br><br>
+cos θ × sec θ = 1
+<br><br>
+tan θ × cot θ = 1
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>6. Relation Between tan, sin and cos</h2>
+
+<div class="formula">
+tan θ = sin θ / cos θ
+</div>
+
+<div class="formula">
+cot θ = cos θ / sin θ
+</div>
+
+<div class="example">
+
+<h3>Example</h3>
+
+<p>
+If sin θ = 3/5 and cos θ = 4/5, find tan θ.
+</p>
+
+<p>
+tan θ = sin θ / cos θ
+</p>
+
+<p>
+= (3/5) ÷ (4/5)
+</p>
+
+<p>
+= 3/4
+</p>
+
+<p class="answer">
+Answer: tan θ = 3/4
+</p>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>7. Standard Angles</h2>
+
+<p>
+The standard angles commonly used in Class 10 are:
+</p>
+
+<span class="badge">0°</span>
+<span class="badge">30°</span>
+<span class="badge">45°</span>
+<span class="badge">60°</span>
+<span class="badge">90°</span>
+
+<table>
+
+<tr>
+<th>θ</th>
+<th>0°</th>
+<th>30°</th>
+<th>45°</th>
+<th>60°</th>
+<th>90°</th>
+</tr>
+
+<tr>
+<td>sin θ</td>
+<td>0</td>
+<td>1/2</td>
+<td>1/√2</td>
+<td>√3/2</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>cos θ</td>
+<td>1</td>
+<td>√3/2</td>
+<td>1/√2</td>
+<td>1/2</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>tan θ</td>
+<td>0</td>
+<td>1/√3</td>
+<td>1</td>
+<td>√3</td>
+<td>Not defined</td>
+</tr>
+
+<tr>
+<td>cosec θ</td>
+<td>Not defined</td>
+<td>2</td>
+<td>√2</td>
+<td>2/√3</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>sec θ</td>
+<td>1</td>
+<td>2/√3</td>
+<td>√2</td>
+<td>2</td>
+<td>Not defined</td>
+</tr>
+
+<tr>
+<td>cot θ</td>
+<td>Not defined</td>
+<td>√3</td>
+<td>1</td>
+<td>1/√3</td>
+<td>0</td>
+</tr>
+
+</table>
+
+<div class="note">
+<strong>Exam Tip:</strong>
+Learn this complete table by understanding the pattern instead of
+only memorising it.
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>8. How to Remember sin Values</h2>
+
+<div class="formula">
+sin θ = √(0, 1, 2, 3, 4) / 2
+</div>
+
+<p>
+For angles:
+</p>
+
+<table>
+<tr>
+<th>Angle</th>
+<th>Value</th>
+</tr>
+
+<tr>
+<td>0°</td>
+<td>√0/2 = 0</td>
+</tr>
+
+<tr>
+<td>30°</td>
+<td>√1/2 = 1/2</td>
+</tr>
+
+<tr>
+<td>45°</td>
+<td>√2/2 = 1/√2</td>
+</tr>
+
+<tr>
+<td>60°</td>
+<td>√3/2</td>
+</tr>
+
+<tr>
+<td>90°</td>
+<td>√4/2 = 1</td>
+</tr>
+</table>
+
+</div>
+
+
+<div class="section">
+
+<h2>9. Important Trigonometric Identities</h2>
+
+<p>
+The following identities are very important for Class 10 examinations.
+</p>
+
+<div class="formula">
+sin² θ + cos² θ = 1
+</div>
+
+<div class="formula">
+1 + tan² θ = sec² θ
+</div>
+
+<div class="formula">
+1 + cot² θ = cosec² θ
+</div>
+
+<h3>Other useful forms</h3>
+
+<div class="formula">
+1 − sin² θ = cos² θ
+<br><br>
+1 − cos² θ = sin² θ
+<br><br>
+sec² θ − tan² θ = 1
+<br><br>
+cosec² θ − cot² θ = 1
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>10. Identity Verification</h2>
+
+<p>
+To prove an identity, usually start from one side and simplify it until
+it becomes equal to the other side.
+</p>
+
+<div class="example">
+
+<h3>Example</h3>
+
+<p>Prove:</p>
+
+<div class="formula">
+1 + tan² θ = sec² θ
+</div>
+
+<p>
+We know:
+</p>
+
+<p>
+sin² θ + cos² θ = 1
+</p>
+
+<p>
+Divide both sides by cos² θ:
+</p>
+
+<p>
+sin² θ/cos² θ + 1 = 1/cos² θ
+</p>
+
+<p>
+Therefore:
+</p>
+
+<p>
+tan² θ + 1 = sec² θ
+</p>
+
+<p class="answer">
+Hence proved.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>11. Finding Other Ratios When One Ratio is Given</h2>
+
+<div class="example">
+
+<h3>Example 1</h3>
+
+<p>
+If sin θ = 3/5, find cos θ and tan θ.
+</p>
+
+<p>
+We know:
+</p>
+
+<div class="formula">
+sin² θ + cos² θ = 1
+</div>
+
+<p>
+(3/5)² + cos² θ = 1
+</p>
+
+<p>
+9/25 + cos² θ = 1
+</p>
+
+<p>
+cos² θ = 16/25
+</p>
+
+<p>
+cos θ = 4/5
+</p>
+
+<p>
+Now:
+</p>
+
+<p>
+tan θ = sin θ / cos θ
+</p>
+
+<p>
+= (3/5)/(4/5)
+</p>
+
+<p>
+= 3/4
+</p>
+
+<p class="answer">
+Answer: cos θ = 4/5, tan θ = 3/4
+</p>
+
+</div>
+
+
+<div class="example">
+
+<h3>Example 2</h3>
+
+<p>
+If tan θ = 3/4, find sin θ and cos θ.
+</p>
+
+<p>
+Take:</p>
+
+<div class="formula">
+Perpendicular = 3
+<br>
+Base = 4
+</div>
+
+<p>
+Using Pythagoras:
+</p>
+
+<div class="formula">
+Hypotenuse = √(3² + 4²) = 5
+</div>
+
+<p>
+Therefore:</p>
+
+<div class="formula">
+sin θ = 3/5
+<br><br>
+cos θ = 4/5
+</div>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>12. Pythagoras Theorem and Trigonometry</h2>
+
+<p>
+For a right-angled triangle:
+</p>
+
+<div class="formula">
+Hypotenuse² = Perpendicular² + Base²
+</div>
+
+<p>
+This theorem is frequently used while finding trigonometric ratios.
+</p>
+
+<div class="example">
+
+<h3>Example</h3>
+
+<p>
+A right triangle has perpendicular = 6 cm and base = 8 cm.
+Find the hypotenuse.
+</p>
+
+<p>
+H² = 6² + 8²
+</p>
+
+<p>
+H² = 36 + 64 = 100
+</p>
+
+<p>
+H = 10 cm
+</p>
+
+<p class="answer">
+Answer: Hypotenuse = 10 cm
+</p>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>13. Solved Numerical Questions</h2>
+
+<div class="example">
+
+<h3>Question 1</h3>
+
+<p>
+Find sin 30° + cos 60°.
+</p>
+
+<p>
+sin 30° = 1/2
+</p>
+
+<p>
+cos 60° = 1/2
+</p>
+
+<p>
+Therefore:
+</p>
+
+<div class="formula">
+1/2 + 1/2 = 1
+</div>
+
+<p class="answer">
+Answer = 1
+</p>
+
+</div>
+
+
+<div class="example">
+
+<h3>Question 2</h3>
+
+<p>
+Find tan 45° + sin 90°.
+</p>
+
+<p>
+tan 45° = 1
+</p>
+
+<p>
+sin 90° = 1
+</p>
+
+<div class="formula">
+1 + 1 = 2
+</div>
+
+<p class="answer">
+Answer = 2
+</p>
+
+</div>
+
+
+<div class="example">
+
+<h3>Question 3</h3>
+
+<p>
+Find sec 60°.
+</p>
+
+<p>
+We know:</p>
+
+<div class="formula">
+cos 60° = 1/2
+</div>
+
+<p>
+Therefore:</p>
+
+<div class="formula">
+sec 60° = 1/cos 60°
+= 1/(1/2)
+= 2
+</div>
+
+<p class="answer">
+Answer = 2
+</p>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>14. Important Points for Exam</h2>
+
+<ul>
+<li>Hypotenuse is always opposite the 90° angle.</li>
+<li>Hypotenuse is always the longest side.</li>
+<li>sin θ = Perpendicular/Hypotenuse.</li>
+<li>cos θ = Base/Hypotenuse.</li>
+<li>tan θ = Perpendicular/Base.</li>
+<li>cosec θ is reciprocal of sin θ.</li>
+<li>sec θ is reciprocal of cos θ.</li>
+<li>cot θ is reciprocal of tan θ.</li>
+<li>tan θ = sin θ/cos θ.</li>
+<li>cot θ = cos θ/sin θ.</li>
+<li>Learn all standard angle values.</li>
+<li>Remember the three major identities.</li>
+</ul>
+
+</div>
+
+
+<div class="section">
+
+<h2>15. Common Mistakes</h2>
+
+<div class="warning">
+
+<ul>
+<li>Do not confuse base and perpendicular.</li>
+<li>Do not take the wrong side as the hypotenuse.</li>
+<li>Remember that tan 90° is not defined.</li>
+<li>Remember that cot 90° = 0.</li>
+<li>Do not forget squares in identities such as sin² θ.</li>
+<li>While proving identities, simplify carefully.</li>
+</ul>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>16. Quick Formula Revision</h2>
+
+<div class="formula">
+sin θ = P/H
+<br><br>
+cos θ = B/H
+<br><br>
+tan θ = P/B
+<br><br>
+cosec θ = H/P
+<br><br>
+sec θ = H/B
+<br><br>
+cot θ = B/P
+</div>
+
+<div class="formula">
+tan θ = sin θ/cos θ
+<br><br>
+cot θ = cos θ/sin θ
+</div>
+
+<div class="formula">
+sin² θ + cos² θ = 1
+<br><br>
+1 + tan² θ = sec² θ
+<br><br>
+1 + cot² θ = cosec² θ
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>17. MCQ Practice</h2>
+
+<div class="mcq">
+<strong>1. What is sin 30°?</strong>
+<p>A) 0 &nbsp;&nbsp; B) 1/2 &nbsp;&nbsp; C) 1 &nbsp;&nbsp; D) √3</p>
+<p class="answer">Answer: B) 1/2</p>
+</div>
+
+<div class="mcq">
+<strong>2. What is tan 45°?</strong>
+<p>A) 0 &nbsp;&nbsp; B) 1/2 &nbsp;&nbsp; C) 1 &nbsp;&nbsp; D) √3</p>
+<p class="answer">Answer: C) 1</p>
+</div>
+
+<div class="mcq">
+<strong>3. Which is the reciprocal of cos θ?</strong>
+<p>A) cot θ &nbsp;&nbsp; B) cosec θ &nbsp;&nbsp; C) sec θ &nbsp;&nbsp; D) tan θ</p>
+<p class="answer">Answer: C) sec θ</p>
+</div>
+
+<div class="mcq">
+<strong>4. What is sin² θ + cos² θ?</strong>
+<p>A) 0 &nbsp;&nbsp; B) 1 &nbsp;&nbsp; C) 2 &nbsp;&nbsp; D) tan θ</p>
+<p class="answer">Answer: B) 1</p>
+</div>
+
+<div class="mcq">
+<strong>5. What is cos 0°?</strong>
+<p>A) 0 &nbsp;&nbsp; B) 1/2 &nbsp;&nbsp; C) 1 &nbsp;&nbsp; D) Not defined</p>
+<p class="answer">Answer: C) 1</p>
+</div>
+
+<div class="mcq">
+<strong>6. What is tan 60°?</strong>
+<p>A) 1/√3 &nbsp;&nbsp; B) 1 &nbsp;&nbsp; C) √3 &nbsp;&nbsp; D) 0</p>
+<p class="answer">Answer: C) √3</p>
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>18. Practice Questions</h2>
+
+<div class="question">
+<strong>1.</strong> Find sin 60° + cos 30°.
+</div>
+
+<div class="question">
+<strong>2.</strong> Find tan 30° × tan 60°.
+</div>
+
+<div class="question">
+<strong>3.</strong> If cos θ = 4/5, find sin θ and tan θ.
+</div>
+
+<div class="question">
+<strong>4.</strong> If tan θ = 5/12, find sin θ and cos θ.
+</div>
+
+<div class="question">
+<strong>5.</strong> Prove that 1 + tan² θ = sec² θ.
+</div>
+
+<div class="question">
+<strong>6.</strong> Prove that 1 + cot² θ = cosec² θ.
+</div>
+
+<div class="question">
+<strong>7.</strong> Find the value of sec 60° + cosec 30°.
+</div>
+
+<div class="question">
+<strong>8.</strong> Find the value of:
+<br>
+sin 30° cos 60° + cos 30° sin 60°.
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>19. Board Exam Preparation</h2>
+
+<p>
+For examination preparation, focus on these topics:
+</p>
+
+<ol>
+<li>Six trigonometric ratios</li>
+<li>Standard values</li>
+<li>Reciprocal relationships</li>
+<li>tan θ = sin θ/cos θ</li>
+<li>Three fundamental identities</li>
+<li>Finding unknown ratios</li>
+<li>Identity-based questions</li>
+<li>Numerical questions using right triangles</li>
+</ol>
+
+<div class="note">
+<strong>Study Strategy:</strong>
+First learn the formulas, then solve standard-value questions,
+then practice identity questions and finally solve mixed numericals.
+</div>
+
+</div>
+
+
+</div>
+
+
+<!-- HINDI CONTENT -->
+
+<div id="hindi" class="hidden">
+
+<div class="section">
+
+<h2>1. परिचय</h2>
+
+<p>
+त्रिकोणमिति गणित की वह शाखा है जिसमें त्रिभुज की भुजाओं और कोणों के
+बीच संबंध का अध्ययन किया जाता है।
+</p>
+
+<div class="note">
+<strong>कक्षा 10 टिप:</strong>
+Trigonometric ratios, standard values और identities को अच्छी तरह सीखें।
+ये परीक्षा के लिए बहुत महत्वपूर्ण हैं।
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>2. समकोण त्रिभुज</h2>
+
+<p>
+जिस त्रिभुज का एक कोण 90° होता है उसे <strong>समकोण त्रिभुज</strong>
+कहा जाता है।
+</p>
+
+<h3>मुख्य भाग</h3>
+
+<ul>
+<li><strong>कर्ण:</strong> 90° कोण के सामने वाली भुजा। यह सबसे लंबी होती है।</li>
+<li><strong>लंब:</strong> चुने गए कोण के सामने वाली भुजा।</li>
+<li><strong>आधार:</strong> चुने गए कोण के पास वाली दूसरी भुजा।</li>
+</ul>
+
+</div>
+
+
+<div class="section">
+
+<h2>3. त्रिकोणमितीय अनुपात</h2>
+
+<table>
+
+<tr>
+<th>अनुपात</th>
+<th>सूत्र</th>
+</tr>
+
+<tr>
+<td>sin θ</td>
+<td>लंब / कर्ण</td>
+</tr>
+
+<tr>
+<td>cos θ</td>
+<td>आधार / कर्ण</td>
+</tr>
+
+<tr>
+<td>tan θ</td>
+<td>लंब / आधार</td>
+</tr>
+
+<tr>
+<td>cosec θ</td>
+<td>कर्ण / लंब</td>
+</tr>
+
+<tr>
+<td>sec θ</td>
+<td>कर्ण / आधार</td>
+</tr>
+
+<tr>
+<td>cot θ</td>
+<td>आधार / लंब</td>
+</tr>
+
+</table>
+
+<div class="formula">
+sin θ = P/H
+<br><br>
+cos θ = B/H
+<br><br>
+tan θ = P/B
+<br><br>
+cosec θ = H/P
+<br><br>
+sec θ = H/B
+<br><br>
+cot θ = B/P
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>4. अनुपात याद रखने का आसान तरीका</h2>
+
+<div class="formula">
+SOH → Sin = Opposite / Hypotenuse
+<br><br>
+CAH → Cos = Adjacent / Hypotenuse
+<br><br>
+TOA → Tan = Opposite / Adjacent
+</div>
+
+<div class="note">
+<strong>SOH – CAH – TOA</strong> याद रखें।
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>5. Reciprocal Relations</h2>
+
+<div class="formula">
+cosec θ = 1/sin θ
+<br><br>
+sec θ = 1/cos θ
+<br><br>
+cot θ = 1/tan θ
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>6. tan, sin और cos का संबंध</h2>
+
+<div class="formula">
+tan θ = sin θ / cos θ
+<br><br>
+cot θ = cos θ / sin θ
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>7. Standard Angles</h2>
+
+<table>
+
+<tr>
+<th>θ</th>
+<th>0°</th>
+<th>30°</th>
+<th>45°</th>
+<th>60°</th>
+<th>90°</th>
+</tr>
+
+<tr>
+<td>sin θ</td>
+<td>0</td>
+<td>1/2</td>
+<td>1/√2</td>
+<td>√3/2</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>cos θ</td>
+<td>1</td>
+<td>√3/2</td>
+<td>1/√2</td>
+<td>1/2</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>tan θ</td>
+<td>0</td>
+<td>1/√3</td>
+<td>1</td>
+<td>√3</td>
+<td>परिभाषित नहीं</td>
+</tr>
+
+<tr>
+<td>cosec θ</td>
+<td>परिभाषित नहीं</td>
+<td>2</td>
+<td>√2</td>
+<td>2/√3</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>sec θ</td>
+<td>1</td>
+<td>2/√3</td>
+<td>√2</td>
+<td>2</td>
+<td>परिभाषित नहीं</td>
+</tr>
+
+<tr>
+<td>cot θ</td>
+<td>परिभाषित नहीं</td>
+<td>√3</td>
+<td>1</td>
+<td>1/√3</td>
+<td>0</td>
+</tr>
+
+</table>
+
+</div>
+
+
+<div class="section">
+
+<h2>8. महत्वपूर्ण त्रिकोणमितीय सर्वसमिकाएँ</h2>
+
+<div class="formula">
+sin² θ + cos² θ = 1
+</div>
+
+<div class="formula">
+1 + tan² θ = sec² θ
+</div>
+
+<div class="formula">
+1 + cot² θ = cosec² θ
+</div>
+
+<h3>अन्य उपयोगी रूप</h3>
+
+<div class="formula">
+1 − sin² θ = cos² θ
+<br><br>
+1 − cos² θ = sin² θ
+<br><br>
+sec² θ − tan² θ = 1
+<br><br>
+cosec² θ − cot² θ = 1
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>9. उदाहरण</h2>
+
+<div class="example">
+
+<h3>उदाहरण 1</h3>
+
+<p>
+यदि sin θ = 3/5 है, तो cos θ और tan θ ज्ञात कीजिए।
+</p>
+
+<p>
+sin² θ + cos² θ = 1
+</p>
+
+<p>
+9/25 + cos² θ = 1
+</p>
+
+<p>
+cos² θ = 16/25
+</p>
+
+<p>
+cos θ = 4/5
+</p>
+
+<p>
+अब:
+</p>
+
+<p>
+tan θ = sin θ / cos θ
+</p>
+
+<p>
+= (3/5)/(4/5) = 3/4
+</p>
+
+<p class="answer">
+उत्तर: cos θ = 4/5 और tan θ = 3/4
+</p>
+
+</div>
+
+
+<div class="example">
+
+<h3>उदाहरण 2</h3>
+
+<p>
+एक समकोण त्रिभुज में लंब = 6 cm और आधार = 8 cm है।
+कर्ण ज्ञात कीजिए।
+</p>
+
+<p>
+H² = 6² + 8²
+</p>
+
+<p>
+H² = 36 + 64 = 100
+</p>
+
+<p>
+H = 10 cm
+</p>
+
+<p class="answer">
+उत्तर: कर्ण = 10 cm
+</p>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>10. परीक्षा के लिए महत्वपूर्ण बातें</h2>
+
+<ul>
+<li>कर्ण हमेशा 90° कोण के सामने होता है।</li>
+<li>कर्ण सबसे लंबी भुजा होती है।</li>
+<li>sin θ = लंब/कर्ण</li>
+<li>cos θ = आधार/कर्ण</li>
+<li>tan θ = लंब/आधार</li>
+<li>cosec, sin का reciprocal है।</li>
+<li>sec, cos का reciprocal है।</li>
+<li>cot, tan का reciprocal है।</li>
+<li>Standard angles याद रखें।</li>
+<li>तीनों मुख्य identities याद रखें।</li>
+</ul>
+
+</div>
+
+
+<div class="section">
+
+<h2>11. सामान्य गलतियाँ</h2>
+
+<div class="warning">
+
+<ul>
+<li>आधार और लंब को आपस में न मिलाएँ।</li>
+<li>कर्ण को गलत भुजा न मानें।</li>
+<li>tan 90° defined नहीं है।</li>
+<li>cot 90° = 0 होता है।</li>
+<li>sin² θ में square को न भूलें।</li>
+<li>Identity prove करते समय हर step ध्यान से करें।</li>
+</ul>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>12. Quick Revision</h2>
+
+<div class="formula">
+sin θ = P/H
+<br><br>
+cos θ = B/H
+<br><br>
+tan θ = P/B
+<br><br>
+cosec θ = H/P
+<br><br>
+sec θ = H/B
+<br><br>
+cot θ = B/P
+</div>
+
+<div class="formula">
+sin² θ + cos² θ = 1
+<br><br>
+1 + tan² θ = sec² θ
+<br><br>
+1 + cot² θ = cosec² θ
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>13. अभ्यास प्रश्न</h2>
+
+<div class="question">
+1. sin 60° + cos 30° ज्ञात कीजिए।
+</div>
+
+<div class="question">
+2. tan 30° × tan 60° ज्ञात कीजिए।
+</div>
+
+<div class="question">
+3. यदि cos θ = 4/5 है, तो sin θ और tan θ ज्ञात कीजिए।
+</div>
+
+<div class="question">
+4. यदि tan θ = 5/12 है, तो sin θ और cos θ ज्ञात कीजिए।
+</div>
+
+<div class="question">
+5. सिद्ध कीजिए: 1 + tan² θ = sec² θ
+</div>
+
+<div class="question">
+6. सिद्ध कीजिए: 1 + cot² θ = cosec² θ
+</div>
+
+<div class="question">
+7. sec 60° + cosec 30° का मान ज्ञात कीजिए।
+</div>
+
+<div class="question">
+8. sin 30° cos 60° + cos 30° sin 60° का मान ज्ञात कीजिए।
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>14. Board Exam Preparation</h2>
+
+<ol>
+<li>छह त्रिकोणमितीय अनुपात सीखें।</li>
+<li>Standard values याद करें।</li>
+<li>Reciprocal relationships समझें।</li>
+<li>tan θ = sin θ/cos θ याद रखें।</li>
+<li>तीनों मुख्य identities याद करें।</li>
+<li>Unknown ratios निकालने का अभ्यास करें।</li>
+<li>Identity वाले सवाल करें।</li>
+<li>Numerical questions का अभ्यास करें।</li>
+</ol>
+
+<div class="note">
+<strong>Study Strategy:</strong>
+पहले formulas सीखें, फिर standard-value questions करें,
+उसके बाद identities और mixed numericals का अभ्यास करें।
+</div>
+
+</div>
+
+
+</div>
+
+
+<div class="back">
+<a href="class10.html">← Back to Class 10</a>
+</div>
+
+</div>
+
+
+<footer>
+<p>© 2026 Golu Coaching Center</p>
+<p>Learn • Practice • Succeed</p>
+</footer>
+
+
+<script>
+
+function showHindi(){
+
+    document.getElementById("english").classList.add("hidden");
+    document.getElementById("hindi").classList.remove("hidden");
+
+}
+
+function showEnglish(){
+
+    document.getElementById("hindi").classList.add("hidden");
+    document.getElementById("english").classList.remove("hidden");
+
+}
+
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,725 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Golu Coaching Center | Home</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f5f7fb;
+    color:#222;
+}
+
+/* HEADER */
+
+header{
+    background:linear-gradient(135deg,#172554,#2563eb);
+    color:white;
+    padding:30px 20px;
+    text-align:center;
+    position:relative;
+}
+
+header h1{
+    font-size:46px;
+    font-weight:800;
+    letter-spacing:1px;
+}
+
+header p{
+    margin-top:8px;
+    font-size:18px;
+}
+
+/* LANGUAGE */
+
+.language{
+    position:absolute;
+    top:15px;
+    right:18px;
+    display:flex;
+    gap:5px;
+}
+
+.language button{
+    border:none;
+    padding:8px 13px;
+    border-radius:20px;
+    cursor:pointer;
+    background:white;
+    color:#172554;
+    font-weight:bold;
+}
+
+.language button.active{
+    background:#ffd54f;
+    color:#222;
+}
+
+/* NAVIGATION */
+
+nav{
+    background:white;
+    padding:14px;
+    text-align:right;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+
+nav a{
+    text-decoration:none;
+    color:#172554;
+    font-weight:bold;
+    margin:0 8px;
+}
+
+nav a:hover{
+    color:#2563eb;
+}
+
+/* HERO */
+
+.hero{
+    background:linear-gradient(135deg,#dbeafe,#eff6ff);
+    text-align:center;
+    padding:75px 20px;
+}
+
+.hero h2{
+    font-size:42px;
+    color:#172554;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:18px;
+    max-width:800px;
+    margin:auto;
+    line-height:1.7;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:13px 28px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#172554;
+}
+
+/* CONTAINER */
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:45px auto;
+}
+
+.title{
+    text-align:center;
+    color:#172554;
+    font-size:30px;
+    margin-bottom:30px;
+}
+
+/* CLASSES */
+
+.classes{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.class-card{
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.class-card:hover{
+    transform:translateY(-7px);
+}
+
+.class-card h3{
+    color:#2563eb;
+    font-size:25px;
+    margin-bottom:12px;
+}
+
+.class-card p{
+    color:#555;
+    line-height:1.6;
+}
+
+.class-card .btn{
+    margin-top:20px;
+}
+
+/* FEATURES */
+
+.features{
+    background:#172554;
+    color:white;
+    padding:45px 20px;
+    margin-top:50px;
+}
+
+.features h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.feature-list{
+    max-width:800px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:15px;
+}
+
+.feature{
+    background:rgba(255,255,255,.1);
+    padding:18px;
+    border-radius:10px;
+    text-align:center;
+}
+
+/* ABOUT */
+
+.about{
+    text-align:center;
+    padding:45px 20px;
+}
+
+.about p{
+    max-width:800px;
+    margin:auto;
+    line-height:1.8;
+    color:#555;
+}
+
+/* FOOTER */
+
+footer{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:22px;
+    margin-top:40px;
+}
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+    header{
+        padding-top:75px;
+    }
+
+    header h1{
+        font-size:34px;
+    }
+
+    nav{
+        text-align:center;
+    }
+
+    nav a{
+        display:inline-block;
+        margin:5px;
+    }
+
+    .hero h2{
+        font-size:32px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+<div class="language">
+
+<button id="hiBtn" onclick="setLanguage('hi')">
+हिन्दी
+</button>
+
+<button id="enBtn" class="active" onclick="setLanguage('en')">
+English
+</button>
+
+</div>
+
+<h1 id="siteName">
+Golu Coaching Center
+</h1>
+
+<p id="tagline">
+Learn Today, Succeed Tomorrow 🚀
+</p>
+
+</header>
+
+
+<!-- NAVIGATION -->
+
+<nav>
+
+<a href="index.html" id="navHome">Home</a>
+
+<a href="courses.html" id="navCourses">Courses</a>
+
+<a href="teachers.html" id="navTeachers">Teachers</a>
+
+<a href="toppers.html" id="navToppers">Toppers</a>
+
+<a href="about.html" id="navAbout">About</a>
+
+<a href="contact.html" id="navContact">Contact</a>
+
+<a href="admission.html" id="navAdmission">Admission</a>
+
+</nav>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<h2 id="heroTitle">
+Welcome to Golu Coaching Center 🎓
+</h2>
+
+<p id="heroText">
+
+Quality education, regular practice and proper guidance
+for students to achieve their academic goals.
+
+</p>
+
+<a href="courses.html" class="btn" id="courseBtn">
+Explore Courses 📚
+</a>
+
+</section>
+
+
+<!-- CLASSES -->
+
+<section class="container">
+
+<h2 class="title" id="classesTitle">
+Our Classes | हमारी कक्षाएँ
+</h2>
+
+<div class="classes">
+
+
+<!-- CLASS 9 -->
+
+<div class="class-card">
+
+<h3>📘 Class 9th</h3>
+
+<p id="class9Text">
+Foundation मजबूत करने और Class 10 की तैयारी
+के लिए बेहतर learning program.
+</p>
+
+<a href="courses.html" class="btn" id="class9Btn">
+View Class 9 📚
+</a>
+
+</div>
+
+
+<!-- CLASS 10 -->
+
+<div class="class-card">
+
+<h3>🎯 Class 10th</h3>
+
+<p id="class10Text">
+Board Exam की तैयारी के लिए Mathematics,
+Science, Social Science, Hindi और English
+की systematic preparation.
+</p>
+
+<a href="class10.html" class="btn" id="class10Btn">
+View Class 10 📚
+</a>
+
+</div>
+
+
+<!-- CLASS 11 -->
+
+<div class="class-card">
+
+<h3>📚 Class 11th</h3>
+
+<p id="class11Text">
+Higher studies के लिए strong foundation और
+subject-wise preparation.
+</p>
+
+<a href="courses.html" class="btn" id="class11Btn">
+View Class 11 📚
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FEATURES -->
+
+<section class="features">
+
+<h2 id="whyTitle">
+Why Choose Golu Coaching Center? ⭐
+</h2>
+
+<div class="feature-list">
+
+<div class="feature" id="feature1">
+👨‍🏫 Experienced Teachers
+</div>
+
+<div class="feature" id="feature2">
+📝 Regular Tests
+</div>
+
+<div class="feature" id="feature3">
+💡 Doubt Clearing
+</div>
+
+<div class="feature" id="feature4">
+📚 Study Materials
+</div>
+
+<div class="feature" id="feature5">
+🎯 Exam Preparation
+</div>
+
+<div class="feature" id="feature6">
+📈 Regular Progress
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="about">
+
+<h2 class="title" id="aboutTitle">
+About Golu Coaching Center
+</h2>
+
+<p id="aboutText">
+Golu Coaching Center का उद्देश्य विद्यार्थियों को
+सही guidance, अच्छी education और regular practice
+प्रदान करना है। हमारा focus concepts को आसान तरीके
+से समझाने और विद्यार्थियों को exam के लिए तैयार
+करने पर है।
+</p>
+
+<a href="about.html" class="btn" id="aboutBtn">
+Know More
+</a>
+
+</section>
+
+
+<!-- ADMISSION -->
+
+<section class="container">
+
+<div class="class-card">
+
+<h3 id="admissionTitle">
+🎓 Start Your Learning Journey
+</h3>
+
+<p id="admissionText">
+Golu Coaching Center में admission enquiry के लिए
+नीचे दिए गए button पर click करें।
+</p>
+
+<a href="admission.html" class="btn" id="admissionBtn">
+Admission Enquiry 📩
+</a>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<p id="footerText">
+© 2026 Golu Coaching Center | All Rights Reserved
+</p>
+
+</footer>
+
+
+<script>
+
+function setLanguage(language){
+
+const hiBtn=document.getElementById("hiBtn");
+const enBtn=document.getElementById("enBtn");
+
+if(language==="hi"){
+
+document.documentElement.lang="hi";
+
+hiBtn.classList.add("active");
+enBtn.classList.remove("active");
+
+
+/* HEADER */
+
+document.getElementById("siteName").innerText=
+"Golu Coaching Center";
+
+document.getElementById("tagline").innerText=
+"आज सीखें, कल सफलता पाएँ 🚀";
+
+
+/* NAV */
+
+document.getElementById("navHome").innerText="होम";
+document.getElementById("navCourses").innerText="कोर्स";
+document.getElementById("navTeachers").innerText="शिक्षक";
+document.getElementById("navToppers").innerText="टॉपर्स";
+document.getElementById("navAbout").innerText="हमारे बारे में";
+document.getElementById("navContact").innerText="संपर्क";
+document.getElementById("navAdmission").innerText="प्रवेश";
+
+
+/* HERO */
+
+document.getElementById("heroTitle").innerText=
+"Golu Coaching Center में आपका स्वागत है 🎓";
+
+document.getElementById("heroText").innerText=
+"विद्यार्थियों को गुणवत्तापूर्ण शिक्षा, नियमित अभ्यास और सही मार्गदर्शन प्रदान करके उनके शैक्षणिक लक्ष्यों को प्राप्त करने में सहायता करना हमारा उद्देश्य है।";
+
+document.getElementById("courseBtn").innerText=
+"कोर्स देखें 📚";
+
+
+/* CLASSES */
+
+document.getElementById("classesTitle").innerText=
+"हमारी कक्षाएँ";
+
+document.getElementById("class9Text").innerText=
+"बुनियादी ज्ञान मजबूत करने और कक्षा 10 की तैयारी के लिए बेहतर learning program.";
+
+document.getElementById("class9Btn").innerText=
+"कक्षा 9 देखें 📚";
+
+document.getElementById("class10Text").innerText=
+"बोर्ड परीक्षा की तैयारी के लिए गणित, विज्ञान, सामाजिक विज्ञान, हिंदी और अंग्रेजी की व्यवस्थित तैयारी।";
+
+document.getElementById("class10Btn").innerText=
+"कक्षा 10 देखें 📚";
+
+document.getElementById("class11Text").innerText=
+"उच्च शिक्षा के लिए मजबूत foundation और विषयवार तैयारी।";
+
+document.getElementById("class11Btn").innerText=
+"कक्षा 11 देखें 📚";
+
+
+/* FEATURES */
+
+document.getElementById("whyTitle").innerText=
+"Golu Coaching Center क्यों चुनें? ⭐";
+
+document.getElementById("feature1").innerText=
+"👨‍🏫 अनुभवी शिक्षक";
+
+document.getElementById("feature2").innerText=
+"📝 नियमित टेस्ट";
+
+document.getElementById("feature3").innerText=
+"💡 डाउट क्लियरिंग";
+
+document.getElementById("feature4").innerText=
+"📚 अध्ययन सामग्री";
+
+document.getElementById("feature5").innerText=
+"🎯 परीक्षा की तैयारी";
+
+document.getElementById("feature6").innerText=
+"📈 नियमित प्रगति";
+
+
+/* ABOUT */
+
+document.getElementById("aboutTitle").innerText=
+"Golu Coaching Center के बारे में";
+
+document.getElementById("aboutText").innerText=
+"Golu Coaching Center का उद्देश्य विद्यार्थियों को सही मार्गदर्शन, अच्छी शिक्षा और नियमित अभ्यास प्रदान करना है। हमारा ध्यान concepts को आसान तरीके से समझाने और विद्यार्थियों को परीक्षा के लिए तैयार करने पर है।";
+
+document.getElementById("aboutBtn").innerText=
+"और जानें";
+
+
+/* ADMISSION */
+
+document.getElementById("admissionTitle").innerText=
+"🎓 अपनी Learning Journey शुरू करें";
+
+document.getElementById("admissionText").innerText=
+"Golu Coaching Center में admission enquiry के लिए नीचे दिए गए button पर click करें।";
+
+document.getElementById("admissionBtn").innerText=
+"Admission Enquiry 📩";
+
+
+/* FOOTER */
+
+document.getElementById("footerText").innerText=
+"© 2026 Golu Coaching Center | सर्वाधिकार सुरक्षित";
+
+}else{
+
+document.documentElement.lang="en";
+
+hiBtn.classList.remove("active");
+enBtn.classList.add("active");
+
+document.getElementById("siteName").innerText=
+"Golu Coaching Center";
+
+document.getElementById("tagline").innerText=
+"Learn Today, Succeed Tomorrow 🚀";
+
+document.getElementById("navHome").innerText="Home";
+document.getElementById("navCourses").innerText="Courses";
+document.getElementById("navTeachers").innerText="Teachers";
+document.getElementById("navToppers").innerText="Toppers";
+document.getElementById("navAbout").innerText="About";
+document.getElementById("navContact").innerText="Contact";
+document.getElementById("navAdmission").innerText="Admission";
+
+document.getElementById("heroTitle").innerText=
+"Welcome to Golu Coaching Center 🎓";
+
+document.getElementById("heroText").innerText=
+"Quality education, regular practice and proper guidance for students to achieve their academic goals.";
+
+document.getElementById("courseBtn").innerText=
+"Explore Courses 📚";
+
+document.getElementById("classesTitle").innerText=
+"Our Classes | हमारी कक्षाएँ";
+
+document.getElementById("class9Text").innerText=
+"Foundation मजबूत करने और Class 10 की तैयारी के लिए बेहतर learning program.";
+
+document.getElementById("class9Btn").innerText=
+"View Class 9 📚";
+
+document.getElementById("class10Text").innerText=
+"Board Exam की तैयारी के लिए Mathematics, Science, Social Science, Hindi और English की systematic preparation.";
+
+document.getElementById("class10Btn").innerText=
+"View Class 10 📚";
+
+document.getElementById("class11Text").innerText=
+"Higher studies के लिए strong foundation और subject-wise preparation.";
+
+document.getElementById("class11Btn").innerText=
+"View Class 11 📚";
+
+document.getElementById("whyTitle").innerText=
+"Why Choose Golu Coaching Center? ⭐";
+
+document.getElementById("feature1").innerText=
+"👨‍🏫 Experienced Teachers";
+
+document.getElementById("feature2").innerText=
+"📝 Regular Tests";
+
+document.getElementById("feature3").innerText=
+"💡 Doubt Clearing";
+
+document.getElementById("feature4").innerText=
+"📚 Study Materials";
+
+document.getElementById("feature5").innerText=
+"🎯 Exam Preparation";
+
+document.getElementById("feature6").innerText=
+"📈 Regular Progress";
+
+document.getElementById("aboutTitle").innerText=
+"About Golu Coaching Center";
+
+document.getElementById("aboutText").innerText=
+"Golu Coaching Center का उद्देश्य विद्यार्थियों को सही guidance, अच्छी education और regular practice प्रदान करना है। हमारा focus concepts को आसान तरीके से समझाने और विद्यार्थियों को exam के लिए तैयार करने पर है।";
+
+document.getElementById("aboutBtn").innerText=
+"Know More";
+
+document.getElementById("admissionTitle").innerText=
+"🎓 Start Your Learning Journey";
+
+document.getElementById("admissionText").innerText=
+"Golu Coaching Center में admission enquiry के लिए नीचे दिए गए button पर click करें।";
+
+document.getElementById("admissionBtn").innerText=
+"Admission Enquiry 📩";
+
+document.getElementById("footerText").innerText=
+"© 2026 Golu Coaching Center | All Rights Reserved";
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
+

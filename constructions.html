@@ -1,0 +1,994 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Constructions | Golu Coaching Center</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f7fb;
+      color: #222;
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: white;
+      padding: 25px 15px;
+      text-align: center;
+      position: relative;
+    }
+
+    header h1 {
+      font-size: 32px;
+      margin-bottom: 5px;
+    }
+
+    header p {
+      font-size: 17px;
+    }
+
+    .language {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+    }
+
+    .language button {
+      border: none;
+      padding: 7px 12px;
+      margin-left: 5px;
+      border-radius: 6px;
+      cursor: pointer;
+      background: white;
+      color: #1e3c72;
+      font-weight: bold;
+    }
+
+    .language button:hover {
+      background: #e8f0ff;
+    }
+
+    .container {
+      max-width: 1050px;
+      margin: 25px auto;
+      padding: 0 15px;
+    }
+
+    .back {
+      display: inline-block;
+      text-decoration: none;
+      background: #1e3c72;
+      color: white;
+      padding: 9px 16px;
+      border-radius: 7px;
+      margin-bottom: 20px;
+    }
+
+    .back:hover {
+      background: #16315d;
+    }
+
+    .section {
+      background: white;
+      padding: 25px;
+      margin-bottom: 22px;
+      border-radius: 14px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+      color: #1e3c72;
+      margin-bottom: 14px;
+      font-size: 25px;
+    }
+
+    h3 {
+      color: #2a5298;
+      margin: 18px 0 10px;
+    }
+
+    ul, ol {
+      padding-left: 25px;
+    }
+
+    li {
+      margin-bottom: 7px;
+    }
+
+    .formula {
+      background: #eef6ff;
+      border-left: 5px solid #2a5298;
+      padding: 15px;
+      margin: 15px 0;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .example {
+      background: #effaf0;
+      border-left: 5px solid #35a853;
+      padding: 16px;
+      margin: 15px 0;
+      border-radius: 8px;
+    }
+
+    .note {
+      background: #fff8df;
+      border-left: 5px solid #f0b400;
+      padding: 15px;
+      margin: 15px 0;
+      border-radius: 8px;
+    }
+
+    .warning {
+      background: #fff0f0;
+      border-left: 5px solid #d93025;
+      padding: 15px;
+      margin: 15px 0;
+      border-radius: 8px;
+    }
+
+    .diagram {
+      border: 2px dashed #8aa6c8;
+      background: #f8fbff;
+      padding: 25px;
+      text-align: center;
+      margin: 18px 0;
+      border-radius: 10px;
+    }
+
+    .diagram span {
+      font-size: 18px;
+      color: #1e3c72;
+      font-weight: bold;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background: #1e3c72;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background: #f7f9fc;
+    }
+
+    .question {
+      background: #f8f9fc;
+      border: 1px solid #ddd;
+      padding: 15px;
+      margin: 12px 0;
+      border-radius: 8px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #e8f0ff;
+      color: #1e3c72;
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-size: 14px;
+      margin: 4px;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #1e3c72;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+
+    .hindi {
+      display: none;
+    }
+
+    @media (max-width: 700px) {
+      header h1 {
+        font-size: 25px;
+      }
+
+      .language {
+        position: static;
+        margin-top: 12px;
+      }
+
+      .section {
+        padding: 18px;
+      }
+
+      h2 {
+        font-size: 22px;
+      }
+
+      table {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="language">
+    <button onclick="showHindi()">हिन्दी</button>
+    <button onclick="showEnglish()">English</button>
+  </div>
+
+  <h1>Constructions</h1>
+  <p>Class 10 Mathematics | Chapter 15</p>
+</header>
+
+<div class="container">
+
+  <a href="class10.html" class="back">← Back to Class 10</a>
+
+  <!-- ENGLISH CONTENT -->
+  <div id="english">
+
+    <div class="section">
+      <h2>📐 Introduction</h2>
+
+      <p>
+        Constructions is a practical chapter of Class 10 Mathematics.
+        It deals with accurate geometric constructions using a
+        <b>compass</b> and <b>straightedge/ruler</b>.
+      </p>
+
+      <div class="note">
+        <b>Important:</b> Construction questions require both the
+        correct construction and proper written steps.
+      </div>
+
+      <h3>Main Topics</h3>
+
+      <span class="tag">Division of Line Segment</span>
+      <span class="tag">Similar Triangles</span>
+      <span class="tag">Tangents to a Circle</span>
+    </div>
+
+    <div class="section">
+      <h2>🧰 Basic Construction Tools</h2>
+
+      <ul>
+        <li><b>Ruler:</b> Used to draw straight lines.</li>
+        <li><b>Compass:</b> Used to draw circles and arcs.</li>
+        <li><b>Pencil:</b> Used for accurate and clear construction.</li>
+      </ul>
+
+      <div class="note">
+        Keep construction lines light and do not erase important arcs
+        unless instructed.
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>1️⃣ Division of a Line Segment in a Given Ratio</h2>
+
+      <p>
+        A line segment can be divided internally in a given ratio using
+        a standard construction method.
+      </p>
+
+      <h3>Example</h3>
+
+      <p>
+        Divide line segment AB of length 8 cm in the ratio 3 : 5.
+      </p>
+
+      <h3>Construction Steps</h3>
+
+      <ol>
+        <li>Draw a line segment AB of the required length.</li>
+        <li>From A, draw a ray AX making a suitable angle with AB.</li>
+        <li>On ray AX, mark 3 + 5 = 8 equal parts.</li>
+        <li>Join the 8th point to B.</li>
+        <li>Through the 3rd point, draw a line parallel to the line joining the 8th point to B.</li>
+        <li>The parallel line meets AB at the required point P.</li>
+      </ol>
+
+      <div class="diagram">
+        <span>Diagram: AB divided internally at P in the ratio 3 : 5</span>
+      </div>
+
+      <div class="formula">
+        AP : PB = 3 : 5
+      </div>
+
+      <div class="note">
+        The number of equal divisions on the auxiliary ray must be equal
+        to the sum of the terms of the given ratio.
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>2️⃣ Division of a Line Segment in a Given Ratio m : n</h2>
+
+      <h3>General Method</h3>
+
+      <ol>
+        <li>Draw AB.</li>
+        <li>Draw a ray AX from A.</li>
+        <li>Mark m + n equal points on AX.</li>
+        <li>Join the last point to B.</li>
+        <li>Through the m-th point draw a parallel to the joining line.</li>
+        <li>The point where this parallel meets AB divides AB in m : n.</li>
+      </ol>
+
+      <div class="formula">
+        AP : PB = m : n
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>3️⃣ Construction of Similar Triangles</h2>
+
+      <p>
+        Similar triangles have the same shape but may have different sizes.
+        Their corresponding angles are equal and corresponding sides are
+        proportional.
+      </p>
+
+      <h3>Case: Construct a triangle similar to a given triangle</h3>
+
+      <p>
+        Suppose a triangle ABC is given and we need to construct a triangle
+        similar to it with a specified scale factor.
+      </p>
+
+      <h3>Construction Steps</h3>
+
+      <ol>
+        <li>Draw the given triangle ABC.</li>
+        <li>From one vertex, say A, draw a ray AX.</li>
+        <li>Mark the required number of equal divisions on AX.</li>
+        <li>Join the appropriate division point to the corresponding vertex.</li>
+        <li>Draw a line parallel to the joining line through the required point.</li>
+        <li>The new triangle obtained is similar to the given triangle.</li>
+      </ol>
+
+      <div class="diagram">
+        <span>Diagram: Construction of a triangle similar to △ABC</span>
+      </div>
+
+      <div class="note">
+        <b>Key idea:</b> Parallel lines help create proportional corresponding
+        sides and equal corresponding angles.
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>4️⃣ Tangent to a Circle from an External Point</h2>
+
+      <p>
+        A tangent is a line that touches a circle at exactly one point.
+      </p>
+
+      <h3>Important Theorem</h3>
+
+      <div class="formula">
+        The tangent at any point of a circle is perpendicular to the radius
+        through the point of contact.
+      </div>
+
+      <h3>Construction Problem</h3>
+
+      <p>
+        Construct tangents to a circle from an external point P.
+      </p>
+
+      <h3>Construction Steps</h3>
+
+      <ol>
+        <li>Draw the given circle with centre O.</li>
+        <li>Mark the external point P.</li>
+        <li>Join OP.</li>
+        <li>Find the midpoint M of OP.</li>
+        <li>With M as centre and radius MO, draw a circle.</li>
+        <li>This circle intersects the original circle at T₁ and T₂.</li>
+        <li>Join PT₁ and PT₂.</li>
+        <li>PT₁ and PT₂ are the required tangents.</li>
+      </ol>
+
+      <div class="diagram">
+        <span>
+          Diagram: Two tangents PT₁ and PT₂ from external point P
+        </span>
+      </div>
+
+      <div class="formula">
+        OT₁ ⟂ PT₁ &nbsp;&nbsp; and &nbsp;&nbsp; OT₂ ⟂ PT₂
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>5️⃣ Why Does the Tangent Construction Work?</h2>
+
+      <p>
+        When T lies on the circle with diameter OP, angle OTP is 90°.
+        Therefore OT is perpendicular to PT.
+      </p>
+
+      <p>
+        Since OT is a radius and PT is perpendicular to OT,
+        PT becomes a tangent to the original circle.
+      </p>
+
+      <div class="example">
+        <b>Conclusion:</b> The two points of intersection of the auxiliary
+        circle with the given circle give the points of contact of the
+        required tangents.
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>📊 Important Construction Results</h2>
+
+      <table>
+        <tr>
+          <th>Topic</th>
+          <th>Important Idea</th>
+        </tr>
+
+        <tr>
+          <td>Line Segment Division</td>
+          <td>Use an auxiliary ray and parallel lines.</td>
+        </tr>
+
+        <tr>
+          <td>Similar Triangle</td>
+          <td>Use proportional division and parallel lines.</td>
+        </tr>
+
+        <tr>
+          <td>Tangent</td>
+          <td>Radius at point of contact is perpendicular to tangent.</td>
+        </tr>
+
+        <tr>
+          <td>External Point</td>
+          <td>Two tangents can be drawn from an external point.</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="section">
+      <h2>📝 Solved Construction Questions</h2>
+
+      <div class="example">
+        <h3>Question 1</h3>
+        <p>
+          Divide a line segment of 10 cm internally in the ratio 2 : 3.
+        </p>
+
+        <p><b>Solution:</b></p>
+
+        <ol>
+          <li>Draw AB = 10 cm.</li>
+          <li>Draw ray AX from A.</li>
+          <li>Mark 5 equal divisions on AX.</li>
+          <li>Join the 5th point to B.</li>
+          <li>Through the 2nd point draw a parallel to the joining line.</li>
+          <li>The intersection with AB gives the required point P.</li>
+        </ol>
+
+        <div class="formula">
+          AP : PB = 2 : 3
+        </div>
+      </div>
+
+      <div class="example">
+        <h3>Question 2</h3>
+        <p>
+          Construct tangents to a circle from an external point P.
+        </p>
+
+        <p><b>Solution:</b></p>
+
+        <ol>
+          <li>Join OP.</li>
+          <li>Construct the midpoint M of OP.</li>
+          <li>Draw a circle with centre M and radius MO.</li>
+          <li>Let it intersect the given circle at T₁ and T₂.</li>
+          <li>Join PT₁ and PT₂.</li>
+          <li>These are the required tangents.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>⚠️ Common Mistakes</h2>
+
+      <ul>
+        <li>Not using the correct ratio while marking divisions.</li>
+        <li>Making unequal divisions on the auxiliary ray.</li>
+        <li>Drawing inaccurate parallel lines.</li>
+        <li>Forgetting to mark the points of contact.</li>
+        <li>Not writing construction steps.</li>
+        <li>Making construction lines too dark.</li>
+        <li>Not using a sharp pencil and accurate compass.</li>
+      </ul>
+
+      <div class="warning">
+        <b>Exam Tip:</b> In construction questions, do not write only the
+        final answer. Show the construction clearly and write the steps.
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>🎯 Board Exam Important Questions</h2>
+
+      <div class="question">
+        1. Divide a line segment in a given ratio using construction.
+      </div>
+
+      <div class="question">
+        2. Construct a triangle similar to a given triangle with a given
+        scale factor.
+      </div>
+
+      <div class="question">
+        3. Construct tangents to a circle from an external point.
+      </div>
+
+      <div class="question">
+        4. State the theorem related to tangent and radius.
+      </div>
+
+      <div class="question">
+        5. Explain why the line constructed from an external point is a tangent.
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>🧠 MCQs</h2>
+
+      <div class="question">
+        <b>1. A tangent to a circle touches it at:</b><br>
+        A) Two points<br>
+        B) One point<br>
+        C) Three points<br>
+        D) No point
+      </div>
+
+      <div class="question">
+        <b>2. The radius through the point of contact is:</b><br>
+        A) Parallel to tangent<br>
+        B) Equal to tangent<br>
+        C) Perpendicular to tangent<br>
+        D) None
+      </div>
+
+      <div class="question">
+        <b>3. From an external point, the number of tangents that can be drawn
+        to a circle is:</b><br>
+        A) 0<br>
+        B) 1<br>
+        C) 2<br>
+        D) 3
+      </div>
+
+      <div class="question">
+        <b>4. To divide a line segment in ratio m : n, the auxiliary ray is
+        divided into:</b><br>
+        A) m parts<br>
+        B) n parts<br>
+        C) m + n parts<br>
+        D) m × n parts
+      </div>
+
+      <div class="question">
+        <b>5. Similar triangles have:</b><br>
+        A) Equal corresponding angles<br>
+        B) Equal corresponding sides always<br>
+        C) No relation<br>
+        D) Different corresponding angles
+      </div>
+
+      <div class="note">
+        <b>Answers:</b> 1-B, 2-C, 3-C, 4-C, 5-A
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>✍️ Practice Set</h2>
+
+      <div class="question">
+        1. Divide a line segment of 12 cm in the ratio 5 : 7.
+      </div>
+
+      <div class="question">
+        2. Divide a line segment in the ratio 3 : 4 using construction.
+      </div>
+
+      <div class="question">
+        3. Construct a triangle similar to a given triangle with scale factor
+        2/3.
+      </div>
+
+      <div class="question">
+        4. Construct tangents to a circle from a point 7 cm away from its centre.
+      </div>
+
+      <div class="question">
+        5. Explain the construction of tangents from an external point.
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>⚡ Quick Revision</h2>
+
+      <div class="formula">
+        🔹 Line segment ratio → Auxiliary ray + equal divisions + parallel line
+      </div>
+
+      <div class="formula">
+        🔹 Similar triangle → Proportional sides + equal corresponding angles
+      </div>
+
+      <div class="formula">
+        🔹 Tangent → Radius ⟂ Tangent at point of contact
+      </div>
+
+      <div class="formula">
+        🔹 External point → Two tangents can be drawn
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>🏆 Board Exam Tips</h2>
+
+      <ul>
+        <li>Use a sharp pencil.</li>
+        <li>Keep the ruler and compass steady.</li>
+        <li>Make equal divisions carefully.</li>
+        <li>Label all important points.</li>
+        <li>Write construction steps in order.</li>
+        <li>Keep arcs and construction lines visible.</li>
+        <li>Draw the final figure clearly.</li>
+      </ul>
+
+      <div class="note">
+        <b>Remember:</b> Accuracy + diagram + construction steps =
+        a complete construction answer.
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- HINDI CONTENT -->
+  <div id="hindi" class="hindi">
+
+    <div class="section">
+      <h2>📐 परिचय</h2>
+
+      <p>
+        रचनाएँ कक्षा 10 गणित का एक महत्वपूर्ण व्यावहारिक अध्याय है।
+        इसमें <b>Compass</b> और <b>Scale/Ruler</b> की सहायता से
+        ज्यामितीय आकृतियों का सही निर्माण किया जाता है।
+      </p>
+
+      <div class="note">
+        <b>महत्वपूर्ण:</b> Construction के प्रश्न में सही diagram के साथ
+        construction के steps लिखना भी जरूरी है।
+      </div>
+
+      <h3>मुख्य Topics</h3>
+
+      <span class="tag">रेखाखंड का विभाजन</span>
+      <span class="tag">समरूप त्रिभुज</span>
+      <span class="tag">वृत्त की स्पर्श रेखा</span>
+    </div>
+
+    <div class="section">
+      <h2>🧰 निर्माण के मुख्य उपकरण</h2>
+
+      <ul>
+        <li><b>Scale:</b> सीधी रेखा खींचने के लिए।</li>
+        <li><b>Compass:</b> वृत्त और arc बनाने के लिए।</li>
+        <li><b>Pencil:</b> साफ और सटीक construction के लिए।</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>1️⃣ दिए गए अनुपात में रेखाखंड का विभाजन</h2>
+
+      <p>
+        किसी रेखाखंड को दिए गए अनुपात में विभाजित करने के लिए
+        auxiliary ray और parallel line का प्रयोग किया जाता है।
+      </p>
+
+      <h3>उदाहरण</h3>
+
+      <p>
+        8 cm के रेखाखंड AB को 3 : 5 के अनुपात में विभाजित करें।
+      </p>
+
+      <h3>Construction Steps</h3>
+
+      <ol>
+        <li>AB = 8 cm का रेखाखंड बनाइए।</li>
+        <li>A से एक auxiliary ray AX खींचिए।</li>
+        <li>AX पर 3 + 5 = 8 बराबर भाग बनाइए।</li>
+        <li>8वें बिंदु को B से मिलाइए।</li>
+        <li>3वें बिंदु से इस रेखा के समानांतर रेखा खींचिए।</li>
+        <li>जहाँ यह रेखा AB को काटे, वही आवश्यक बिंदु P है।</li>
+      </ol>
+
+      <div class="formula">
+        AP : PB = 3 : 5
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>2️⃣ m : n के अनुपात में रेखाखंड का विभाजन</h2>
+
+      <ol>
+        <li>AB रेखाखंड बनाइए।</li>
+        <li>A से एक ray AX बनाइए।</li>
+        <li>AX पर m + n बराबर भाग बनाइए।</li>
+        <li>अंतिम बिंदु को B से मिलाइए।</li>
+        <li>mवें बिंदु से parallel line खींचिए।</li>
+        <li>AB पर प्राप्त बिंदु रेखाखंड को m : n में विभाजित करेगा।</li>
+      </ol>
+
+      <div class="formula">
+        AP : PB = m : n
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>3️⃣ समरूप त्रिभुज का निर्माण</h2>
+
+      <p>
+        समरूप त्रिभुजों का आकार समान होता है, लेकिन उनका आकार/माप अलग
+        हो सकता है। इनके corresponding angles बराबर होते हैं और
+        corresponding sides समान अनुपात में होते हैं।
+      </p>
+
+      <h3>Construction Steps</h3>
+
+      <ol>
+        <li>दिया गया त्रिभुज ABC बनाइए।</li>
+        <li>A से एक ray AX खींचिए।</li>
+        <li>AX पर आवश्यक संख्या में बराबर divisions बनाइए।</li>
+        <li>उचित division point को संबंधित vertex से मिलाइए।</li>
+        <li>आवश्यक बिंदु से parallel line खींचिए।</li>
+        <li>प्राप्त नया त्रिभुज दिए गए त्रिभुज के समान होगा।</li>
+      </ol>
+
+      <div class="note">
+        <b>मुख्य विचार:</b> Parallel lines proportional sides और
+        equal corresponding angles बनाने में मदद करती हैं।
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>4️⃣ बाहरी बिंदु से वृत्त पर स्पर्श रेखा</h2>
+
+      <p>
+        स्पर्श रेखा वह रेखा है जो वृत्त को केवल एक बिंदु पर छूती है।
+      </p>
+
+      <div class="formula">
+        स्पर्श बिंदु पर radius, tangent के perpendicular होती है।
+      </div>
+
+      <h3>Construction Steps</h3>
+
+      <ol>
+        <li>केन्द्र O वाला दिया गया वृत्त बनाइए।</li>
+        <li>वृत्त के बाहर बिंदु P लीजिए।</li>
+        <li>OP को मिलाइए।</li>
+        <li>OP का midpoint M बनाइए।</li>
+        <li>M को केन्द्र मानकर MO त्रिज्या का वृत्त बनाइए।</li>
+        <li>यह वृत्त मूल वृत्त को T₁ और T₂ पर काटेगा।</li>
+        <li>PT₁ और PT₂ को मिलाइए।</li>
+        <li>PT₁ और PT₂ आवश्यक स्पर्श रेखाएँ हैं।</li>
+      </ol>
+
+      <div class="formula">
+        OT₁ ⟂ PT₁ &nbsp;&nbsp; तथा &nbsp;&nbsp; OT₂ ⟂ PT₂
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>5️⃣ Tangent Construction क्यों सही है?</h2>
+
+      <p>
+        T, OP को diameter मानकर बनाए गए वृत्त पर स्थित है।
+        इसलिए angle OTP = 90° होता है।
+      </p>
+
+      <p>
+        अतः OT, PT पर perpendicular है। चूँकि OT radius है,
+        इसलिए PT मूल वृत्त की tangent होगी।
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>📊 महत्वपूर्ण परिणाम</h2>
+
+      <table>
+        <tr>
+          <th>Topic</th>
+          <th>मुख्य बात</th>
+        </tr>
+
+        <tr>
+          <td>रेखाखंड विभाजन</td>
+          <td>Auxiliary ray और parallel line का प्रयोग करें।</td>
+        </tr>
+
+        <tr>
+          <td>समरूप त्रिभुज</td>
+          <td>Proportional sides और parallel lines का प्रयोग करें।</td>
+        </tr>
+
+        <tr>
+          <td>स्पर्श रेखा</td>
+          <td>Radius, tangent पर perpendicular होती है।</td>
+        </tr>
+
+        <tr>
+          <td>बाहरी बिंदु</td>
+          <td>एक बाहरी बिंदु से दो tangents खींची जा सकती हैं।</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="section">
+      <h2>⚠️ सामान्य गलतियाँ</h2>
+
+      <ul>
+        <li>Ratio के अनुसार बराबर divisions न बनाना।</li>
+        <li>Auxiliary ray पर unequal divisions बनाना।</li>
+        <li>Parallel line गलत बनाना।</li>
+        <li>Points of contact को label न करना।</li>
+        <li>Construction steps न लिखना।</li>
+        <li>Construction lines को बहुत dark बनाना।</li>
+      </ul>
+
+      <div class="warning">
+        <b>Exam Tip:</b> केवल final diagram न बनाएं। Construction के
+        steps भी जरूर लिखें।
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>🧠 MCQs</h2>
+
+      <div class="question">
+        <b>1. Tangent वृत्त को कितने बिंदु पर छूती है?</b><br>
+        A) 2 &nbsp; B) 1 &nbsp; C) 3 &nbsp; D) 0
+      </div>
+
+      <div class="question">
+        <b>2. Point of contact पर radius और tangent के बीच कोण होता है:</b><br>
+        A) 45° &nbsp; B) 60° &nbsp; C) 90° &nbsp; D) 180°
+      </div>
+
+      <div class="question">
+        <b>3. बाहरी बिंदु से वृत्त पर कितनी tangents बनाई जा सकती हैं?</b><br>
+        A) 1 &nbsp; B) 2 &nbsp; C) 3 &nbsp; D) 4
+      </div>
+
+      <div class="question">
+        <b>4. m : n में division के लिए auxiliary ray पर कितने बराबर भाग होते हैं?</b><br>
+        A) m &nbsp; B) n &nbsp; C) m+n &nbsp; D) m×n
+      </div>
+
+      <div class="note">
+        <b>Answers:</b> 1-B, 2-C, 3-B, 4-C
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>✍️ Practice Set</h2>
+
+      <div class="question">
+        1. 12 cm के रेखाखंड को 5 : 7 के अनुपात में विभाजित कीजिए।
+      </div>
+
+      <div class="question">
+        2. किसी रेखाखंड को 3 : 4 के अनुपात में construct कीजिए।
+      </div>
+
+      <div class="question">
+        3. दिए गए त्रिभुज के समान 2/3 scale factor वाला त्रिभुज बनाइए।
+      </div>
+
+      <div class="question">
+        4. किसी वृत्त से बाहर दिए गए बिंदु से दो tangents construct कीजिए।
+      </div>
+
+      <div class="question">
+        5. बाहरी बिंदु से tangent बनाने की construction समझाइए।
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>⚡ Quick Revision</h2>
+
+      <div class="formula">
+        🔹 Line Segment → Auxiliary ray + Equal divisions + Parallel line
+      </div>
+
+      <div class="formula">
+        🔹 Similar Triangle → Proportional sides + Equal angles
+      </div>
+
+      <div class="formula">
+        🔹 Tangent → Radius ⟂ Tangent
+      </div>
+
+      <div class="formula">
+        🔹 External Point → Two tangents
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>🏆 Board Exam Tips</h2>
+
+      <ul>
+        <li>Sharp pencil का प्रयोग करें।</li>
+        <li>Compass को सही तरीके से पकड़ें।</li>
+        <li>Equal divisions ध्यान से बनाएं।</li>
+        <li>सभी जरूरी points को label करें।</li>
+        <li>Steps क्रम से लिखें।</li>
+        <li>Construction lines को हल्का रखें।</li>
+        <li>Final figure साफ बनाएं।</li>
+      </ul>
+
+      <div class="note">
+        <b>याद रखें:</b> Accuracy + Diagram + Steps = Complete Construction Answer
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2026 Golu Coaching Center | Class 10 Mathematics</p>
+</footer>
+
+<script>
+  function showHindi() {
+    document.getElementById("english").style.display = "none";
+    document.getElementById("hindi").style.display = "block";
+  }
+
+  function showEnglish() {
+    document.getElementById("english").style.display = "block";
+    document.getElementById("hindi").style.display = "none";
+  }
+</script>
+
+</body>
+</html>
+

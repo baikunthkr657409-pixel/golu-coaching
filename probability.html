@@ -1,0 +1,2634 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Probability | Golu Coaching Center</title>
+
+<style>
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:#f4f7fb;
+    color:#222;
+    line-height:1.7;
+}
+
+header{
+    background:linear-gradient(135deg,#1e3c72,#2a5298);
+    color:white;
+    text-align:center;
+    padding:28px 15px;
+    position:relative;
+}
+
+header h1{
+    font-size:31px;
+    margin-bottom:5px;
+}
+
+header p{
+    font-size:16px;
+}
+
+.language{
+    position:absolute;
+    top:15px;
+    right:20px;
+}
+
+.language button{
+    border:none;
+    padding:8px 13px;
+    margin-left:5px;
+    border-radius:20px;
+    cursor:pointer;
+    background:white;
+    color:#1e3c72;
+    font-weight:bold;
+}
+
+.language button:hover{
+    background:#e8f0ff;
+}
+
+.container{
+    max-width:1050px;
+    margin:25px auto;
+    padding:0 15px;
+}
+
+.back-btn{
+    display:inline-block;
+    text-decoration:none;
+    background:#1e3c72;
+    color:white;
+    padding:10px 18px;
+    border-radius:8px;
+    margin-bottom:20px;
+}
+
+.back-btn:hover{
+    background:#2a5298;
+}
+
+.section{
+    background:white;
+    padding:25px;
+    margin-bottom:22px;
+    border-radius:14px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+}
+
+.section h2{
+    color:#1e3c72;
+    margin-bottom:15px;
+    border-bottom:2px solid #e1e8f5;
+    padding-bottom:8px;
+}
+
+.section h3{
+    color:#2a5298;
+    margin-top:18px;
+    margin-bottom:8px;
+}
+
+.formula{
+    background:#eef6ff;
+    border-left:5px solid #2a5298;
+    padding:15px;
+    margin:15px 0;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.example{
+    background:#eefaf1;
+    border-left:5px solid #2e8b57;
+    padding:15px;
+    margin:15px 0;
+    border-radius:8px;
+}
+
+.note{
+    background:#fff8df;
+    border-left:5px solid #e0a800;
+    padding:15px;
+    margin:15px 0;
+    border-radius:8px;
+}
+
+.warning{
+    background:#fff0f0;
+    border-left:5px solid #dc3545;
+    padding:15px;
+    margin:15px 0;
+    border-radius:8px;
+}
+
+.table-container{
+    overflow-x:auto;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+}
+
+th,td{
+    border:1px solid #ccd5e0;
+    padding:11px;
+    text-align:center;
+}
+
+th{
+    background:#1e3c72;
+    color:white;
+}
+
+tr:nth-child(even){
+    background:#f7f9fc;
+}
+
+.question{
+    background:#f8faff;
+    border:1px solid #dce5f3;
+    padding:15px;
+    border-radius:9px;
+    margin:12px 0;
+}
+
+.mcq{
+    background:#f9fbff;
+    border-left:4px solid #2a5298;
+    padding:15px;
+    margin:12px 0;
+    border-radius:8px;
+}
+
+.answer{
+    color:#18733c;
+    font-weight:bold;
+    margin-top:7px;
+}
+
+ul,ol{
+    margin-left:25px;
+    margin-top:8px;
+}
+
+li{
+    margin-bottom:6px;
+}
+
+.hindi{
+    display:none;
+}
+
+footer{
+    background:#1e3c72;
+    color:white;
+    text-align:center;
+    padding:22px 15px;
+    margin-top:30px;
+}
+
+footer p{
+    margin:4px;
+}
+
+@media(max-width:700px){
+
+    header h1{
+        font-size:24px;
+        margin-top:35px;
+    }
+
+    header p{
+        font-size:14px;
+    }
+
+    .language{
+        top:10px;
+        right:10px;
+    }
+
+    .language button{
+        padding:6px 9px;
+        font-size:12px;
+    }
+
+    .section{
+        padding:18px;
+    }
+
+    .section h2{
+        font-size:21px;
+    }
+
+    .section h3{
+        font-size:18px;
+    }
+
+    table{
+        font-size:14px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="language">
+    <button onclick="showHindi()">हिन्दी</button>
+    <button onclick="showEnglish()">English</button>
+</div>
+
+<h1>Chapter 14 – Probability</h1>
+<p>Class 10 Mathematics | Golu Coaching Center</p>
+
+</header>
+
+
+<div class="container">
+
+<a href="class10.html" class="back-btn">← Back to Class 10</a>
+
+
+<!-- ================= ENGLISH ================= -->
+
+<div id="english">
+
+<div class="section">
+
+<h2>1. Introduction</h2>
+
+<p>
+Probability is a branch of mathematics that deals with the chance or
+likelihood of an event happening.
+</p>
+
+<div class="note">
+Probability tells us how likely an event is to occur.
+</div>
+
+<p>
+Examples of random experiments include tossing a coin, rolling a die,
+or drawing a card from a deck.
+</p>
+
+</div>
+
+
+<div class="section">
+
+<h2>2. Random Experiment</h2>
+
+<p>
+An experiment in which the exact outcome cannot be predicted in advance
+is called a random experiment.
+</p>
+
+<h3>Examples</h3>
+
+<ul>
+<li>Tossing a coin.</li>
+<li>Rolling a die.</li>
+<li>Drawing a card from a well-shuffled deck.</li>
+</ul>
+
+</div>
+
+
+<div class="section">
+
+<h2>3. Outcome</h2>
+
+<p>
+An outcome is a possible result of a random experiment.
+</p>
+
+<div class="example">
+
+<b>Example:</b>
+
+<br><br>
+
+When a coin is tossed, the possible outcomes are:
+
+<br><br>
+
+S = {H, T}
+
+<br><br>
+
+H = Head
+
+<br>
+T = Tail
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>4. Sample Space</h2>
+
+<p>
+The set of all possible outcomes of a random experiment is called
+the sample space.
+</p>
+
+<div class="formula">
+
+<b>Sample Space = Set of all possible outcomes</b>
+
+</div>
+
+<div class="example">
+
+<b>Example:</b>
+
+<br><br>
+
+When a die is thrown:
+
+<br><br>
+
+S = {1, 2, 3, 4, 5, 6}
+
+<br><br>
+
+Therefore:
+
+<br>
+
+Number of outcomes = 6
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>5. Event</h2>
+
+<p>
+An event is a collection of one or more outcomes of a random experiment.
+</p>
+
+<div class="example">
+
+<b>Example:</b>
+
+<br><br>
+
+When a die is thrown, getting an even number is an event.
+
+<br><br>
+
+E = {2, 4, 6}
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>6. Theoretical Probability</h2>
+
+<p>
+If all outcomes of an experiment are equally likely, the theoretical
+probability of an event E is:
+</p>
+
+<div class="formula">
+
+P(E) = Number of favourable outcomes / Total number of outcomes
+
+<br><br>
+
+P(E) = n(E) / n(S)
+
+</div>
+
+<p>
+Where:</p>
+
+<ul>
+<li>n(E) = number of favourable outcomes</li>
+<li>n(S) = total number of outcomes in the sample space</li>
+</ul>
+
+</div>
+
+
+<div class="section">
+
+<h2>7. Probability of a Coin Toss</h2>
+
+<p>
+When a fair coin is tossed once:
+</p>
+
+<div class="formula">
+
+S = {H, T}
+
+<br><br>
+
+P(H) = 1/2
+
+<br>
+
+P(T) = 1/2
+
+</div>
+
+<div class="example">
+
+<b>Example:</b>
+
+<br><br>
+
+What is the probability of getting a head?
+
+<br><br>
+
+Favourable outcomes = 1
+
+<br>
+Total outcomes = 2
+
+<br><br>
+
+P(H) = 1/2
+
+<br>
+= <b>0.5</b>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>8. Probability of Throwing a Die</h2>
+
+<p>
+When a fair die is thrown once:
+</p>
+
+<div class="formula">
+
+S = {1, 2, 3, 4, 5, 6}
+
+<br><br>
+
+n(S) = 6
+
+</div>
+
+<div class="example">
+
+<b>Example 1:</b>
+
+<br><br>
+
+Find the probability of getting an even number.
+
+<br><br>
+
+Even outcomes = {2,4,6}
+
+<br>
+
+Favourable outcomes = 3
+
+<br>
+
+Total outcomes = 6
+
+<br><br>
+
+P(E) = 3/6
+
+<br>
+= <b>1/2</b>
+
+</div>
+
+<div class="example">
+
+<b>Example 2:</b>
+
+<br><br>
+
+Find the probability of getting a number greater than 4.
+
+<br><br>
+
+Favourable outcomes = {5,6}
+
+<br>
+
+P(E) = 2/6
+
+<br>
+= <b>1/3</b>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>9. Impossible Event</h2>
+
+<p>
+An event that cannot happen is called an impossible event.
+</p>
+
+<div class="formula">
+
+Probability of an impossible event = 0
+
+<br><br>
+
+P(E) = 0
+
+</div>
+
+<div class="example">
+
+<b>Example:</b>
+
+<br><br>
+
+Getting 7 when a normal die is thrown.
+
+<br><br>
+
+P(7) = 0
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>10. Sure Event</h2>
+
+<p>
+An event that must happen is called a sure event.
+</p>
+
+<div class="formula">
+
+Probability of a sure event = 1
+
+<br><br>
+
+P(E) = 1
+
+</div>
+
+<div class="example">
+
+<b>Example:</b>
+
+<br><br>
+
+When a die is thrown, getting a number less than 7 is a sure event.
+
+<br><br>
+
+P(E) = 1
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>11. Range of Probability</h2>
+
+<div class="formula">
+
+<b>0 ≤ P(E) ≤ 1</b>
+
+</div>
+
+<p>
+The probability of every event lies between 0 and 1.
+</p>
+
+<div class="note">
+
+Probability can also be written as a fraction, decimal or percentage.
+
+<br><br>
+
+For example:
+
+<br>
+
+1/2 = 0.5 = 50%
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>12. Complementary Event</h2>
+
+<p>
+If E is an event, then the event that E does not occur is called the
+complementary event of E.
+</p>
+
+<p>
+It is denoted by E'.
+</p>
+
+<div class="formula">
+
+<b>P(E') = 1 − P(E)</b>
+
+<br><br>
+
+Also:
+
+<br>
+
+<b>P(E) + P(E') = 1</b>
+
+</div>
+
+<div class="example">
+
+<b>Example:</b>
+
+<br><br>
+
+If P(E) = 3/5, find P(E').
+
+<br><br>
+
+P(E') = 1 − 3/5
+
+<br>
+= 2/5
+
+<br>
+= <b>2/5</b>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>13. Experimental Probability</h2>
+
+<p>
+Experimental probability is based on the actual results obtained after
+performing an experiment several times.
+</p>
+
+<div class="formula">
+
+Experimental Probability
+
+=
+
+Number of times the event occurs
+/
+Total number of trials
+
+</div>
+
+<div class="example">
+
+<b>Example:</b>
+
+<br><br>
+
+A coin is tossed 50 times and heads appear 28 times.
+
+<br><br>
+
+Experimental probability of getting head:
+
+<br>
+
+P(H) = 28/50
+
+<br>
+= <b>14/25</b>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>14. Theoretical vs Experimental Probability</h2>
+
+<div class="table-container">
+
+<table>
+
+<tr>
+<th>Theoretical Probability</th>
+<th>Experimental Probability</th>
+</tr>
+
+<tr>
+<td>Based on equally likely possible outcomes.</td>
+<td>Based on actual experiment results.</td>
+</tr>
+
+<tr>
+<td>Uses favourable outcomes and total outcomes.</td>
+<td>Uses observed frequency and total trials.</td>
+</tr>
+
+<tr>
+<td>For a fair coin, P(H) = 1/2.</td>
+<td>Actual result may be different from 1/2.</td>
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>15. Probability of Cards</h2>
+
+<p>
+A standard deck contains 52 cards.
+</p>
+
+<div class="table-container">
+
+<table>
+
+<tr>
+<th>Type</th>
+<th>Number</th>
+</tr>
+
+<tr>
+<td>Total cards</td>
+<td>52</td>
+</tr>
+
+<tr>
+<td>Red cards</td>
+<td>26</td>
+</tr>
+
+<tr>
+<td>Black cards</td>
+<td>26</td>
+</tr>
+
+<tr>
+<td>Hearts</td>
+<td>13</td>
+</tr>
+
+<tr>
+<td>Diamonds</td>
+<td>13</td>
+</tr>
+
+<tr>
+<td>Clubs</td>
+<td>13</td>
+</tr>
+
+<tr>
+<td>Spades</td>
+<td>13</td>
+</tr>
+
+<tr>
+<td>Aces</td>
+<td>4</td>
+</tr>
+
+<tr>
+<td>Kings</td>
+<td>4</td>
+</tr>
+
+<tr>
+<td>Queens</td>
+<td>4</td>
+</tr>
+
+<tr>
+<td>Jacks</td>
+<td>4</td>
+</tr>
+
+</table>
+
+</div>
+
+<div class="example">
+
+<b>Example:</b>
+
+<br><br>
+
+Find the probability of drawing a red card from a well-shuffled deck.
+
+<br><br>
+
+Favourable cards = 26
+
+<br>
+Total cards = 52
+
+<br><br>
+
+P(Red) = 26/52
+
+<br>
+= <b>1/2</b>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>16. Probability of Two Coins</h2>
+
+<p>
+When two coins are tossed together:
+</p>
+
+<div class="formula">
+
+S = {HH, HT, TH, TT}
+
+<br><br>
+
+Total outcomes = 4
+
+</div>
+
+<div class="example">
+
+<b>Example:</b>
+
+<br><br>
+
+Probability of getting two heads:
+
+<br><br>
+
+Favourable outcome = HH
+
+<br>
+
+P(HH) = 1/4
+
+</div>
+
+<div class="example">
+
+<b>Example:</b>
+
+<br><br>
+
+Probability of getting exactly one head:
+
+<br><br>
+
+Favourable outcomes = HT, TH
+
+<br>
+
+P(E) = 2/4
+
+<br>
+= <b>1/2</b>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>17. Probability of Three Coins</h2>
+
+<p>
+When three coins are tossed together, the sample space contains
+8 equally likely outcomes.
+</p>
+
+<div class="formula">
+
+S = {HHH, HHT, HTH, THH, HTT, THT, TTH, TTT}
+
+<br><br>
+
+n(S) = 8
+
+</div>
+
+<div class="example">
+
+<b>Example:</b>
+
+<br><br>
+
+Probability of getting three heads:
+
+<br><br>
+
+P(HHH) = 1/8
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>18. Solved Example – Die</h2>
+
+<div class="example">
+
+<b>Question:</b>
+
+<br>
+
+A die is thrown once. Find the probability of getting a prime number.
+
+<br><br>
+
+<b>Solution:</b>
+
+Sample space:
+
+<br>
+
+S = {1,2,3,4,5,6}
+
+<br><br>
+
+Prime numbers = {2,3,5}
+
+<br><br>
+
+Favourable outcomes = 3
+
+<br>
+
+Total outcomes = 6
+
+<br><br>
+
+P(E) = 3/6
+
+<br>
+= <b>1/2</b>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>19. Solved Example – Cards</h2>
+
+<div class="example">
+
+<b>Question:</b>
+
+<br>
+
+A card is drawn from a standard deck of 52 cards.
+Find the probability of getting an ace.
+
+<br><br>
+
+<b>Solution:</b>
+
+Number of aces = 4
+
+<br>
+
+Total cards = 52
+
+<br><br>
+
+P(Ace) = 4/52
+
+<br>
+= <b>1/13</b>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>20. Solved Example – Complement</h2>
+
+<div class="example">
+
+<b>Question:</b>
+
+<br>
+
+If the probability of an event is 2/7, find the probability that
+the event does not occur.
+
+<br><br>
+
+<b>Solution:</b>
+
+P(E') = 1 − P(E)
+
+<br><br>
+
+= 1 − 2/7
+
+<br>
+
+= <b>5/7</b>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>21. Important Formula Table</h2>
+
+<div class="table-container">
+
+<table>
+
+<tr>
+<th>Concept</th>
+<th>Formula</th>
+</tr>
+
+<tr>
+<td>Probability</td>
+<td>P(E) = n(E)/n(S)</td>
+</tr>
+
+<tr>
+<td>Impossible Event</td>
+<td>P(E) = 0</td>
+</tr>
+
+<tr>
+<td>Sure Event</td>
+<td>P(E) = 1</td>
+</tr>
+
+<tr>
+<td>Range</td>
+<td>0 ≤ P(E) ≤ 1</td>
+</tr>
+
+<tr>
+<td>Complement</td>
+<td>P(E') = 1 − P(E)</td>
+</tr>
+
+<tr>
+<td>Complement Relation</td>
+<td>P(E) + P(E') = 1</td>
+</tr>
+
+<tr>
+<td>Experimental Probability</td>
+<td>Favourable Occurrences / Total Trials</td>
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>22. Common Mistakes</h2>
+
+<div class="warning">
+
+<ul>
+<li>Favourable outcomes और total outcomes को confuse न करें।</li>
+<li>Probability हमेशा 0 और 1 के बीच होती है।</li>
+<li>Sample space सभी possible outcomes का set है।</li>
+<li>Complement में 1 − P(E) करना न भूलें।</li>
+<li>Cards के प्रश्न में total cards 52 याद रखें।</li>
+<li>Die के प्रश्न में total outcomes 6 होते हैं।</li>
+<li>दो coins के लिए total outcomes 4 होते हैं।</li>
+<li>तीन coins के लिए total outcomes 8 होते हैं।</li>
+</ul>
+
+</div>
+
+
+<div class="section">
+
+<h2>23. Board Exam Important Questions</h2>
+
+<div class="question">
+<b>Q1.</b> A coin is tossed once. Find the probability of getting a head.
+</div>
+
+<div class="question">
+<b>Q2.</b> A die is thrown once. Find the probability of getting an even number.
+</div>
+
+<div class="question">
+<b>Q3.</b> Find the probability of getting a prime number on throwing a die.
+</div>
+
+<div class="question">
+<b>Q4.</b> Two coins are tossed. Find the probability of getting exactly one head.
+</div>
+
+<div class="question">
+<b>Q5.</b> A card is drawn from a deck. Find the probability of getting an ace.
+</div>
+
+<div class="question">
+<b>Q6.</b> Find the probability of getting a red card from a deck.
+</div>
+
+<div class="question">
+<b>Q7.</b> If P(E) = 3/8, find P(E').
+</div>
+
+<div class="question">
+<b>Q8.</b> A die is thrown once. Find the probability of getting a number
+greater than 4.
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>24. MCQs</h2>
+
+<div class="mcq">
+
+<b>1. Probability of an impossible event is:</b><br>
+A) 0<br>
+B) 1<br>
+C) 2<br>
+D) 1/2
+
+<p class="answer">Answer: A) 0</p>
+
+</div>
+
+
+<div class="mcq">
+
+<b>2. Probability of a sure event is:</b><br>
+A) 0<br>
+B) 1<br>
+C) 1/2<br>
+D) 2
+
+<p class="answer">Answer: B) 1</p>
+
+</div>
+
+
+<div class="mcq">
+
+<b>3. A die has how many possible outcomes?</b><br>
+A) 4<br>
+B) 5<br>
+C) 6<br>
+D) 8
+
+<p class="answer">Answer: C) 6</p>
+
+</div>
+
+
+<div class="mcq">
+
+<b>4. Probability of getting a head on a fair coin is:</b><br>
+A) 0<br>
+B) 1<br>
+C) 1/2<br>
+D) 2
+
+<p class="answer">Answer: C) 1/2</p>
+
+</div>
+
+
+<div class="mcq">
+
+<b>5. A standard deck contains:</b><br>
+A) 26 cards<br>
+B) 40 cards<br>
+C) 52 cards<br>
+D) 54 cards
+
+<p class="answer">Answer: C) 52 cards</p>
+
+</div>
+
+
+<div class="mcq">
+
+<b>6. If P(E) = 3/5, then P(E') is:</b><br>
+A) 3/5<br>
+B) 2/5<br>
+C) 1/5<br>
+D) 4/5
+
+<p class="answer">Answer: B) 2/5</p>
+
+</div>
+
+
+<div class="mcq">
+
+<b>7. When two coins are tossed, total outcomes are:</b><br>
+A) 2<br>
+B) 3<br>
+C) 4<br>
+D) 6
+
+<p class="answer">Answer: C) 4</p>
+
+</div>
+
+
+<div class="mcq">
+
+<b>8. Probability always lies between:</b><br>
+A) −1 and 1<br>
+B) 0 and 1<br>
+C) 1 and 2<br>
+D) 0 and 10
+
+<p class="answer">Answer: B) 0 and 1</p>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>25. Practice Set</h2>
+
+<div class="question">
+<b>Q1.</b> A coin is tossed once. Find the probability of getting a tail.
+</div>
+
+<div class="question">
+<b>Q2.</b> A die is thrown once. Find the probability of getting an odd number.
+</div>
+
+<div class="question">
+<b>Q3.</b> A die is thrown once. Find the probability of getting a number
+less than 4.
+</div>
+
+<div class="question">
+<b>Q4.</b> Two coins are tossed. Find the probability of getting two tails.
+</div>
+
+<div class="question">
+<b>Q5.</b> Two coins are tossed. Find the probability of getting exactly
+one tail.
+</div>
+
+<div class="question">
+<b>Q6.</b> A card is drawn from a standard deck. Find the probability
+of getting a king.
+</div>
+
+<div class="question">
+<b>Q7.</b> Find the probability of getting a black card.
+</div>
+
+<div class="question">
+<b>Q8.</b> If P(E) = 4/9, find P(E').
+</div>
+
+<div class="question">
+<b>Q9.</b> A die is thrown once. Find the probability of getting a number
+greater than 2.
+</div>
+
+<div class="question">
+<b>Q10.</b> A coin is tossed 100 times and heads appear 54 times.
+Find the experimental probability of getting a head.
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>26. Quick Revision</h2>
+
+<div class="formula">
+
+<b>Basic Probability:</b>
+
+<br>
+P(E) = n(E)/n(S)
+
+<br><br>
+
+<b>Impossible Event:</b>
+
+<br>
+P(E) = 0
+
+<br><br>
+
+<b>Sure Event:</b>
+
+<br>
+P(E) = 1
+
+<br><br>
+
+<b>Range:</b>
+
+<br>
+0 ≤ P(E) ≤ 1
+
+<br><br>
+
+<b>Complement:</b>
+
+<br>
+P(E') = 1 − P(E)
+
+<br><br>
+
+<b>Relation:</b>
+
+<br>
+P(E) + P(E') = 1
+
+<br><br>
+
+<b>Experimental Probability:</b>
+
+<br>
+Favourable Occurrences / Total Trials
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>27. Board Exam Tips</h2>
+
+<ul>
+<li>सबसे पहले sample space लिखो।</li>
+<li>Total outcomes की संख्या पहचानो।</li>
+<li>Favourable outcomes carefully count करो।</li>
+<li>Formula P(E) = n(E)/n(S) याद रखो।</li>
+<li>Complement के लिए 1 − P(E) करो।</li>
+<li>Final answer को simplest fraction में लिखो।</li>
+<li>Probability कभी 0 से कम या 1 से ज्यादा नहीं होती।</li>
+</ul>
+
+<div class="note">
+
+<b>Golden Rule:</b>
+
+<br><br>
+
+Sample Space → Total Outcomes → Favourable Outcomes →
+Formula → Simplify → Final Answer
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- ================= HINDI ================= -->
+
+<div id="hindi" class="hindi">
+
+<div class="section">
+
+<h2>1. परिचय</h2>
+
+<p>
+प्रायिकता गणित की वह शाखा है जिसमें किसी घटना के होने की संभावना
+का अध्ययन किया जाता है।
+</p>
+
+<div class="note">
+Probability बताती है कि कोई घटना होने की कितनी संभावना है।
+</div>
+
+<p>
+सिक्का उछालना, पासा फेंकना और ताश का पत्ता निकालना random experiments
+के उदाहरण हैं।
+</p>
+
+</div>
+
+
+<div class="section">
+
+<h2>2. यादृच्छिक प्रयोग (Random Experiment)</h2>
+
+<p>
+ऐसा प्रयोग जिसका exact result पहले से निश्चित रूप से नहीं बताया जा सकता,
+random experiment कहलाता है।
+</p>
+
+<ul>
+<li>सिक्का उछालना।</li>
+<li>पासा फेंकना।</li>
+<li>ताश के पत्तों में से एक पत्ता निकालना।</li>
+</ul>
+
+</div>
+
+
+<div class="section">
+
+<h2>3. Outcome</h2>
+
+<p>
+Random experiment के किसी संभावित परिणाम को outcome कहते हैं।
+</p>
+
+<div class="example">
+
+<b>उदाहरण:</b>
+
+<br><br>
+
+एक सिक्का उछालने पर:
+
+<br><br>
+
+S = {H, T}
+
+<br><br>
+
+H = Head
+
+<br>
+T = Tail
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>4. Sample Space</h2>
+
+<p>
+Random experiment के सभी possible outcomes के set को sample space कहते हैं।
+</p>
+
+<div class="formula">
+
+<b>Sample Space = सभी संभावित परिणामों का समूह</b>
+
+</div>
+
+<div class="example">
+
+<b>उदाहरण:</b>
+
+<br><br>
+
+एक पासा फेंकने पर:
+
+<br><br>
+
+S = {1,2,3,4,5,6}
+
+<br><br>
+
+Total outcomes = 6
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>5. Event</h2>
+
+<p>
+एक या अधिक outcomes के समूह को event कहते हैं।
+</p>
+
+<div class="example">
+
+<b>उदाहरण:</b>
+
+<br><br>
+
+पासा फेंकने पर even number मिलना एक event है।
+
+<br><br>
+
+E = {2,4,6}
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>6. Theoretical Probability</h2>
+
+<p>
+जब सभी outcomes equally likely हों, तो event E की theoretical probability:
+</p>
+
+<div class="formula">
+
+P(E) = अनुकूल परिणामों की संख्या / कुल परिणामों की संख्या
+
+<br><br>
+
+P(E) = n(E) / n(S)
+
+</div>
+
+<ul>
+<li>n(E) = favourable outcomes</li>
+<li>n(S) = total outcomes</li>
+</ul>
+
+</div>
+
+
+<div class="section">
+
+<h2>7. सिक्का उछालने की Probability</h2>
+
+<p>
+एक fair coin को एक बार उछालने पर:
+</p>
+
+<div class="formula">
+
+S = {H,T}
+
+<br><br>
+
+P(H) = 1/2
+
+<br>
+
+P(T) = 1/2
+
+</div>
+
+<div class="example">
+
+<b>उदाहरण:</b>
+
+<br><br>
+
+Head आने की probability:
+
+<br><br>
+
+P(H) = 1/2
+
+<br>
+= <b>0.5</b>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>8. पासा फेंकने की Probability</h2>
+
+<p>
+एक fair die को एक बार फेंकने पर:
+</p>
+
+<div class="formula">
+
+S = {1,2,3,4,5,6}
+
+<br><br>
+
+n(S) = 6
+
+</div>
+
+<div class="example">
+
+<b>उदाहरण 1:</b>
+
+<br><br>
+
+Even number आने की probability:
+
+<br><br>
+
+Even outcomes = {2,4,6}
+
+<br>
+
+P(E) = 3/6
+
+<br>
+= <b>1/2</b>
+
+</div>
+
+<div class="example">
+
+<b>उदाहरण 2:</b>
+
+<br><br>
+
+4 से बड़ी संख्या आने की probability:
+
+<br><br>
+
+Favourable outcomes = {5,6}
+
+<br>
+
+P(E) = 2/6
+
+<br>
+= <b>1/3</b>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>9. असंभव घटना</h2>
+
+<p>
+जो घटना कभी नहीं हो सकती, उसे impossible event कहते हैं।
+</p>
+
+<div class="formula">
+
+P(E) = 0
+
+</div>
+
+<div class="example">
+
+<b>उदाहरण:</b>
+
+<br><br>
+
+Normal die पर 7 आना impossible event है।
+
+<br>
+
+P(7) = 0
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>10. निश्चित घटना</h2>
+
+<p>
+जो घटना निश्चित रूप से होगी, उसे sure event कहते हैं।
+</p>
+
+<div class="formula">
+
+P(E) = 1
+
+</div>
+
+<div class="example">
+
+<b>उदाहरण:</b>
+
+<br><br>
+
+पासा फेंकने पर 7 से छोटी संख्या आना sure event है।
+
+<br>
+
+P(E) = 1
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>11. Probability की Range</h2>
+
+<div class="formula">
+
+<b>0 ≤ P(E) ≤ 1</b>
+
+</div>
+
+<p>
+किसी भी event की probability 0 और 1 के बीच होती है।
+</p>
+
+<div class="note">
+
+उदाहरण:
+
+<br><br>
+
+1/2 = 0.5 = 50%
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>12. Complementary Event</h2>
+
+<p>
+यदि E कोई event है, तो E के नहीं होने वाली घटना को उसका complementary
+event कहते हैं।
+</p>
+
+<p>
+इसे E' से दर्शाते हैं।
+</p>
+
+<div class="formula">
+
+<b>P(E') = 1 − P(E)</b>
+
+<br><br>
+
+<b>P(E) + P(E') = 1</b>
+
+</div>
+
+<div class="example">
+
+<b>उदाहरण:</b>
+
+<br><br>
+
+यदि P(E) = 3/5 है, तो:
+
+<br><br>
+
+P(E') = 1 − 3/5
+
+<br>
+= <b>2/5</b>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>13. Experimental Probability</h2>
+
+<p>
+किसी experiment को कई बार करने पर प्राप्त वास्तविक results के आधार पर
+निकाली गई probability को experimental probability कहते हैं।
+</p>
+
+<div class="formula">
+
+Experimental Probability
+
+=
+
+घटना जितनी बार हुई
+/
+कुल trials
+
+</div>
+
+<div class="example">
+
+<b>उदाहरण:</b>
+
+<br><br>
+
+एक coin को 50 बार उछाला गया और 28 बार Head आया।
+
+<br><br>
+
+P(H) = 28/50
+
+<br>
+= <b>14/25</b>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>14. Theoretical और Experimental Probability</h2>
+
+<div class="table-container">
+
+<table>
+
+<tr>
+<th>Theoretical Probability</th>
+<th>Experimental Probability</th>
+</tr>
+
+<tr>
+<td>Possible outcomes पर आधारित होती है।</td>
+<td>Actual experiment के results पर आधारित होती है।</td>
+</tr>
+
+<tr>
+<td>Favourable और total outcomes का उपयोग होता है।</td>
+<td>Observed frequency और total trials का उपयोग होता है।</td>
+</tr>
+
+<tr>
+<td>Fair coin के लिए P(H)=1/2</td>
+<td>Actual experiment में result अलग हो सकता है।</td>
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>15. ताश के पत्तों की Probability</h2>
+
+<p>
+एक standard deck में कुल 52 cards होते हैं।
+</p>
+
+<div class="table-container">
+
+<table>
+
+<tr>
+<th>प्रकार</th>
+<th>संख्या</th>
+</tr>
+
+<tr>
+<td>कुल cards</td>
+<td>52</td>
+</tr>
+
+<tr>
+<td>Red cards</td>
+<td>26</td>
+</tr>
+
+<tr>
+<td>Black cards</td>
+<td>26</td>
+</tr>
+
+<tr>
+<td>Hearts</td>
+<td>13</td>
+</tr>
+
+<tr>
+<td>Diamonds</td>
+<td>13</td>
+</tr>
+
+<tr>
+<td>Clubs</td>
+<td>13</td>
+</tr>
+
+<tr>
+<td>Spades</td>
+<td>13</td>
+</tr>
+
+<tr>
+<td>Aces</td>
+<td>4</td>
+</tr>
+
+<tr>
+<td>Kings</td>
+<td>4</td>
+</tr>
+
+<tr>
+<td>Queens</td>
+<td>4</td>
+</tr>
+
+<tr>
+<td>Jacks</td>
+<td>4</td>
+</tr>
+
+</table>
+
+</div>
+
+<div class="example">
+
+<b>उदाहरण:</b>
+
+<br><br>
+
+एक deck से red card आने की probability:
+
+<br><br>
+
+P(Red) = 26/52
+
+<br>
+= <b>1/2</b>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>16. दो सिक्कों की Probability</h2>
+
+<p>
+दो coins को एक साथ उछालने पर:
+</p>
+
+<div class="formula">
+
+S = {HH, HT, TH, TT}
+
+<br><br>
+
+Total outcomes = 4
+
+</div>
+
+<div class="example">
+
+<b>उदाहरण:</b>
+
+<br><br>
+
+दोनों पर Head आने की probability:
+
+<br><br>
+
+P(HH) = 1/4
+
+</div>
+
+<div class="example">
+
+<b>उदाहरण:</b>
+
+<br><br>
+
+Exactly one Head आने की probability:
+
+<br><br>
+
+Favourable outcomes = HT, TH
+
+<br>
+
+P(E) = 2/4
+
+<br>
+= <b>1/2</b>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>17. तीन सिक्कों की Probability</h2>
+
+<p>
+तीन coins को एक साथ उछालने पर कुल 8 equally likely outcomes होते हैं।
+</p>
+
+<div class="formula">
+
+S = {HHH,HHT,HTH,THH,HTT,THT,TTH,TTT}
+
+<br><br>
+
+n(S) = 8
+
+</div>
+
+<div class="example">
+
+<b>उदाहरण:</b>
+
+<br><br>
+
+तीनों पर Head आने की probability:
+
+<br><br>
+
+P(HHH) = <b>1/8</b>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>18. हल किया हुआ प्रश्न – पासा</h2>
+
+<div class="example">
+
+<b>प्रश्न:</b>
+
+<br>
+
+एक पासा एक बार फेंका जाता है। Prime number आने की probability निकालिए।
+
+<br><br>
+
+<b>हल:</b>
+
+<br>
+
+S = {1,2,3,4,5,6}
+
+<br><br>
+
+Prime numbers = {2,3,5}
+
+<br><br>
+
+Favourable outcomes = 3
+
+<br>
+
+Total outcomes = 6
+
+<br><br>
+
+P(E) = 3/6
+
+<br>
+= <b>1/2</b>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>19. हल किया हुआ प्रश्न – Cards</h2>
+
+<div class="example">
+
+<b>प्रश्न:</b>
+
+<br>
+
+52 cards की deck से एक card निकाला जाता है।
+Ace आने की probability निकालिए।
+
+<br><br>
+
+<b>हल:</b>
+
+<br>
+
+Aces = 4
+
+<br>
+
+Total cards = 52
+
+<br><br>
+
+P(Ace) = 4/52
+
+<br>
+= <b>1/13</b>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>20. हल किया हुआ प्रश्न – Complement</h2>
+
+<div class="example">
+
+<b>प्रश्न:</b>
+
+<br>
+
+यदि P(E) = 2/7 है, तो event के नहीं होने की probability निकालिए।
+
+<br><br>
+
+<b>हल:</b>
+
+<br>
+
+P(E') = 1 − P(E)
+
+<br><br>
+
+= 1 − 2/7
+
+<br>
+
+= <b>5/7</b>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>21. Important Formula Table</h2>
+
+<div class="table-container">
+
+<table>
+
+<tr>
+<th>Concept</th>
+<th>Formula</th>
+</tr>
+
+<tr>
+<td>Probability</td>
+<td>P(E) = n(E)/n(S)</td>
+</tr>
+
+<tr>
+<td>Impossible Event</td>
+<td>P(E) = 0</td>
+</tr>
+
+<tr>
+<td>Sure Event</td>
+<td>P(E) = 1</td>
+</tr>
+
+<tr>
+<td>Range</td>
+<td>0 ≤ P(E) ≤ 1</td>
+</tr>
+
+<tr>
+<td>Complement</td>
+<td>P(E') = 1 − P(E)</td>
+</tr>
+
+<tr>
+<td>Complement Relation</td>
+<td>P(E) + P(E') = 1</td>
+</tr>
+
+<tr>
+<td>Experimental Probability</td>
+<td>Favourable Occurrences / Total Trials</td>
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>22. सामान्य गलतियाँ</h2>
+
+<div class="warning">
+
+<ul>
+<li>Favourable outcomes और total outcomes को confuse न करें।</li>
+<li>Probability 0 और 1 के बीच ही होती है।</li>
+<li>Sample space में सभी possible outcomes लिखें।</li>
+<li>Complement में 1 − P(E) करना न भूलें।</li>
+<li>Cards के प्रश्न में total cards = 52 याद रखें।</li>
+<li>Die के प्रश्न में total outcomes = 6 होते हैं।</li>
+<li>Two coins के लिए total outcomes = 4 होते हैं।</li>
+<li>Three coins के लिए total outcomes = 8 होते हैं।</li>
+</ul>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>23. बोर्ड परीक्षा के महत्वपूर्ण प्रश्न</h2>
+
+<div class="question">
+<b>प्रश्न 1.</b> एक सिक्का एक बार उछाला जाता है। Head आने की probability निकालिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 2.</b> एक पासा फेंका जाता है। Even number आने की probability निकालिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 3.</b> पासा फेंकने पर prime number आने की probability निकालिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 4.</b> दो coins उछाले जाते हैं। Exactly one Head आने की probability निकालिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 5.</b> एक deck से एक card निकाला जाता है। Ace आने की probability निकालिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 6.</b> एक deck से red card आने की probability निकालिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 7.</b> यदि P(E) = 3/8 है, तो P(E') निकालिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 8.</b> पासा फेंकने पर 4 से बड़ी संख्या आने की probability निकालिए।
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>24. MCQs</h2>
+
+<div class="mcq">
+
+<b>1. Impossible event की probability है:</b><br>
+A) 0<br>
+B) 1<br>
+C) 2<br>
+D) 1/2
+
+<p class="answer">उत्तर: A) 0</p>
+
+</div>
+
+
+<div class="mcq">
+
+<b>2. Sure event की probability है:</b><br>
+A) 0<br>
+B) 1<br>
+C) 1/2<br>
+D) 2
+
+<p class="answer">उत्तर: B) 1</p>
+
+</div>
+
+
+<div class="mcq">
+
+<b>3. एक पासे में possible outcomes कितने होते हैं?</b><br>
+A) 4<br>
+B) 5<br>
+C) 6<br>
+D) 8
+
+<p class="answer">उत्तर: C) 6</p>
+
+</div>
+
+
+<div class="mcq">
+
+<b>4. Fair coin पर Head आने की probability है:</b><br>
+A) 0<br>
+B) 1<br>
+C) 1/2<br>
+D) 2
+
+<p class="answer">उत्तर: C) 1/2</p>
+
+</div>
+
+
+<div class="mcq">
+
+<b>5. Standard deck में कुल cards होते हैं:</b><br>
+A) 26<br>
+B) 40<br>
+C) 52<br>
+D) 54
+
+<p class="answer">उत्तर: C) 52</p>
+
+</div>
+
+
+<div class="mcq">
+
+<b>6. यदि P(E) = 3/5 है, तो P(E') है:</b><br>
+A) 3/5<br>
+B) 2/5<br>
+C) 1/5<br>
+D) 4/5
+
+<p class="answer">उत्तर: B) 2/5</p>
+
+</div>
+
+
+<div class="mcq">
+
+<b>7. दो coins उछालने पर total outcomes हैं:</b><br>
+A) 2<br>
+B) 3<br>
+C) 4<br>
+D) 6
+
+<p class="answer">उत्तर: C) 4</p>
+
+</div>
+
+
+<div class="mcq">
+
+<b>8. Probability की range है:</b><br>
+A) −1 से 1<br>
+B) 0 से 1<br>
+C) 1 से 2<br>
+D) 0 से 10
+
+<p class="answer">उत्तर: B) 0 से 1</p>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>25. अभ्यास प्रश्न</h2>
+
+<div class="question">
+<b>प्रश्न 1.</b> एक coin उछालने पर Tail आने की probability निकालिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 2.</b> एक die फेंकने पर odd number आने की probability निकालिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 3.</b> एक die फेंकने पर 4 से छोटी संख्या आने की probability निकालिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 4.</b> दो coins उछालने पर दोनों Tail आने की probability निकालिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 5.</b> दो coins उछालने पर exactly one Tail आने की probability निकालिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 6.</b> एक standard deck से King आने की probability निकालिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 7.</b> एक black card आने की probability निकालिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 8.</b> यदि P(E) = 4/9 है, तो P(E') निकालिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 9.</b> एक die फेंकने पर 2 से बड़ी संख्या आने की probability निकालिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 10.</b> एक coin को 100 बार उछाला गया और 54 बार Head आया।
+Experimental probability निकालिए।
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>26. Quick Revision</h2>
+
+<div class="formula">
+
+<b>Basic Probability:</b>
+
+<br>
+P(E) = n(E)/n(S)
+
+<br><br>
+
+<b>Impossible Event:</b>
+
+<br>
+P(E) = 0
+
+<br><br>
+
+<b>Sure Event:</b>
+
+<br>
+P(E) = 1
+
+<br><br>
+
+<b>Range:</b>
+
+<br>
+0 ≤ P(E) ≤ 1
+
+<br><br>
+
+<b>Complement:</b>
+
+<br>
+P(E') = 1 − P(E)
+
+<br><br>
+
+<b>Relation:</b>
+
+<br>
+P(E) + P(E') = 1
+
+<br><br>
+
+<b>Experimental Probability:</b>
+
+<br>
+Favourable Occurrences / Total Trials
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>27. Board Exam Tips</h2>
+
+<ul>
+<li>सबसे पहले sample space लिखो।</li>
+<li>Total outcomes पहचानो।</li>
+<li>Favourable outcomes ध्यान से count करो।</li>
+<li>P(E) = n(E)/n(S) याद रखो।</li>
+<li>Complement के लिए 1 − P(E) करो।</li>
+<li>Final fraction को simplest form में लिखो।</li>
+<li>Probability कभी 0 से कम या 1 से ज्यादा नहीं होती।</li>
+</ul>
+
+<div class="note">
+
+<b>Golden Rule:</b>
+
+<br><br>
+
+Sample Space → Total Outcomes → Favourable Outcomes →
+Formula → Simplify → Final Answer
+
+</div>
+
+</div>
+
+</div>
+
+
+<footer>
+
+<p><b>Golu Coaching Center</b></p>
+<p>Class 10 Mathematics – Chapter 14: Probability</p>
+<p>© 2026 Golu Coaching Center</p>
+
+</footer>
+
+
+<script>
+
+function showHindi(){
+
+    document.getElementById("english").style.display = "none";
+    document.getElementById("hindi").style.display = "block";
+
+}
+
+function showEnglish(){
+
+    document.getElementById("hindi").style.display = "none";
+    document.getElementById("english").style.display = "block";
+
+}
+
+</script>
+
+</body>
+</html>
+

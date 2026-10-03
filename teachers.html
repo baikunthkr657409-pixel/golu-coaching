@@ -1,0 +1,505 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Teachers | Golu Coaching</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8fafc;
+            color: #1e293b;
+        }
+
+        /* HEADER */
+        header {
+            background: linear-gradient(135deg, #2563eb, #7c3aed);
+            color: white;
+            padding: 20px 50px;
+        }
+
+        header h1 {
+            display: inline-block;
+            font-size: 30px;
+        }
+
+        nav {
+            float: right;
+            margin-top: 7px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #fde68a;
+        }
+
+        .admission-btn {
+            background: #facc15;
+            color: #172554 !important;
+            padding: 10px 15px;
+            border-radius: 8px;
+        }
+
+        /* HERO */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #dbeafe, #ede9fe);
+        }
+
+        .hero h2 {
+            font-size: 45px;
+            color: #172554;
+            margin-bottom: 15px;
+            animation: fadeDown 1s ease;
+        }
+
+        .hero p {
+            font-size: 19px;
+            color: #475569;
+            line-height: 1.6;
+            max-width: 750px;
+            margin: auto;
+            animation: fadeUp 1s ease;
+        }
+
+        /* TEACHERS */
+        .teachers {
+            padding: 70px 20px;
+            text-align: center;
+        }
+
+        .teachers h2 {
+            color: #7c3aed;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .intro {
+            color: #64748b;
+            font-size: 17px;
+            margin-bottom: 40px;
+        }
+
+        .teacher-container {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .teacher-card {
+            display: inline-block;
+            vertical-align: top;
+            width: 280px;
+            min-height: 320px;
+            margin: 12px;
+            padding: 30px 20px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            border: 1px solid #e2e8f0;
+            transition: 0.3s ease;
+        }
+
+        .teacher-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.14);
+        }
+
+        .teacher-icon {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            background: #eef2ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 55px;
+        }
+
+        .teacher-card h3 {
+            color: #2563eb;
+            font-size: 23px;
+            margin-bottom: 10px;
+        }
+
+        .teacher-card .subject {
+            font-size: 17px;
+            font-weight: bold;
+            color: #172554;
+            margin-bottom: 7px;
+        }
+
+        .teacher-card .hindi {
+            color: #64748b;
+            line-height: 1.5;
+        }
+
+        /* TEACHING FEATURES */
+        .features {
+            padding: 65px 20px;
+            text-align: center;
+            background: #eef2ff;
+        }
+
+        .features h2 {
+            color: #2563eb;
+            font-size: 34px;
+            margin-bottom: 30px;
+        }
+
+        .feature-box {
+            display: inline-block;
+            vertical-align: top;
+            width: 230px;
+            margin: 10px;
+            padding: 25px 15px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.07);
+        }
+
+        .feature-icon {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .feature-box h3 {
+            color: #172554;
+            margin-bottom: 8px;
+        }
+
+        .feature-box p {
+            color: #64748b;
+            line-height: 1.5;
+        }
+
+        /* CTA */
+        .cta {
+            text-align: center;
+            padding: 70px 20px;
+            background: white;
+        }
+
+        .cta h2 {
+            color: #172554;
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        .cta p {
+            color: #64748b;
+            font-size: 17px;
+            margin-bottom: 25px;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            padding: 14px 25px;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        .cta-btn:hover {
+            background: #1d4ed8;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 22px;
+            background: #1e293b;
+            color: white;
+        }
+
+        /* ANIMATIONS */
+        @keyframes fadeDown {
+            from {
+                opacity: 0;
+                transform: translateY(-25px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(25px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* MOBILE */
+        @media (max-width: 768px) {
+
+            header {
+                padding: 20px 15px;
+                text-align: center;
+            }
+
+            header h1 {
+                font-size: 28px;
+            }
+
+            nav {
+                float: none;
+                margin-top: 20px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 7px 8px;
+                font-size: 14px;
+            }
+
+            .hero {
+                padding: 65px 15px;
+            }
+
+            .hero h2 {
+                font-size: 34px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+
+            .teacher-card {
+                width: 90%;
+                max-width: 350px;
+            }
+
+            .feature-box {
+                width: 90%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+
+        <h1>Golu Coaching</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="teachers.html">Teachers</a>
+            <a href="toppers.html">Toppers</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="admission.html" class="admission-btn">
+                Admission Enquiry
+            </a>
+        </nav>
+
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <h2>Our Teachers</h2>
+
+        <p>
+            हमारे शिक्षक विद्यार्थियों को सही मार्गदर्शन,
+            concepts की बेहतर समझ और परीक्षा की तैयारी में
+            सहयोग प्रदान करते हैं।
+        </p>
+
+    </section>
+
+
+    <!-- TEACHERS -->
+    <section class="teachers">
+
+        <h2>Our Teachers | हमारे शिक्षक</h2>
+
+        <p class="intro">
+            विद्यार्थियों के लिए समर्पित शिक्षकों की टीम
+        </p>
+
+        <div class="teacher-container">
+
+
+            <!-- TEACHER 1 -->
+            <div class="teacher-card">
+
+                <div class="teacher-icon">
+                    👨‍🏫
+                </div>
+
+                <h3>nitish sir</h3>
+
+                <p class="subject">
+                    Mathematics & Science
+                </p>
+
+                <p class="hindi">
+                    गणित और विज्ञान
+                </p>
+
+            </div>
+
+
+            <!-- TEACHER 2 -->
+            <div class="teacher-card">
+
+                <div class="teacher-icon">
+                    👨‍🏫
+                </div>
+
+                <h3>bhola sir</h3>
+
+                <p class="subject">
+                    Hindi & Sanskrit (sst)
+                </p>
+
+                <p class="hindi">
+                    हिंदी और संस्कृत
+                </p>
+
+            </div>
+
+
+            <!-- TEACHER 3 -->
+            <div class="teacher-card">
+
+                <div class="teacher-icon">
+                    👨‍🏫
+                </div>
+
+                <h3>Teacher 3</h3>
+
+                <p class="subject">
+                    english
+                </p>
+
+                <p class="hindi">
+                    
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- FEATURES -->
+    <section class="features">
+
+        <h2>Our Teaching Approach</h2>
+
+        <div class="feature-box">
+
+            <div class="feature-icon">💡</div>
+
+            <h3>Concept Focus</h3>
+
+            <p>
+                Topics को समझने और concepts को मजबूत करने पर ध्यान।
+            </p>
+
+        </div>
+
+
+        <div class="feature-box">
+
+            <div class="feature-icon">📝</div>
+
+            <h3>Regular Practice</h3>
+
+            <p>
+                नियमित अभ्यास और questions की practice।
+            </p>
+
+        </div>
+
+
+        <div class="feature-box">
+
+            <div class="feature-icon">🎯</div>
+
+            <h3>Exam Guidance</h3>
+
+            <p>
+                परीक्षा की तैयारी के लिए सही guidance।
+            </p>
+
+        </div>
+
+
+        <div class="feature-box">
+
+            <div class="feature-icon">🤝</div>
+
+            <h3>Student Support</h3>
+
+            <p>
+                विद्यार्थियों की learning में लगातार support।
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- CTA -->
+    <section class="cta">
+
+        <h2>Join Golu Coaching</h2>
+
+        <p>
+            अपनी पढ़ाई की तैयारी आज से शुरू करें।
+        </p>
+
+        <a href="admission.html" class="cta-btn">
+            Admission Enquiry
+        </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        © 2026 Golu Coaching | All Rights Reserved
+
+    </footer>
+
+</body>
+
+</html>

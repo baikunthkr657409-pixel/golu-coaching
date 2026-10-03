@@ -1,0 +1,1524 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Circles | Golu Coaching Center</title>
+
+<style>
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f4f7fb;
+    color:#222;
+    line-height:1.7;
+}
+
+header{
+    background:linear-gradient(135deg,#1e3c72,#2a5298);
+    color:white;
+    padding:28px 15px;
+    text-align:center;
+    position:relative;
+}
+
+header h1{
+    font-size:32px;
+    margin-bottom:5px;
+}
+
+header p{
+    font-size:16px;
+}
+
+.language{
+    position:absolute;
+    top:15px;
+    right:20px;
+}
+
+.language button{
+    border:none;
+    padding:8px 13px;
+    margin-left:5px;
+    border-radius:20px;
+    cursor:pointer;
+    background:white;
+    color:#1e3c72;
+    font-weight:bold;
+}
+
+.language button:hover{
+    background:#e8f0ff;
+}
+
+.container{
+    max-width:1050px;
+    margin:25px auto;
+    padding:0 15px;
+}
+
+.back-btn{
+    display:inline-block;
+    text-decoration:none;
+    background:#1e3c72;
+    color:white;
+    padding:10px 18px;
+    border-radius:8px;
+    margin-bottom:20px;
+}
+
+.back-btn:hover{
+    background:#2a5298;
+}
+
+.section{
+    background:white;
+    padding:25px;
+    margin-bottom:22px;
+    border-radius:14px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+}
+
+.section h2{
+    color:#1e3c72;
+    margin-bottom:15px;
+    border-bottom:2px solid #e1e8f5;
+    padding-bottom:8px;
+}
+
+.section h3{
+    color:#2a5298;
+    margin-top:18px;
+    margin-bottom:8px;
+}
+
+.formula{
+    background:#eef6ff;
+    border-left:5px solid #2a5298;
+    padding:15px;
+    margin:15px 0;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.example{
+    background:#eefaf1;
+    border-left:5px solid #2e8b57;
+    padding:15px;
+    margin:15px 0;
+    border-radius:8px;
+}
+
+.note{
+    background:#fff8df;
+    border-left:5px solid #e0a800;
+    padding:15px;
+    margin:15px 0;
+    border-radius:8px;
+}
+
+.warning{
+    background:#fff0f0;
+    border-left:5px solid #dc3545;
+    padding:15px;
+    margin:15px 0;
+    border-radius:8px;
+}
+
+.diagram{
+    background:#f8f9fa;
+    border:2px dashed #9aa8bd;
+    padding:25px;
+    text-align:center;
+    margin:18px 0;
+    border-radius:10px;
+}
+
+.circle-shape{
+    width:180px;
+    height:180px;
+    border:4px solid #2a5298;
+    border-radius:50%;
+    margin:10px auto;
+    position:relative;
+}
+
+.center-point{
+    width:12px;
+    height:12px;
+    background:#dc3545;
+    border-radius:50%;
+    position:absolute;
+    top:82px;
+    left:82px;
+}
+
+.radius-line{
+    position:absolute;
+    width:75px;
+    height:3px;
+    background:#222;
+    top:88px;
+    left:90px;
+    transform:rotate(-25deg);
+    transform-origin:left;
+}
+
+.table-container{
+    overflow-x:auto;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+}
+
+th,td{
+    border:1px solid #ccd5e0;
+    padding:11px;
+    text-align:left;
+}
+
+th{
+    background:#1e3c72;
+    color:white;
+}
+
+tr:nth-child(even){
+    background:#f7f9fc;
+}
+
+.question{
+    background:#f8faff;
+    border:1px solid #dce5f3;
+    padding:15px;
+    border-radius:9px;
+    margin:12px 0;
+}
+
+.mcq{
+    background:#f9fbff;
+    border-left:4px solid #2a5298;
+    padding:15px;
+    margin:12px 0;
+    border-radius:8px;
+}
+
+.answer{
+    color:#18733c;
+    font-weight:bold;
+    margin-top:7px;
+}
+
+ul,ol{
+    margin-left:25px;
+    margin-top:8px;
+}
+
+li{
+    margin-bottom:6px;
+}
+
+.hindi{
+    display:none;
+}
+
+footer{
+    background:#1e3c72;
+    color:white;
+    text-align:center;
+    padding:22px 15px;
+    margin-top:30px;
+}
+
+footer p{
+    margin:4px;
+}
+
+@media(max-width:700px){
+
+    header h1{
+        font-size:25px;
+        margin-top:35px;
+    }
+
+    header p{
+        font-size:14px;
+    }
+
+    .language{
+        top:10px;
+        right:10px;
+    }
+
+    .language button{
+        padding:6px 9px;
+        font-size:12px;
+    }
+
+    .section{
+        padding:18px;
+    }
+
+    .section h2{
+        font-size:21px;
+    }
+
+    .section h3{
+        font-size:18px;
+    }
+
+    .circle-shape{
+        width:140px;
+        height:140px;
+    }
+
+    .center-point{
+        top:62px;
+        left:62px;
+    }
+
+    .radius-line{
+        width:55px;
+        top:68px;
+        left:70px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="language">
+        <button onclick="showHindi()">हिन्दी</button>
+        <button onclick="showEnglish()">English</button>
+    </div>
+
+    <h1>Chapter 10 – Circles</h1>
+    <p>Class 10 Mathematics | Golu Coaching Center</p>
+
+</header>
+
+<div class="container">
+
+<a href="class10.html" class="back-btn">← Back to Class 10</a>
+
+<!-- ================= ENGLISH ================= -->
+
+<div id="english">
+
+<div class="section">
+<h2>1. Introduction to Circles</h2>
+
+<p>
+A circle is a collection of all points in a plane which are at the same
+distance from a fixed point.
+</p>
+
+<p>
+The fixed point is called the <b>Centre</b> of the circle and the fixed
+distance is called the <b>Radius</b>.
+</p>
+
+<div class="diagram">
+
+<p><b>Basic Circle</b></p>
+
+<div class="circle-shape">
+    <div class="center-point"></div>
+    <div class="radius-line"></div>
+</div>
+
+<p>Red point = Centre | Line = Radius</p>
+
+</div>
+
+<div class="formula">
+Radius = r &nbsp;&nbsp; | &nbsp;&nbsp; Diameter = 2r
+</div>
+
+</div>
+
+
+<div class="section">
+<h2>2. Important Terms Related to a Circle</h2>
+
+<h3>Centre</h3>
+<p>
+The fixed point inside a circle is called its centre.
+</p>
+
+<h3>Radius</h3>
+<p>
+The distance from the centre to any point on the circle is called the radius.
+</p>
+
+<h3>Diameter</h3>
+<p>
+A chord passing through the centre of the circle is called the diameter.
+</p>
+
+<div class="formula">
+Diameter = 2 × Radius
+</div>
+
+<h3>Chord</h3>
+<p>
+A line segment joining any two points on a circle is called a chord.
+</p>
+
+<h3>Arc</h3>
+<p>
+A part of the circumference of a circle is called an arc.
+</p>
+
+<h3>Secant</h3>
+<p>
+A line which intersects a circle at two distinct points is called a secant.
+</p>
+
+<h3>Tangent</h3>
+<p>
+A line which touches a circle at exactly one point is called a tangent.
+</p>
+
+<div class="note">
+<b>Important:</b> The point where a tangent touches the circle is called
+the <b>point of contact</b>.
+</div>
+
+</div>
+
+
+<div class="section">
+<h2>3. Tangent to a Circle</h2>
+
+<p>
+A tangent is a straight line that touches a circle at exactly one point.
+</p>
+
+<div class="diagram">
+<p><b>Circle + Tangent</b></p>
+
+<p style="font-size:25px;">
+────────────── T
+</p>
+
+<p>
+The line touches the circle at point T.
+</p>
+</div>
+
+<p>
+If a line touches the circle at only one point, it is called a tangent.
+</p>
+
+</div>
+
+
+<div class="section">
+<h2>4. Tangent and Radius Theorem</h2>
+
+<h3>Theorem</h3>
+
+<p>
+The tangent at any point of a circle is perpendicular to the radius
+through the point of contact.
+</p>
+
+<div class="formula">
+If PT is tangent to a circle at T and OT is the radius,
+then <b>OT ⟂ PT</b>.
+<br><br>
+Therefore, ∠OTP = 90°
+</div>
+
+<h3>Proof Idea</h3>
+
+<ol>
+<li>Let PT be a tangent to the circle at T.</li>
+<li>O is the centre of the circle.</li>
+<li>Join OT.</li>
+<li>The shortest distance from the centre to the tangent is OT.</li>
+<li>Therefore OT is perpendicular to PT.</li>
+<li>Hence ∠OTP = 90°.</li>
+</ol>
+
+<div class="example">
+<b>Example:</b><br>
+If OT is a radius and PT is tangent at T, find ∠OTP.
+<br><br>
+<b>Solution:</b><br>
+Radius is perpendicular to tangent.
+<br>
+Therefore,
+<br>
+∠OTP = <b>90°</b>.
+</div>
+
+</div>
+
+
+<div class="section">
+<h2>5. Number of Tangents from a Point</h2>
+
+<p>
+The number of tangents that can be drawn to a circle depends on the
+position of the point.
+</p>
+
+<div class="table-container">
+<table>
+<tr>
+<th>Position of Point</th>
+<th>Number of Tangents</th>
+</tr>
+
+<tr>
+<td>Point inside the circle</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>Point on the circle</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>Point outside the circle</td>
+<td>2</td>
+</tr>
+</table>
+</div>
+
+<div class="note">
+<b>Board Exam Point:</b><br>
+From an external point, exactly two tangents can be drawn to a circle.
+</div>
+
+</div>
+
+
+<div class="section">
+<h2>6. Tangents from an External Point</h2>
+
+<p>
+Suppose P is a point outside a circle. Two tangents PA and PB can be drawn
+from P to the circle.
+</p>
+
+<div class="diagram">
+
+<p><b>External Point P</b></p>
+
+<p style="font-size:22px;">
+A ●────────────── P ──────────────● B
+</p>
+
+<p>
+PA and PB represent two tangents.
+</p>
+
+</div>
+
+<p>
+The two tangent segments drawn from the same external point are equal.
+</p>
+
+<div class="formula">
+<b>PA = PB</b>
+</div>
+
+</div>
+
+
+<div class="section">
+<h2>7. Theorem – Equal Tangents from an External Point</h2>
+
+<h3>Statement</h3>
+
+<p>
+The lengths of two tangents drawn from an external point to a circle
+are equal.
+</p>
+
+<div class="formula">
+If PA and PB are tangents from external point P,
+then:
+<br><br>
+<b>PA = PB</b>
+</div>
+
+<h3>Proof</h3>
+
+<ol>
+<li>Let PA and PB be two tangents from P.</li>
+<li>Join OA and OB, where O is the centre.</li>
+<li>Radius is perpendicular to tangent.</li>
+<li>Therefore ∠OAP = ∠OBP = 90°.</li>
+<li>OA = OB because both are radii.</li>
+<li>OP is common.</li>
+<li>By RHS congruence, ΔOAP ≅ ΔOBP.</li>
+<li>Therefore PA = PB.</li>
+</ol>
+
+<div class="example">
+<b>Example:</b><br>
+From point P, two tangents PA and PB are drawn to a circle.
+If PA = 7 cm, find PB.
+<br><br>
+<b>Solution:</b><br>
+Tangents from the same external point are equal.
+<br>
+PA = PB
+<br>
+Therefore,
+<br>
+<b>PB = 7 cm</b>.
+</div>
+
+</div>
+
+
+<div class="section">
+<h2>8. Important Results</h2>
+
+<div class="formula">
+1. Radius = Diameter ÷ 2
+<br><br>
+2. Diameter = 2 × Radius
+<br><br>
+3. Radius ⟂ Tangent at point of contact
+<br><br>
+4. Angle between radius and tangent = 90°
+<br><br>
+5. From an external point, two tangents can be drawn.
+<br><br>
+6. Tangents from the same external point are equal.
+</div>
+
+</div>
+
+
+<div class="section">
+<h2>9. Solved Examples</h2>
+
+<div class="example">
+<b>Example 1</b><br><br>
+
+The radius of a circle is 8 cm. Find its diameter.
+
+<br><br>
+
+<b>Solution:</b>
+
+<div class="formula">
+Diameter = 2 × Radius
+<br>
+= 2 × 8
+<br>
+= <b>16 cm</b>
+</div>
+</div>
+
+
+<div class="example">
+<b>Example 2</b><br><br>
+
+A tangent is drawn to a circle at point A. If OA is the radius,
+find the angle between OA and the tangent.
+
+<br><br>
+
+<b>Solution:</b><br>
+Radius is perpendicular to tangent.
+
+<div class="formula">
+Angle = <b>90°</b>
+</div>
+</div>
+
+
+<div class="example">
+<b>Example 3</b><br><br>
+
+Two tangents PA and PB are drawn from an external point P.
+If PA = 12 cm, find PB.
+
+<br><br>
+
+<b>Solution:</b><br>
+Tangents from the same external point are equal.
+
+<div class="formula">
+PA = PB
+<br>
+PB = <b>12 cm</b>
+</div>
+</div>
+
+
+<div class="example">
+<b>Example 4</b><br><br>
+
+A circle has diameter 20 cm. Find its radius.
+
+<br><br>
+
+<b>Solution:</b>
+
+<div class="formula">
+Radius = Diameter ÷ 2
+<br>
+= 20 ÷ 2
+<br>
+= <b>10 cm</b>
+</div>
+</div>
+
+</div>
+
+
+<div class="section">
+<h2>10. How to Solve Circle Questions</h2>
+
+<ol>
+<li>First identify the centre of the circle.</li>
+<li>Look for the radius and diameter.</li>
+<li>If a tangent is given, remember radius ⟂ tangent.</li>
+<li>Use 90° for the angle between radius and tangent.</li>
+<li>If two tangents come from the same external point, make them equal.</li>
+<li>Use RHS congruence when proving equal tangents.</li>
+<li>Write the theorem used in the solution.</li>
+</ol>
+
+</div>
+
+
+<div class="section">
+<h2>11. Common Mistakes</h2>
+
+<div class="warning">
+<ul>
+<li>Do not confuse radius with diameter.</li>
+<li>Diameter is always twice the radius.</li>
+<li>A tangent touches the circle at only one point.</li>
+<li>Do not forget that radius and tangent are perpendicular at the point of contact.</li>
+<li>Equal tangent theorem applies to tangents drawn from the same external point.</li>
+</ul>
+</div>
+
+</div>
+
+
+<div class="section">
+<h2>12. Board Exam Important Questions</h2>
+
+<div class="question">
+<b>Q1.</b> Prove that the tangent at any point of a circle is perpendicular
+to the radius through the point of contact.
+</div>
+
+<div class="question">
+<b>Q2.</b> Prove that the lengths of tangents drawn from an external point
+to a circle are equal.
+</div>
+
+<div class="question">
+<b>Q3.</b> How many tangents can be drawn to a circle from a point outside it?
+</div>
+
+<div class="question">
+<b>Q4.</b> If two tangents PA and PB are drawn from P and PA = 9 cm,
+find PB.
+</div>
+
+<div class="question">
+<b>Q5.</b> The diameter of a circle is 18 cm. Find its radius.
+</div>
+
+</div>
+
+
+<div class="section">
+<h2>13. MCQs – Practice</h2>
+
+<div class="mcq">
+<b>1. A tangent touches a circle at:</b><br>
+A) Two points<br>
+B) One point<br>
+C) Three points<br>
+D) No point
+
+<p class="answer">Answer: B) One point</p>
+</div>
+
+
+<div class="mcq">
+<b>2. The angle between radius and tangent at point of contact is:</b><br>
+A) 30°<br>
+B) 45°<br>
+C) 90°<br>
+D) 180°
+
+<p class="answer">Answer: C) 90°</p>
+</div>
+
+
+<div class="mcq">
+<b>3. From an external point, how many tangents can be drawn?</b><br>
+A) 1<br>
+B) 2<br>
+C) 3<br>
+D) 0
+
+<p class="answer">Answer: B) 2</p>
+</div>
+
+
+<div class="mcq">
+<b>4. If radius is 7 cm, diameter is:</b><br>
+A) 7 cm<br>
+B) 14 cm<br>
+C) 21 cm<br>
+D) 49 cm
+
+<p class="answer">Answer: B) 14 cm</p>
+</div>
+
+
+<div class="mcq">
+<b>5. If PA and PB are tangents from P, then:</b><br>
+A) PA &gt; PB<br>
+B) PA &lt; PB<br>
+C) PA = PB<br>
+D) PA + PB = 0
+
+<p class="answer">Answer: C) PA = PB</p>
+</div>
+
+</div>
+
+
+<div class="section">
+<h2>14. Practice Set</h2>
+
+<div class="question">
+<b>Q1.</b> Define a tangent to a circle.
+</div>
+
+<div class="question">
+<b>Q2.</b> Define a secant.
+</div>
+
+<div class="question">
+<b>Q3.</b> State the tangent-radius theorem.
+</div>
+
+<div class="question">
+<b>Q4.</b> A circle has radius 11 cm. Find its diameter.
+</div>
+
+<div class="question">
+<b>Q5.</b> A circle has diameter 30 cm. Find its radius.
+</div>
+
+<div class="question">
+<b>Q6.</b> Two tangents PA and PB are drawn from an external point P.
+If PA = 15 cm, find PB.
+</div>
+
+<div class="question">
+<b>Q7.</b> How many tangents can be drawn from a point lying inside a circle?
+</div>
+
+<div class="question">
+<b>Q8.</b> Why is the radius perpendicular to the tangent at the point
+of contact?
+</div>
+
+</div>
+
+
+<div class="section">
+<h2>15. Quick Revision</h2>
+
+<div class="formula">
+
+<b>Circle:</b> Set of points at the same distance from a fixed point.
+
+<br><br>
+
+<b>Radius:</b> Centre to any point on circle.
+
+<br><br>
+
+<b>Diameter:</b> Chord passing through centre.
+
+<br><br>
+
+<b>Tangent:</b> Line touching circle at one point.
+
+<br><br>
+
+<b>Secant:</b> Line intersecting circle at two points.
+
+<br><br>
+
+<b>Main Theorem:</b><br>
+Radius ⟂ Tangent
+
+<br><br>
+
+<b>Equal Tangent Theorem:</b><br>
+PA = PB
+
+<br><br>
+
+<b>Number of Tangents:</b><br>
+Inside = 0 | On circle = 1 | Outside = 2
+
+</div>
+
+</div>
+
+
+<div class="section">
+<h2>16. Board Exam Preparation</h2>
+
+<p>
+For the Circles chapter, focus especially on:
+</p>
+
+<ul>
+<li>Definitions of tangent and secant</li>
+<li>Radius and diameter</li>
+<li>Tangent-radius theorem</li>
+<li>Proof of equal tangents theorem</li>
+<li>Number of tangents from different points</li>
+<li>Problems based on PA = PB</li>
+<li>Problems involving 90°</li>
+</ul>
+
+<div class="note">
+<b>Exam Tip:</b><br>
+Theorem questions should be written in proper steps. Draw a neat diagram,
+write the given information, use the correct theorem, and clearly write
+the final result.
+</div>
+
+</div>
+
+</div>
+
+
+<!-- ================= HINDI ================= -->
+
+<div id="hindi" class="hindi">
+
+<div class="section">
+<h2>1. वृत्त का परिचय</h2>
+
+<p>
+वृत्त एक ऐसे समतल में सभी बिंदुओं का समूह है जो एक निश्चित बिंदु से
+समान दूरी पर होते हैं।
+</p>
+
+<p>
+इस निश्चित बिंदु को <b>केंद्र (Centre)</b> और निश्चित दूरी को
+<b>त्रिज्या (Radius)</b> कहते हैं।
+</p>
+
+<div class="diagram">
+
+<p><b>वृत्त</b></p>
+
+<div class="circle-shape">
+    <div class="center-point"></div>
+    <div class="radius-line"></div>
+</div>
+
+<p>लाल बिंदु = केंद्र | रेखा = त्रिज्या</p>
+
+</div>
+
+<div class="formula">
+त्रिज्या = r &nbsp;&nbsp; | &nbsp;&nbsp; व्यास = 2r
+</div>
+
+</div>
+
+
+<div class="section">
+<h2>2. वृत्त से संबंधित महत्वपूर्ण शब्द</h2>
+
+<h3>केंद्र</h3>
+<p>
+वृत्त के अंदर स्थित निश्चित बिंदु को केंद्र कहते हैं।
+</p>
+
+<h3>त्रिज्या</h3>
+<p>
+केंद्र से वृत्त के किसी भी बिंदु तक की दूरी को त्रिज्या कहते हैं।
+</p>
+
+<h3>व्यास</h3>
+<p>
+वृत्त की वह जीवा जो केंद्र से होकर गुजरती है, व्यास कहलाती है।
+</p>
+
+<div class="formula">
+व्यास = 2 × त्रिज्या
+</div>
+
+<h3>जीवा</h3>
+<p>
+वृत्त के दो बिंदुओं को जोड़ने वाले रेखाखंड को जीवा कहते हैं।
+</p>
+
+<h3>चाप</h3>
+<p>
+वृत्त की परिधि के किसी भाग को चाप कहते हैं।
+</p>
+
+<h3>छेदक</h3>
+<p>
+वह रेखा जो वृत्त को दो अलग-अलग बिंदुओं पर काटती है, छेदक कहलाती है।
+</p>
+
+<h3>स्पर्श रेखा</h3>
+<p>
+वह रेखा जो वृत्त को केवल एक बिंदु पर स्पर्श करती है, स्पर्श रेखा कहलाती है।
+</p>
+
+<div class="note">
+जिस बिंदु पर स्पर्श रेखा वृत्त को छूती है, उसे <b>स्पर्श बिंदु</b>
+कहते हैं।
+</div>
+
+</div>
+
+
+<div class="section">
+<h2>3. वृत्त की स्पर्श रेखा</h2>
+
+<p>
+स्पर्श रेखा वह सीधी रेखा है जो वृत्त को केवल एक बिंदु पर छूती है।
+</p>
+
+<div class="diagram">
+<p><b>वृत्त और स्पर्श रेखा</b></p>
+
+<p style="font-size:25px;">
+────────────── T
+</p>
+
+<p>
+रेखा वृत्त को T बिंदु पर स्पर्श करती है।
+</p>
+</div>
+
+</div>
+
+
+<div class="section">
+<h2>4. स्पर्श रेखा और त्रिज्या का प्रमेय</h2>
+
+<h3>प्रमेय</h3>
+
+<p>
+वृत्त के किसी बिंदु पर खींची गई स्पर्श रेखा, स्पर्श बिंदु से जाने वाली
+त्रिज्या पर लंब होती है।
+</p>
+
+<div class="formula">
+यदि PT, T बिंदु पर स्पर्श रेखा है और OT त्रिज्या है,
+तो <b>OT ⟂ PT</b>.
+<br><br>
+अतः ∠OTP = 90°
+</div>
+
+<h3>सरल प्रमाण</h3>
+
+<ol>
+<li>मान लीजिए PT, T पर स्पर्श रेखा है।</li>
+<li>O वृत्त का केंद्र है।</li>
+<li>OT को मिलाइए।</li>
+<li>केंद्र से स्पर्श रेखा की दूरी OT है।</li>
+<li>इसलिए OT, PT पर लंब है।</li>
+<li>अतः ∠OTP = 90°.</li>
+</ol>
+
+<div class="example">
+<b>उदाहरण:</b><br>
+यदि OT त्रिज्या है और PT, T पर स्पर्श रेखा है, तो ∠OTP ज्ञात कीजिए।
+<br><br>
+<b>हल:</b><br>
+त्रिज्या स्पर्श रेखा पर लंब होती है।
+<br>
+अतः ∠OTP = <b>90°</b>.
+</div>
+
+</div>
+
+
+<div class="section">
+<h2>5. किसी बिंदु से वृत्त पर स्पर्श रेखाओं की संख्या</h2>
+
+<div class="table-container">
+<table>
+<tr>
+<th>बिंदु की स्थिति</th>
+<th>स्पर्श रेखाओं की संख्या</th>
+</tr>
+
+<tr>
+<td>वृत्त के अंदर</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>वृत्त पर</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>वृत्त के बाहर</td>
+<td>2</td>
+</tr>
+</table>
+</div>
+
+<div class="note">
+<b>बोर्ड परीक्षा के लिए महत्वपूर्ण:</b><br>
+वृत्त के बाहर स्थित किसी बिंदु से वृत्त पर ठीक दो स्पर्श रेखाएँ खींची
+जा सकती हैं।
+</div>
+
+</div>
+
+
+<div class="section">
+<h2>6. बाहरी बिंदु से स्पर्श रेखाएँ</h2>
+
+<p>
+मान लीजिए P वृत्त के बाहर एक बिंदु है। P से वृत्त पर दो स्पर्श रेखाएँ
+PA और PB खींची जा सकती हैं।
+</p>
+
+<div class="formula">
+<b>PA = PB</b>
+</div>
+
+<p>
+अर्थात एक ही बाहरी बिंदु से खींची गई दोनों स्पर्श रेखाओं की लंबाई समान होती है।
+</p>
+
+</div>
+
+
+<div class="section">
+<h2>7. समान स्पर्श रेखाओं का प्रमेय</h2>
+
+<h3>कथन</h3>
+
+<p>
+किसी बाहरी बिंदु से वृत्त पर खींची गई दो स्पर्श रेखाओं की लंबाइयाँ
+समान होती हैं।
+</p>
+
+<div class="formula">
+यदि PA और PB, P से खींची गई स्पर्श रेखाएँ हैं, तो:
+<br><br>
+<b>PA = PB</b>
+</div>
+
+<h3>प्रमाण</h3>
+
+<ol>
+<li>PA और PB दो स्पर्श रेखाएँ हैं।</li>
+<li>O केंद्र है और OA तथा OB को मिलाइए।</li>
+<li>त्रिज्या स्पर्श रेखा पर लंब होती है।</li>
+<li>इसलिए ∠OAP = ∠OBP = 90°.</li>
+<li>OA = OB क्योंकि दोनों त्रिज्याएँ हैं।</li>
+<li>OP उभयनिष्ठ है।</li>
+<li>RHS सर्वांगसमता से ΔOAP ≅ ΔOBP.</li>
+<li>अतः PA = PB.</li>
+</ol>
+
+<div class="example">
+<b>उदाहरण:</b><br>
+P से PA और PB दो स्पर्श रेखाएँ खींची गई हैं।
+यदि PA = 7 cm है, तो PB ज्ञात कीजिए।
+<br><br>
+<b>हल:</b><br>
+एक ही बाहरी बिंदु से खींची गई स्पर्श रेखाएँ समान होती हैं।
+<br>
+PA = PB
+<br>
+अतः <b>PB = 7 cm</b>.
+</div>
+
+</div>
+
+
+<div class="section">
+<h2>8. महत्वपूर्ण परिणाम</h2>
+
+<div class="formula">
+1. त्रिज्या = व्यास ÷ 2
+<br><br>
+2. व्यास = 2 × त्रिज्या
+<br><br>
+3. स्पर्श बिंदु पर त्रिज्या ⟂ स्पर्श रेखा
+<br><br>
+4. त्रिज्या और स्पर्श रेखा के बीच कोण = 90°
+<br><br>
+5. बाहरी बिंदु से दो स्पर्श रेखाएँ खींची जा सकती हैं।
+<br><br>
+6. एक ही बाहरी बिंदु से खींची गई स्पर्श रेखाएँ समान होती हैं।
+</div>
+
+</div>
+
+
+<div class="section">
+<h2>9. हल किए हुए उदाहरण</h2>
+
+<div class="example">
+<b>उदाहरण 1</b><br><br>
+
+एक वृत्त की त्रिज्या 8 cm है। उसका व्यास ज्ञात कीजिए।
+
+<div class="formula">
+व्यास = 2 × त्रिज्या
+<br>
+= 2 × 8
+<br>
+= <b>16 cm</b>
+</div>
+</div>
+
+
+<div class="example">
+<b>उदाहरण 2</b><br><br>
+
+यदि OA त्रिज्या है और A पर स्पर्श रेखा खींची गई है,
+तो OA और स्पर्श रेखा के बीच कोण कितना होगा?
+
+<br><br>
+
+<b>हल:</b><br>
+त्रिज्या स्पर्श रेखा पर लंब होती है।
+
+<div class="formula">
+कोण = <b>90°</b>
+</div>
+</div>
+
+
+<div class="example">
+<b>उदाहरण 3</b><br><br>
+
+P से PA और PB दो स्पर्श रेखाएँ खींची गई हैं।
+यदि PA = 12 cm है, तो PB ज्ञात कीजिए।
+
+<div class="formula">
+PA = PB
+<br>
+PB = <b>12 cm</b>
+</div>
+</div>
+
+
+<div class="example">
+<b>उदाहरण 4</b><br><br>
+
+एक वृत्त का व्यास 20 cm है। उसकी त्रिज्या ज्ञात कीजिए।
+
+<div class="formula">
+त्रिज्या = व्यास ÷ 2
+<br>
+= 20 ÷ 2
+<br>
+= <b>10 cm</b>
+</div>
+</div>
+
+</div>
+
+
+<div class="section">
+<h2>10. वृत्त के प्रश्न कैसे हल करें?</h2>
+
+<ol>
+<li>सबसे पहले वृत्त का केंद्र पहचानें।</li>
+<li>त्रिज्या और व्यास को पहचानें।</li>
+<li>यदि स्पर्श रेखा दी गई है तो याद रखें: त्रिज्या ⟂ स्पर्श रेखा।</li>
+<li>त्रिज्या और स्पर्श रेखा के बीच कोण 90° होगा।</li>
+<li>एक ही बाहरी बिंदु से दो स्पर्श रेखाएँ हों तो उनकी लंबाई बराबर रखें।</li>
+<li>प्रमाण वाले प्रश्न में उचित प्रमेय लिखें।</li>
+</ol>
+
+</div>
+
+
+<div class="section">
+<h2>11. सामान्य गलतियाँ</h2>
+
+<div class="warning">
+<ul>
+<li>त्रिज्या और व्यास को एक जैसा न समझें।</li>
+<li>व्यास हमेशा त्रिज्या का दो गुना होता है।</li>
+<li>स्पर्श रेखा वृत्त को केवल एक बिंदु पर छूती है।</li>
+<li>स्पर्श बिंदु पर त्रिज्या और स्पर्श रेखा के बीच 90° होता है।</li>
+<li>समान स्पर्श रेखा का प्रमेय एक ही बाहरी बिंदु से खींची गई स्पर्श रेखाओं पर लागू होता है।</li>
+</ul>
+</div>
+
+</div>
+
+
+<div class="section">
+<h2>12. बोर्ड परीक्षा के महत्वपूर्ण प्रश्न</h2>
+
+<div class="question">
+<b>प्रश्न 1.</b> सिद्ध कीजिए कि वृत्त के किसी बिंदु पर खींची गई स्पर्श रेखा,
+स्पर्श बिंदु से जाने वाली त्रिज्या पर लंब होती है।
+</div>
+
+<div class="question">
+<b>प्रश्न 2.</b> सिद्ध कीजिए कि किसी बाहरी बिंदु से वृत्त पर खींची गई
+दो स्पर्श रेखाओं की लंबाइयाँ समान होती हैं।
+</div>
+
+<div class="question">
+<b>प्रश्न 3.</b> वृत्त के बाहर स्थित किसी बिंदु से कितनी स्पर्श रेखाएँ
+खींची जा सकती हैं?
+</div>
+
+<div class="question">
+<b>प्रश्न 4.</b> यदि PA और PB स्पर्श रेखाएँ हैं और PA = 9 cm है,
+तो PB ज्ञात कीजिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 5.</b> एक वृत्त का व्यास 18 cm है। उसकी त्रिज्या ज्ञात कीजिए।
+</div>
+
+</div>
+
+
+<div class="section">
+<h2>13. MCQ अभ्यास</h2>
+
+<div class="mcq">
+<b>1. स्पर्श रेखा वृत्त को कितने बिंदुओं पर छूती है?</b><br>
+A) दो<br>
+B) एक<br>
+C) तीन<br>
+D) कोई नहीं
+
+<p class="answer">उत्तर: B) एक</p>
+</div>
+
+
+<div class="mcq">
+<b>2. स्पर्श बिंदु पर त्रिज्या और स्पर्श रेखा के बीच कोण होता है:</b><br>
+A) 30°<br>
+B) 45°<br>
+C) 90°<br>
+D) 180°
+
+<p class="answer">उत्तर: C) 90°</p>
+</div>
+
+
+<div class="mcq">
+<b>3. बाहरी बिंदु से वृत्त पर कितनी स्पर्श रेखाएँ खींची जा सकती हैं?</b><br>
+A) 1<br>
+B) 2<br>
+C) 3<br>
+D) 0
+
+<p class="answer">उत्तर: B) 2</p>
+</div>
+
+
+<div class="mcq">
+<b>4. यदि त्रिज्या 7 cm है, तो व्यास होगा:</b><br>
+A) 7 cm<br>
+B) 14 cm<br>
+C) 21 cm<br>
+D) 49 cm
+
+<p class="answer">उत्तर: B) 14 cm</p>
+</div>
+
+
+<div class="mcq">
+<b>5. यदि PA और PB, P से खींची गई स्पर्श रेखाएँ हैं, तो:</b><br>
+A) PA &gt; PB<br>
+B) PA &lt; PB<br>
+C) PA = PB<br>
+D) PA + PB = 0
+
+<p class="answer">उत्तर: C) PA = PB</p>
+</div>
+
+</div>
+
+
+<div class="section">
+<h2>14. अभ्यास प्रश्न</h2>
+
+<div class="question">
+<b>प्रश्न 1.</b> वृत्त की स्पर्श रेखा की परिभाषा लिखिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 2.</b> छेदक की परिभाषा लिखिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 3.</b> स्पर्श रेखा और त्रिज्या का प्रमेय लिखिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 4.</b> एक वृत्त की त्रिज्या 11 cm है। उसका व्यास ज्ञात कीजिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 5.</b> एक वृत्त का व्यास 30 cm है। उसकी त्रिज्या ज्ञात कीजिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 6.</b> P से PA और PB दो स्पर्श रेखाएँ खींची गई हैं।
+यदि PA = 15 cm है, तो PB ज्ञात कीजिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 7.</b> वृत्त के अंदर स्थित किसी बिंदु से कितनी स्पर्श रेखाएँ
+खींची जा सकती हैं?
+</div>
+
+<div class="question">
+<b>प्रश्न 8.</b> स्पर्श बिंदु पर त्रिज्या स्पर्श रेखा पर लंब क्यों होती है?
+</div>
+
+</div>
+
+
+<div class="section">
+<h2>15. Quick Revision – त्वरित दोहराव</h2>
+
+<div class="formula">
+
+<b>वृत्त:</b> एक निश्चित बिंदु से समान दूरी पर स्थित सभी बिंदुओं का समूह।
+
+<br><br>
+
+<b>त्रिज्या:</b> केंद्र से वृत्त के किसी बिंदु तक की दूरी।
+
+<br><br>
+
+<b>व्यास:</b> केंद्र से गुजरने वाली जीवा।
+
+<br><br>
+
+<b>स्पर्श रेखा:</b> वृत्त को केवल एक बिंदु पर छूने वाली रेखा।
+
+<br><br>
+
+<b>छेदक:</b> वृत्त को दो बिंदुओं पर काटने वाली रेखा।
+
+<br><br>
+
+<b>मुख्य प्रमेय:</b><br>
+त्रिज्या ⟂ स्पर्श रेखा
+
+<br><br>
+
+<b>समान स्पर्श रेखा प्रमेय:</b><br>
+PA = PB
+
+<br><br>
+
+<b>स्पर्श रेखाओं की संख्या:</b><br>
+अंदर = 0 | वृत्त पर = 1 | बाहर = 2
+
+</div>
+
+</div>
+
+
+<div class="section">
+<h2>16. बोर्ड परीक्षा की तैयारी</h2>
+
+<p>
+Circles अध्याय में इन topics पर विशेष ध्यान दें:
+</p>
+
+<ul>
+<li>स्पर्श रेखा और छेदक की परिभाषा</li>
+<li>त्रिज्या और व्यास</li>
+<li>स्पर्श रेखा-त्रिज्या प्रमेय</li>
+<li>समान स्पर्श रेखाओं का प्रमेय</li>
+<li>प्रमेय के प्रमाण</li>
+<li>PA = PB वाले प्रश्न</li>
+<li>90° वाले प्रश्न</li>
+<li>बाहरी बिंदु से स्पर्श रेखाओं की संख्या</li>
+</ul>
+
+<div class="note">
+<b>Exam Tip:</b><br>
+प्रमेय वाले प्रश्नों में साफ diagram बनाइए, Given लिखिए,
+उचित theorem लगाइए और अंत में स्पष्ट result लिखिए।
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<footer>
+<p><b>Golu Coaching Center</b></p>
+<p>Class 10 Mathematics – Chapter 10: Circles</p>
+<p>© 2026 Golu Coaching Center</p>
+</footer>
+
+
+<script>
+
+function showHindi(){
+
+    document.getElementById("english").style.display = "none";
+    document.getElementById("hindi").style.display = "block";
+
+}
+
+function showEnglish(){
+
+    document.getElementById("hindi").style.display = "none";
+    document.getElementById("english").style.display = "block";
+
+}
+
+</script>
+
+</body>
+</html>
+

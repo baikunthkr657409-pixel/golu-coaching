@@ -1,0 +1,438 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Polynomials | Golu Coaching</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f7fb;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        /* HEADER */
+        header {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            text-align: center;
+            padding: 30px 15px;
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 32px;
+        }
+
+        header p {
+            margin-top: 5px;
+        }
+
+        /* LANGUAGE BUTTONS */
+        .language {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            display: flex;
+            gap: 5px;
+        }
+
+        .language button {
+            border: none;
+            padding: 7px 11px;
+            border-radius: 20px;
+            cursor: pointer;
+            background: white;
+            color: #1e3c72;
+            font-weight: bold;
+        }
+
+        .language button.active {
+            background: #ffd54f;
+            color: #222;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 30px auto;
+        }
+
+        .back {
+            display: inline-block;
+            text-decoration: none;
+            background: #1e3c72;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+        }
+
+        .back:hover {
+            background: #16305d;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            margin-bottom: 22px;
+            border-radius: 14px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .card h2 {
+            color: #1e3c72;
+            margin-bottom: 12px;
+        }
+
+        .card h3 {
+            color: #2a5298;
+            margin-top: 18px;
+            margin-bottom: 8px;
+        }
+
+        ul, ol {
+            padding-left: 25px;
+        }
+
+        li {
+            margin: 7px 0;
+        }
+
+        .formula {
+            background: #eef4ff;
+            padding: 15px;
+            border-left: 5px solid #2a5298;
+            border-radius: 8px;
+            margin-top: 12px;
+            font-weight: bold;
+        }
+
+        .important {
+            background: #fff8e1;
+            border-left: 5px solid #f4b400;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+
+        footer {
+            background: #1e3c72;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding-top: 65px;
+            }
+
+            header h1 {
+                font-size: 26px;
+            }
+
+            .language {
+                top: 12px;
+                right: 10px;
+            }
+
+            .container {
+                width: 94%;
+            }
+
+            .card {
+                padding: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <!-- LANGUAGE SWITCHER -->
+    <div class="language">
+        <button id="hiBtn" onclick="setLanguage('hi')">हिन्दी</button>
+        <button id="enBtn" class="active" onclick="setLanguage('en')">English</button>
+    </div>
+
+    <h1 id="pageTitle">Chapter 2 – Polynomials</h1>
+    <p id="pageSubtitle">Class 10 Mathematics | Golu Coaching</p>
+
+</header>
+
+<div class="container">
+
+    <a href="class10.html" class="back" id="backBtn">
+        ← Back to Class 10
+    </a>
+
+    <!-- INTRODUCTION -->
+    <div class="card">
+        <h2 id="introTitle">📘 Chapter Introduction</h2>
+
+        <p id="introText">
+            In this chapter, we will learn about polynomials, their zeroes,
+            and the relationship between zeroes and coefficients.
+        </p>
+    </div>
+
+    <!-- MAIN TOPICS -->
+    <div class="card">
+        <h2 id="topicsTitle">📚 Main Topics</h2>
+
+        <ul id="topicsList">
+            <li>What is a Polynomial?</li>
+            <li>Types of Polynomials</li>
+            <li>Zeroes of a Polynomial</li>
+            <li>Geometrical Meaning of Zeroes</li>
+            <li>Relationship Between Zeroes and Coefficients</li>
+            <li>Quadratic Polynomial</li>
+            <li>Cubic Polynomial</li>
+            <li>Division Algorithm for Polynomials</li>
+        </ul>
+    </div>
+
+    <!-- FORMULAS -->
+    <div class="card">
+        <h2 id="formulaTitle">🧮 Important Formulas</h2>
+
+        <h3 id="quadraticTitle">Quadratic Polynomial</h3>
+
+        <div class="formula">
+            For ax² + bx + c:<br><br>
+            <span id="sumText">Sum of zeroes = -b/a</span><br>
+            <span id="productText">Product of zeroes = c/a</span>
+        </div>
+
+        <h3 id="cubicTitle">Cubic Polynomial</h3>
+
+        <div class="formula">
+            For ax³ + bx² + cx + d:<br><br>
+            <span id="cubicSumText">Sum of zeroes = -b/a</span>
+        </div>
+    </div>
+
+    <!-- EXAMPLE -->
+    <div class="card">
+        <h2 id="exampleTitle">✏️ Example</h2>
+
+        <p id="exampleQuestion">
+            Find the zeroes of:
+        </p>
+
+        <div class="formula">
+            x² - 5x + 6
+        </div>
+
+        <p id="factorText" style="margin-top:15px;">
+            Factorisation:
+        </p>
+
+        <div class="formula">
+            x² - 5x + 6 = (x - 2)(x - 3)
+        </div>
+
+        <p id="answerText" style="margin-top:15px;">
+            Therefore, the zeroes are:
+        </p>
+
+        <div class="formula">
+            x = 2 and x = 3
+        </div>
+    </div>
+
+    <!-- IMPORTANT -->
+    <div class="card">
+        <h2 id="importantTitle">🎯 Exam Important Points</h2>
+
+        <div class="important" id="point1">
+            ⭐ Zeroes of a polynomial are the values of x for which p(x) = 0.
+        </div>
+
+        <div class="important" id="point2">
+            ⭐ A quadratic polynomial has at most two zeroes.
+        </div>
+
+        <div class="important" id="point3">
+            ⭐ A cubic polynomial has at most three zeroes.
+        </div>
+
+        <div class="important" id="point4">
+            ⭐ Questions based on the relationship between zeroes and
+            coefficients are important for exams.
+        </div>
+    </div>
+
+    <!-- PRACTICE -->
+    <div class="card">
+        <h2 id="practiceTitle">📝 Practice Questions</h2>
+
+        <ol id="practiceList">
+            <li>Find the zeroes of x² - 7x + 12.</li>
+            <li>Find the sum and product of zeroes of 2x² - 5x + 3.</li>
+            <li>Find a quadratic polynomial whose zeroes are 3 and -2.</li>
+            <li>Find the zeroes of x² - 9.</li>
+            <li>Verify the relationship between zeroes and coefficients.</li>
+        </ol>
+    </div>
+
+    <!-- NEXT STEP -->
+    <div class="card">
+        <h2 id="nextTitle">🚀 Next Step</h2>
+
+        <p id="nextText">
+            After understanding the chapter, solve the examples and
+            practice questions regularly.
+        </p>
+
+        <div class="important" id="tipText">
+            💡 Regular practice helps build confidence in Mathematics.
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p id="footerText">
+        © 2026 Golu Coaching | Class 10 Mathematics
+    </p>
+</footer>
+
+
+<script>
+
+function setLanguage(language) {
+
+    const hiBtn = document.getElementById("hiBtn");
+    const enBtn = document.getElementById("enBtn");
+
+    if (language === "hi") {
+
+        document.documentElement.lang = "hi";
+
+        hiBtn.classList.add("active");
+        enBtn.classList.remove("active");
+
+        document.getElementById("pageTitle").innerText =
+            "अध्याय 2 – बहुपद";
+
+        document.getElementById("pageSubtitle").innerText =
+            "कक्षा 10 गणित | Golu Coaching";
+
+        document.getElementById("backBtn").innerText =
+            "← कक्षा 10 पर वापस जाएँ";
+
+        document.getElementById("introTitle").innerText =
+            "📘 अध्याय परिचय";
+
+        document.getElementById("introText").innerText =
+            "इस अध्याय में हम बहुपद, उसके शून्यक तथा शून्यकों और गुणांकों के बीच संबंध के बारे में सीखेंगे।";
+
+        document.getElementById("topicsTitle").innerText =
+            "📚 मुख्य विषय";
+
+        document.getElementById("topicsList").innerHTML = `
+            <li>बहुपद क्या है?</li>
+            <li>बहुपद के प्रकार</li>
+            <li>बहुपद के शून्यक</li>
+            <li>शून्यकों का ज्यामितीय अर्थ</li>
+            <li>शून्यकों और गुणांकों के बीच संबंध</li>
+            <li>द्विघात बहुपद</li>
+            <li>घन बहुपद</li>
+            <li>बहुपदों के लिए विभाजन एल्गोरिथ्म</li>
+        `;
+
+        document.getElementById("formulaTitle").innerText =
+            "🧮 महत्वपूर्ण सूत्र";
+
+        document.getElementById("quadraticTitle").innerText =
+            "द्विघात बहुपद";
+
+        document.getElementById("sumText").innerText =
+            "शून्यकों का योग = -b/a";
+
+        document.getElementById("productText").innerText =
+            "शून्यकों का गुणनफल = c/a";
+
+        document.getElementById("cubicTitle").innerText =
+            "घन बहुपद";
+
+        document.getElementById("cubicSumText").innerText =
+            "शून्यकों का योग = -b/a";
+
+        document.getElementById("exampleTitle").innerText =
+            "✏️ उदाहरण";
+
+        document.getElementById("exampleQuestion").innerText =
+            "इसके शून्यक ज्ञात कीजिए:";
+
+        document.getElementById("factorText").innerText =
+            "गुणनखंड:";
+
+        document.getElementById("answerText").innerText =
+            "अतः शून्यक हैं:";
+
+        document.getElementById("importantTitle").innerText =
+            "🎯 परीक्षा के लिए महत्वपूर्ण बातें";
+
+        document.getElementById("point1").innerText =
+            "⭐ बहुपद के शून्यक वे मान हैं जिनके लिए p(x) = 0 होता है।";
+
+        document.getElementById("point2").innerText =
+            "⭐ द्विघात बहुपद के अधिकतम दो शून्यक हो सकते हैं।";
+
+        document.getElementById("point3").innerText =
+            "⭐ घन बहुपद के अधिकतम तीन शून्यक हो सकते हैं।";
+
+        document.getElementById("point4").innerText =
+            "⭐ शून्यकों और गुणांकों के बीच संबंध पर आधारित प्रश्न परीक्षा के लिए महत्वपूर्ण हैं।";
+
+        document.getElementById("practiceTitle").innerText =
+            "📝 अभ्यास प्रश्न";
+
+        document.getElementById("practiceList").innerHTML = `
+            <li>x² - 7x + 12 के शून्यक ज्ञात कीजिए।</li>
+            <li>2x² - 5x + 3 के शून्यकों का योग और गुणनफल ज्ञात कीजिए।</li>
+            <li>ऐसा द्विघात बहुपद ज्ञात कीजिए जिसके शून्यक 3 और -2 हैं।</li>
+            <li>x² - 9 के शून्यक ज्ञात कीजिए।</li>
+            <li>शून्यकों और गुणांकों के बीच संबंध सत्यापित कीजिए।</li>
+        `;
+
+        document.getElementById("nextTitle").innerText =
+            "🚀 अगला कदम";
+
+        document.getElementById("nextText").innerText =
+            "अध्याय समझने के बाद उदाहरण और अभ्यास प्रश्न नियमित रूप से हल करें।";
+
+        document.getElementById("tipText").innerText =
+            "💡 नियमित अभ्यास से गणित में आत्मविश्वास बढ़ता है।";
+
+        document.getElementById("footerText").innerText =
+            "© 2026 Golu Coaching | कक्षा 10 गणित";
+
+    } else {
+
+        location.reload();
+
+    }
+}
+
+</script>
+
+</body>
+</html>
+

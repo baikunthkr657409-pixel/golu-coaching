@@ -1,0 +1,720 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Class 10 Science | Golu Coaching Center</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f7fb;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: white;
+      text-align: center;
+      padding: 30px 15px;
+      position: relative;
+    }
+
+    header h1 {
+      font-size: 34px;
+      margin-bottom: 5px;
+    }
+
+    header p {
+      font-size: 17px;
+    }
+
+    .language {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+    }
+
+    .language button {
+      border: none;
+      background: white;
+      color: #1e3c72;
+      padding: 8px 13px;
+      border-radius: 6px;
+      margin-left: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .language button:hover {
+      background: #e8f0ff;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 0 15px;
+    }
+
+    .back {
+      display: inline-block;
+      text-decoration: none;
+      background: #1e3c72;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 7px;
+      margin-bottom: 25px;
+      font-weight: bold;
+    }
+
+    .back:hover {
+      background: #16315d;
+    }
+
+    .intro {
+      background: white;
+      padding: 25px;
+      border-radius: 14px;
+      margin-bottom: 25px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .intro h2 {
+      color: #1e3c72;
+      margin-bottom: 10px;
+    }
+
+    .chapters {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .chapter {
+      background: white;
+      padding: 22px;
+      border-radius: 14px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .chapter:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.13);
+    }
+
+    .chapter-number {
+      display: inline-block;
+      background: #1e3c72;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+
+    .chapter h3 {
+      color: #1e3c72;
+      margin-bottom: 8px;
+      font-size: 21px;
+    }
+
+    .chapter p {
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .view-btn {
+      display: inline-block;
+      text-decoration: none;
+      background: #2a5298;
+      color: white;
+      padding: 9px 15px;
+      border-radius: 7px;
+      font-weight: bold;
+      transition: 0.2s;
+    }
+
+    .view-btn:hover {
+      background: #1e3c72;
+    }
+
+    .hindi {
+      display: none;
+    }
+
+    footer {
+      background: #1e3c72;
+      color: white;
+      text-align: center;
+      padding: 22px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 700px) {
+
+      header h1 {
+        font-size: 27px;
+      }
+
+      .language {
+        position: static;
+        margin-bottom: 10px;
+      }
+
+      .chapters {
+        grid-template-columns: 1fr;
+      }
+
+      .chapter {
+        padding: 19px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+
+  <div class="language">
+    <button onclick="showHindi()">हिन्दी</button>
+    <button onclick="showEnglish()">English</button>
+  </div>
+
+  <h1>Class 10 Science</h1>
+  <p>Golu Coaching Center | Complete Chapter-wise Topics</p>
+
+</header>
+
+
+<div class="container">
+
+  <a href="index.html" class="back">← Back to Home</a>
+
+
+  <!-- ================= ENGLISH ================= -->
+
+  <div id="english">
+
+    <div class="intro">
+      <h2>🔬 Class 10 Science</h2>
+
+      <p>
+        Complete chapter-wise Science notes, important concepts,
+        diagrams, reactions, formulas, MCQs and practice questions.
+      </p>
+    </div>
+
+
+    <div class="chapters">
+
+      <!-- Chapter 1 -->
+      <div class="chapter">
+        <span class="chapter-number">Chapter 1</span>
+
+        <h3>🧪 Chemical Reactions and Equations</h3>
+
+        <p>
+          Chemical reactions, balancing equations, types of reactions,
+          oxidation and reduction.
+        </p>
+
+        <a href="chemical-reactions-and-equations.html" class="view-btn">
+          View Topics →
+        </a>
+      </div>
+
+
+      <!-- Chapter 2 -->
+      <div class="chapter">
+        <span class="chapter-number">Chapter 2</span>
+
+        <h3>⚗️ Acids, Bases and Salts</h3>
+
+        <p>
+          Properties of acids and bases, indicators, pH scale,
+          salts and their uses.
+        </p>
+
+        <a href="acids-bases-and-salts.html" class="view-btn">
+          View Topics →
+        </a>
+      </div>
+
+
+      <!-- Chapter 3 -->
+      <div class="chapter">
+        <span class="chapter-number">Chapter 3</span>
+
+        <h3>🔩 Metals and Non-metals</h3>
+
+        <p>
+          Physical and chemical properties, reactivity series,
+          ionic compounds, extraction and corrosion.
+        </p>
+
+        <a href="metals-and-non-metals.html" class="view-btn">
+          View Topics →
+        </a>
+      </div>
+
+
+      <!-- Chapter 4 -->
+      <div class="chapter">
+        <span class="chapter-number">Chapter 4</span>
+
+        <h3>🧬 Carbon and Its Compounds</h3>
+
+        <p>
+          Carbon bonding, hydrocarbons, functional groups,
+          chemical properties and soaps and detergents.
+        </p>
+
+        <a href="carbon-and-its-compounds.html" class="view-btn">
+          View Topics →
+        </a>
+      </div>
+
+
+      <!-- Chapter 5 -->
+      <div class="chapter">
+        <span class="chapter-number">Chapter 5</span>
+
+        <h3>🌱 Life Processes</h3>
+
+        <p>
+          Nutrition, respiration, transportation and excretion
+          in living organisms.
+        </p>
+
+        <a href="life-processes.html" class="view-btn">
+          View Topics →
+        </a>
+      </div>
+
+
+      <!-- Chapter 6 -->
+      <div class="chapter">
+        <span class="chapter-number">Chapter 6</span>
+
+        <h3>🧠 Control and Coordination</h3>
+
+        <p>
+          Nervous system, brain, hormones, reflex action,
+          plants and coordination.
+        </p>
+
+        <a href="control-and-coordination.html" class="view-btn">
+          View Topics →
+        </a>
+      </div>
+
+
+      <!-- Chapter 7 -->
+      <div class="chapter">
+        <span class="chapter-number">Chapter 7</span>
+
+        <h3>🌸 How do Organisms Reproduce?</h3>
+
+        <p>
+          Reproduction in plants and animals, asexual and sexual
+          reproduction.
+        </p>
+
+        <a href="how-do-organisms-reproduce.html" class="view-btn">
+          View Topics →
+        </a>
+      </div>
+
+
+      <!-- Chapter 8 -->
+      <div class="chapter">
+        <span class="chapter-number">Chapter 8</span>
+
+        <h3>🧬 Heredity</h3>
+
+        <p>
+          Heredity, Mendel's experiments, traits, genes,
+          chromosomes and evolution.
+        </p>
+
+        <a href="heredity.html" class="view-btn">
+          View Topics →
+        </a>
+      </div>
+
+
+      <!-- Chapter 9 -->
+      <div class="chapter">
+        <span class="chapter-number">Chapter 9</span>
+
+        <h3>💡 Light – Reflection and Refraction</h3>
+
+        <p>
+          Reflection, refraction, mirrors, lenses, ray diagrams
+          and numerical problems.
+        </p>
+
+        <a href="light-reflection-and-refraction.html" class="view-btn">
+          View Topics →
+        </a>
+      </div>
+
+
+      <!-- Chapter 10 -->
+      <div class="chapter">
+        <span class="chapter-number">Chapter 10</span>
+
+        <h3>👁️ Human Eye and the Colourful World</h3>
+
+        <p>
+          Human eye, defects of vision, correction, dispersion
+          and atmospheric phenomena.
+        </p>
+
+        <a href="human-eye-and-colourful-world.html" class="view-btn">
+          View Topics →
+        </a>
+      </div>
+
+
+      <!-- Chapter 11 -->
+      <div class="chapter">
+        <span class="chapter-number">Chapter 11</span>
+
+        <h3>⚡ Electricity</h3>
+
+        <p>
+          Electric current, potential difference, resistance,
+          Ohm's law, circuits, power and energy.
+        </p>
+
+        <a href="electricity.html" class="view-btn">
+          View Topics →
+        </a>
+      </div>
+
+
+      <!-- Chapter 12 -->
+      <div class="chapter">
+        <span class="chapter-number">Chapter 12</span>
+
+        <h3>🧲 Magnetic Effects of Electric Current</h3>
+
+        <p>
+          Magnetic field, field lines, electromagnet, Fleming's
+          rules, electric motor and generator.
+        </p>
+
+        <a href="magnetic-effects-of-electric-current.html" class="view-btn">
+          View Topics →
+        </a>
+      </div>
+
+
+      <!-- Chapter 13 -->
+      <div class="chapter">
+        <span class="chapter-number">Chapter 13</span>
+
+        <h3>🌍 Our Environment</h3>
+
+        <p>
+          Ecosystem, food chains, food webs, biodegradable and
+          non-biodegradable substances.
+        </p>
+
+        <a href="our-environment.html" class="view-btn">
+          View Topics →
+        </a>
+      </div>
+
+
+      <!-- Chapter 14 -->
+      <div class="chapter">
+        <span class="chapter-number">Chapter 14</span>
+
+        <h3>🌳 Sustainable Management of Natural Resources</h3>
+
+        <p>
+          Natural resources, forests, wildlife, water management,
+          coal and petroleum conservation.
+        </p>
+
+        <a href="sustainable-management-of-natural-resources.html" class="view-btn">
+          View Topics →
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- ================= HINDI ================= -->
+
+  <div id="hindi" class="hindi">
+
+    <div class="intro">
+      <h2>🔬 कक्षा 10 विज्ञान</h2>
+
+      <p>
+        अध्यायवार Science Notes, महत्वपूर्ण Concepts, Diagrams,
+        Reactions, MCQs और Practice Questions।
+      </p>
+    </div>
+
+
+    <div class="chapters">
+
+      <div class="chapter">
+        <span class="chapter-number">अध्याय 1</span>
+
+        <h3>🧪 रासायनिक अभिक्रियाएँ एवं समीकरण</h3>
+
+        <p>
+          रासायनिक अभिक्रियाएँ, समीकरणों का संतुलन और अभिक्रियाओं के प्रकार।
+        </p>
+
+        <a href="chemical-reactions-and-equations.html" class="view-btn">
+          Topics देखें →
+        </a>
+      </div>
+
+
+      <div class="chapter">
+        <span class="chapter-number">अध्याय 2</span>
+
+        <h3>⚗️ अम्ल, क्षार एवं लवण</h3>
+
+        <p>
+          अम्ल और क्षार के गुण, Indicators, pH scale और लवण।
+        </p>
+
+        <a href="acids-bases-and-salts.html" class="view-btn">
+          Topics देखें →
+        </a>
+      </div>
+
+
+      <div class="chapter">
+        <span class="chapter-number">अध्याय 3</span>
+
+        <h3>🔩 धातु एवं अधातु</h3>
+
+        <p>
+          भौतिक एवं रासायनिक गुण, Reactivity Series, Ionic Compounds,
+          Extraction और Corrosion।
+        </p>
+
+        <a href="metals-and-non-metals.html" class="view-btn">
+          Topics देखें →
+        </a>
+      </div>
+
+
+      <div class="chapter">
+        <span class="chapter-number">अध्याय 4</span>
+
+        <h3>🧬 कार्बन एवं उसके यौगिक</h3>
+
+        <p>
+          Carbon bonding, Hydrocarbons, Functional Groups और
+          Soap तथा Detergent।
+        </p>
+
+        <a href="carbon-and-its-compounds.html" class="view-btn">
+          Topics देखें →
+        </a>
+      </div>
+
+
+      <div class="chapter">
+        <span class="chapter-number">अध्याय 5</span>
+
+        <h3>🌱 जैव प्रक्रम</h3>
+
+        <p>
+          पोषण, श्वसन, परिवहन और उत्सर्जन।
+        </p>
+
+        <a href="life-processes.html" class="view-btn">
+          Topics देखें →
+        </a>
+      </div>
+
+
+      <div class="chapter">
+        <span class="chapter-number">अध्याय 6</span>
+
+        <h3>🧠 नियंत्रण एवं समन्वय</h3>
+
+        <p>
+          Nervous System, Brain, Hormones और Reflex Action।
+        </p>
+
+        <a href="control-and-coordination.html" class="view-btn">
+          Topics देखें →
+        </a>
+      </div>
+
+
+      <div class="chapter">
+        <span class="chapter-number">अध्याय 7</span>
+
+        <h3>🌸 जीव जनन कैसे करते हैं?</h3>
+
+        <p>
+          अलैंगिक और लैंगिक जनन तथा पौधों एवं जीवों में जनन।
+        </p>
+
+        <a href="how-do-organisms-reproduce.html" class="view-btn">
+          Topics देखें →
+        </a>
+      </div>
+
+
+      <div class="chapter">
+        <span class="chapter-number">अध्याय 8</span>
+
+        <h3>🧬 आनुवंशिकता</h3>
+
+        <p>
+          Heredity, Mendel के प्रयोग, Genes, Traits और Evolution।
+        </p>
+
+        <a href="heredity.html" class="view-btn">
+          Topics देखें →
+        </a>
+      </div>
+
+
+      <div class="chapter">
+        <span class="chapter-number">अध्याय 9</span>
+
+        <h3>💡 प्रकाश – परावर्तन तथा अपवर्तन</h3>
+
+        <p>
+          Reflection, Refraction, Mirrors, Lenses और Ray Diagrams।
+        </p>
+
+        <a href="light-reflection-and-refraction.html" class="view-btn">
+          Topics देखें →
+        </a>
+      </div>
+
+
+      <div class="chapter">
+        <span class="chapter-number">अध्याय 10</span>
+
+        <h3>👁️ मानव नेत्र तथा रंगीन संसार</h3>
+
+        <p>
+          मानव नेत्र, दृष्टि दोष, उनका सुधार, Dispersion और
+          Atmospheric Phenomena।
+        </p>
+
+        <a href="human-eye-and-colourful-world.html" class="view-btn">
+          Topics देखें →
+        </a>
+      </div>
+
+
+      <div class="chapter">
+        <span class="chapter-number">अध्याय 11</span>
+
+        <h3>⚡ विद्युत</h3>
+
+        <p>
+          विद्युत धारा, विभवांतर, प्रतिरोध, Ohm's Law और Electric Power।
+        </p>
+
+        <a href="electricity.html" class="view-btn">
+          Topics देखें →
+        </a>
+      </div>
+
+
+      <div class="chapter">
+        <span class="chapter-number">अध्याय 12</span>
+
+        <h3>🧲 विद्युत धारा के चुंबकीय प्रभाव</h3>
+
+        <p>
+          Magnetic Field, Electromagnet, Fleming Rules, Motor और Generator।
+        </p>
+
+        <a href="magnetic-effects-of-electric-current.html" class="view-btn">
+          Topics देखें →
+        </a>
+      </div>
+
+
+      <div class="chapter">
+        <span class="chapter-number">अध्याय 13</span>
+
+        <h3>🌍 हमारा पर्यावरण</h3>
+
+        <p>
+          Ecosystem, Food Chain, Food Web और Biodegradable पदार्थ।
+        </p>
+
+        <a href="our-environment.html" class="view-btn">
+          Topics देखें →
+        </a>
+      </div>
+
+
+      <div class="chapter">
+        <span class="chapter-number">अध्याय 14</span>
+
+        <h3>🌳 प्राकृतिक संसाधनों का प्रबंधन</h3>
+
+        <p>
+          वन, वन्यजीव, जल प्रबंधन, कोयला, पेट्रोलियम और संरक्षण।
+        </p>
+
+        <a href="sustainable-management-of-natural-resources.html" class="view-btn">
+          Topics देखें →
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<footer>
+  <p>© 2026 Golu Coaching Center | Class 10 Science</p>
+</footer>
+
+
+<script>
+
+  function showHindi() {
+    document.getElementById("english").style.display = "none";
+    document.getElementById("hindi").style.display = "block";
+  }
+
+  function showEnglish() {
+    document.getElementById("english").style.display = "block";
+    document.getElementById("hindi").style.display = "none";
+  }
+
+</script>
+
+</body>
+</html>
+

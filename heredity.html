@@ -1,0 +1,623 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Heredity - Golu Coaching</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f4f7fb;
+    color:#222;
+    line-height:1.7;
+}
+
+header{
+    background:#123b6d;
+    color:white;
+    padding:22px 15px;
+    text-align:center;
+}
+
+header h1{
+    font-size:32px;
+}
+
+header p{
+    margin-top:5px;
+    font-size:16px;
+}
+
+nav{
+    background:#0b294d;
+    padding:12px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 12px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#ffd54f;
+}
+
+.container{
+    width:92%;
+    max-width:1000px;
+    margin:25px auto;
+}
+
+.chapter-title{
+    background:white;
+    padding:22px;
+    border-radius:14px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.chapter-title h2{
+    color:#123b6d;
+    font-size:28px;
+}
+
+/* LANGUAGE OPTION */
+.language-box{
+    text-align:center;
+    margin:18px 0;
+}
+
+.language-box button{
+    border:none;
+    padding:10px 22px;
+    margin:4px;
+    border-radius:25px;
+    background:#e3eaf3;
+    color:#123b6d;
+    font-size:15px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.language-box button.active{
+    background:#123b6d;
+    color:white;
+}
+
+.card{
+    background:white;
+    padding:22px;
+    margin-bottom:18px;
+    border-radius:14px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.07);
+}
+
+.card h3{
+    color:#123b6d;
+    margin-bottom:10px;
+}
+
+.objective{
+    background:#f8fafc;
+    padding:14px;
+    margin:10px 0;
+    border-left:4px solid #123b6d;
+    border-radius:6px;
+}
+
+.answer{
+    color:#137333;
+    font-weight:bold;
+}
+
+.back-btn{
+    display:block;
+    width:max-content;
+    margin:25px auto;
+    padding:12px 25px;
+    background:#123b6d;
+    color:white;
+    text-decoration:none;
+    border-radius:25px;
+    font-weight:bold;
+}
+
+.back-btn:hover{
+    background:#0b294d;
+}
+
+footer{
+    background:#0b294d;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:35px;
+}
+
+@media(max-width:600px){
+
+    header h1{
+        font-size:26px;
+    }
+
+    nav a{
+        display:inline-block;
+        margin:5px 7px;
+        font-size:14px;
+    }
+
+    .chapter-title h2{
+        font-size:23px;
+    }
+
+    .container{
+        width:94%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Golu Coaching</h1>
+    <p id="headerSubtitle">Class 10 Science • Heredity</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="courses.html">Courses</a>
+    <a href="class10.html">Class 10</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+
+    <!-- CHAPTER TITLE -->
+    <div class="chapter-title">
+        <h2 id="chapterHeading">
+            Heredity / आनुवंशिकता
+        </h2>
+
+        <!-- LANGUAGE OPTION IS HERE -->
+        <div class="language-box">
+            <button id="englishBtn" class="active" onclick="showEnglish()">
+                English
+            </button>
+
+            <button id="hindiBtn" onclick="showHindi()">
+                🌐 हिंदी
+            </button>
+        </div>
+    </div>
+
+
+    <!-- ================= ENGLISH ================= -->
+
+    <div id="englishContent">
+
+        <div class="card">
+            <h3>1. Heredity</h3>
+            <p>
+                Heredity is the transmission of characteristics from parents
+                to their offspring. These characteristics are transferred
+                through genes.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>2. Variation</h3>
+            <p>
+                Variation means the differences in characteristics among
+                individuals of the same species. Variations help organisms
+                survive changing environmental conditions.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>3. Genes</h3>
+            <p>
+                Genes are the basic units of heredity. They are segments of DNA
+                that contain information for particular characteristics.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>4. DNA</h3>
+            <p>
+                DNA stands for Deoxyribonucleic Acid. It carries genetic
+                information from one generation to the next.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>5. Mendel's Experiment</h3>
+            <p>
+                Gregor Johann Mendel performed experiments on pea plants to
+                understand how characteristics are inherited from parents.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>6. Dominant and Recessive Traits</h3>
+            <p>
+                A dominant trait expresses itself even when only one copy of
+                the gene is present. A recessive trait generally expresses
+                itself when both copies are recessive.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>7. Sex Determination in Humans</h3>
+            <p>
+                In humans, females generally have XX chromosomes and males
+                generally have XY chromosomes. The sperm determines whether
+                the child receives an X or Y chromosome from the father.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>8. Heredity and Evolution</h3>
+            <p>
+                Variations produced during reproduction can contribute to
+                changes in populations over generations. Heredity passes
+                these variations to the next generation.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>20 Objective Questions</h3>
+
+            <div class="objective">
+                1. What is the basic unit of heredity?
+                <div class="answer">Answer: Gene</div>
+            </div>
+
+            <div class="objective">
+                2. Who performed experiments on pea plants?
+                <div class="answer">Answer: Gregor Mendel</div>
+            </div>
+
+            <div class="objective">
+                3. What carries genetic information?
+                <div class="answer">Answer: DNA</div>
+            </div>
+
+            <div class="objective">
+                4. What does heredity mean?
+                <div class="answer">Answer: Transmission of characteristics from parents to offspring</div>
+            </div>
+
+            <div class="objective">
+                5. What is variation?
+                <div class="answer">Answer: Difference in characteristics among individuals</div>
+            </div>
+
+            <div class="objective">
+                6. What is the full form of DNA?
+                <div class="answer">Answer: Deoxyribonucleic Acid</div>
+            </div>
+
+            <div class="objective">
+                7. Which organism did Mendel use?
+                <div class="answer">Answer: Pea plant</div>
+            </div>
+
+            <div class="objective">
+                8. What is a dominant trait?
+                <div class="answer">Answer: A trait that expresses itself in a heterozygous condition</div>
+            </div>
+
+            <div class="objective">
+                9. What is a recessive trait?
+                <div class="answer">Answer: A trait that is masked by a dominant trait</div>
+            </div>
+
+            <div class="objective">
+                10. How many chromosomes are generally present in human body cells?
+                <div class="answer">Answer: 46</div>
+            </div>
+
+            <div class="objective">
+                11. How many pairs of chromosomes are present in humans?
+                <div class="answer">Answer: 23 pairs</div>
+            </div>
+
+            <div class="objective">
+                12. What are the sex chromosomes of a human female?
+                <div class="answer">Answer: XX</div>
+            </div>
+
+            <div class="objective">
+                13. What are the sex chromosomes of a human male?
+                <div class="answer">Answer: XY</div>
+            </div>
+
+            <div class="objective">
+                14. Which chromosome is present in all human eggs?
+                <div class="answer">Answer: X chromosome</div>
+            </div>
+
+            <div class="objective">
+                15. Which chromosomes can be present in human sperm?
+                <div class="answer">Answer: X or Y</div>
+            </div>
+
+            <div class="objective">
+                16. What is the role of genes?
+                <div class="answer">Answer: They carry information for characteristics</div>
+            </div>
+
+            <div class="objective">
+                17. What can variations help organisms with?
+                <div class="answer">Answer: Survival in changing environments</div>
+            </div>
+
+            <div class="objective">
+                18. Where are genes located?
+                <div class="answer">Answer: On chromosomes</div>
+            </div>
+
+            <div class="objective">
+                19. What is the genetic material in most organisms?
+                <div class="answer">Answer: DNA</div>
+            </div>
+
+            <div class="objective">
+                20. What process passes characteristics from parents to offspring?
+                <div class="answer">Answer: Heredity</div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= HINDI ================= -->
+
+    <div id="hindiContent" style="display:none;">
+
+        <div class="card">
+            <h3>1. आनुवंशिकता</h3>
+            <p>
+                माता-पिता से उनकी संतानों में लक्षणों का स्थानांतरण
+                आनुवंशिकता कहलाता है। ये लक्षण जीन के माध्यम से स्थानांतरित
+                होते हैं।
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>2. विभिन्नता</h3>
+            <p>
+                एक ही प्रजाति के अलग-अलग जीवों के लक्षणों में पाए जाने वाले
+                अंतर को विभिन्नता कहते हैं।
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>3. जीन</h3>
+            <p>
+                जीन आनुवंशिकता की मूल इकाई है। यह DNA का एक भाग होता है,
+                जिसमें किसी विशेष लक्षण की जानकारी होती है।
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>4. DNA</h3>
+            <p>
+                DNA का पूरा नाम डीऑक्सीराइबोन्यूक्लिक अम्ल है। यह आनुवंशिक
+                जानकारी को एक पीढ़ी से दूसरी पीढ़ी तक पहुँचाता है।
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>5. मेंडल का प्रयोग</h3>
+            <p>
+                ग्रेगर जॉन मेंडल ने मटर के पौधों पर प्रयोग करके यह समझने का
+                प्रयास किया कि लक्षण माता-पिता से संतानों में कैसे जाते हैं।
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>6. प्रभावी और अप्रभावी लक्षण</h3>
+            <p>
+                जो लक्षण एक ही प्रति में उपस्थित होने पर भी दिखाई देता है,
+                उसे प्रभावी लक्षण कहते हैं। अप्रभावी लक्षण सामान्यतः तब
+                दिखाई देता है जब दोनों जीन अप्रभावी हों।
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>7. मनुष्य में लिंग निर्धारण</h3>
+            <p>
+                मनुष्य में स्त्री के लिंग गुणसूत्र सामान्यतः XX और पुरुष के
+                सामान्यतः XY होते हैं। पिता से मिलने वाला X या Y गुणसूत्र
+                बच्चे के लिंग निर्धारण में भूमिका निभाता है।
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>8. आनुवंशिकता और विकास</h3>
+            <p>
+                प्रजनन के दौरान उत्पन्न विभिन्नताएँ पीढ़ियों के साथ जीवों की
+                जनसंख्या में परिवर्तन ला सकती हैं। आनुवंशिकता इन विभिन्नताओं
+                को अगली पीढ़ी तक पहुँचाती है।
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>20 वस्तुनिष्ठ प्रश्न</h3>
+
+            <div class="objective">
+                1. आनुवंशिकता की मूल इकाई क्या है?
+                <div class="answer">उत्तर: जीन</div>
+            </div>
+
+            <div class="objective">
+                2. मटर के पौधों पर प्रयोग किसने किया था?
+                <div class="answer">उत्तर: ग्रेगर मेंडल</div>
+            </div>
+
+            <div class="objective">
+                3. आनुवंशिक जानकारी किसमें होती है?
+                <div class="answer">उत्तर: DNA</div>
+            </div>
+
+            <div class="objective">
+                4. आनुवंशिकता का क्या अर्थ है?
+                <div class="answer">उत्तर: माता-पिता से संतानों में लक्षणों का स्थानांतरण</div>
+            </div>
+
+            <div class="objective">
+                5. विभिन्नता क्या है?
+                <div class="answer">उत्तर: जीवों के लक्षणों में अंतर</div>
+            </div>
+
+            <div class="objective">
+                6. DNA का पूरा नाम क्या है?
+                <div class="answer">उत्तर: डीऑक्सीराइबोन्यूक्लिक अम्ल</div>
+            </div>
+
+            <div class="objective">
+                7. मेंडल ने किस पौधे पर प्रयोग किया था?
+                <div class="answer">उत्तर: मटर के पौधे पर</div>
+            </div>
+
+            <div class="objective">
+                8. प्रभावी लक्षण क्या है?
+                <div class="answer">उत्तर: वह लक्षण जो विषमयुग्मजी अवस्था में भी दिखाई देता है</div>
+            </div>
+
+            <div class="objective">
+                9. अप्रभावी लक्षण क्या है?
+                <div class="answer">उत्तर: वह लक्षण जो प्रभावी लक्षण द्वारा दब जाता है</div>
+            </div>
+
+            <div class="objective">
+                10. मनुष्य की शरीर कोशिकाओं में सामान्यतः कितने गुणसूत्र होते हैं?
+                <div class="answer">उत्तर: 46</div>
+            </div>
+
+            <div class="objective">
+                11. मनुष्य में गुणसूत्रों के कितने जोड़े होते हैं?
+                <div class="answer">उत्तर: 23 जोड़े</div>
+            </div>
+
+            <div class="objective">
+                12. मानव स्त्री के लिंग गुणसूत्र क्या होते हैं?
+                <div class="answer">उत्तर: XX</div>
+            </div>
+
+            <div class="objective">
+                13. मानव पुरुष के लिंग गुणसूत्र क्या होते हैं?
+                <div class="answer">उत्तर: XY</div>
+            </div>
+
+            <div class="objective">
+                14. मानव अंडाणु में कौन-सा गुणसूत्र होता है?
+                <div class="answer">उत्तर: X गुणसूत्र</div>
+            </div>
+
+            <div class="objective">
+                15. मानव शुक्राणु में कौन-से गुणसूत्र हो सकते हैं?
+                <div class="answer">उत्तर: X या Y</div>
+            </div>
+
+            <div class="objective">
+                16. जीन का क्या कार्य है?
+                <div class="answer">उत्तर: लक्षणों की जानकारी रखना</div>
+            </div>
+
+            <div class="objective">
+                17. विभिन्नताएँ जीवों की किसमें सहायता कर सकती हैं?
+                <div class="answer">उत्तर: बदलते वातावरण में जीवित रहने में</div>
+            </div>
+
+            <div class="objective">
+                18. जीन कहाँ स्थित होते हैं?
+                <div class="answer">उत्तर: गुणसूत्रों पर</div>
+            </div>
+
+            <div class="objective">
+                19. अधिकांश जीवों में आनुवंशिक पदार्थ क्या होता है?
+                <div class="answer">उत्तर: DNA</div>
+            </div>
+
+            <div class="objective">
+                20. माता-पिता से संतानों में लक्षणों का स्थानांतरण किस प्रक्रिया से होता है?
+                <div class="answer">उत्तर: आनुवंशिकता</div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <a href="class10.html" class="back-btn">
+        ← Back to Class 10
+    </a>
+
+</div>
+
+
+<footer>
+    <p>© 2026 Golu Coaching | All Rights Reserved</p>
+</footer>
+
+
+<script>
+
+function showHindi(){
+
+    document.getElementById("englishContent").style.display = "none";
+    document.getElementById("hindiContent").style.display = "block";
+
+    document.getElementById("hindiBtn").classList.add("active");
+    document.getElementById("englishBtn").classList.remove("active");
+
+    document.getElementById("headerSubtitle").innerText =
+        "कक्षा 10 विज्ञान • आनुवंशिकता";
+
+    document.getElementById("chapterHeading").innerText =
+        "आनुवंशिकता";
+
+    document.documentElement.lang = "hi";
+}
+
+
+function showEnglish(){
+
+    document.getElementById("hindiContent").style.display = "none";
+    document.getElementById("englishContent").style.display = "block";
+
+    document.getElementById("englishBtn").classList.add("active");
+    document.getElementById("hindiBtn").classList.remove("active");
+
+    document.getElementById("headerSubtitle").innerText =
+        "Class 10 Science • Heredity";
+
+    document.getElementById("chapterHeading").innerText =
+        "Heredity";
+
+    document.documentElement.lang = "en";
+}
+
+</script>
+
+</body>
+</html>
+

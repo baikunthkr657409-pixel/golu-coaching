@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Golu Coaching - Toppers</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f7fb;
+            color: #222;
+        }
+
+        header {
+            background: #ffffff;
+            padding: 18px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #2563eb;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 22px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #222;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            color: #2563eb;
+        }
+
+        .admission-btn {
+            background: #2563eb;
+            color: white !important;
+            padding: 10px 16px;
+            border-radius: 8px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #2563eb, #7c3aed);
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+        }
+
+        .section {
+            padding: 60px 7%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title h2 {
+            font-size: 32px;
+            color: #2563eb;
+            margin-bottom: 10px;
+        }
+
+        .toppers {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .topper-card {
+            background: white;
+            padding: 30px 20px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .topper-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .topper-icon {
+            font-size: 55px;
+            margin-bottom: 15px;
+        }
+
+        .topper-card h3 {
+            font-size: 22px;
+            margin-bottom: 8px;
+        }
+
+        .class-name {
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .percentage {
+            font-size: 32px;
+            font-weight: bold;
+            color: #16a34a;
+            margin-bottom: 10px;
+        }
+
+        .achievement {
+            color: #555;
+        }
+
+        .message {
+            margin-top: 40px;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+        }
+
+        .message h2 {
+            color: #2563eb;
+            margin-bottom: 12px;
+        }
+
+        .cta {
+            text-align: center;
+            padding: 60px 20px;
+            background: #eef2ff;
+        }
+
+        .cta h2 {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .cta a {
+            display: inline-block;
+            margin-top: 20px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            padding: 13px 24px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 900px) {
+            .toppers {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            nav {
+                gap: 12px;
+            }
+        }
+
+        @media (max-width: 650px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 34px;
+            }
+
+            .toppers {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Golu Coaching</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="teachers.html">Teachers</a>
+        <a href="toppers.html">Toppers</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="admission.html" class="admission-btn">
+            Admission Enquiry
+        </a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Our Toppers 🏆</h1>
+    <p>हमारे होनहार विद्यार्थियों की शानदार उपलब्धियाँ</p>
+</section>
+
+<section class="section">
+
+    <div class="section-title">
+        <h2>Our Top Performers</h2>
+        <p>हमारे विद्यार्थियों की मेहनत और सफलता</p>
+    </div>
+
+    <div class="toppers">
+
+        <div class="topper-card">
+            <div class="topper-icon">🏆</div>
+            <h3>Topper Name</h3>
+            <p class="class-name">Class 10th</p>
+            <div class="percentage">95%</div>
+            <p class="achievement">Excellent Performance</p>
+        </div>
+
+        <div class="topper-card">
+            <div class="topper-icon">🥇</div>
+            <h3>Topper Name</h3>
+            <p class="class-name">Class 10th</p>
+            <div class="percentage">93%</div>
+            <p class="achievement">Outstanding Result</p>
+        </div>
+
+        <div class="topper-card">
+            <div class="topper-icon">🎓</div>
+            <h3>Topper Name</h3>
+            <p class="class-name">Class 10th</p>
+            <div class="percentage">91%</div>
+            <p class="achievement">Great Achievement</p>
+        </div>
+
+    </div>
+
+    <div class="message">
+        <h2>Success Through Hard Work 💪</h2>
+        <p>
+            सही guidance, regular practice और मेहनत से हर विद्यार्थी
+            अपने लक्ष्य को हासिल कर सकता है।
+        </p>
+    </div>
+
+</section>
+
+<section class="cta">
+    <h2>आप भी अपनी सफलता की शुरुआत करें 🚀</h2>
+    <p>Golu Coaching के साथ अपने academic goals को पूरा करें।</p>
+
+    <a href="admission.html">Admission Enquiry</a>
+</section>
+
+<footer>
+    <p>© 2026 Golu Coaching | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

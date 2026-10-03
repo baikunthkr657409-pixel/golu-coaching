@@ -1,0 +1,710 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Quadratic Equations | Golu Coaching</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f5f7fb;
+    color:#222;
+    line-height:1.6;
+}
+
+header{
+    background:linear-gradient(135deg,#1e3c72,#2a5298);
+    color:white;
+    text-align:center;
+    padding:35px 15px;
+    position:relative;
+}
+
+header h1{
+    font-size:32px;
+}
+
+header p{
+    margin-top:8px;
+}
+
+.language{
+    position:absolute;
+    top:15px;
+    right:20px;
+}
+
+.language button{
+    border:none;
+    background:white;
+    color:#1e3c72;
+    padding:7px 12px;
+    margin-left:4px;
+    border-radius:6px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.container{
+    width:90%;
+    max-width:1000px;
+    margin:30px auto;
+}
+
+.back{
+    display:inline-block;
+    text-decoration:none;
+    background:#1e3c72;
+    color:white;
+    padding:10px 18px;
+    border-radius:8px;
+    margin-bottom:25px;
+}
+
+.section{
+    background:white;
+    padding:25px;
+    margin-bottom:22px;
+    border-radius:14px;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+
+.section h2{
+    color:#1e3c72;
+    margin-bottom:12px;
+}
+
+.section h3{
+    color:#2a5298;
+    margin-top:18px;
+    margin-bottom:8px;
+}
+
+.formula{
+    background:#eef3ff;
+    padding:15px;
+    border-left:5px solid #1e3c72;
+    margin:12px 0;
+    font-weight:bold;
+    overflow-x:auto;
+}
+
+.example{
+    background:#f8f9fa;
+    padding:15px;
+    border-radius:8px;
+    margin-top:12px;
+}
+
+.example strong{
+    color:#1e3c72;
+}
+
+ul,ol{
+    padding-left:25px;
+}
+
+.practice{
+    background:#fff8e6;
+    padding:20px;
+    border-radius:10px;
+}
+
+footer{
+    background:#1e3c72;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+@media(max-width:700px){
+
+    header h1{
+        font-size:26px;
+    }
+
+    .container{
+        width:94%;
+    }
+
+    .language{
+        position:static;
+        margin-bottom:12px;
+    }
+
+    .section{
+        padding:20px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="language">
+<button onclick="setLanguage('hi')">हिन्दी</button>
+<button onclick="setLanguage('en')">English</button>
+</div>
+
+<h1 id="title">Chapter 4 – Quadratic Equations</h1>
+
+<p id="subtitle">
+Class 10 Mathematics | Golu Coaching
+</p>
+
+</header>
+
+<div class="container">
+
+<a href="class10.html" class="back" id="back">
+← Back to Class 10
+</a>
+
+
+<!-- INTRODUCTION -->
+
+<div class="section">
+
+<h2 id="introTitle">Introduction</h2>
+
+<p id="introText">
+A quadratic equation is an equation of the form
+ax² + bx + c = 0, where a ≠ 0.
+In this chapter we learn different methods to find its roots.
+</p>
+
+</div>
+
+
+<!-- GENERAL FORM -->
+
+<div class="section">
+
+<h2 id="generalTitle">1. General Form of a Quadratic Equation</h2>
+
+<p id="generalText">
+The general form is:
+</p>
+
+<div class="formula">
+ax² + bx + c = 0
+<br><br>
+where a ≠ 0
+</div>
+
+<p id="generalNote">
+Here a, b and c are real numbers.
+</p>
+
+</div>
+
+
+<!-- ROOTS -->
+
+<div class="section">
+
+<h2 id="rootsTitle">2. Roots of a Quadratic Equation</h2>
+
+<p id="rootsText">
+The values of x which satisfy the quadratic equation are called
+its roots or solutions.
+</p>
+
+<div class="example">
+
+<strong id="rootsExampleTitle">Solved Example:</strong>
+
+<p id="rootsExample">
+Find the roots of x² − 5x + 6 = 0.
+</p>
+
+<div class="formula">
+x² − 5x + 6 = 0
+<br>
+x² − 2x − 3x + 6 = 0
+<br>
+x(x − 2) − 3(x − 2) = 0
+<br>
+(x − 2)(x − 3) = 0
+<br><br>
+
+Therefore:
+<br>
+x = 2 or x = 3
+</div>
+
+<p id="rootsAnswer">
+Answer: The roots are 2 and 3.
+</p>
+
+</div>
+
+</div>
+
+
+<!-- FACTORISATION -->
+
+<div class="section">
+
+<h2 id="factorTitle">3. Solution by Factorisation</h2>
+
+<p id="factorText">
+A quadratic equation can sometimes be solved by splitting the
+middle term and factorising the equation.
+</p>
+
+<div class="example">
+
+<strong id="factorExampleTitle">Solved Example:</strong>
+
+<p id="factorExample">
+Solve x² + 7x + 12 = 0.
+</p>
+
+<div class="formula">
+x² + 7x + 12 = 0
+<br>
+x² + 3x + 4x + 12 = 0
+<br>
+x(x + 3) + 4(x + 3) = 0
+<br>
+(x + 3)(x + 4) = 0
+<br><br>
+
+x = −3 or x = −4
+</div>
+
+<p id="factorAnswer">
+Answer: x = −3, −4
+</p>
+
+</div>
+
+</div>
+
+
+<!-- QUADRATIC FORMULA -->
+
+<div class="section">
+
+<h2 id="formulaTitle">4. Quadratic Formula</h2>
+
+<p id="formulaText">
+For ax² + bx + c = 0, the roots are given by:
+</p>
+
+<div class="formula">
+x = [-b ± √(b² − 4ac)] / 2a
+</div>
+
+<div class="example">
+
+<strong id="formulaExampleTitle">Solved Example:</strong>
+
+<p id="formulaExample">
+Solve 2x² − 5x + 2 = 0 using the quadratic formula.
+</p>
+
+<div class="formula">
+a = 2, b = −5, c = 2
+<br><br>
+
+x = [5 ± √((-5)² − 4(2)(2))] / 4
+<br>
+= [5 ± √(25 − 16)] / 4
+<br>
+= [5 ± 3] / 4
+<br><br>
+
+x = 8/4 = 2
+<br>
+x = 2/4 = 1/2
+</div>
+
+<p id="formulaAnswer">
+Answer: x = 2 and x = 1/2
+</p>
+
+</div>
+
+</div>
+
+
+<!-- DISCRIMINANT -->
+
+<div class="section">
+
+<h2 id="discTitle">5. Discriminant</h2>
+
+<p id="discText">
+The discriminant tells us about the nature of the roots.
+</p>
+
+<div class="formula">
+D = b² − 4ac
+</div>
+
+<h3 id="case1Title">Case 1: D &gt; 0</h3>
+
+<p id="case1Text">
+The equation has two distinct real roots.
+</p>
+
+<h3 id="case2Title">Case 2: D = 0</h3>
+
+<p id="case2Text">
+The equation has two equal real roots.
+</p>
+
+<h3 id="case3Title">Case 3: D &lt; 0</h3>
+
+<p id="case3Text">
+The equation has no real roots.
+</p>
+
+</div>
+
+
+<!-- NATURE OF ROOTS -->
+
+<div class="section">
+
+<h2 id="natureTitle">6. Nature of Roots</h2>
+
+<div class="example">
+
+<strong id="natureExampleTitle">Solved Example:</strong>
+
+<p id="natureExample">
+Determine the nature of roots of
+x² − 4x + 4 = 0.
+</p>
+
+<div class="formula">
+a = 1, b = −4, c = 4
+<br><br>
+
+D = b² − 4ac
+<br>
+= (−4)² − 4(1)(4)
+<br>
+= 16 − 16
+<br>
+= 0
+</div>
+
+<p id="natureAnswer">
+Answer: The equation has two equal real roots.
+</p>
+
+</div>
+
+</div>
+
+
+<!-- RELATION BETWEEN ROOTS -->
+
+<div class="section">
+
+<h2 id="relationTitle">7. Relationship Between Roots and Coefficients</h2>
+
+<p id="relationText">
+If α and β are the roots of ax² + bx + c = 0, then:
+</p>
+
+<div class="formula">
+α + β = −b/a
+<br><br>
+αβ = c/a
+</div>
+
+<div class="example">
+
+<strong id="relationExampleTitle">Solved Example:</strong>
+
+<p id="relationExample">
+For 2x² − 7x + 3 = 0, find the sum and product of roots.
+</p>
+
+<div class="formula">
+a = 2, b = −7, c = 3
+<br><br>
+
+α + β = −b/a
+<br>
+= 7/2
+<br><br>
+
+αβ = c/a
+<br>
+= 3/2
+</div>
+
+<p id="relationAnswer">
+Answer: Sum = 7/2 and Product = 3/2
+</p>
+
+</div>
+
+</div>
+
+
+<!-- IMPORTANT -->
+
+<div class="section">
+
+<h2 id="importantTitle">Important Points for Exam</h2>
+
+<ul id="important">
+
+<li>Remember the standard form ax² + bx + c = 0.</li>
+<li>Remember the quadratic formula.</li>
+<li>Discriminant is D = b² − 4ac.</li>
+<li>If D &gt; 0 → two distinct real roots.</li>
+<li>If D = 0 → two equal real roots.</li>
+<li>If D &lt; 0 → no real roots.</li>
+<li>Write all steps clearly while solving.</li>
+
+</ul>
+
+</div>
+
+
+<!-- PRACTICE -->
+
+<div class="section">
+
+<h2 id="practiceTitle">Practice Questions</h2>
+
+<div class="practice">
+
+<ol id="practice">
+
+<li>Solve x² − 7x + 12 = 0.</li>
+
+<li>Solve 2x² + 5x + 2 = 0.</li>
+
+<li>Find the discriminant of 3x² − 4x + 1 = 0.</li>
+
+<li>Find the nature of roots of x² + 4x + 4 = 0.</li>
+
+<li>For 3x² − 8x + 2 = 0, find the sum and product of roots.</li>
+
+</ol>
+
+</div>
+
+</div>
+
+
+<!-- NEXT -->
+
+<div class="section">
+
+<h2 id="nextTitle">Next Step</h2>
+
+<p id="nextText">
+Practice factorisation, quadratic formula and discriminant questions.
+Try solving numerical problems without looking at the solution.
+</p>
+
+</div>
+
+</div>
+
+
+<footer>
+
+<p id="footer">
+© 2026 Golu Coaching | Class 10 Mathematics
+</p>
+
+</footer>
+
+
+<script>
+
+function setLanguage(lang){
+
+if(lang === "hi"){
+
+document.getElementById("title").innerText =
+"अध्याय 4 – द्विघात समीकरण";
+
+document.getElementById("subtitle").innerText =
+"कक्षा 10 गणित | Golu Coaching";
+
+document.getElementById("back").innerText =
+"← कक्षा 10 पर वापस जाएँ";
+
+document.getElementById("introTitle").innerText =
+"परिचय";
+
+document.getElementById("introText").innerText =
+"द्विघात समीकरण ax² + bx + c = 0 के रूप का समीकरण है, जहाँ a ≠ 0 है। इस अध्याय में इसके मूल ज्ञात करने की विभिन्न विधियाँ पढ़ते हैं।";
+
+document.getElementById("generalTitle").innerText =
+"1. द्विघात समीकरण का सामान्य रूप";
+
+document.getElementById("generalText").innerText =
+"द्विघात समीकरण का सामान्य रूप:";
+
+document.getElementById("generalNote").innerText =
+"यहाँ a, b और c वास्तविक संख्याएँ हैं।";
+
+document.getElementById("rootsTitle").innerText =
+"2. द्विघात समीकरण के मूल";
+
+document.getElementById("rootsText").innerText =
+"वे x के मान जो द्विघात समीकरण को संतुष्ट करते हैं, उसके मूल या हल कहलाते हैं।";
+
+document.getElementById("rootsExampleTitle").innerText =
+"हल किया गया उदाहरण:";
+
+document.getElementById("rootsExample").innerText =
+"x² − 5x + 6 = 0 के मूल ज्ञात कीजिए।";
+
+document.getElementById("rootsAnswer").innerText =
+"उत्तर: मूल 2 और 3 हैं।";
+
+document.getElementById("factorTitle").innerText =
+"3. गुणनखंड द्वारा हल";
+
+document.getElementById("factorText").innerText =
+"कई द्विघात समीकरणों को मध्य पद को विभाजित करके गुणनखंड विधि से हल किया जा सकता है।";
+
+document.getElementById("factorExampleTitle").innerText =
+"हल किया गया उदाहरण:";
+
+document.getElementById("factorExample").innerText =
+"x² + 7x + 12 = 0 को हल कीजिए।";
+
+document.getElementById("factorAnswer").innerText =
+"उत्तर: x = −3, −4";
+
+document.getElementById("formulaTitle").innerText =
+"4. द्विघात सूत्र";
+
+document.getElementById("formulaText").innerText =
+"ax² + bx + c = 0 के लिए मूल का सूत्र:";
+
+document.getElementById("formulaExampleTitle").innerText =
+"हल किया गया उदाहरण:";
+
+document.getElementById("formulaExample").innerText =
+"द्विघात सूत्र का प्रयोग करके 2x² − 5x + 2 = 0 को हल कीजिए।";
+
+document.getElementById("formulaAnswer").innerText =
+"उत्तर: x = 2 और x = 1/2";
+
+document.getElementById("discTitle").innerText =
+"5. विविक्तकर (Discriminant)";
+
+document.getElementById("discText").innerText =
+"विविक्तकर हमें मूलों की प्रकृति बताता है।";
+
+document.getElementById("case1Title").innerText =
+"स्थिति 1: D > 0";
+
+document.getElementById("case1Text").innerText =
+"समीकरण के दो अलग-अलग वास्तविक मूल होते हैं।";
+
+document.getElementById("case2Title").innerText =
+"स्थिति 2: D = 0";
+
+document.getElementById("case2Text").innerText =
+"समीकरण के दो बराबर वास्तविक मूल होते हैं।";
+
+document.getElementById("case3Title").innerText =
+"स्थिति 3: D < 0";
+
+document.getElementById("case3Text").innerText =
+"समीकरण के कोई वास्तविक मूल नहीं होते हैं।";
+
+document.getElementById("natureTitle").innerText =
+"6. मूलों की प्रकृति";
+
+document.getElementById("natureExampleTitle").innerText =
+"हल किया गया उदाहरण:";
+
+document.getElementById("natureExample").innerText =
+"x² − 4x + 4 = 0 के मूलों की प्रकृति ज्ञात कीजिए।";
+
+document.getElementById("natureAnswer").innerText =
+"उत्तर: समीकरण के दो बराबर वास्तविक मूल हैं।";
+
+document.getElementById("relationTitle").innerText =
+"7. मूलों और गुणांकों के बीच संबंध";
+
+document.getElementById("relationText").innerText =
+"यदि α और β, ax² + bx + c = 0 के मूल हैं, तो:";
+
+document.getElementById("relationExampleTitle").innerText =
+"हल किया गया उदाहरण:";
+
+document.getElementById("relationExample").innerText =
+"2x² − 7x + 3 = 0 के मूलों का योग और गुणनफल ज्ञात कीजिए।";
+
+document.getElementById("relationAnswer").innerText =
+"उत्तर: योग = 7/2 और गुणनफल = 3/2";
+
+document.getElementById("importantTitle").innerText =
+"परीक्षा के लिए महत्वपूर्ण बातें";
+
+document.getElementById("important").innerHTML = `
+<li>सामान्य रूप ax² + bx + c = 0 याद रखें।</li>
+<li>द्विघात सूत्र याद रखें।</li>
+<li>विविक्तकर D = b² − 4ac होता है।</li>
+<li>D > 0 → दो अलग-अलग वास्तविक मूल।</li>
+<li>D = 0 → दो बराबर वास्तविक मूल।</li>
+<li>D < 0 → कोई वास्तविक मूल नहीं।</li>
+<li>हल करते समय सभी steps साफ-साफ लिखें।</li>
+`;
+
+document.getElementById("practiceTitle").innerText =
+"अभ्यास प्रश्न";
+
+document.getElementById("practice").innerHTML = `
+<li>x² − 7x + 12 = 0 को हल कीजिए।</li>
+<li>2x² + 5x + 2 = 0 को हल कीजिए।</li>
+<li>3x² − 4x + 1 = 0 का विविक्तकर ज्ञात कीजिए।</li>
+<li>x² + 4x + 4 = 0 के मूलों की प्रकृति ज्ञात कीजिए।</li>
+<li>3x² − 8x + 2 = 0 के मूलों का योग और गुणनफल ज्ञात कीजिए।</li>
+`;
+
+document.getElementById("nextTitle").innerText =
+"अगला कदम";
+
+document.getElementById("nextText").innerText =
+"गुणनखंड, द्विघात सूत्र और विविक्तकर पर आधारित प्रश्नों का अभ्यास करें। बिना solution देखे numerical questions हल करने की कोशिश करें।";
+
+document.getElementById("footer").innerText =
+"© 2026 Golu Coaching | कक्षा 10 गणित";
+
+}
+
+else{
+
+location.reload();
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
+

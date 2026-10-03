@@ -1,0 +1,2272 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Statistics | Golu Coaching Center</title>
+
+<style>
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:#f4f7fb;
+    color:#222;
+    line-height:1.7;
+}
+
+header{
+    background:linear-gradient(135deg,#1e3c72,#2a5298);
+    color:white;
+    text-align:center;
+    padding:28px 15px;
+    position:relative;
+}
+
+header h1{
+    font-size:31px;
+    margin-bottom:5px;
+}
+
+header p{
+    font-size:16px;
+}
+
+.language{
+    position:absolute;
+    top:15px;
+    right:20px;
+}
+
+.language button{
+    border:none;
+    padding:8px 13px;
+    margin-left:5px;
+    border-radius:20px;
+    cursor:pointer;
+    background:white;
+    color:#1e3c72;
+    font-weight:bold;
+}
+
+.language button:hover{
+    background:#e8f0ff;
+}
+
+.container{
+    max-width:1050px;
+    margin:25px auto;
+    padding:0 15px;
+}
+
+.back-btn{
+    display:inline-block;
+    text-decoration:none;
+    background:#1e3c72;
+    color:white;
+    padding:10px 18px;
+    border-radius:8px;
+    margin-bottom:20px;
+}
+
+.back-btn:hover{
+    background:#2a5298;
+}
+
+.section{
+    background:white;
+    padding:25px;
+    margin-bottom:22px;
+    border-radius:14px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+}
+
+.section h2{
+    color:#1e3c72;
+    margin-bottom:15px;
+    border-bottom:2px solid #e1e8f5;
+    padding-bottom:8px;
+}
+
+.section h3{
+    color:#2a5298;
+    margin-top:18px;
+    margin-bottom:8px;
+}
+
+.formula{
+    background:#eef6ff;
+    border-left:5px solid #2a5298;
+    padding:15px;
+    margin:15px 0;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.example{
+    background:#eefaf1;
+    border-left:5px solid #2e8b57;
+    padding:15px;
+    margin:15px 0;
+    border-radius:8px;
+}
+
+.note{
+    background:#fff8df;
+    border-left:5px solid #e0a800;
+    padding:15px;
+    margin:15px 0;
+    border-radius:8px;
+}
+
+.warning{
+    background:#fff0f0;
+    border-left:5px solid #dc3545;
+    padding:15px;
+    margin:15px 0;
+    border-radius:8px;
+}
+
+.table-container{
+    overflow-x:auto;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+}
+
+th,td{
+    border:1px solid #ccd5e0;
+    padding:11px;
+    text-align:center;
+}
+
+th{
+    background:#1e3c72;
+    color:white;
+}
+
+tr:nth-child(even){
+    background:#f7f9fc;
+}
+
+.question{
+    background:#f8faff;
+    border:1px solid #dce5f3;
+    padding:15px;
+    border-radius:9px;
+    margin:12px 0;
+}
+
+.mcq{
+    background:#f9fbff;
+    border-left:4px solid #2a5298;
+    padding:15px;
+    margin:12px 0;
+    border-radius:8px;
+}
+
+.answer{
+    color:#18733c;
+    font-weight:bold;
+    margin-top:7px;
+}
+
+ul,ol{
+    margin-left:25px;
+    margin-top:8px;
+}
+
+li{
+    margin-bottom:6px;
+}
+
+.hindi{
+    display:none;
+}
+
+footer{
+    background:#1e3c72;
+    color:white;
+    text-align:center;
+    padding:22px 15px;
+    margin-top:30px;
+}
+
+footer p{
+    margin:4px;
+}
+
+@media(max-width:700px){
+
+    header h1{
+        font-size:24px;
+        margin-top:35px;
+    }
+
+    header p{
+        font-size:14px;
+    }
+
+    .language{
+        top:10px;
+        right:10px;
+    }
+
+    .language button{
+        padding:6px 9px;
+        font-size:12px;
+    }
+
+    .section{
+        padding:18px;
+    }
+
+    .section h2{
+        font-size:21px;
+    }
+
+    .section h3{
+        font-size:18px;
+    }
+
+    table{
+        font-size:14px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="language">
+    <button onclick="showHindi()">हिन्दी</button>
+    <button onclick="showEnglish()">English</button>
+</div>
+
+<h1>Chapter 13 – Statistics</h1>
+<p>Class 10 Mathematics | Golu Coaching Center</p>
+
+</header>
+
+
+<div class="container">
+
+<a href="class10.html" class="back-btn">← Back to Class 10</a>
+
+
+<!-- ================= ENGLISH ================= -->
+
+<div id="english">
+
+<div class="section">
+
+<h2>1. Introduction</h2>
+
+<p>
+Statistics is the branch of mathematics that deals with the collection,
+organisation, presentation, analysis and interpretation of data.
+</p>
+
+<div class="note">
+In Class 10, we mainly study the <b>mean, median and mode</b> of grouped data.
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>2. Important Terms</h2>
+
+<h3>Data</h3>
+<p>
+A collection of information or observations is called data.
+</p>
+
+<h3>Frequency</h3>
+<p>
+The number of times an observation occurs is called its frequency.
+</p>
+
+<h3>Class Interval</h3>
+<p>
+A range such as 10–20, 20–30, 30–40 is called a class interval.
+</p>
+
+<h3>Class Size</h3>
+
+<div class="formula">
+Class Size = Upper Class Limit − Lower Class Limit
+</div>
+
+<h3>Class Mark</h3>
+
+<div class="formula">
+Class Mark = (Upper Class Limit + Lower Class Limit) / 2
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>3. Grouped Data</h2>
+
+<p>
+When data is arranged into class intervals along with their frequencies,
+it is called grouped data.
+</p>
+
+<div class="table-container">
+
+<table>
+
+<tr>
+<th>Class Interval</th>
+<th>Frequency (f)</th>
+</tr>
+
+<tr>
+<td>0–10</td>
+<td>5</td>
+</tr>
+
+<tr>
+<td>10–20</td>
+<td>8</td>
+</tr>
+
+<tr>
+<td>20–30</td>
+<td>12</td>
+</tr>
+
+<tr>
+<td>30–40</td>
+<td>7</td>
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>4. Mean of Grouped Data</h2>
+
+<p>
+The mean represents the average value of the observations.
+</p>
+
+<h3>Method 1 – Direct Method</h3>
+
+<div class="formula">
+
+Mean = Σfᵢxᵢ / Σfᵢ
+
+<br><br>
+
+where:
+
+<br>
+fᵢ = frequency
+
+<br>
+xᵢ = class mark
+
+</div>
+
+<h3>Steps</h3>
+
+<ol>
+<li>Find the class mark xᵢ.</li>
+<li>Multiply fᵢ by xᵢ.</li>
+<li>Find Σfᵢxᵢ.</li>
+<li>Find Σfᵢ.</li>
+<li>Use Mean = Σfᵢxᵢ / Σfᵢ.</li>
+</ol>
+
+<div class="example">
+
+<b>Example:</b>
+
+<br><br>
+
+Class intervals: 0–10, 10–20, 20–30
+
+<br>
+
+Frequencies: 2, 3, 5
+
+<br><br>
+
+Class marks:
+
+<br>
+5, 15, 25
+
+<br><br>
+
+Σfᵢxᵢ
+
+<br>
+= 2×5 + 3×15 + 5×25
+
+<br>
+= 10 + 45 + 125
+
+<br>
+= 180
+
+<br><br>
+
+Σfᵢ = 2 + 3 + 5 = 10
+
+<br><br>
+
+Mean = 180/10
+
+<br>
+= <b>18</b>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>5. Assumed Mean Method</h2>
+
+<p>
+The assumed mean method makes calculations easier when class marks
+are large.
+</p>
+
+<div class="formula">
+
+dᵢ = xᵢ − a
+
+<br><br>
+
+Mean = a + Σfᵢdᵢ / Σfᵢ
+
+</div>
+
+<p>
+Here <b>a</b> is the assumed mean.
+</p>
+
+<div class="example">
+
+<b>Example:</b>
+
+<br><br>
+
+Suppose the class marks are 15, 25 and 35.
+
+Choose:
+
+<br>
+
+a = 25
+
+<br><br>
+
+Then:
+
+<br>
+
+dᵢ = xᵢ − 25
+
+<br><br>
+
+The values become:
+
+<br>
+
+−10, 0, 10
+
+<br><br>
+
+Now use:
+
+<br>
+
+Mean = a + Σfᵢdᵢ / Σfᵢ
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>6. Step-Deviation Method</h2>
+
+<p>
+The step-deviation method is useful when class intervals have equal size
+and the deviations can be simplified.
+</p>
+
+<div class="formula">
+
+uᵢ = (xᵢ − a) / h
+
+<br><br>
+
+Mean = a + h(Σfᵢuᵢ / Σfᵢ)
+
+</div>
+
+<p>
+Here:
+
+<br>
+a = assumed mean
+
+<br>
+h = class size
+
+<br>
+xᵢ = class mark
+
+</p>
+
+</div>
+
+
+<div class="section">
+
+<h2>7. Median of Grouped Data</h2>
+
+<p>
+The median is the middle value of the data after arranging it in order.
+For grouped data, we use the median formula.
+</p>
+
+<div class="formula">
+
+Median = l + [(n/2 − cf) / f] × h
+
+</div>
+
+<p>
+Where:</p>
+
+<ul>
+<li><b>l</b> = lower boundary of median class</li>
+<li><b>n</b> = total frequency</li>
+<li><b>cf</b> = cumulative frequency before median class</li>
+<li><b>f</b> = frequency of median class</li>
+<li><b>h</b> = class size</li>
+</ul>
+
+<h3>How to Find Median</h3>
+
+<ol>
+<li>Find total frequency n.</li>
+<li>Calculate n/2.</li>
+<li>Find cumulative frequencies.</li>
+<li>Identify the median class.</li>
+<li>Use the median formula.</li>
+</ol>
+
+<div class="example">
+
+<b>Example:</b>
+
+<br><br>
+
+Suppose:
+
+<br>
+
+n = 50
+
+<br>
+
+n/2 = 25
+
+<br><br>
+
+The class whose cumulative frequency first becomes equal to or greater
+than 25 is the median class.
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>8. Mode of Grouped Data</h2>
+
+<p>
+Mode is the value that occurs most frequently.
+For grouped data, the modal class is the class with the highest frequency.
+</p>
+
+<div class="formula">
+
+Mode = l + [(f₁ − f₀) / (2f₁ − f₀ − f₂)] × h
+
+</div>
+
+<p>
+Where:</p>
+
+<ul>
+<li><b>l</b> = lower boundary of modal class</li>
+<li><b>f₁</b> = frequency of modal class</li>
+<li><b>f₀</b> = frequency of class before modal class</li>
+<li><b>f₂</b> = frequency of class after modal class</li>
+<li><b>h</b> = class size</li>
+</ul>
+
+<div class="example">
+
+<b>Example:</b>
+
+<br><br>
+
+If the highest frequency is 18 in the class interval 20–30,
+then 20–30 is the modal class.
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>9. Cumulative Frequency</h2>
+
+<p>
+Cumulative frequency is obtained by continuously adding the frequencies.
+</p>
+
+<div class="table-container">
+
+<table>
+
+<tr>
+<th>Class</th>
+<th>Frequency</th>
+<th>Cumulative Frequency</th>
+</tr>
+
+<tr>
+<td>0–10</td>
+<td>5</td>
+<td>5</td>
+</tr>
+
+<tr>
+<td>10–20</td>
+<td>8</td>
+<td>13</td>
+</tr>
+
+<tr>
+<td>20–30</td>
+<td>12</td>
+<td>25</td>
+</tr>
+
+<tr>
+<td>30–40</td>
+<td>7</td>
+<td>32</td>
+</tr>
+
+</table>
+
+</div>
+
+<div class="note">
+To get cumulative frequency, keep adding the frequencies from the first
+class onwards.
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>10. Median Class</h2>
+
+<p>
+The median class is the class whose cumulative frequency is just greater
+than or equal to n/2.
+</p>
+
+<div class="formula">
+
+Median Class → First class where CF ≥ n/2
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>11. Empirical Relation</h2>
+
+<p>
+For a moderately symmetrical distribution, the following empirical
+relationship is used:
+</p>
+
+<div class="formula">
+
+<b>Mode = 3 Median − 2 Mean</b>
+
+<br><br>
+
+or
+
+<br><br>
+
+<b>3 Median = Mode + 2 Mean</b>
+
+</div>
+
+<div class="example">
+
+<b>Example:</b>
+
+<br><br>
+
+Mean = 20
+
+<br>
+Median = 22
+
+<br><br>
+
+Mode = 3(22) − 2(20)
+
+<br>
+= 66 − 40
+
+<br>
+= <b>26</b>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>12. Continuous Class Intervals</h2>
+
+<p>
+Sometimes class intervals are written in a form such as:
+</p>
+
+<div class="formula">
+
+10–19, 20–29, 30–39
+
+</div>
+
+<p>
+To convert them into continuous intervals, we may use the correction
+factor when required.
+</p>
+
+<div class="note">
+
+For example:
+
+<br><br>
+
+10–19, 20–29
+
+<br><br>
+
+can be converted to:
+
+<br>
+
+9.5–19.5, 19.5–29.5
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>13. Complete Formula Table</h2>
+
+<div class="table-container">
+
+<table>
+
+<tr>
+<th>Concept</th>
+<th>Formula</th>
+</tr>
+
+<tr>
+<td>Class Mark</td>
+<td>(Upper Limit + Lower Limit) / 2</td>
+</tr>
+
+<tr>
+<td>Mean – Direct</td>
+<td>Σfᵢxᵢ / Σfᵢ</td>
+</tr>
+
+<tr>
+<td>Mean – Assumed Mean</td>
+<td>a + Σfᵢdᵢ / Σfᵢ</td>
+</tr>
+
+<tr>
+<td>Mean – Step Deviation</td>
+<td>a + h(Σfᵢuᵢ / Σfᵢ)</td>
+</tr>
+
+<tr>
+<td>Median</td>
+<td>l + [(n/2 − cf)/f] × h</td>
+</tr>
+
+<tr>
+<td>Mode</td>
+<td>l + [(f₁−f₀)/(2f₁−f₀−f₂)] × h</td>
+</tr>
+
+<tr>
+<td>Empirical Relation</td>
+<td>Mode = 3 Median − 2 Mean</td>
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>14. Solved Example – Mean</h2>
+
+<div class="example">
+
+<b>Question:</b>
+
+<br>
+
+Find the mean of the following data.
+
+<br><br>
+
+| x | 10 | 20 | 30 |
+
+<br>
+
+| f | 2 | 3 | 5 |
+
+<br><br>
+
+<b>Solution:</b>
+
+<br><br>
+
+Σfx = 2×10 + 3×20 + 5×30
+
+<br>
+= 20 + 60 + 150
+
+<br>
+= 230
+
+<br><br>
+
+Σf = 2 + 3 + 5 = 10
+
+<br><br>
+
+Mean = Σfx/Σf
+
+<br>
+= 230/10
+
+<br>
+= <b>23</b>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>15. Solved Example – Median</h2>
+
+<div class="example">
+
+<b>Question:</b>
+
+<br>
+
+For a grouped distribution, total frequency is 40.
+The median class has:
+
+<br><br>
+
+l = 20
+
+<br>
+cf = 15
+
+<br>
+f = 10
+
+<br>
+h = 10
+
+<br><br>
+
+Find the median.
+
+<br><br>
+
+<b>Solution:</b>
+
+<br>
+
+Median = l + [(n/2 − cf)/f] × h
+
+<br><br>
+
+= 20 + [(40/2 − 15)/10] × 10
+
+<br>
+
+= 20 + [(20 − 15)/10] × 10
+
+<br>
+
+= 20 + 5
+
+<br>
+
+= <b>25</b>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>16. Solved Example – Mode</h2>
+
+<div class="example">
+
+<b>Question:</b>
+
+<br>
+
+For a distribution:
+
+<br><br>
+
+l = 20
+
+<br>
+f₁ = 18
+
+<br>
+f₀ = 12
+
+<br>
+f₂ = 10
+
+<br>
+h = 10
+
+<br><br>
+
+Find the mode.
+
+<br><br>
+
+<b>Solution:</b>
+
+<br>
+
+Mode = l + [(f₁−f₀)/(2f₁−f₀−f₂)] × h
+
+<br><br>
+
+= 20 + [(18−12)/(36−12−10)] × 10
+
+<br>
+
+= 20 + (6/14) × 10
+
+<br>
+
+≈ <b>24.29</b>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>17. Common Mistakes</h2>
+
+<div class="warning">
+
+<ul>
+<li>Class mark निकालना न भूलें।</li>
+<li>Total frequency n सही निकालें।</li>
+<li>Median class गलत न चुनें।</li>
+<li>Median formula में cf median class से पहले वाली cumulative frequency होती है।</li>
+<li>Mode में f₀, f₁ और f₂ की position ध्यान से देखें।</li>
+<li>Formula में h यानी class size सही रखें।</li>
+<li>Calculation के बाद answer दोबारा check करें।</li>
+</ul>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>18. Board Exam Questions</h2>
+
+<div class="question">
+<b>Q1.</b> Find the mean of a grouped frequency distribution using
+the direct method.
+</div>
+
+<div class="question">
+<b>Q2.</b> Find the mean using the assumed mean method.
+</div>
+
+<div class="question">
+<b>Q3.</b> Find the mean using the step-deviation method.
+</div>
+
+<div class="question">
+<b>Q4.</b> Find the median of a grouped frequency distribution.
+</div>
+
+<div class="question">
+<b>Q5.</b> Find the mode of a grouped frequency distribution.
+</div>
+
+<div class="question">
+<b>Q6.</b> Find the missing frequency when the mean is given.
+</div>
+
+<div class="question">
+<b>Q7.</b> Find one of Mean, Median or Mode using the empirical relation.
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>19. MCQs</h2>
+
+<div class="mcq">
+
+<b>1. Class mark of 10–20 is:</b><br>
+A) 10<br>
+B) 15<br>
+C) 20<br>
+D) 30
+
+<p class="answer">Answer: B) 15</p>
+
+</div>
+
+
+<div class="mcq">
+
+<b>2. The class having the highest frequency is called:</b><br>
+A) Median class<br>
+B) Mean class<br>
+C) Modal class<br>
+D) Lower class
+
+<p class="answer">Answer: C) Modal class</p>
+
+</div>
+
+
+<div class="mcq">
+
+<b>3. Median formula contains:</b><br>
+A) n/2<br>
+B) n/3<br>
+C) 2n<br>
+D) n²
+
+<p class="answer">Answer: A) n/2</p>
+
+</div>
+
+
+<div class="mcq">
+
+<b>4. Mean by direct method is:</b><br>
+A) Σx/Σf<br>
+B) Σfx/Σf<br>
+C) Σf/Σx<br>
+D) Σx²/Σf
+
+<p class="answer">Answer: B) Σfx/Σf</p>
+
+</div>
+
+
+<div class="mcq">
+
+<b>5. The empirical relation is:</b><br>
+A) Mode = Mean + Median<br>
+B) Mode = 2Mean − 3Median<br>
+C) Mode = 3Median − 2Mean<br>
+D) Mode = Mean − Median
+
+<p class="answer">Answer: C) Mode = 3Median − 2Mean</p>
+
+</div>
+
+
+<div class="mcq">
+
+<b>6. Frequency means:</b><br>
+A) Average value<br>
+B) Number of times an observation occurs<br>
+C) Middle value<br>
+D) Highest value
+
+<p class="answer">Answer: B) Number of times an observation occurs</p>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>20. Practice Set</h2>
+
+<div class="question">
+<b>Q1.</b> Find the class mark of 20–30.
+</div>
+
+<div class="question">
+<b>Q2.</b> Find the mean for the following:
+x = 5, 10, 15 and f = 2, 3, 5.
+</div>
+
+<div class="question">
+<b>Q3.</b> Find the mean using the assumed mean method.
+</div>
+
+<div class="question">
+<b>Q4.</b> Find the mean using the step-deviation method.
+</div>
+
+<div class="question">
+<b>Q5.</b> Find the cumulative frequency of the given distribution.
+</div>
+
+<div class="question">
+<b>Q6.</b> Find the median of a grouped frequency distribution.
+</div>
+
+<div class="question">
+<b>Q7.</b> Find the mode of a grouped frequency distribution.
+</div>
+
+<div class="question">
+<b>Q8.</b> If mean = 25 and median = 27, find the mode.
+</div>
+
+<div class="question">
+<b>Q9.</b> Find the missing frequency when mean is given.
+</div>
+
+<div class="question">
+<b>Q10.</b> Solve a complete statistics question involving mean,
+median and mode.
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>21. Quick Revision</h2>
+
+<div class="formula">
+
+<b>Class Mark</b>
+
+<br>
+xᵢ = (Upper Limit + Lower Limit)/2
+
+<br><br>
+
+<b>Direct Mean</b>
+
+<br>
+Mean = Σfᵢxᵢ / Σfᵢ
+
+<br><br>
+
+<b>Assumed Mean</b>
+
+<br>
+Mean = a + Σfᵢdᵢ / Σfᵢ
+
+<br><br>
+
+<b>Step Deviation</b>
+
+<br>
+Mean = a + h(Σfᵢuᵢ / Σfᵢ)
+
+<br><br>
+
+<b>Median</b>
+
+<br>
+Median = l + [(n/2 − cf)/f] × h
+
+<br><br>
+
+<b>Mode</b>
+
+<br>
+Mode = l + [(f₁−f₀)/(2f₁−f₀−f₂)] × h
+
+<br><br>
+
+<b>Empirical Relation</b>
+
+<br>
+Mode = 3 Median − 2 Mean
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>22. Board Exam Tips</h2>
+
+<ul>
+<li>Table को साफ-साफ बनाओ।</li>
+<li>Class mark सही निकालो।</li>
+<li>Σf और Σfx को carefully calculate करो।</li>
+<li>Median के लिए cumulative frequency जरूर बनाओ।</li>
+<li>Median class पहचानने के लिए n/2 निकालो।</li>
+<li>Mode में highest frequency वाली class पहले पहचानो।</li>
+<li>हर formula में values रखने से पहले symbols पहचानो।</li>
+<li>Calculation के बाद answer की reasonable value check करो।</li>
+</ul>
+
+<div class="note">
+
+<b>Golden Rule:</b><br>
+
+Table बनाओ → Given values पहचानो → सही formula चुनो →
+Calculation करो → Answer check करो।
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- ================= HINDI ================= -->
+
+<div id="hindi" class="hindi">
+
+<div class="section">
+
+<h2>1. परिचय</h2>
+
+<p>
+सांख्यिकी गणित की वह शाखा है जिसमें आँकड़ों का संग्रह,
+व्यवस्थित करना, प्रस्तुतीकरण, विश्लेषण और व्याख्या की जाती है।
+</p>
+
+<div class="note">
+कक्षा 10 में मुख्य रूप से grouped data का <b>Mean, Median और Mode</b>
+पढ़ा जाता है।
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>2. महत्वपूर्ण शब्द</h2>
+
+<h3>आँकड़े (Data)</h3>
+<p>
+सूचनाओं या observations के संग्रह को आँकड़े कहते हैं।
+</p>
+
+<h3>आवृत्ति (Frequency)</h3>
+<p>
+कोई observation जितनी बार आता है, उसे उसकी आवृत्ति कहते हैं।
+</p>
+
+<h3>वर्ग-अंतराल (Class Interval)</h3>
+<p>
+10–20, 20–30, 30–40 जैसे अंतराल को वर्ग-अंतराल कहते हैं।
+</p>
+
+<h3>वर्ग-चिह्न (Class Mark)</h3>
+
+<div class="formula">
+Class Mark = (ऊपरी सीमा + निचली सीमा) / 2
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>3. Grouped Data</h2>
+
+<p>
+जब आँकड़ों को class intervals और frequencies के साथ व्यवस्थित किया जाता है,
+तो उसे grouped data कहते हैं।
+</p>
+
+<div class="table-container">
+
+<table>
+
+<tr>
+<th>वर्ग-अंतराल</th>
+<th>आवृत्ति</th>
+</tr>
+
+<tr>
+<td>0–10</td>
+<td>5</td>
+</tr>
+
+<tr>
+<td>10–20</td>
+<td>8</td>
+</tr>
+
+<tr>
+<td>20–30</td>
+<td>12</td>
+</tr>
+
+<tr>
+<td>30–40</td>
+<td>7</td>
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>4. Grouped Data का Mean</h2>
+
+<p>
+Mean आँकड़ों का औसत मान बताता है।
+</p>
+
+<h3>Direct Method</h3>
+
+<div class="formula">
+
+Mean = Σfᵢxᵢ / Σfᵢ
+
+<br><br>
+
+जहाँ:
+
+<br>
+fᵢ = आवृत्ति
+
+<br>
+xᵢ = वर्ग-चिह्न
+
+</div>
+
+<h3>Steps</h3>
+
+<ol>
+<li>Class mark xᵢ निकालें।</li>
+<li>fᵢ और xᵢ को multiply करें।</li>
+<li>Σfᵢxᵢ निकालें।</li>
+<li>Σfᵢ निकालें।</li>
+<li>Mean का formula लगाएँ।</li>
+</ol>
+
+<div class="example">
+
+<b>उदाहरण:</b>
+
+<br><br>
+
+Class intervals: 0–10, 10–20, 20–30
+
+<br>
+
+Frequencies: 2, 3, 5
+
+<br><br>
+
+Class marks:
+
+<br>
+5, 15, 25
+
+<br><br>
+
+Σfᵢxᵢ
+
+<br>
+= 2×5 + 3×15 + 5×25
+
+<br>
+= 180
+
+<br><br>
+
+Σfᵢ = 10
+
+<br><br>
+
+Mean = 180/10
+
+<br>
+= <b>18</b>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>5. Assumed Mean Method</h2>
+
+<p>
+जब class marks बड़ी हों, तो assumed mean method calculation को आसान बनाता है।
+</p>
+
+<div class="formula">
+
+dᵢ = xᵢ − a
+
+<br><br>
+
+Mean = a + Σfᵢdᵢ / Σfᵢ
+
+</div>
+
+<p>
+यहाँ <b>a</b> assumed mean है।
+</p>
+
+</div>
+
+
+<div class="section">
+
+<h2>6. Step-Deviation Method</h2>
+
+<p>
+जब class intervals समान हों, तब step-deviation method calculation को
+छोटा और आसान बना सकता है।
+</p>
+
+<div class="formula">
+
+uᵢ = (xᵢ − a) / h
+
+<br><br>
+
+Mean = a + h(Σfᵢuᵢ / Σfᵢ)
+
+</div>
+
+<p>
+जहाँ:</p>
+
+<ul>
+<li>a = assumed mean</li>
+<li>h = class size</li>
+<li>xᵢ = class mark</li>
+</ul>
+
+</div>
+
+
+<div class="section">
+
+<h2>7. Median</h2>
+
+<p>
+आँकड़ों को क्रम में रखने के बाद बीच के मान को Median कहते हैं।
+Grouped data में इसके लिए formula का उपयोग किया जाता है।
+</p>
+
+<div class="formula">
+
+Median = l + [(n/2 − cf) / f] × h
+
+</div>
+
+<ul>
+<li>l = median class की lower boundary</li>
+<li>n = total frequency</li>
+<li>cf = median class से पहले की cumulative frequency</li>
+<li>f = median class की frequency</li>
+<li>h = class size</li>
+</ul>
+
+<h3>Median निकालने के Steps</h3>
+
+<ol>
+<li>Total frequency n निकालें।</li>
+<li>n/2 निकालें।</li>
+<li>Cumulative frequency बनाएं।</li>
+<li>Median class पहचानें।</li>
+<li>Formula में values रखें।</li>
+</ol>
+
+</div>
+
+
+<div class="section">
+
+<h2>8. Mode</h2>
+
+<p>
+जो मान सबसे अधिक बार आता है उसे Mode कहते हैं।
+Grouped data में highest frequency वाली class को modal class कहते हैं।
+</p>
+
+<div class="formula">
+
+Mode = l + [(f₁ − f₀) / (2f₁ − f₀ − f₂)] × h
+
+</div>
+
+<ul>
+<li>l = modal class की lower boundary</li>
+<li>f₁ = modal class की frequency</li>
+<li>f₀ = उससे पहले वाली class की frequency</li>
+<li>f₂ = उसके बाद वाली class की frequency</li>
+<li>h = class size</li>
+</ul>
+
+</div>
+
+
+<div class="section">
+
+<h2>9. Cumulative Frequency</h2>
+
+<p>
+Frequencies को लगातार जोड़ने पर cumulative frequency प्राप्त होती है।
+</p>
+
+<div class="table-container">
+
+<table>
+
+<tr>
+<th>Class</th>
+<th>Frequency</th>
+<th>Cumulative Frequency</th>
+</tr>
+
+<tr>
+<td>0–10</td>
+<td>5</td>
+<td>5</td>
+</tr>
+
+<tr>
+<td>10–20</td>
+<td>8</td>
+<td>13</td>
+</tr>
+
+<tr>
+<td>20–30</td>
+<td>12</td>
+<td>25</td>
+</tr>
+
+<tr>
+<td>30–40</td>
+<td>7</td>
+<td>32</td>
+</tr>
+
+</table>
+
+</div>
+
+<div class="note">
+पहली frequency से शुरू करके सभी frequencies को क्रम से जोड़ते जाएँ।
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>10. Median Class</h2>
+
+<p>
+जिस class की cumulative frequency पहली बार n/2 के बराबर या उससे अधिक हो,
+वही median class होती है।
+</p>
+
+<div class="formula">
+
+Median Class → First CF ≥ n/2
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>11. Empirical Relation</h2>
+
+<p>
+Moderately symmetrical distribution के लिए empirical relation का उपयोग
+किया जा सकता है।
+</p>
+
+<div class="formula">
+
+<b>Mode = 3 Median − 2 Mean</b>
+
+<br><br>
+
+या
+
+<br><br>
+
+<b>3 Median = Mode + 2 Mean</b>
+
+</div>
+
+<div class="example">
+
+<b>उदाहरण:</b>
+
+<br><br>
+
+Mean = 20
+
+<br>
+Median = 22
+
+<br><br>
+
+Mode = 3(22) − 2(20)
+
+<br>
+= 66 − 40
+
+<br>
+= <b>26</b>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>12. Continuous Class Intervals</h2>
+
+<p>
+कभी-कभी class intervals इस प्रकार दिए होते हैं:
+</p>
+
+<div class="formula">
+10–19, 20–29, 30–39
+</div>
+
+<p>
+आवश्यकता होने पर इन्हें continuous intervals में बदला जा सकता है।
+</p>
+
+<div class="note">
+
+उदाहरण:
+
+<br><br>
+
+10–19, 20–29
+
+<br><br>
+
+को:
+
+<br>
+
+9.5–19.5, 19.5–29.5
+
+<br><br>
+
+में बदला जा सकता है।
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>13. Complete Formula Table</h2>
+
+<div class="table-container">
+
+<table>
+
+<tr>
+<th>Concept</th>
+<th>Formula</th>
+</tr>
+
+<tr>
+<td>Class Mark</td>
+<td>(Upper Limit + Lower Limit) / 2</td>
+</tr>
+
+<tr>
+<td>Direct Mean</td>
+<td>Σfᵢxᵢ / Σfᵢ</td>
+</tr>
+
+<tr>
+<td>Assumed Mean</td>
+<td>a + Σfᵢdᵢ / Σfᵢ</td>
+</tr>
+
+<tr>
+<td>Step Deviation</td>
+<td>a + h(Σfᵢuᵢ / Σfᵢ)</td>
+</tr>
+
+<tr>
+<td>Median</td>
+<td>l + [(n/2 − cf)/f] × h</td>
+</tr>
+
+<tr>
+<td>Mode</td>
+<td>l + [(f₁−f₀)/(2f₁−f₀−f₂)] × h</td>
+</tr>
+
+<tr>
+<td>Empirical Relation</td>
+<td>Mode = 3 Median − 2 Mean</td>
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>14. हल किया हुआ प्रश्न – Mean</h2>
+
+<div class="example">
+
+<b>प्रश्न:</b>
+
+<br><br>
+
+x = 10, 20, 30
+
+<br>
+
+f = 2, 3, 5
+
+<br><br>
+
+<b>हल:</b>
+
+<br>
+
+Σfx = 2×10 + 3×20 + 5×30
+
+<br>
+= 230
+
+<br><br>
+
+Σf = 2 + 3 + 5
+
+<br>
+= 10
+
+<br><br>
+
+Mean = 230/10
+
+<br>
+= <b>23</b>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>15. हल किया हुआ प्रश्न – Median</h2>
+
+<div class="example">
+
+<b>प्रश्न:</b>
+
+<br><br>
+
+n = 40
+
+<br>
+l = 20
+
+<br>
+cf = 15
+
+<br>
+f = 10
+
+<br>
+h = 10
+
+<br><br>
+
+<b>हल:</b>
+
+<br>
+
+Median = l + [(n/2 − cf)/f] × h
+
+<br><br>
+
+= 20 + [(40/2 − 15)/10] × 10
+
+<br>
+
+= 20 + 5
+
+<br>
+
+= <b>25</b>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>16. हल किया हुआ प्रश्न – Mode</h2>
+
+<div class="example">
+
+<b>प्रश्न:</b>
+
+<br><br>
+
+l = 20
+
+<br>
+f₁ = 18
+
+<br>
+f₀ = 12
+
+<br>
+f₂ = 10
+
+<br>
+h = 10
+
+<br><br>
+
+<b>हल:</b>
+
+<br>
+
+Mode = l + [(f₁−f₀)/(2f₁−f₀−f₂)] × h
+
+<br><br>
+
+= 20 + [(18−12)/(36−12−10)] × 10
+
+<br>
+
+≈ <b>24.29</b>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>17. सामान्य गलतियाँ</h2>
+
+<div class="warning">
+
+<ul>
+<li>Class mark निकालना न भूलें।</li>
+<li>Total frequency n सही निकालें।</li>
+<li>Median class ध्यान से चुनें।</li>
+<li>cf हमेशा median class से पहले वाली cumulative frequency होती है।</li>
+<li>Mode में f₀, f₁ और f₂ की position ध्यान से देखें।</li>
+<li>h यानी class size सही रखें।</li>
+<li>अंतिम answer को दोबारा check करें।</li>
+</ul>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>18. बोर्ड परीक्षा के महत्वपूर्ण प्रश्न</h2>
+
+<div class="question">
+<b>प्रश्न 1.</b> Direct method से grouped data का mean निकालिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 2.</b> Assumed mean method से mean निकालिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 3.</b> Step-deviation method से mean निकालिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 4.</b> Grouped data का median निकालिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 5.</b> Grouped data का mode निकालिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 6.</b> Mean दिए जाने पर missing frequency निकालिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 7.</b> Empirical relation की मदद से Mean, Median या Mode में से
+अज्ञात मान निकालिए।
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>19. MCQs</h2>
+
+<div class="mcq">
+
+<b>1. 10–20 का class mark है:</b><br>
+A) 10<br>
+B) 15<br>
+C) 20<br>
+D) 30
+
+<p class="answer">उत्तर: B) 15</p>
+
+</div>
+
+
+<div class="mcq">
+
+<b>2. सबसे अधिक frequency वाली class कहलाती है:</b><br>
+A) Median class<br>
+B) Mean class<br>
+C) Modal class<br>
+D) Lower class
+
+<p class="answer">उत्तर: C) Modal class</p>
+
+</div>
+
+
+<div class="mcq">
+
+<b>3. Median formula में आता है:</b><br>
+A) n/2<br>
+B) n/3<br>
+C) 2n<br>
+D) n²
+
+<p class="answer">उत्तर: A) n/2</p>
+
+</div>
+
+
+<div class="mcq">
+
+<b>4. Direct method से Mean है:</b><br>
+A) Σx/Σf<br>
+B) Σfx/Σf<br>
+C) Σf/Σx<br>
+D) Σx²/Σf
+
+<p class="answer">उत्तर: B) Σfx/Σf</p>
+
+</div>
+
+
+<div class="mcq">
+
+<b>5. Empirical relation है:</b><br>
+A) Mode = Mean + Median<br>
+B) Mode = 2Mean − 3Median<br>
+C) Mode = 3Median − 2Mean<br>
+D) Mode = Mean − Median
+
+<p class="answer">उत्तर: C) Mode = 3Median − 2Mean</p>
+
+</div>
+
+
+<div class="mcq">
+
+<b>6. Frequency का अर्थ है:</b><br>
+A) औसत मान<br>
+B) किसी observation के आने की संख्या<br>
+C) बीच का मान<br>
+D) सबसे बड़ा मान
+
+<p class="answer">उत्तर: B) किसी observation के आने की संख्या</p>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>20. अभ्यास प्रश्न</h2>
+
+<div class="question">
+<b>प्रश्न 1.</b> 20–30 का class mark निकालिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 2.</b> x = 5, 10, 15 और f = 2, 3, 5 का mean निकालिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 3.</b> Assumed mean method से mean निकालिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 4.</b> Step-deviation method से mean निकालिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 5.</b> दिए गए distribution की cumulative frequency निकालिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 6.</b> Grouped frequency distribution का median निकालिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 7.</b> Grouped frequency distribution का mode निकालिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 8.</b> यदि Mean = 25 और Median = 27 है, तो Mode निकालिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 9.</b> Mean दिए जाने पर missing frequency निकालिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 10.</b> Mean, Median और Mode से संबंधित पूरा statistics question हल कीजिए।
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>21. Quick Revision</h2>
+
+<div class="formula">
+
+<b>Class Mark</b>
+
+<br>
+xᵢ = (Upper Limit + Lower Limit)/2
+
+<br><br>
+
+<b>Direct Mean</b>
+
+<br>
+Mean = Σfᵢxᵢ / Σfᵢ
+
+<br><br>
+
+<b>Assumed Mean</b>
+
+<br>
+Mean = a + Σfᵢdᵢ / Σfᵢ
+
+<br><br>
+
+<b>Step Deviation</b>
+
+<br>
+Mean = a + h(Σfᵢuᵢ / Σfᵢ)
+
+<br><br>
+
+<b>Median</b>
+
+<br>
+Median = l + [(n/2 − cf)/f] × h
+
+<br><br>
+
+<b>Mode</b>
+
+<br>
+Mode = l + [(f₁−f₀)/(2f₁−f₀−f₂)] × h
+
+<br><br>
+
+<b>Empirical Relation</b>
+
+<br>
+Mode = 3 Median − 2 Mean
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>22. Board Exam Tips</h2>
+
+<ul>
+<li>Table साफ-साफ बनाओ।</li>
+<li>Class mark सही निकालो।</li>
+<li>Σf और Σfx को ध्यान से calculate करो।</li>
+<li>Median के लिए cumulative frequency जरूर बनाओ।</li>
+<li>Median class के लिए n/2 निकालो।</li>
+<li>Mode में highest frequency वाली class पहचानो।</li>
+<li>Formula में values रखने से पहले symbols पहचानो।</li>
+<li>Final answer को check करो।</li>
+</ul>
+
+<div class="note">
+
+<b>Golden Rule:</b><br>
+
+Table बनाओ → Given पहचानो → सही Formula चुनो →
+Calculation करो → Answer check करो।
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<footer>
+
+<p><b>Golu Coaching Center</b></p>
+<p>Class 10 Mathematics – Chapter 13: Statistics</p>
+<p>© 2026 Golu Coaching Center</p>
+
+</footer>
+
+
+<script>
+
+function showHindi(){
+
+    document.getElementById("english").style.display = "none";
+    document.getElementById("hindi").style.display = "block";
+
+}
+
+function showEnglish(){
+
+    document.getElementById("hindi").style.display = "none";
+    document.getElementById("english").style.display = "block";
+
+}
+
+</script>
+
+</body>
+</html>
+

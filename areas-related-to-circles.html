@@ -1,0 +1,2035 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Areas Related to Circles | Golu Coaching Center</title>
+
+<style>
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:#f4f7fb;
+    color:#222;
+    line-height:1.7;
+}
+
+header{
+    background:linear-gradient(135deg,#1e3c72,#2a5298);
+    color:white;
+    text-align:center;
+    padding:28px 15px;
+    position:relative;
+}
+
+header h1{
+    font-size:31px;
+    margin-bottom:5px;
+}
+
+header p{
+    font-size:16px;
+}
+
+.language{
+    position:absolute;
+    top:15px;
+    right:20px;
+}
+
+.language button{
+    border:none;
+    padding:8px 13px;
+    margin-left:5px;
+    border-radius:20px;
+    cursor:pointer;
+    background:white;
+    color:#1e3c72;
+    font-weight:bold;
+}
+
+.language button:hover{
+    background:#e8f0ff;
+}
+
+.container{
+    max-width:1050px;
+    margin:25px auto;
+    padding:0 15px;
+}
+
+.back-btn{
+    display:inline-block;
+    text-decoration:none;
+    background:#1e3c72;
+    color:white;
+    padding:10px 18px;
+    border-radius:8px;
+    margin-bottom:20px;
+}
+
+.back-btn:hover{
+    background:#2a5298;
+}
+
+.section{
+    background:white;
+    padding:25px;
+    margin-bottom:22px;
+    border-radius:14px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+}
+
+.section h2{
+    color:#1e3c72;
+    margin-bottom:15px;
+    border-bottom:2px solid #e1e8f5;
+    padding-bottom:8px;
+}
+
+.section h3{
+    color:#2a5298;
+    margin-top:18px;
+    margin-bottom:8px;
+}
+
+.formula{
+    background:#eef6ff;
+    border-left:5px solid #2a5298;
+    padding:15px;
+    margin:15px 0;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.example{
+    background:#eefaf1;
+    border-left:5px solid #2e8b57;
+    padding:15px;
+    margin:15px 0;
+    border-radius:8px;
+}
+
+.note{
+    background:#fff8df;
+    border-left:5px solid #e0a800;
+    padding:15px;
+    margin:15px 0;
+    border-radius:8px;
+}
+
+.warning{
+    background:#fff0f0;
+    border-left:5px solid #dc3545;
+    padding:15px;
+    margin:15px 0;
+    border-radius:8px;
+}
+
+.diagram{
+    background:#f8f9fa;
+    border:2px dashed #9aa8bd;
+    padding:22px;
+    text-align:center;
+    margin:18px 0;
+    border-radius:10px;
+}
+
+.circle{
+    width:180px;
+    height:180px;
+    border:4px solid #2a5298;
+    border-radius:50%;
+    margin:10px auto;
+    position:relative;
+}
+
+.radius{
+    position:absolute;
+    width:82px;
+    height:3px;
+    background:#222;
+    top:88px;
+    left:90px;
+    transform:rotate(-25deg);
+    transform-origin:left;
+}
+
+.center{
+    position:absolute;
+    width:12px;
+    height:12px;
+    background:#dc3545;
+    border-radius:50%;
+    top:82px;
+    left:82px;
+}
+
+.semicircle{
+    width:190px;
+    height:95px;
+    border:4px solid #2a5298;
+    border-bottom:4px solid #222;
+    border-radius:190px 190px 0 0;
+    margin:15px auto;
+}
+
+.table-container{
+    overflow-x:auto;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+}
+
+th,td{
+    border:1px solid #ccd5e0;
+    padding:11px;
+    text-align:left;
+}
+
+th{
+    background:#1e3c72;
+    color:white;
+}
+
+tr:nth-child(even){
+    background:#f7f9fc;
+}
+
+.question{
+    background:#f8faff;
+    border:1px solid #dce5f3;
+    padding:15px;
+    border-radius:9px;
+    margin:12px 0;
+}
+
+.mcq{
+    background:#f9fbff;
+    border-left:4px solid #2a5298;
+    padding:15px;
+    margin:12px 0;
+    border-radius:8px;
+}
+
+.answer{
+    color:#18733c;
+    font-weight:bold;
+    margin-top:7px;
+}
+
+ul,ol{
+    margin-left:25px;
+    margin-top:8px;
+}
+
+li{
+    margin-bottom:6px;
+}
+
+.hindi{
+    display:none;
+}
+
+footer{
+    background:#1e3c72;
+    color:white;
+    text-align:center;
+    padding:22px 15px;
+    margin-top:30px;
+}
+
+footer p{
+    margin:4px;
+}
+
+@media(max-width:700px){
+
+    header h1{
+        font-size:24px;
+        margin-top:35px;
+    }
+
+    header p{
+        font-size:14px;
+    }
+
+    .language{
+        top:10px;
+        right:10px;
+    }
+
+    .language button{
+        padding:6px 9px;
+        font-size:12px;
+    }
+
+    .section{
+        padding:18px;
+    }
+
+    .section h2{
+        font-size:21px;
+    }
+
+    .section h3{
+        font-size:18px;
+    }
+
+    .circle{
+        width:140px;
+        height:140px;
+    }
+
+    .center{
+        top:62px;
+        left:62px;
+    }
+
+    .radius{
+        width:60px;
+        top:68px;
+        left:70px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="language">
+    <button onclick="showHindi()">हिन्दी</button>
+    <button onclick="showEnglish()">English</button>
+</div>
+
+<h1>Chapter 11 – Areas Related to Circles</h1>
+<p>Class 10 Mathematics | Golu Coaching Center</p>
+
+</header>
+
+<div class="container">
+
+<a href="class10.html" class="back-btn">← Back to Class 10</a>
+
+
+<!-- ================= ENGLISH ================= -->
+
+<div id="english">
+
+<div class="section">
+
+<h2>1. Introduction</h2>
+
+<p>
+In this chapter, we study the areas and lengths related to circles.
+We learn how to calculate the circumference, area, area of a sector,
+length of an arc and area of a segment.
+</p>
+
+<div class="diagram">
+
+<p><b>Circle</b></p>
+
+<div class="circle">
+    <div class="center"></div>
+    <div class="radius"></div>
+</div>
+
+<p>Centre, radius and circular region</p>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>2. Circumference of a Circle</h2>
+
+<p>
+The distance around a circle is called its circumference.
+</p>
+
+<div class="formula">
+
+Circumference = 2πr
+
+<br><br>
+
+or
+
+<br><br>
+
+Circumference = πd
+
+</div>
+
+<p>
+where <b>r</b> is radius and <b>d</b> is diameter.
+</p>
+
+<div class="note">
+For numerical questions, usually use π = 22/7 or π = 3.14
+as specified in the question.
+</div>
+
+<div class="example">
+
+<b>Example:</b><br>
+
+Find the circumference of a circle whose radius is 7 cm.
+
+<br><br>
+
+<b>Solution:</b>
+
+<div class="formula">
+C = 2πr
+<br>
+= 2 × 22/7 × 7
+<br>
+= <b>44 cm</b>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>3. Area of a Circle</h2>
+
+<p>
+The region enclosed by a circle is called the area of the circle.
+</p>
+
+<div class="formula">
+
+<b>Area of circle = πr²</b>
+
+</div>
+
+<div class="example">
+
+<b>Example:</b><br>
+
+Find the area of a circle of radius 7 cm.
+
+<br><br>
+
+<b>Solution:</b>
+
+<div class="formula">
+Area = πr²
+<br>
+= 22/7 × 7 × 7
+<br>
+= <b>154 cm²</b>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>4. Diameter and Radius</h2>
+
+<div class="formula">
+
+Diameter = 2r
+
+<br><br>
+
+Radius = d/2
+
+</div>
+
+<div class="example">
+
+<b>Example:</b><br>
+
+The diameter of a circle is 14 cm. Find its radius.
+
+<br><br>
+
+Radius = d/2
+<br>
+= 14/2
+<br>
+= <b>7 cm</b>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>5. Semicircle</h2>
+
+<p>
+Half of a circle is called a semicircle.
+</p>
+
+<div class="diagram">
+
+<p><b>Semicircle</b></p>
+
+<div class="semicircle"></div>
+
+</div>
+
+<h3>Area of Semicircle</h3>
+
+<div class="formula">
+Area = 1/2 × πr²
+</div>
+
+<h3>Perimeter of Semicircle</h3>
+
+<p>
+The perimeter includes the curved part and the diameter.
+</p>
+
+<div class="formula">
+Perimeter = πr + 2r
+</div>
+
+<div class="example">
+
+<b>Example:</b><br>
+
+Find the area of a semicircle of radius 7 cm.
+
+<br><br>
+
+Area = 1/2 × πr²
+<br>
+= 1/2 × 22/7 × 7 × 7
+<br>
+= <b>77 cm²</b>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>6. Quadrant</h2>
+
+<p>
+One-fourth of a circle is called a quadrant.
+</p>
+
+<div class="formula">
+Area of quadrant = 1/4 × πr²
+</div>
+
+<p>
+The complete circle has an angle of 360°.
+Therefore a quadrant has an angle of 90°.
+</p>
+
+</div>
+
+
+<div class="section">
+
+<h2>7. Sector of a Circle</h2>
+
+<p>
+A sector is the region enclosed by two radii and the corresponding arc.
+</p>
+
+<div class="diagram">
+
+<p><b>Sector</b></p>
+
+<p style="font-size:30px;">
+◔
+</p>
+
+<p>
+A sector is a part of a circular region.
+</p>
+
+</div>
+
+<p>
+If the angle of the sector is θ, then:
+</p>
+
+<div class="formula">
+
+Area of sector =
+(θ/360°) × πr²
+
+<br><br>
+
+Length of arc =
+(θ/360°) × 2πr
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>8. Area of a Sector</h2>
+
+<div class="formula">
+
+<b>Area of Sector</b>
+<br><br>
+= θ/360° × πr²
+
+</div>
+
+<div class="example">
+
+<b>Example:</b><br>
+
+Find the area of a sector of angle 90° and radius 14 cm.
+
+<br><br>
+
+<b>Solution:</b>
+
+Area = 90/360 × 22/7 × 14 × 14
+
+<br><br>
+
+= 1/4 × 22/7 × 196
+
+<br><br>
+
+= <b>154 cm²</b>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>9. Length of an Arc</h2>
+
+<p>
+An arc is a part of the circumference of a circle.
+</p>
+
+<div class="formula">
+
+Length of Arc =
+θ/360° × 2πr
+
+</div>
+
+<div class="example">
+
+<b>Example:</b><br>
+
+Find the length of an arc of a circle having radius 14 cm
+and central angle 90°.
+
+<br><br>
+
+<b>Solution:</b>
+
+Length = 90/360 × 2 × 22/7 × 14
+
+<br><br>
+
+= 1/4 × 88
+
+<br><br>
+
+= <b>22 cm</b>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>10. Important Formula Table</h2>
+
+<div class="table-container">
+
+<table>
+
+<tr>
+<th>Quantity</th>
+<th>Formula</th>
+</tr>
+
+<tr>
+<td>Diameter</td>
+<td>d = 2r</td>
+</tr>
+
+<tr>
+<td>Radius</td>
+<td>r = d/2</td>
+</tr>
+
+<tr>
+<td>Circumference</td>
+<td>2πr</td>
+</tr>
+
+<tr>
+<td>Area of Circle</td>
+<td>πr²</td>
+</tr>
+
+<tr>
+<td>Area of Semicircle</td>
+<td>1/2 πr²</td>
+</tr>
+
+<tr>
+<td>Area of Quadrant</td>
+<td>1/4 πr²</td>
+</tr>
+
+<tr>
+<td>Area of Sector</td>
+<td>θ/360 × πr²</td>
+</tr>
+
+<tr>
+<td>Length of Arc</td>
+<td>θ/360 × 2πr</td>
+</tr>
+
+<tr>
+<td>Perimeter of Semicircle</td>
+<td>πr + 2r</td>
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>11. Area of a Segment</h2>
+
+<p>
+The region between a chord and its corresponding arc is called a segment
+of a circle.
+</p>
+
+<p>
+For a minor segment:
+</p>
+
+<div class="formula">
+
+Area of Minor Segment
+=
+Area of Sector − Area of Triangle
+
+</div>
+
+<p>
+For a major segment:
+</p>
+
+<div class="formula">
+
+Area of Major Segment
+=
+Area of Circle − Area of Minor Segment
+
+</div>
+
+<div class="note">
+Remember this important relation:
+<br><br>
+<b>Segment = Sector − Triangle</b>
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>12. Solved Question – Sector</h2>
+
+<div class="example">
+
+<b>Question:</b><br>
+
+Find the area of a sector of angle 60° in a circle of radius 21 cm.
+
+<br><br>
+
+<b>Solution:</b>
+
+Area = θ/360 × πr²
+
+<br><br>
+
+= 60/360 × 22/7 × 21 × 21
+
+<br><br>
+
+= 1/6 × 22/7 × 441
+
+<br><br>
+
+= <b>231 cm²</b>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>13. Solved Question – Arc</h2>
+
+<div class="example">
+
+<b>Question:</b><br>
+
+Find the length of an arc subtending 60° at the centre
+of a circle of radius 21 cm.
+
+<br><br>
+
+<b>Solution:</b>
+
+Length = θ/360 × 2πr
+
+<br><br>
+
+= 60/360 × 2 × 22/7 × 21
+
+<br><br>
+
+= 1/6 × 132
+
+<br><br>
+
+= <b>22 cm</b>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>14. Shaded Region Problems</h2>
+
+<p>
+Many board questions ask for the area of a shaded region.
+The basic method is:
+</p>
+
+<ol>
+<li>Find the area of the complete figure.</li>
+<li>Find the area of the unshaded part.</li>
+<li>Subtract the unshaded area from the total area.</li>
+</ol>
+
+<div class="formula">
+
+Shaded Area = Total Area − Unshaded Area
+
+</div>
+
+<div class="example">
+
+<b>Example:</b><br>
+
+A square contains a circle inside it. If the side of the square
+is equal to the diameter of the circle, then:
+
+<div class="formula">
+Shaded Area = Area of Square − Area of Circle
+</div>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>15. Important Exam Method</h2>
+
+<ol>
+<li>Read the question carefully.</li>
+<li>Write the given values.</li>
+<li>Identify radius, diameter or angle.</li>
+<li>Choose the correct formula.</li>
+<li>Substitute the values.</li>
+<li>Simplify carefully.</li>
+<li>Write the correct unit.</li>
+</ol>
+
+<div class="note">
+
+<b>Units:</b>
+
+<br><br>
+
+Length → cm, m, etc.
+
+<br>
+
+Area → cm², m², etc.
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>16. Common Mistakes</h2>
+
+<div class="warning">
+
+<ul>
+<li>Do not use diameter in place of radius in πr².</li>
+<li>Always convert diameter into radius when required.</li>
+<li>Use θ/360° for sector questions.</li>
+<li>Do not forget the diameter while finding semicircle perimeter.</li>
+<li>Area is written in square units.</li>
+<li>Length of arc is a length, not an area.</li>
+<li>Check whether the question asks for sector, segment or complete circle.</li>
+</ul>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>17. Board Exam Important Questions</h2>
+
+<div class="question">
+<b>Q1.</b> Find the area of a circle of radius 14 cm.
+</div>
+
+<div class="question">
+<b>Q2.</b> Find the circumference of a circle whose diameter is 28 cm.
+</div>
+
+<div class="question">
+<b>Q3.</b> Find the area of a semicircle of radius 7 cm.
+</div>
+
+<div class="question">
+<b>Q4.</b> Find the area of a sector of angle 90° and radius 14 cm.
+</div>
+
+<div class="question">
+<b>Q5.</b> Find the length of an arc of angle 60° in a circle of radius 21 cm.
+</div>
+
+<div class="question">
+<b>Q6.</b> Find the area of a minor segment if the area of the corresponding
+sector and triangle are known.
+</div>
+
+<div class="question">
+<b>Q7.</b> Find the area of the shaded region in a suitable circular figure.
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>18. MCQs – Practice</h2>
+
+<div class="mcq">
+
+<b>1. Area of a circle is:</b><br>
+A) 2πr<br>
+B) πr²<br>
+C) πd<br>
+D) r²/π
+
+<p class="answer">Answer: B) πr²</p>
+
+</div>
+
+
+<div class="mcq">
+
+<b>2. Circumference of a circle is:</b><br>
+A) πr²<br>
+B) 2πr<br>
+C) πr/2<br>
+D) r²
+
+<p class="answer">Answer: B) 2πr</p>
+
+</div>
+
+
+<div class="mcq">
+
+<b>3. Area of a semicircle is:</b><br>
+A) πr²<br>
+B) 2πr²<br>
+C) 1/2 πr²<br>
+D) 1/4 πr²
+
+<p class="answer">Answer: C) 1/2 πr²</p>
+
+</div>
+
+
+<div class="mcq">
+
+<b>4. A quadrant has central angle:</b><br>
+A) 45°<br>
+B) 60°<br>
+C) 90°<br>
+D) 180°
+
+<p class="answer">Answer: C) 90°</p>
+
+</div>
+
+
+<div class="mcq">
+
+<b>5. Area of a sector of angle θ is:</b><br>
+A) θ/360 × πr²<br>
+B) θ/180 × πr²<br>
+C) 2πr<br>
+D) πr
+
+<p class="answer">Answer: A) θ/360 × πr²</p>
+
+</div>
+
+
+<div class="mcq">
+
+<b>6. The area of a minor segment is:</b><br>
+A) Sector + Triangle<br>
+B) Sector − Triangle<br>
+C) Circle + Sector<br>
+D) Circle − Sector
+
+<p class="answer">Answer: B) Sector − Triangle</p>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>19. Practice Set</h2>
+
+<div class="question">
+<b>Q1.</b> Find the circumference of a circle of radius 7 cm.
+</div>
+
+<div class="question">
+<b>Q2.</b> Find the area of a circle of radius 14 cm.
+</div>
+
+<div class="question">
+<b>Q3.</b> Find the radius of a circle whose diameter is 42 cm.
+</div>
+
+<div class="question">
+<b>Q4.</b> Find the area of a semicircle of radius 14 cm.
+</div>
+
+<div class="question">
+<b>Q5.</b> Find the area of a quadrant of radius 14 cm.
+</div>
+
+<div class="question">
+<b>Q6.</b> Find the area of a sector with radius 7 cm and angle 60°.
+</div>
+
+<div class="question">
+<b>Q7.</b> Find the length of an arc with radius 14 cm and angle 90°.
+</div>
+
+<div class="question">
+<b>Q8.</b> Find the shaded area when the area of the complete figure
+and the unshaded region are given.
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>20. Quick Revision</h2>
+
+<div class="formula">
+
+<b>Circumference:</b>
+2πr
+
+<br><br>
+
+<b>Area of Circle:</b>
+πr²
+
+<br><br>
+
+<b>Diameter:</b>
+2r
+
+<br><br>
+
+<b>Semicircle Area:</b>
+1/2 πr²
+
+<br><br>
+
+<b>Quadrant Area:</b>
+1/4 πr²
+
+<br><br>
+
+<b>Sector Area:</b>
+θ/360 × πr²
+
+<br><br>
+
+<b>Arc Length:</b>
+θ/360 × 2πr
+
+<br><br>
+
+<b>Minor Segment:</b>
+Sector − Triangle
+
+<br><br>
+
+<b>Shaded Area:</b>
+Total Area − Unshaded Area
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>21. Board Exam Tips</h2>
+
+<ul>
+<li>Formula सबसे पहले लिखें।</li>
+<li>Radius और diameter को carefully identify करें।</li>
+<li>π की value question के अनुसार लें।</li>
+<li>Sector के लिए θ/360° लगाना याद रखें।</li>
+<li>Area में square units लिखें।</li>
+<li>Arc की length में normal length unit लिखें।</li>
+<li>Shaded region में बड़े area से छोटे area को subtract करें।</li>
+</ul>
+
+<div class="note">
+<b>Golden Rule:</b><br>
+Question को देखकर पहले यह पहचानो कि वह Circle, Semicircle,
+Sector, Arc, Segment या Shaded Region में से किसका है।
+फिर उसी की formula लगाओ।
+</div>
+
+</div>
+
+</div>
+
+
+<!-- ================= HINDI ================= -->
+
+<div id="hindi" class="hindi">
+
+<div class="section">
+
+<h2>1. परिचय</h2>
+
+<p>
+इस अध्याय में हम वृत्त से संबंधित क्षेत्रफल और लंबाइयों का अध्ययन करेंगे।
+इसमें वृत्त की परिधि, क्षेत्रफल, अर्धवृत्त, चतुर्थांश, त्रिज्यखंड,
+चाप और वृत्तखंड से संबंधित प्रश्न शामिल हैं।
+</p>
+
+<div class="diagram">
+
+<p><b>वृत्त</b></p>
+
+<div class="circle">
+    <div class="center"></div>
+    <div class="radius"></div>
+</div>
+
+<p>केंद्र और त्रिज्या</p>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>2. वृत्त की परिधि</h2>
+
+<p>
+वृत्त के चारों ओर की दूरी को वृत्त की <b>परिधि</b> कहते हैं।
+</p>
+
+<div class="formula">
+
+परिधि = 2πr
+
+<br><br>
+
+या
+
+<br><br>
+
+परिधि = πd
+
+</div>
+
+<p>
+जहाँ r = त्रिज्या और d = व्यास।
+</p>
+
+<div class="note">
+प्रश्न में π की value दी हो तो वही लें। अन्यथा सामान्यतः
+π = 22/7 या 3.14 लिया जा सकता है।
+</div>
+
+<div class="example">
+
+<b>उदाहरण:</b><br>
+
+एक वृत्त की त्रिज्या 7 cm है। उसकी परिधि ज्ञात कीजिए।
+
+<div class="formula">
+परिधि = 2πr
+<br>
+= 2 × 22/7 × 7
+<br>
+= <b>44 cm</b>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>3. वृत्त का क्षेत्रफल</h2>
+
+<p>
+वृत्त के अंदर घिरे हुए भाग को वृत्त का क्षेत्रफल कहते हैं।
+</p>
+
+<div class="formula">
+
+<b>वृत्त का क्षेत्रफल = πr²</b>
+
+</div>
+
+<div class="example">
+
+<b>उदाहरण:</b><br>
+
+7 cm त्रिज्या वाले वृत्त का क्षेत्रफल ज्ञात कीजिए।
+
+<div class="formula">
+क्षेत्रफल = πr²
+<br>
+= 22/7 × 7 × 7
+<br>
+= <b>154 cm²</b>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>4. व्यास और त्रिज्या</h2>
+
+<div class="formula">
+
+व्यास = 2r
+
+<br><br>
+
+त्रिज्या = d/2
+
+</div>
+
+<div class="example">
+
+<b>उदाहरण:</b><br>
+
+एक वृत्त का व्यास 14 cm है। उसकी त्रिज्या ज्ञात कीजिए।
+
+<br><br>
+
+त्रिज्या = 14/2
+<br>
+= <b>7 cm</b>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>5. अर्धवृत्त</h2>
+
+<p>
+वृत्त के आधे भाग को <b>अर्धवृत्त</b> कहते हैं।
+</p>
+
+<div class="diagram">
+
+<p><b>अर्धवृत्त</b></p>
+
+<div class="semicircle"></div>
+
+</div>
+
+<h3>अर्धवृत्त का क्षेत्रफल</h3>
+
+<div class="formula">
+क्षेत्रफल = 1/2 × πr²
+</div>
+
+<h3>अर्धवृत्त की परिमाप</h3>
+
+<p>
+अर्धवृत्त की परिमाप में वक्र भाग और व्यास दोनों शामिल होते हैं।
+</p>
+
+<div class="formula">
+परिमाप = πr + 2r
+</div>
+
+<div class="example">
+
+<b>उदाहरण:</b><br>
+
+7 cm त्रिज्या वाले अर्धवृत्त का क्षेत्रफल ज्ञात कीजिए।
+
+<br><br>
+
+क्षेत्रफल = 1/2 × πr²
+<br>
+= 1/2 × 22/7 × 7 × 7
+<br>
+= <b>77 cm²</b>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>6. चतुर्थांश</h2>
+
+<p>
+वृत्त के एक-चौथाई भाग को <b>चतुर्थांश</b> कहते हैं।
+</p>
+
+<div class="formula">
+चतुर्थांश का क्षेत्रफल = 1/4 × πr²
+</div>
+
+<p>
+पूरे वृत्त का केंद्रीय कोण 360° होता है।
+इसलिए चतुर्थांश का कोण 90° होता है।
+</p>
+
+</div>
+
+
+<div class="section">
+
+<h2>7. त्रिज्यखंड (Sector)</h2>
+
+<p>
+दो त्रिज्याओं और उनके बीच के चाप से घिरे क्षेत्र को
+<b>त्रिज्यखंड</b> कहते हैं।
+</p>
+
+<div class="diagram">
+
+<p><b>त्रिज्यखंड</b></p>
+
+<p style="font-size:30px;">
+◔
+</p>
+
+<p>वृत्त का एक भाग</p>
+
+</div>
+
+<div class="formula">
+
+त्रिज्यखंड का क्षेत्रफल =
+θ/360° × πr²
+
+<br><br>
+
+चाप की लंबाई =
+θ/360° × 2πr
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>8. त्रिज्यखंड का क्षेत्रफल</h2>
+
+<div class="formula">
+
+<b>क्षेत्रफल = θ/360° × πr²</b>
+
+</div>
+
+<div class="example">
+
+<b>उदाहरण:</b><br>
+
+14 cm त्रिज्या और 90° कोण वाले त्रिज्यखंड का क्षेत्रफल ज्ञात कीजिए।
+
+<br><br>
+
+क्षेत्रफल = 90/360 × 22/7 × 14 × 14
+
+<br><br>
+
+= 1/4 × 22/7 × 196
+
+<br><br>
+
+= <b>154 cm²</b>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>9. चाप की लंबाई</h2>
+
+<p>
+वृत्त की परिधि के किसी भाग को <b>चाप</b> कहते हैं।
+</p>
+
+<div class="formula">
+
+चाप की लंबाई =
+θ/360° × 2πr
+
+</div>
+
+<div class="example">
+
+<b>उदाहरण:</b><br>
+
+14 cm त्रिज्या वाले वृत्त में 90° कोण के चाप की लंबाई ज्ञात कीजिए।
+
+<br><br>
+
+चाप की लंबाई =
+90/360 × 2 × 22/7 × 14
+
+<br><br>
+
+= 1/4 × 88
+
+<br><br>
+
+= <b>22 cm</b>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>10. महत्वपूर्ण सूत्र</h2>
+
+<div class="table-container">
+
+<table>
+
+<tr>
+<th>राशि</th>
+<th>सूत्र</th>
+</tr>
+
+<tr>
+<td>व्यास</td>
+<td>d = 2r</td>
+</tr>
+
+<tr>
+<td>त्रिज्या</td>
+<td>r = d/2</td>
+</tr>
+
+<tr>
+<td>वृत्त की परिधि</td>
+<td>2πr</td>
+</tr>
+
+<tr>
+<td>वृत्त का क्षेत्रफल</td>
+<td>πr²</td>
+</tr>
+
+<tr>
+<td>अर्धवृत्त का क्षेत्रफल</td>
+<td>1/2 πr²</td>
+</tr>
+
+<tr>
+<td>चतुर्थांश का क्षेत्रफल</td>
+<td>1/4 πr²</td>
+</tr>
+
+<tr>
+<td>त्रिज्यखंड का क्षेत्रफल</td>
+<td>θ/360 × πr²</td>
+</tr>
+
+<tr>
+<td>चाप की लंबाई</td>
+<td>θ/360 × 2πr</td>
+</tr>
+
+<tr>
+<td>अर्धवृत्त की परिमाप</td>
+<td>πr + 2r</td>
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>11. वृत्तखंड (Segment)</h2>
+
+<p>
+किसी जीवा और उसके संगत चाप के बीच के क्षेत्र को
+<b>वृत्तखंड</b> कहते हैं।
+</p>
+
+<h3>लघु वृत्तखंड</h3>
+
+<div class="formula">
+
+लघु वृत्तखंड का क्षेत्रफल
+=
+त्रिज्यखंड का क्षेत्रफल − त्रिभुज का क्षेत्रफल
+
+</div>
+
+<h3>दीर्घ वृत्तखंड</h3>
+
+<div class="formula">
+
+दीर्घ वृत्तखंड का क्षेत्रफल
+=
+वृत्त का क्षेत्रफल − लघु वृत्तखंड का क्षेत्रफल
+
+</div>
+
+<div class="note">
+
+<b>याद रखने का तरीका:</b><br><br>
+
+वृत्तखंड = त्रिज्यखंड − त्रिभुज
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>12. हल किया हुआ प्रश्न – त्रिज्यखंड</h2>
+
+<div class="example">
+
+<b>प्रश्न:</b><br>
+
+21 cm त्रिज्या वाले वृत्त में 60° कोण वाले त्रिज्यखंड का
+क्षेत्रफल ज्ञात कीजिए।
+
+<br><br>
+
+<b>हल:</b>
+
+क्षेत्रफल = θ/360 × πr²
+
+<br><br>
+
+= 60/360 × 22/7 × 21 × 21
+
+<br><br>
+
+= 1/6 × 22/7 × 441
+
+<br><br>
+
+= <b>231 cm²</b>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>13. हल किया हुआ प्रश्न – चाप</h2>
+
+<div class="example">
+
+<b>प्रश्न:</b><br>
+
+21 cm त्रिज्या वाले वृत्त में केंद्र पर 60° कोण बनाने वाले
+चाप की लंबाई ज्ञात कीजिए।
+
+<br><br>
+
+<b>हल:</b>
+
+चाप की लंबाई = θ/360 × 2πr
+
+<br><br>
+
+= 60/360 × 2 × 22/7 × 21
+
+<br><br>
+
+= 1/6 × 132
+
+<br><br>
+
+= <b>22 cm</b>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>14. छायांकित क्षेत्र के प्रश्न</h2>
+
+<p>
+कई बोर्ड प्रश्नों में shaded region अर्थात छायांकित क्षेत्र का
+क्षेत्रफल पूछा जाता है।
+</p>
+
+<ol>
+<li>पूरे figure का क्षेत्रफल निकालें।</li>
+<li>Unshaded भाग का क्षेत्रफल निकालें।</li>
+<li>दोनों को घटाएँ।</li>
+</ol>
+
+<div class="formula">
+
+छायांकित क्षेत्र =
+कुल क्षेत्रफल − बिना छायांकित क्षेत्रफल
+
+</div>
+
+<div class="example">
+
+<b>उदाहरण:</b><br>
+
+यदि एक वर्ग के अंदर एक वृत्त बना है और वर्ग की भुजा वृत्त के
+व्यास के बराबर है, तो:
+
+<div class="formula">
+छायांकित क्षेत्र =
+वर्ग का क्षेत्रफल − वृत्त का क्षेत्रफल
+</div>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>15. प्रश्न हल करने की सही विधि</h2>
+
+<ol>
+<li>प्रश्न को ध्यान से पढ़ें।</li>
+<li>Given values लिखें।</li>
+<li>त्रिज्या, व्यास और कोण पहचानें।</li>
+<li>सही formula चुनें।</li>
+<li>Values को formula में रखें।</li>
+<li>Calculation करें।</li>
+<li>सही unit लिखें।</li>
+</ol>
+
+<div class="note">
+
+<b>Units:</b><br><br>
+
+लंबाई → cm, m आदि।
+
+<br>
+
+क्षेत्रफल → cm², m² आदि।
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>16. सामान्य गलतियाँ</h2>
+
+<div class="warning">
+
+<ul>
+<li>πr² में diameter को सीधे r की जगह न रखें।</li>
+<li>जरूरत पड़ने पर पहले diameter को radius में बदलें।</li>
+<li>Sector के लिए θ/360° लगाना न भूलें।</li>
+<li>Semicircle की perimeter में diameter जोड़ना न भूलें।</li>
+<li>Area की unit square में होती है।</li>
+<li>Arc की length area नहीं होती।</li>
+<li>Sector, segment और circle के बीच अंतर समझें।</li>
+</ul>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>17. बोर्ड परीक्षा के महत्वपूर्ण प्रश्न</h2>
+
+<div class="question">
+<b>प्रश्न 1.</b> 14 cm त्रिज्या वाले वृत्त का क्षेत्रफल ज्ञात कीजिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 2.</b> 28 cm व्यास वाले वृत्त की परिधि ज्ञात कीजिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 3.</b> 7 cm त्रिज्या वाले अर्धवृत्त का क्षेत्रफल ज्ञात कीजिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 4.</b> 14 cm त्रिज्या और 90° कोण वाले त्रिज्यखंड का
+क्षेत्रफल ज्ञात कीजिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 5.</b> 21 cm त्रिज्या और 60° कोण वाले चाप की लंबाई ज्ञात कीजिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 6.</b> त्रिज्यखंड और त्रिभुज के क्षेत्रफल दिए होने पर
+लघु वृत्तखंड का क्षेत्रफल ज्ञात कीजिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 7.</b> दिए गए figure में छायांकित क्षेत्र का क्षेत्रफल ज्ञात कीजिए।
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>18. MCQ अभ्यास</h2>
+
+<div class="mcq">
+
+<b>1. वृत्त का क्षेत्रफल है:</b><br>
+A) 2πr<br>
+B) πr²<br>
+C) πd<br>
+D) r²/π
+
+<p class="answer">उत्तर: B) πr²</p>
+
+</div>
+
+
+<div class="mcq">
+
+<b>2. वृत्त की परिधि है:</b><br>
+A) πr²<br>
+B) 2πr<br>
+C) πr/2<br>
+D) r²
+
+<p class="answer">उत्तर: B) 2πr</p>
+
+</div>
+
+
+<div class="mcq">
+
+<b>3. अर्धवृत्त का क्षेत्रफल है:</b><br>
+A) πr²<br>
+B) 2πr²<br>
+C) 1/2 πr²<br>
+D) 1/4 πr²
+
+<p class="answer">उत्तर: C) 1/2 πr²</p>
+
+</div>
+
+
+<div class="mcq">
+
+<b>4. चतुर्थांश का केंद्रीय कोण होता है:</b><br>
+A) 45°<br>
+B) 60°<br>
+C) 90°<br>
+D) 180°
+
+<p class="answer">उत्तर: C) 90°</p>
+
+</div>
+
+
+<div class="mcq">
+
+<b>5. θ कोण वाले त्रिज्यखंड का क्षेत्रफल है:</b><br>
+A) θ/360 × πr²<br>
+B) θ/180 × πr²<br>
+C) 2πr<br>
+D) πr
+
+<p class="answer">उत्तर: A) θ/360 × πr²</p>
+
+</div>
+
+
+<div class="mcq">
+
+<b>6. लघु वृत्तखंड का क्षेत्रफल होता है:</b><br>
+A) त्रिज्यखंड + त्रिभुज<br>
+B) त्रिज्यखंड − त्रिभुज<br>
+C) वृत्त + त्रिज्यखंड<br>
+D) वृत्त − त्रिज्यखंड
+
+<p class="answer">उत्तर: B) त्रिज्यखंड − त्रिभुज</p>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>19. अभ्यास प्रश्न</h2>
+
+<div class="question">
+<b>प्रश्न 1.</b> 7 cm त्रिज्या वाले वृत्त की परिधि ज्ञात कीजिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 2.</b> 14 cm त्रिज्या वाले वृत्त का क्षेत्रफल ज्ञात कीजिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 3.</b> 42 cm व्यास वाले वृत्त की त्रिज्या ज्ञात कीजिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 4.</b> 14 cm त्रिज्या वाले अर्धवृत्त का क्षेत्रफल ज्ञात कीजिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 5.</b> 14 cm त्रिज्या वाले चतुर्थांश का क्षेत्रफल ज्ञात कीजिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 6.</b> 7 cm त्रिज्या और 60° कोण वाले त्रिज्यखंड का
+क्षेत्रफल ज्ञात कीजिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 7.</b> 14 cm त्रिज्या और 90° कोण वाले चाप की लंबाई ज्ञात कीजिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 8.</b> किसी figure में दिए गए कुल और बिना छायांकित
+क्षेत्रफल से shaded area ज्ञात कीजिए।
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>20. Quick Revision – त्वरित दोहराव</h2>
+
+<div class="formula">
+
+<b>परिधि:</b>
+2πr
+
+<br><br>
+
+<b>वृत्त का क्षेत्रफल:</b>
+πr²
+
+<br><br>
+
+<b>व्यास:</b>
+2r
+
+<br><br>
+
+<b>अर्धवृत्त का क्षेत्रफल:</b>
+1/2 πr²
+
+<br><br>
+
+<b>चतुर्थांश का क्षेत्रफल:</b>
+1/4 πr²
+
+<br><br>
+
+<b>त्रिज्यखंड का क्षेत्रफल:</b>
+θ/360 × πr²
+
+<br><br>
+
+<b>चाप की लंबाई:</b>
+θ/360 × 2πr
+
+<br><br>
+
+<b>लघु वृत्तखंड:</b>
+त्रिज्यखंड − त्रिभुज
+
+<br><br>
+
+<b>छायांकित क्षेत्र:</b>
+कुल क्षेत्रफल − बिना छायांकित क्षेत्रफल
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>21. बोर्ड परीक्षा के लिए Tips</h2>
+
+<ul>
+<li>सबसे पहले formula लिखें।</li>
+<li>Radius और diameter को ध्यान से पहचानें।</li>
+<li>π की value question के अनुसार लें।</li>
+<li>Sector के लिए θ/360° याद रखें।</li>
+<li>Area में square unit लिखें।</li>
+<li>Arc की length में normal length unit लिखें।</li>
+<li>Shaded region में बड़े area में से छोटे area को घटाएँ।</li>
+</ul>
+
+<div class="note">
+
+<b>Golden Rule:</b><br>
+
+प्रश्न देखकर पहले पहचानो कि वह Circle, Semicircle, Sector,
+Arc, Segment या Shaded Region में से किसका है।
+फिर उसी का सही formula लगाओ।
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<footer>
+
+<p><b>Golu Coaching Center</b></p>
+<p>Class 10 Mathematics – Chapter 11: Areas Related to Circles</p>
+<p>© 2026 Golu Coaching Center</p>
+
+</footer>
+
+
+<script>
+
+function showHindi(){
+
+    document.getElementById("english").style.display = "none";
+    document.getElementById("hindi").style.display = "block";
+
+}
+
+function showEnglish(){
+
+    document.getElementById("hindi").style.display = "none";
+    document.getElementById("english").style.display = "block";
+
+}
+
+</script>
+
+</body>
+</html>
+

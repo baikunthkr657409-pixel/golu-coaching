@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Golu Coaching - Courses & Topics</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #f5f7fb;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        /* HEADER */
+
+        header {
+            background: white;
+            padding: 18px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #2563eb;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #222;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            color: #2563eb;
+        }
+
+        .admission-btn {
+            background: #2563eb;
+            color: white !important;
+            padding: 10px 16px;
+            border-radius: 8px;
+        }
+
+        /* HERO */
+
+        .hero {
+            text-align: center;
+            padding: 90px 20px;
+            background: linear-gradient(135deg, #2563eb, #7c3aed);
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            max-width: 800px;
+            margin: auto;
+            font-size: 19px;
+        }
+
+        /* SECTION */
+
+        .section {
+            padding: 70px 7%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .section-title h2 {
+            color: #2563eb;
+            font-size: 34px;
+            margin-bottom: 8px;
+        }
+
+        .section-title p {
+            color: #666;
+        }
+
+        /* CLASS NAV */
+
+        .class-nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 45px;
+        }
+
+        .class-nav a {
+            text-decoration: none;
+            background: #2563eb;
+            color: white;
+            padding: 11px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        /* CLASS BOX */
+
+        .class-box {
+            max-width: 1100px;
+            margin: 0 auto 60px;
+        }
+
+        .class-heading {
+            background: linear-gradient(135deg, #2563eb, #7c3aed);
+            color: white;
+            padding: 22px 25px;
+            border-radius: 15px 15px 0 0;
+        }
+
+        .class-heading h2 {
+            font-size: 30px;
+        }
+
+        .class-heading p {
+            margin-top: 5px;
+        }
+
+        /* SUBJECT */
+
+        .subject {
+            background: white;
+            margin-top: 20px;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.07);
+        }
+
+        .subject h3 {
+            color: #2563eb;
+            font-size: 24px;
+            margin-bottom: 18px;
+        }
+
+        .topic {
+            background: #f8fafc;
+            border-left: 4px solid #2563eb;
+            padding: 15px 18px;
+            margin: 12px 0;
+            border-radius: 8px;
+        }
+
+        .topic h4 {
+            color: #222;
+            margin-bottom: 5px;
+            font-size: 17px;
+        }
+
+        .topic p {
+            color: #666;
+            font-size: 15px;
+        }
+
+        /* SPECIAL COURSES */
+
+        .special-courses {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .special-card {
+            background: white;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.07);
+            text-align: center;
+        }
+
+        .special-card .icon {
+            font-size: 45px;
+            margin-bottom: 12px;
+        }
+
+        .special-card h3 {
+            color: #2563eb;
+            margin-bottom: 10px;
+        }
+
+        .special-card p {
+            color: #666;
+        }
+
+        /* CTA */
+
+        .cta {
+            text-align: center;
+            padding: 75px 20px;
+            background: #eef2ff;
+        }
+
+        .cta h2 {
+            font-size: 34px;
+            margin-bottom: 12px;
+        }
+
+        .cta p {
+            color: #666;
+        }
+
+        .cta a {
+            display: inline-block;
+            margin-top: 25px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            padding: 14px 28px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 28px;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 850px) {
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .special-courses {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            .hero h1 {
+                font-size: 35px;
+            }
+
+            .section {
+                padding: 50px 18px;
+            }
+
+            .class-heading h2 {
+                font-size: 25px;
+            }
+
+            .subject {
+                padding: 20px 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="logo">
+            Golu Coaching
+        </div>
+
+        <nav>
+
+            <a href="index.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="teachers.html">Teachers</a>
+            <a href="toppers.html">Toppers</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+
+            <a href="admission.html" class="admission-btn">
+                Admission Enquiry
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <h1>Courses & Topics 📚</h1>
+
+        <p>
+            Class-wise subjects, important topics और आसान explanations
+            के साथ बेहतर preparation।
+        </p>
+
+    </section>
+
+
+    <!-- COURSE CONTENT -->
+
+    <section class="section">
+
+        <div class="section-title">
+
+            <h2>Class-wise Courses</h2>
+
+            <p>
+                अपनी class चुनें और subjects के important topics देखें।
+            </p>
+
+        </div>
+
+
+        <!-- CLASS NAV -->
+
+        <div class="class-nav">
+
+            <a href="#class9">Class 9th</a>
+            <a href="#class10">Class 10th</a>
+            <a href="#class11">Class 11th</a>
+
+        </div>
+
+
+        <!-- ================= CLASS 9 ================= -->
+
+        <div class="class-box" id="class9">
+
+            <div class="class-heading">
+
+                <h2>📘 Class 9th</h2>
+
+                <p>
+                    Strong foundation और school examination preparation
+                </p>
+
+            </div>
+
+
+            <!-- MATH -->
+
+            <div class="subject">
+
+                <h3>➗ Mathematics</h3>
+
+
+                <div class="topic">
+                    <h4>Number Systems</h4>
+                    <p>
+                        Rational और irrational numbers तथा number system
+                        के basic concepts को समझना।
+                    </p>
+                </div>
+
+
+                <div class="topic">
+                    <h4>Polynomials</h4>
+                    <p>
+                        Polynomial की पहचान, terms, coefficients और basic
+                        operations को समझना।
+                    </p>
+                </div>
+
+
+                <div class="topic">
+                    <h4>Coordinate Geometry</h4>
+                    <p>
+                        Cartesian plane और coordinates की basic understanding।
+                    </p>
+                </div>
+
+
+                <div class="topic">
+                    <h4>Linear Equations</h4>
+                    <p>
+                        दो variables वाली linear equations को समझना और
+                        graph से represent करना।
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- SCIENCE -->
+
+            <div class="subject">
+
+                <h3>🔬 Science</h3>
+
+
+                <div class="topic">
+                    <h4>Matter in Our Surroundings</h4>
+                    <p>
+                        Matter की states और उनके properties को समझना।
+                    </p>
+                </div>
+
+
+                <div class="topic">
+                    <h4>Atoms and Molecules</h4>
+                    <p>
+                        Atoms, molecules और chemical formula के basic concepts।
+                    </p>
+                </div>
+
+
+                <div class="topic">
+                    <h4>Motion</h4>
+                    <p>
+                        Distance, displacement, speed और velocity को समझना।
+                    </p>
+                </div>
+
+
+                <div class="topic">
+                    <h4>Force and Laws of Motion</h4>
+                    <p>
+                        Force और Newton's laws के basic applications को समझना।
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- SOCIAL SCIENCE -->
+
+            <div class="subject">
+
+                <h3>🌍 Social Science</h3>
+
+
+                <div class="topic">
+                    <h4>French Revolution</h4>
+                    <p>
+                        French Revolution के प्रमुख कारण और घटनाओं को समझना।
+                    </p>
+                </div>
+
+
+                <div class="topic">
+                    <h4>India – Size and Location</h4>
+                    <p>
+                        भारत की geographical location और extent को समझना।
+                    </p>
+                </div>
+
+
+                <div class="topic">
+                    <h4>Democracy</h4>
+                    <p>
+                        Democracy की meaning और उसकी मुख्य विशेषताओं को समझना।
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- LANGUAGES -->
+
+            <div class="subject">
+
+                <h3>📚 Hindi & English</h3>
+
+
+                <div class="topic">
+                    <h4>Grammar</h4>
+                    <p>
+                        भाषा के basic grammar rules और sentence formation पर practice।
+                    </p>
+                </div>
+
+
+                <div class="topic">
+                    <h4>Reading & Writing</h4>
+                    <p>
+                        Reading comprehension और सही तरीके से लिखने की practice।
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= CLASS 10 ================= -->
+
+        <div class="class-box" id="class10">
+
+            <div class="class-heading">
+
+                <h2>🎯 Class 10th</h2>
+
+                <p>
+                    Board examination और strong academic preparation
+                </p>
+
+            </div>
+
+
+            <!-- MATH -->
+
+            <div class="subject">
+
+                <h3>➗ Mathematics</h3>
+
+
+                <div class="topic">
+                    <h4>Real Numbers</h4>
+                    <p>
+                        Euclid division algorithm और real numbers के
+                        important concepts को समझना।
+                    </p>
+                </div>
+
+
+                <div class="topic">
+                    <h4>Polynomials</h4>
+                    <p>
+                        Zeros of polynomial और zeros तथा coefficients के
+                        relationship को समझना।
+                    </p>
+                </div>
+
+
+                <div class="topic">
+                    <h4>Pair of Linear Equations</h4>
+                    <p>
+                        दो linear equations को graphical और algebraic
+                        methods से solve करना।
+                    </p>
+                </div>
+
+
+                <div class="topic">
+                    <h4>Quadratic Equations</h4>
+                    <p>
+                        Quadratic equations के roots और solving methods को समझना।
+                    </p>
+                </div>
+
+
+                <div class="topic">
+                    <h4>Arithmetic Progressions</h4>
+                    <p>
+                        AP का pattern, nth term और sum को समझना।
+                    </p>
+                </div>
+
+
+                <div class="topic">
+                    <h4>Triangles</h4>
+                    <p>
+                        Similarity और triangles के important theorems को समझना।
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- SCIENCE -->
+
+            <div class="subject">
+
+                <h3>🔬 Science</h3>
+
+
+                <div class="topic">
+                    <h4>Chemical Reactions and Equations</h4>
+                    <p>
+                        Chemical reactions को identify करना और equations
+                        को balance करना।
+                    </p>
+                </div>
+
+
+                <div class="topic">
+                    <h4>Acids, Bases and Salts</h4>
+                    <p>
+                        Acids और bases के properties, pH और salts को समझना।
+                    </p>
+                </div>
+
+
+                <div class="topic">
+                    <h4>Metals and Non-metals</h4>
+                    <p>
+                        Metals और non-metals के properties तथा reactions को समझना।
+                    </p>
+                </div>
+
+
+                <div class="topic">
+                    <h4>Light – Reflection and Refraction</h4>
+                    <p>
+                        Mirrors, lenses, ray diagrams और important formulas
+                        को समझना।
+                    </p>
+                </div>
+
+
+                <div class="topic">
+                    <h4>Human Eye and Colourful World</h4>
+                    <p>
+                        Human eye की structure, defects और light phenomena
+                        को समझना।
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- SOCIAL SCIENCE -->
+
+            <div class="subject">
+
+                <h3>🌍 Social Science</h3>
+
+
+                <div class="topic">
+                    <h4>Nationalism in India</h4>
+                    <p>
+                        Indian national movement और freedom struggle के
+                        प्रमुख developments को समझना।
+                    </p>
+                </div>
+
+
+                <div class="topic">
+                    <h4>Power Sharing</h4>
+                    <p>
+                        Democracy में power sharing की importance को समझना।
+                    </p>
+                </div>
+
+
+                <div class="topic">
+                    <h4>Resources and Development</h4>
+                    <p>
+                        Natural resources और उनके sustainable use को समझना।
+                    </p>
+                </div>
+
+
+                <div class="topic">
+                    <h4>Development</h4>
+                    <p>
+                        Development के different indicators और concepts को समझना।
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- LANGUAGES -->
+
+            <div class="subject">
+
+                <h3>📚 Hindi, English & Sanskrit</h3>
+
+
+                <div class="topic">
+                    <h4>Grammar & Writing</h4>
+                    <p>
+                        Grammar rules, writing formats और exam-oriented questions
+                        की practice।
+                    </p>
+                </div>
+
+
+                <div class="topic">
+                    <h4>Literature</h4>
+                    <p>
+                        Chapters, poems और important questions की preparation।
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= CLASS 11 ================= -->
+
+        <div class="class-box" id="class11">
+
+            <div class="class-heading">
+
+                <h2>📖 Class 11th</h2>
+
+                <p>
+                    Higher secondary concepts और academic foundation
+                </p>
+
+            </div>
+
+
+            <!-- PHYSICS -->
+
+            <div class="subject">
+
+                <h3>⚛️ Physics</h3>
+
+
+                <div class="topic">
+                    <h4>Units and Measurements</h4>
+                    <p>
+                        Physical quantities, units और measurements की
+                        basic understanding।
+                    </p>
+                </div>
+
+
+                <div class="topic">
+                    <h4>Motion in a Straight Line</h4>
+                    <p>
+                        Position, velocity, acceleration और motion graphs को समझना।
+                    </p>
+                </div>
+
+
+                <div class="topic">
+                    <h4>Laws of Motion</h4>
+                    <p>
+                        Newton's laws और force के applications को समझना।
+                    </p>
+                </div>
+
+
+                <div class="topic">
+                    <h4>Work, Energy and Power</h4>
+                    <p>
+                        Work, kinetic energy, potential energy और power के concepts।
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- CHEMISTRY -->
+
+            <div class="subject">
+
+                <h3>🧪 Chemistry</h3>
+
+
+                <div class="topic">
+                    <h4>Basic Concepts of Chemistry</h4>
+                    <p>
+                        Mole concept, atomic mass और chemical calculations की basics।
+                    </p>
+                </div>
+
+
+                <div class="topic">
+                    <h4>Structure of Atom</h4>
+                    <p>
+                        Atom की structure और electronic configuration को समझना।
+                    </p>
+                </div>
+
+
+                <div class="topic">
+                    <h4>Periodic Classification</h4>
+                    <p>
+                        Periodic table और elements की trends को समझना।
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- MATHEMATICS -->
+
+            <div class="subject">
+
+                <h3>➗ Mathematics</h3>
+
+
+                <div class="topic">
+                    <h4>Sets</h4>
+                    <p>
+                        Sets, subsets और set operations को समझना।
+                    </p>
+                </div>
+
+
+                <div class="topic">
+                    <h4>Relations and Functions</h4>
+                    <p>
+                        Relations और functions के basic concepts को समझना।
+                    </p>
+                </div>
+
+
+                <div class="topic">
+                    <h4>Trigonometric Functions</h4>
+                    <p>
+                        Trigonometric ratios और identities की foundation बनाना।
+                    </p>
+                </div>
+
+
+                <div class="topic">
+                    <h4>Complex Numbers</h4>
+                    <p>
+                        Complex numbers और उनके basic operations को समझना।
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- BIOLOGY -->
+
+            <div class="subject">
+
+                <h3>🧬 Biology</h3>
+
+
+                <div class="topic">
+                    <h4>The Living World</h4>
+                    <p>
+                        Living organisms की characteristics और classification को समझना।
+                    </p>
+                </div>
+
+
+                <div class="topic">
+                    <h4>Biological Classification</h4>
+                    <p>
+                        Organisms के major groups और classification system को समझना।
+                    </p>
+                </div>
+
+
+                <div class="topic">
+                    <h4>Cell: The Unit of Life</h4>
+                    <p>
+                        Cell structure और cell organelles के functions को समझना।
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- ENGLISH -->
+
+            <div class="subject">
+
+                <h3>📘 English</h3>
+
+
+                <div class="topic">
+                    <h4>Reading Skills</h4>
+                    <p>
+                        Reading comprehension और information finding की practice।
+                    </p>
+                </div>
+
+
+                <div class="topic">
+                    <h4>Writing Skills</h4>
+                    <p>
+                        Different writing formats और effective communication पर practice।
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SPECIAL COURSES -->
+
+    <section class="section">
+
+        <div class="section-title">
+
+            <h2>Special Preparation 🚀</h2>
+
+            <p>
+                Regular classes के साथ additional preparation।
+            </p>
+
+        </div>
+
+
+        <div class="special-courses">
+
+
+            <div class="special-card">
+
+                <div class="icon">🏆</div>
+
+                <h3>Board Preparation</h3>
+
+                <p>
+                    Important chapters, revision, practice questions
+                    और exam preparation।
+                </p>
+
+            </div>
+
+
+            <div class="special-card">
+
+                <div class="icon">📝</div>
+
+                <h3>Regular Tests</h3>
+
+                <p>
+                    नियमित tests के माध्यम से preparation और
+                    progress को check करना।
+                </p>
+
+            </div>
+
+
+            <div class="special-card">
+
+                <div class="icon">💡</div>
+
+                <h3>Doubt Clearing</h3>
+
+                <p>
+                    Difficult topics और questions को समझने के लिए
+                    doubt support।
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CTA -->
+
+    <section class="cta">
+
+        <h2>Start Your Learning Journey 🎓</h2>
+
+        <p>
+            Golu Coaching के साथ अपनी preparation शुरू करें।
+        </p>
+
+        <a href="admission.html">
+            Admission Enquiry
+        </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 Golu Coaching | All Rights Reserved
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

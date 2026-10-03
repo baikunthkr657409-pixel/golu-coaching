@@ -1,0 +1,2314 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Surface Areas and Volumes | Golu Coaching Center</title>
+
+<style>
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:#f4f7fb;
+    color:#222;
+    line-height:1.7;
+}
+
+header{
+    background:linear-gradient(135deg,#1e3c72,#2a5298);
+    color:white;
+    text-align:center;
+    padding:28px 15px;
+    position:relative;
+}
+
+header h1{
+    font-size:31px;
+    margin-bottom:5px;
+}
+
+header p{
+    font-size:16px;
+}
+
+.language{
+    position:absolute;
+    top:15px;
+    right:20px;
+}
+
+.language button{
+    border:none;
+    padding:8px 13px;
+    margin-left:5px;
+    border-radius:20px;
+    cursor:pointer;
+    background:white;
+    color:#1e3c72;
+    font-weight:bold;
+}
+
+.language button:hover{
+    background:#e8f0ff;
+}
+
+.container{
+    max-width:1050px;
+    margin:25px auto;
+    padding:0 15px;
+}
+
+.back-btn{
+    display:inline-block;
+    text-decoration:none;
+    background:#1e3c72;
+    color:white;
+    padding:10px 18px;
+    border-radius:8px;
+    margin-bottom:20px;
+}
+
+.back-btn:hover{
+    background:#2a5298;
+}
+
+.section{
+    background:white;
+    padding:25px;
+    margin-bottom:22px;
+    border-radius:14px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+}
+
+.section h2{
+    color:#1e3c72;
+    margin-bottom:15px;
+    border-bottom:2px solid #e1e8f5;
+    padding-bottom:8px;
+}
+
+.section h3{
+    color:#2a5298;
+    margin-top:18px;
+    margin-bottom:8px;
+}
+
+.formula{
+    background:#eef6ff;
+    border-left:5px solid #2a5298;
+    padding:15px;
+    margin:15px 0;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.example{
+    background:#eefaf1;
+    border-left:5px solid #2e8b57;
+    padding:15px;
+    margin:15px 0;
+    border-radius:8px;
+}
+
+.note{
+    background:#fff8df;
+    border-left:5px solid #e0a800;
+    padding:15px;
+    margin:15px 0;
+    border-radius:8px;
+}
+
+.warning{
+    background:#fff0f0;
+    border-left:5px solid #dc3545;
+    padding:15px;
+    margin:15px 0;
+    border-radius:8px;
+}
+
+.shape{
+    margin:15px auto;
+    text-align:center;
+    font-size:80px;
+}
+
+.table-container{
+    overflow-x:auto;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+}
+
+th,td{
+    border:1px solid #ccd5e0;
+    padding:11px;
+    text-align:left;
+}
+
+th{
+    background:#1e3c72;
+    color:white;
+}
+
+tr:nth-child(even){
+    background:#f7f9fc;
+}
+
+.question{
+    background:#f8faff;
+    border:1px solid #dce5f3;
+    padding:15px;
+    border-radius:9px;
+    margin:12px 0;
+}
+
+.mcq{
+    background:#f9fbff;
+    border-left:4px solid #2a5298;
+    padding:15px;
+    margin:12px 0;
+    border-radius:8px;
+}
+
+.answer{
+    color:#18733c;
+    font-weight:bold;
+    margin-top:7px;
+}
+
+ul,ol{
+    margin-left:25px;
+    margin-top:8px;
+}
+
+li{
+    margin-bottom:6px;
+}
+
+.hindi{
+    display:none;
+}
+
+footer{
+    background:#1e3c72;
+    color:white;
+    text-align:center;
+    padding:22px 15px;
+    margin-top:30px;
+}
+
+footer p{
+    margin:4px;
+}
+
+@media(max-width:700px){
+
+    header h1{
+        font-size:24px;
+        margin-top:35px;
+    }
+
+    header p{
+        font-size:14px;
+    }
+
+    .language{
+        top:10px;
+        right:10px;
+    }
+
+    .language button{
+        padding:6px 9px;
+        font-size:12px;
+    }
+
+    .section{
+        padding:18px;
+    }
+
+    .section h2{
+        font-size:21px;
+    }
+
+    .section h3{
+        font-size:18px;
+    }
+
+    .shape{
+        font-size:60px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="language">
+    <button onclick="showHindi()">हिन्दी</button>
+    <button onclick="showEnglish()">English</button>
+</div>
+
+<h1>Chapter 12 – Surface Areas and Volumes</h1>
+<p>Class 10 Mathematics | Golu Coaching Center</p>
+
+</header>
+
+
+<div class="container">
+
+<a href="class10.html" class="back-btn">← Back to Class 10</a>
+
+
+<!-- ================= ENGLISH ================= -->
+
+<div id="english">
+
+<div class="section">
+
+<h2>1. Introduction</h2>
+
+<p>
+In this chapter, we study the surface areas and volumes of different
+three-dimensional solids. The main solids are cube, cuboid, cylinder,
+cone, sphere and hemisphere.
+</p>
+
+<div class="note">
+<b>Surface Area</b> tells us about the area covered by the outer surface
+of a solid, while <b>Volume</b> tells us the space occupied by the solid.
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>2. Important Terms</h2>
+
+<h3>Surface Area</h3>
+
+<p>
+The total area of all surfaces of a three-dimensional object is called
+its surface area.
+</p>
+
+<h3>Volume</h3>
+
+<p>
+The amount of space occupied by a solid is called its volume.
+</p>
+
+<div class="formula">
+
+Surface Area → square units
+
+<br><br>
+
+Volume → cubic units
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>3. Cuboid</h2>
+
+<p>
+A cuboid is a solid having six rectangular faces.
+</p>
+
+<div class="shape">▣</div>
+
+<p>
+Let length = l, breadth = b and height = h.
+</p>
+
+<div class="formula">
+
+<b>Volume of Cuboid</b>
+<br>
+V = l × b × h
+
+<br><br>
+
+<b>Total Surface Area</b>
+<br>
+TSA = 2(lb + bh + hl)
+
+<br><br>
+
+<b>Lateral Surface Area</b>
+<br>
+LSA = 2h(l + b)
+
+</div>
+
+<div class="example">
+
+<b>Example:</b><br>
+
+Find the volume of a cuboid having length 10 cm,
+breadth 5 cm and height 4 cm.
+
+<br><br>
+
+V = lbh
+
+<br>
+= 10 × 5 × 4
+
+<br>
+= <b>200 cm³</b>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>4. Cube</h2>
+
+<p>
+A cube is a special cuboid in which all edges are equal.
+</p>
+
+<div class="shape">⬜</div>
+
+<p>
+Let side of cube = a.
+</p>
+
+<div class="formula">
+
+<b>Volume</b>
+<br>
+V = a³
+
+<br><br>
+
+<b>Total Surface Area</b>
+<br>
+TSA = 6a²
+
+<br><br>
+
+<b>Lateral Surface Area</b>
+<br>
+LSA = 4a²
+
+</div>
+
+<div class="example">
+
+<b>Example:</b><br>
+
+Find the volume of a cube whose side is 5 cm.
+
+<br><br>
+
+V = a³
+
+<br>
+= 5³
+
+<br>
+= 125
+
+<br>
+= <b>125 cm³</b>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>5. Cylinder</h2>
+
+<p>
+A cylinder has two circular bases and one curved surface.
+</p>
+
+<div class="shape">🥫</div>
+
+<p>
+Let radius = r and height = h.
+</p>
+
+<div class="formula">
+
+<b>Curved Surface Area</b>
+<br>
+CSA = 2πrh
+
+<br><br>
+
+<b>Total Surface Area</b>
+<br>
+TSA = 2πr(h + r)
+
+<br><br>
+
+<b>Volume</b>
+<br>
+V = πr²h
+
+</div>
+
+<div class="example">
+
+<b>Example:</b><br>
+
+Find the volume of a cylinder with radius 7 cm
+and height 10 cm.
+
+<br><br>
+
+V = πr²h
+
+<br>
+= 22/7 × 7 × 7 × 10
+
+<br>
+= <b>1540 cm³</b>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>6. Cone</h2>
+
+<p>
+A cone has one circular base and one curved surface.
+</p>
+
+<div class="shape">🔺</div>
+
+<p>
+Let radius = r, height = h and slant height = l.
+</p>
+
+<div class="formula">
+
+<b>Slant Height</b>
+<br>
+l = √(r² + h²)
+
+<br><br>
+
+<b>Curved Surface Area</b>
+<br>
+CSA = πrl
+
+<br><br>
+
+<b>Total Surface Area</b>
+<br>
+TSA = πr(l + r)
+
+<br><br>
+
+<b>Volume</b>
+<br>
+V = 1/3 πr²h
+
+</div>
+
+<div class="example">
+
+<b>Example:</b><br>
+
+Find the volume of a cone with radius 3 cm and height 4 cm.
+
+<br><br>
+
+V = 1/3 πr²h
+
+<br>
+= 1/3 × π × 3 × 3 × 4
+
+<br>
+= <b>12π cm³</b>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>7. Sphere</h2>
+
+<p>
+A sphere is a perfectly round three-dimensional solid.
+</p>
+
+<div class="shape">⚽</div>
+
+<p>
+Let radius = r.
+</p>
+
+<div class="formula">
+
+<b>Surface Area</b>
+<br>
+SA = 4πr²
+
+<br><br>
+
+<b>Volume</b>
+<br>
+V = 4/3 πr³
+
+</div>
+
+<div class="example">
+
+<b>Example:</b><br>
+
+Find the surface area of a sphere of radius 7 cm.
+
+<br><br>
+
+SA = 4πr²
+
+<br>
+= 4 × 22/7 × 7 × 7
+
+<br>
+= <b>616 cm²</b>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>8. Hemisphere</h2>
+
+<p>
+Half of a sphere is called a hemisphere.
+</p>
+
+<div class="shape">◐</div>
+
+<p>
+Let radius = r.
+</p>
+
+<div class="formula">
+
+<b>Curved Surface Area</b>
+<br>
+CSA = 2πr²
+
+<br><br>
+
+<b>Total Surface Area</b>
+<br>
+TSA = 3πr²
+
+<br><br>
+
+<b>Volume</b>
+<br>
+V = 2/3 πr³
+
+</div>
+
+<div class="example">
+
+<b>Example:</b><br>
+
+Find the volume of a hemisphere of radius 3 cm.
+
+<br><br>
+
+V = 2/3 πr³
+
+<br>
+= 2/3 × π × 3³
+
+<br>
+= 2/3 × 27π
+
+<br>
+= <b>18π cm³</b>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>9. Frustum of a Cone</h2>
+
+<p>
+When a cone is cut by a plane parallel to its base, the remaining
+portion is called a frustum of a cone.
+</p>
+
+<div class="formula">
+
+Let larger radius = R
+
+<br>
+
+Smaller radius = r
+
+<br>
+
+Height = h
+
+<br>
+
+Slant height = l
+
+<br><br>
+
+<b>Slant Height:</b>
+<br>
+l = √[h² + (R − r)²]
+
+<br><br>
+
+<b>Curved Surface Area:</b>
+<br>
+CSA = π(R + r)l
+
+<br><br>
+
+<b>Total Surface Area:</b>
+<br>
+TSA = π(R + r)l + πR² + πr²
+
+<br><br>
+
+<b>Volume:</b>
+<br>
+V = 1/3 πh(R² + r² + Rr)
+
+</div>
+
+<div class="note">
+Frustum questions require careful identification of the two radii,
+height and slant height.
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>10. Formula Table</h2>
+
+<div class="table-container">
+
+<table>
+
+<tr>
+<th>Solid</th>
+<th>Surface Area</th>
+<th>Volume</th>
+</tr>
+
+<tr>
+<td>Cube</td>
+<td>TSA = 6a²</td>
+<td>a³</td>
+</tr>
+
+<tr>
+<td>Cuboid</td>
+<td>TSA = 2(lb + bh + hl)</td>
+<td>lbh</td>
+</tr>
+
+<tr>
+<td>Cylinder</td>
+<td>TSA = 2πr(h+r)</td>
+<td>πr²h</td>
+</tr>
+
+<tr>
+<td>Cone</td>
+<td>TSA = πr(l+r)</td>
+<td>1/3πr²h</td>
+</tr>
+
+<tr>
+<td>Sphere</td>
+<td>4πr²</td>
+<td>4/3πr³</td>
+</tr>
+
+<tr>
+<td>Hemisphere</td>
+<td>3πr²</td>
+<td>2/3πr³</td>
+</tr>
+
+<tr>
+<td>Frustum</td>
+<td>π(R+r)l + πR² + πr²</td>
+<td>1/3πh(R²+r²+Rr)</td>
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>11. Conversion of Solids</h2>
+
+<p>
+Some questions involve melting one solid and recasting it into another
+solid. In such questions, the amount of material remains the same.
+</p>
+
+<div class="formula">
+
+<b>Volume of original solid = Volume of new solid</b>
+
+</div>
+
+<div class="example">
+
+<b>Example:</b><br>
+
+A solid sphere is melted and recast into smaller spheres.
+
+The total volume remains unchanged.
+
+<br><br>
+
+Therefore:
+
+<div class="formula">
+Volume of big sphere
+=
+Total volume of smaller spheres
+</div>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>12. Combination of Solids</h2>
+
+<p>
+Sometimes two or more solids are joined together. Such a figure is called
+a combination of solids.
+</p>
+
+<p>
+For volume:
+</p>
+
+<div class="formula">
+
+Total Volume = Volume of Solid 1 + Volume of Solid 2 + ...
+
+</div>
+
+<p>
+For surface area, only the exposed surfaces should be counted.
+</p>
+
+<div class="note">
+When two solids are joined, the common internal surface is usually not
+included in the external surface area.
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>13. Solved Example – Cylinder</h2>
+
+<div class="example">
+
+<b>Question:</b><br>
+
+Find the curved surface area of a cylinder with radius 7 cm
+and height 12 cm.
+
+<br><br>
+
+<b>Solution:</b>
+
+CSA = 2πrh
+
+<br>
+= 2 × 22/7 × 7 × 12
+
+<br>
+= <b>528 cm²</b>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>14. Solved Example – Cone</h2>
+
+<div class="example">
+
+<b>Question:</b><br>
+
+A cone has radius 5 cm and height 12 cm. Find its slant height.
+
+<br><br>
+
+<b>Solution:</b>
+
+l = √(r² + h²)
+
+<br>
+= √(5² + 12²)
+
+<br>
+= √(25 + 144)
+
+<br>
+= √169
+
+<br>
+= <b>13 cm</b>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>15. Solved Example – Sphere</h2>
+
+<div class="example">
+
+<b>Question:</b><br>
+
+Find the volume of a sphere of radius 3 cm.
+
+<br><br>
+
+<b>Solution:</b>
+
+V = 4/3πr³
+
+<br>
+= 4/3 × π × 3³
+
+<br>
+= 4/3 × 27π
+
+<br>
+= <b>36π cm³</b>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>16. Solved Example – Hemisphere</h2>
+
+<div class="example">
+
+<b>Question:</b><br>
+
+Find the total surface area of a hemisphere of radius 7 cm.
+
+<br><br>
+
+<b>Solution:</b>
+
+TSA = 3πr²
+
+<br>
+= 3 × 22/7 × 7 × 7
+
+<br>
+= <b>462 cm²</b>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>17. Important Exam Method</h2>
+
+<ol>
+<li>Identify the solid.</li>
+<li>Write all given values.</li>
+<li>Check whether radius or diameter is given.</li>
+<li>If diameter is given, use r = d/2.</li>
+<li>Choose CSA, TSA or Volume according to the question.</li>
+<li>Substitute values carefully.</li>
+<li>Write correct units.</li>
+</ol>
+
+<div class="note">
+
+<b>Remember:</b>
+
+<br><br>
+
+Surface Area → square units
+
+<br>
+
+Volume → cubic units
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>18. Common Mistakes</h2>
+
+<div class="warning">
+
+<ul>
+<li>Do not use diameter directly where radius is required.</li>
+<li>Do not confuse CSA with TSA.</li>
+<li>For a cone, calculate slant height when required.</li>
+<li>Do not forget the 1/3 factor in cone volume.</li>
+<li>Do not forget the 4/3 factor in sphere volume.</li>
+<li>For hemisphere TSA, use 3πr².</li>
+<li>Use square units for area and cubic units for volume.</li>
+<li>In combined solids, do not count hidden common surfaces.</li>
+</ul>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>19. Board Exam Important Questions</h2>
+
+<div class="question">
+<b>Q1.</b> Find the total surface area of a cube of side 7 cm.
+</div>
+
+<div class="question">
+<b>Q2.</b> Find the volume of a cuboid having dimensions
+12 cm × 8 cm × 5 cm.
+</div>
+
+<div class="question">
+<b>Q3.</b> Find the curved surface area of a cylinder of radius
+7 cm and height 10 cm.
+</div>
+
+<div class="question">
+<b>Q4.</b> Find the volume of a cone of radius 7 cm and height 12 cm.
+</div>
+
+<div class="question">
+<b>Q5.</b> Find the surface area of a sphere of radius 7 cm.
+</div>
+
+<div class="question">
+<b>Q6.</b> Find the total surface area of a hemisphere of radius 7 cm.
+</div>
+
+<div class="question">
+<b>Q7.</b> A solid is melted and recast into another shape. Explain
+which quantity remains unchanged.
+</div>
+
+<div class="question">
+<b>Q8.</b> Solve a problem involving a combination of cylinder and hemisphere.
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>20. MCQs – Practice</h2>
+
+<div class="mcq">
+
+<b>1. Volume of a cube of side a is:</b><br>
+A) 6a²<br>
+B) a²<br>
+C) a³<br>
+D) 4a²
+
+<p class="answer">Answer: C) a³</p>
+
+</div>
+
+
+<div class="mcq">
+
+<b>2. Volume of a cylinder is:</b><br>
+A) 2πrh<br>
+B) πr²h<br>
+C) πrl<br>
+D) 4πr²
+
+<p class="answer">Answer: B) πr²h</p>
+
+</div>
+
+
+<div class="mcq">
+
+<b>3. Curved surface area of a cone is:</b><br>
+A) πr²<br>
+B) πrl<br>
+C) 2πrh<br>
+D) 4πr²
+
+<p class="answer">Answer: B) πrl</p>
+
+</div>
+
+
+<div class="mcq">
+
+<b>4. Volume of a sphere is:</b><br>
+A) 4πr²<br>
+B) 2πr³<br>
+C) 4/3πr³<br>
+D) πr²h
+
+<p class="answer">Answer: C) 4/3πr³</p>
+
+</div>
+
+
+<div class="mcq">
+
+<b>5. Total surface area of a hemisphere is:</b><br>
+A) 2πr²<br>
+B) 3πr²<br>
+C) 4πr²<br>
+D) πr²
+
+<p class="answer">Answer: B) 3πr²</p>
+
+</div>
+
+
+<div class="mcq">
+
+<b>6. When a solid is melted and recast, which quantity remains unchanged?</b><br>
+A) Surface area<br>
+B) Volume<br>
+C) Radius<br>
+D) Height
+
+<p class="answer">Answer: B) Volume</p>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>21. Practice Set</h2>
+
+<div class="question">
+<b>Q1.</b> Find the volume of a cube of side 6 cm.
+</div>
+
+<div class="question">
+<b>Q2.</b> Find the total surface area of a cube of side 8 cm.
+</div>
+
+<div class="question">
+<b>Q3.</b> Find the volume of a cuboid of dimensions
+10 cm × 6 cm × 4 cm.
+</div>
+
+<div class="question">
+<b>Q4.</b> Find the volume of a cylinder of radius 7 cm
+and height 15 cm.
+</div>
+
+<div class="question">
+<b>Q5.</b> Find the curved surface area of a cylinder of radius
+5 cm and height 14 cm.
+</div>
+
+<div class="question">
+<b>Q6.</b> Find the slant height of a cone whose radius is 6 cm
+and height is 8 cm.
+</div>
+
+<div class="question">
+<b>Q7.</b> Find the volume of a cone of radius 7 cm and height 9 cm.
+</div>
+
+<div class="question">
+<b>Q8.</b> Find the surface area of a sphere of radius 7 cm.
+</div>
+
+<div class="question">
+<b>Q9.</b> Find the volume of a hemisphere of radius 6 cm.
+</div>
+
+<div class="question">
+<b>Q10.</b> A solid is converted from one shape to another.
+Which quantity should be equated?
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>22. Quick Revision</h2>
+
+<div class="formula">
+
+<b>Cube:</b><br>
+TSA = 6a²<br>
+Volume = a³
+
+<br><br>
+
+<b>Cuboid:</b><br>
+TSA = 2(lb + bh + hl)<br>
+Volume = lbh
+
+<br><br>
+
+<b>Cylinder:</b><br>
+CSA = 2πrh<br>
+TSA = 2πr(h+r)<br>
+Volume = πr²h
+
+<br><br>
+
+<b>Cone:</b><br>
+l = √(r²+h²)<br>
+CSA = πrl<br>
+TSA = πr(l+r)<br>
+Volume = 1/3πr²h
+
+<br><br>
+
+<b>Sphere:</b><br>
+SA = 4πr²<br>
+Volume = 4/3πr³
+
+<br><br>
+
+<b>Hemisphere:</b><br>
+CSA = 2πr²<br>
+TSA = 3πr²<br>
+Volume = 2/3πr³
+
+<br><br>
+
+<b>Frustum:</b><br>
+CSA = π(R+r)l<br>
+Volume = 1/3πh(R²+r²+Rr)
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>23. Board Exam Tips</h2>
+
+<ul>
+<li>पहले solid पहचानो।</li>
+<li>Radius और diameter check करो।</li>
+<li>CSA, TSA और Volume में अंतर याद रखो।</li>
+<li>Cone में slant height निकालना याद रखो।</li>
+<li>Formula लिखकर ही calculation शुरू करो।</li>
+<li>Area की unit cm²/m² और volume की unit cm³/m³ रखें।</li>
+<li>Combined solids में hidden surfaces को count मत करो।</li>
+<li>Melting और recasting में volume बराबर रखें।</li>
+</ul>
+
+<div class="note">
+
+<b>Golden Rule:</b><br>
+
+पहले Figure पहचानो → Given लिखो → सही Formula चुनो →
+Values रखो → Calculate करो → सही Unit लिखो।
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- ================= HINDI ================= -->
+
+<div id="hindi" class="hindi">
+
+<div class="section">
+
+<h2>1. परिचय</h2>
+
+<p>
+इस अध्याय में हम अलग-अलग तीन-आयामी आकृतियों के पृष्ठीय क्षेत्रफल
+और आयतन का अध्ययन करेंगे। मुख्य आकृतियाँ हैं:
+घन, घनाभ, बेलन, शंकु, गोला और अर्द्धगोला।
+</p>
+
+<div class="note">
+<b>पृष्ठीय क्षेत्रफल</b> किसी ठोस आकृति की बाहरी सतह का क्षेत्रफल बताता है,
+जबकि <b>आयतन</b> उस ठोस द्वारा घेरे गए स्थान को बताता है।
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>2. महत्वपूर्ण शब्द</h2>
+
+<h3>पृष्ठीय क्षेत्रफल</h3>
+
+<p>
+किसी तीन-आयामी वस्तु की सभी सतहों के क्षेत्रफल का योग
+पृष्ठीय क्षेत्रफल कहलाता है।
+</p>
+
+<h3>आयतन</h3>
+
+<p>
+किसी ठोस वस्तु द्वारा घेरे गए स्थान को उसका आयतन कहते हैं।
+</p>
+
+<div class="formula">
+
+पृष्ठीय क्षेत्रफल → वर्ग इकाई
+
+<br><br>
+
+आयतन → घन इकाई
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>3. घनाभ (Cuboid)</h2>
+
+<p>
+घनाभ एक ऐसी ठोस आकृति है जिसकी छह सतहें आयताकार होती हैं।
+</p>
+
+<div class="shape">▣</div>
+
+<p>
+लंबाई = l, चौड़ाई = b और ऊँचाई = h.
+</p>
+
+<div class="formula">
+
+<b>घनाभ का आयतन</b>
+<br>
+V = l × b × h
+
+<br><br>
+
+<b>कुल पृष्ठीय क्षेत्रफल</b>
+<br>
+TSA = 2(lb + bh + hl)
+
+<br><br>
+
+<b>पार्श्व पृष्ठीय क्षेत्रफल</b>
+<br>
+LSA = 2h(l + b)
+
+</div>
+
+<div class="example">
+
+<b>उदाहरण:</b><br>
+
+एक घनाभ की लंबाई 10 cm, चौड़ाई 5 cm और ऊँचाई 4 cm है।
+उसका आयतन ज्ञात कीजिए।
+
+<br><br>
+
+V = lbh
+
+<br>
+= 10 × 5 × 4
+
+<br>
+= <b>200 cm³</b>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>4. घन (Cube)</h2>
+
+<p>
+घन एक विशेष घनाभ है जिसकी सभी भुजाएँ बराबर होती हैं।
+</p>
+
+<div class="shape">⬜</div>
+
+<p>
+घन की भुजा = a
+</p>
+
+<div class="formula">
+
+<b>आयतन</b>
+<br>
+V = a³
+
+<br><br>
+
+<b>कुल पृष्ठीय क्षेत्रफल</b>
+<br>
+TSA = 6a²
+
+<br><br>
+
+<b>पार्श्व पृष्ठीय क्षेत्रफल</b>
+<br>
+LSA = 4a²
+
+</div>
+
+<div class="example">
+
+<b>उदाहरण:</b><br>
+
+5 cm भुजा वाले घन का आयतन ज्ञात कीजिए।
+
+<br><br>
+
+V = a³
+
+<br>
+= 5³
+
+<br>
+= <b>125 cm³</b>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>5. बेलन (Cylinder)</h2>
+
+<p>
+बेलन में दो वृत्ताकार आधार और एक वक्र सतह होती है।
+</p>
+
+<div class="shape">🥫</div>
+
+<p>
+त्रिज्या = r और ऊँचाई = h
+</p>
+
+<div class="formula">
+
+<b>वक्र पृष्ठीय क्षेत्रफल</b>
+<br>
+CSA = 2πrh
+
+<br><br>
+
+<b>कुल पृष्ठीय क्षेत्रफल</b>
+<br>
+TSA = 2πr(h+r)
+
+<br><br>
+
+<b>आयतन</b>
+<br>
+V = πr²h
+
+</div>
+
+<div class="example">
+
+<b>उदाहरण:</b><br>
+
+7 cm त्रिज्या और 10 cm ऊँचाई वाले बेलन का आयतन ज्ञात कीजिए।
+
+<br><br>
+
+V = πr²h
+
+<br>
+= 22/7 × 7 × 7 × 10
+
+<br>
+= <b>1540 cm³</b>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>6. शंकु (Cone)</h2>
+
+<p>
+शंकु में एक वृत्ताकार आधार और एक वक्र सतह होती है।
+</p>
+
+<div class="shape">🔺</div>
+
+<p>
+त्रिज्या = r, ऊँचाई = h और तिर्यक ऊँचाई = l
+</p>
+
+<div class="formula">
+
+<b>तिर्यक ऊँचाई</b>
+<br>
+l = √(r² + h²)
+
+<br><br>
+
+<b>वक्र पृष्ठीय क्षेत्रफल</b>
+<br>
+CSA = πrl
+
+<br><br>
+
+<b>कुल पृष्ठीय क्षेत्रफल</b>
+<br>
+TSA = πr(l+r)
+
+<br><br>
+
+<b>आयतन</b>
+<br>
+V = 1/3 πr²h
+
+</div>
+
+<div class="example">
+
+<b>उदाहरण:</b><br>
+
+एक शंकु की त्रिज्या 3 cm और ऊँचाई 4 cm है।
+उसका आयतन ज्ञात कीजिए।
+
+<br><br>
+
+V = 1/3πr²h
+
+<br>
+= 1/3 × π × 3 × 3 × 4
+
+<br>
+= <b>12π cm³</b>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>7. गोला (Sphere)</h2>
+
+<p>
+गोला एक पूर्णतः गोल तीन-आयामी ठोस आकृति है।
+</p>
+
+<div class="shape">⚽</div>
+
+<p>
+त्रिज्या = r
+</p>
+
+<div class="formula">
+
+<b>पृष्ठीय क्षेत्रफल</b>
+<br>
+SA = 4πr²
+
+<br><br>
+
+<b>आयतन</b>
+<br>
+V = 4/3πr³
+
+</div>
+
+<div class="example">
+
+<b>उदाहरण:</b><br>
+
+7 cm त्रिज्या वाले गोले का पृष्ठीय क्षेत्रफल ज्ञात कीजिए।
+
+<br><br>
+
+SA = 4πr²
+
+<br>
+= 4 × 22/7 × 7 × 7
+
+<br>
+= <b>616 cm²</b>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>8. अर्द्धगोला (Hemisphere)</h2>
+
+<p>
+गोले के आधे भाग को अर्द्धगोला कहते हैं।
+</p>
+
+<div class="shape">◐</div>
+
+<p>
+त्रिज्या = r
+</p>
+
+<div class="formula">
+
+<b>वक्र पृष्ठीय क्षेत्रफल</b>
+<br>
+CSA = 2πr²
+
+<br><br>
+
+<b>कुल पृष्ठीय क्षेत्रफल</b>
+<br>
+TSA = 3πr²
+
+<br><br>
+
+<b>आयतन</b>
+<br>
+V = 2/3πr³
+
+</div>
+
+<div class="example">
+
+<b>उदाहरण:</b><br>
+
+3 cm त्रिज्या वाले अर्द्धगोले का आयतन ज्ञात कीजिए।
+
+<br><br>
+
+V = 2/3πr³
+
+<br>
+= 2/3 × π × 3³
+
+<br>
+= <b>18π cm³</b>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>9. शंकु का छिन्नक (Frustum)</h2>
+
+<p>
+जब किसी शंकु को उसके आधार के समानांतर एक तल द्वारा काटा जाता है,
+तो शंकु के बचे हुए भाग को शंकु का छिन्नक कहते हैं।
+</p>
+
+<div class="formula">
+
+बड़ी त्रिज्या = R
+
+<br>
+
+छोटी त्रिज्या = r
+
+<br>
+
+ऊँचाई = h
+
+<br>
+
+तिर्यक ऊँचाई = l
+
+<br><br>
+
+<b>तिर्यक ऊँचाई:</b>
+<br>
+l = √[h² + (R − r)²]
+
+<br><br>
+
+<b>वक्र पृष्ठीय क्षेत्रफल:</b>
+<br>
+CSA = π(R+r)l
+
+<br><br>
+
+<b>कुल पृष्ठीय क्षेत्रफल:</b>
+<br>
+TSA = π(R+r)l + πR² + πr²
+
+<br><br>
+
+<b>आयतन:</b>
+<br>
+V = 1/3πh(R²+r²+Rr)
+
+</div>
+
+<div class="note">
+छिन्नक के प्रश्न में दोनों त्रिज्या, ऊँचाई और तिर्यक ऊँचाई को
+ध्यान से पहचानें।
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>10. महत्वपूर्ण Formula Table</h2>
+
+<div class="table-container">
+
+<table>
+
+<tr>
+<th>आकृति</th>
+<th>पृष्ठीय क्षेत्रफल</th>
+<th>आयतन</th>
+</tr>
+
+<tr>
+<td>घन</td>
+<td>TSA = 6a²</td>
+<td>a³</td>
+</tr>
+
+<tr>
+<td>घनाभ</td>
+<td>TSA = 2(lb + bh + hl)</td>
+<td>lbh</td>
+</tr>
+
+<tr>
+<td>बेलन</td>
+<td>TSA = 2πr(h+r)</td>
+<td>πr²h</td>
+</tr>
+
+<tr>
+<td>शंकु</td>
+<td>TSA = πr(l+r)</td>
+<td>1/3πr²h</td>
+</tr>
+
+<tr>
+<td>गोला</td>
+<td>4πr²</td>
+<td>4/3πr³</td>
+</tr>
+
+<tr>
+<td>अर्द्धगोला</td>
+<td>3πr²</td>
+<td>2/3πr³</td>
+</tr>
+
+<tr>
+<td>छिन्नक</td>
+<td>π(R+r)l + πR² + πr²</td>
+<td>1/3πh(R²+r²+Rr)</td>
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>11. एक ठोस को दूसरे ठोस में बदलना</h2>
+
+<p>
+जब किसी ठोस आकृति को पिघलाकर दूसरी आकृति में बनाया जाता है,
+तो सामग्री की मात्रा समान रहती है।
+</p>
+
+<div class="formula">
+
+<b>पुराने ठोस का आयतन = नए ठोस का आयतन</b>
+
+</div>
+
+<div class="example">
+
+<b>उदाहरण:</b><br>
+
+एक बड़े गोले को पिघलाकर छोटे गोलों में बदला गया।
+
+<div class="formula">
+बड़े गोले का आयतन
+=
+सभी छोटे गोलों के कुल आयतन
+</div>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>12. संयुक्त ठोस आकृतियाँ</h2>
+
+<p>
+जब दो या अधिक ठोस आकृतियों को जोड़ दिया जाता है तो संयुक्त ठोस आकृति
+बनती है।
+</p>
+
+<div class="formula">
+
+कुल आयतन =
+पहली आकृति का आयतन + दूसरी आकृति का आयतन + ...
+
+</div>
+
+<div class="note">
+जब दो आकृतियाँ आपस में जुड़ी हों तो उनके बीच की छिपी हुई सतह को
+बाहरी पृष्ठीय क्षेत्रफल में सामान्यतः शामिल नहीं किया जाता।
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>13. हल किया हुआ प्रश्न – बेलन</h2>
+
+<div class="example">
+
+<b>प्रश्न:</b><br>
+
+7 cm त्रिज्या और 12 cm ऊँचाई वाले बेलन का वक्र पृष्ठीय क्षेत्रफल
+ज्ञात कीजिए।
+
+<br><br>
+
+<b>हल:</b>
+
+CSA = 2πrh
+
+<br>
+= 2 × 22/7 × 7 × 12
+
+<br>
+= <b>528 cm²</b>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>14. हल किया हुआ प्रश्न – शंकु</h2>
+
+<div class="example">
+
+<b>प्रश्न:</b><br>
+
+एक शंकु की त्रिज्या 5 cm और ऊँचाई 12 cm है।
+उसकी तिर्यक ऊँचाई ज्ञात कीजिए।
+
+<br><br>
+
+<b>हल:</b>
+
+l = √(r²+h²)
+
+<br>
+= √(5²+12²)
+
+<br>
+= √(25+144)
+
+<br>
+= √169
+
+<br>
+= <b>13 cm</b>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>15. हल किया हुआ प्रश्न – गोला</h2>
+
+<div class="example">
+
+<b>प्रश्न:</b><br>
+
+3 cm त्रिज्या वाले गोले का आयतन ज्ञात कीजिए।
+
+<br><br>
+
+<b>हल:</b>
+
+V = 4/3πr³
+
+<br>
+= 4/3 × π × 3³
+
+<br>
+= 4/3 × 27π
+
+<br>
+= <b>36π cm³</b>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>16. हल किया हुआ प्रश्न – अर्द्धगोला</h2>
+
+<div class="example">
+
+<b>प्रश्न:</b><br>
+
+7 cm त्रिज्या वाले अर्द्धगोले का कुल पृष्ठीय क्षेत्रफल ज्ञात कीजिए।
+
+<br><br>
+
+<b>हल:</b>
+
+TSA = 3πr²
+
+<br>
+= 3 × 22/7 × 7 × 7
+
+<br>
+= <b>462 cm²</b>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>17. प्रश्न हल करने की सही विधि</h2>
+
+<ol>
+<li>सबसे पहले आकृति पहचानें।</li>
+<li>सभी दिए गए मान लिखें।</li>
+<li>देखें कि त्रिज्या दी है या व्यास।</li>
+<li>व्यास दिया हो तो r = d/2 करें।</li>
+<li>CSA, TSA या Volume में से सही formula चुनें।</li>
+<li>Values को formula में रखें।</li>
+<li>Calculation करें।</li>
+<li>सही unit लिखें।</li>
+</ol>
+
+<div class="note">
+
+<b>याद रखें:</b>
+
+<br><br>
+
+क्षेत्रफल → वर्ग इकाई
+
+<br>
+
+आयतन → घन इकाई
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>18. सामान्य गलतियाँ</h2>
+
+<div class="warning">
+
+<ul>
+<li>जहाँ radius चाहिए वहाँ diameter को सीधे न रखें।</li>
+<li>CSA और TSA को confuse न करें।</li>
+<li>शंकु में जरूरत पड़ने पर तिर्यक ऊँचाई निकालें।</li>
+<li>शंकु के आयतन में 1/3 लगाना न भूलें।</li>
+<li>गोले के आयतन में 4/3 लगाना न भूलें।</li>
+<li>अर्द्धगोले के TSA के लिए 3πr² लगाएँ।</li>
+<li>Area के लिए square unit और Volume के लिए cubic unit रखें।</li>
+<li>संयुक्त ठोस आकृतियों में छिपी सतहों को बाहरी area में न जोड़ें।</li>
+</ul>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>19. बोर्ड परीक्षा के महत्वपूर्ण प्रश्न</h2>
+
+<div class="question">
+<b>प्रश्न 1.</b> 7 cm भुजा वाले घन का कुल पृष्ठीय क्षेत्रफल ज्ञात कीजिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 2.</b> 12 cm × 8 cm × 5 cm वाले घनाभ का आयतन ज्ञात कीजिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 3.</b> 7 cm त्रिज्या और 10 cm ऊँचाई वाले बेलन का
+वक्र पृष्ठीय क्षेत्रफल ज्ञात कीजिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 4.</b> 7 cm त्रिज्या और 12 cm ऊँचाई वाले शंकु का
+आयतन ज्ञात कीजिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 5.</b> 7 cm त्रिज्या वाले गोले का पृष्ठीय क्षेत्रफल ज्ञात कीजिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 6.</b> 7 cm त्रिज्या वाले अर्द्धगोले का कुल पृष्ठीय
+क्षेत्रफल ज्ञात कीजिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 7.</b> एक ठोस को पिघलाकर दूसरी आकृति में बदला गया।
+कौन-सी राशि समान रहती है?
+</div>
+
+<div class="question">
+<b>प्रश्न 8.</b> बेलन और अर्द्धगोले से बनी संयुक्त आकृति का
+क्षेत्रफल या आयतन ज्ञात कीजिए।
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>20. MCQ अभ्यास</h2>
+
+<div class="mcq">
+
+<b>1. a भुजा वाले घन का आयतन है:</b><br>
+A) 6a²<br>
+B) a²<br>
+C) a³<br>
+D) 4a²
+
+<p class="answer">उत्तर: C) a³</p>
+
+</div>
+
+
+<div class="mcq">
+
+<b>2. बेलन का आयतन है:</b><br>
+A) 2πrh<br>
+B) πr²h<br>
+C) πrl<br>
+D) 4πr²
+
+<p class="answer">उत्तर: B) πr²h</p>
+
+</div>
+
+
+<div class="mcq">
+
+<b>3. शंकु का वक्र पृष्ठीय क्षेत्रफल है:</b><br>
+A) πr²<br>
+B) πrl<br>
+C) 2πrh<br>
+D) 4πr²
+
+<p class="answer">उत्तर: B) πrl</p>
+
+</div>
+
+
+<div class="mcq">
+
+<b>4. गोले का आयतन है:</b><br>
+A) 4πr²<br>
+B) 2πr³<br>
+C) 4/3πr³<br>
+D) πr²h
+
+<p class="answer">उत्तर: C) 4/3πr³</p>
+
+</div>
+
+
+<div class="mcq">
+
+<b>5. अर्द्धगोले का कुल पृष्ठीय क्षेत्रफल है:</b><br>
+A) 2πr²<br>
+B) 3πr²<br>
+C) 4πr²<br>
+D) πr²
+
+<p class="answer">उत्तर: B) 3πr²</p>
+
+</div>
+
+
+<div class="mcq">
+
+<b>6. किसी ठोस को पिघलाकर दूसरी आकृति बनाने पर कौन-सी राशि समान रहती है?</b><br>
+A) पृष्ठीय क्षेत्रफल<br>
+B) आयतन<br>
+C) त्रिज्या<br>
+D) ऊँचाई
+
+<p class="answer">उत्तर: B) आयतन</p>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>21. अभ्यास प्रश्न</h2>
+
+<div class="question">
+<b>प्रश्न 1.</b> 6 cm भुजा वाले घन का आयतन ज्ञात कीजिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 2.</b> 8 cm भुजा वाले घन का कुल पृष्ठीय क्षेत्रफल ज्ञात कीजिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 3.</b> 10 cm × 6 cm × 4 cm वाले घनाभ का आयतन ज्ञात कीजिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 4.</b> 7 cm त्रिज्या और 15 cm ऊँचाई वाले बेलन का आयतन ज्ञात कीजिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 5.</b> 5 cm त्रिज्या और 14 cm ऊँचाई वाले बेलन का
+वक्र पृष्ठीय क्षेत्रफल ज्ञात कीजिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 6.</b> 6 cm त्रिज्या और 8 cm ऊँचाई वाले शंकु की
+तिर्यक ऊँचाई ज्ञात कीजिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 7.</b> 7 cm त्रिज्या और 9 cm ऊँचाई वाले शंकु का आयतन ज्ञात कीजिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 8.</b> 7 cm त्रिज्या वाले गोले का पृष्ठीय क्षेत्रफल ज्ञात कीजिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 9.</b> 6 cm त्रिज्या वाले अर्द्धगोले का आयतन ज्ञात कीजिए।
+</div>
+
+<div class="question">
+<b>प्रश्न 10.</b> एक ठोस को एक आकृति से दूसरी आकृति में बदला गया।
+किस राशि को बराबर रखना चाहिए?
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>22. Quick Revision – त्वरित दोहराव</h2>
+
+<div class="formula">
+
+<b>घन:</b><br>
+TSA = 6a²<br>
+आयतन = a³
+
+<br><br>
+
+<b>घनाभ:</b><br>
+TSA = 2(lb + bh + hl)<br>
+आयतन = lbh
+
+<br><br>
+
+<b>बेलन:</b><br>
+CSA = 2πrh<br>
+TSA = 2πr(h+r)<br>
+आयतन = πr²h
+
+<br><br>
+
+<b>शंकु:</b><br>
+l = √(r²+h²)<br>
+CSA = πrl<br>
+TSA = πr(l+r)<br>
+आयतन = 1/3πr²h
+
+<br><br>
+
+<b>गोला:</b><br>
+SA = 4πr²<br>
+आयतन = 4/3πr³
+
+<br><br>
+
+<b>अर्द्धगोला:</b><br>
+CSA = 2πr²<br>
+TSA = 3πr²<br>
+आयतन = 2/3πr³
+
+<br><br>
+
+<b>छिन्नक:</b><br>
+CSA = π(R+r)l<br>
+आयतन = 1/3πh(R²+r²+Rr)
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>23. बोर्ड परीक्षा के लिए Tips</h2>
+
+<ul>
+<li>पहले figure पहचानो।</li>
+<li>Radius और diameter check करो।</li>
+<li>CSA, TSA और Volume का अंतर याद रखो।</li>
+<li>Cone में slant height निकालना याद रखो।</li>
+<li>Formula लिखकर calculation शुरू करो।</li>
+<li>Area में cm²/m² और Volume में cm³/m³ लिखो।</li>
+<li>Combined solids में hidden surfaces को count मत करो।</li>
+<li>Melting और recasting में volume बराबर रखो।</li>
+</ul>
+
+<div class="note">
+
+<b>Golden Rule:</b><br>
+
+Figure पहचानो → Given लिखो → Formula चुनो →
+Values रखो → Calculate करो → सही Unit लिखो।
+
+</div>
+
+</div>
+
+</div>
+
+
+<footer>
+
+<p><b>Golu Coaching Center</b></p>
+<p>Class 10 Mathematics – Chapter 12: Surface Areas and Volumes</p>
+<p>© 2026 Golu Coaching Center</p>
+
+</footer>
+
+
+<script>
+
+function showHindi(){
+
+    document.getElementById("english").style.display = "none";
+    document.getElementById("hindi").style.display = "block";
+
+}
+
+function showEnglish(){
+
+    document.getElementById("hindi").style.display = "none";
+    document.getElementById("english").style.display = "block";
+
+}
+
+</script>
+
+</body>
+</html>
+

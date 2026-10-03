@@ -1,0 +1,1866 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Applications of Trigonometry | Golu Coaching Center</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    color:#222;
+    line-height:1.7;
+}
+
+header{
+    background:linear-gradient(135deg,#1e3c72,#2a5298);
+    color:white;
+    padding:30px 20px;
+    text-align:center;
+    position:relative;
+}
+
+header h1{
+    font-size:34px;
+    margin-bottom:5px;
+}
+
+header p{
+    font-size:17px;
+}
+
+.language{
+    position:absolute;
+    right:20px;
+    top:20px;
+}
+
+.language button{
+    border:none;
+    padding:8px 13px;
+    margin-left:5px;
+    border-radius:20px;
+    cursor:pointer;
+    font-weight:bold;
+    background:white;
+    color:#1e3c72;
+}
+
+.container{
+    max-width:1050px;
+    margin:30px auto;
+    padding:0 15px;
+}
+
+.section{
+    background:white;
+    margin-bottom:25px;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 18px rgba(0,0,0,.08);
+}
+
+.section h2{
+    color:#1e3c72;
+    margin-bottom:15px;
+    border-left:5px solid #2a5298;
+    padding-left:12px;
+}
+
+.section h3{
+    color:#2a5298;
+    margin-top:18px;
+    margin-bottom:8px;
+}
+
+.formula{
+    background:#eaf3ff;
+    border-left:5px solid #2a5298;
+    padding:15px;
+    margin:15px 0;
+    border-radius:8px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.note{
+    background:#fff8d9;
+    border-left:5px solid #e0b000;
+    padding:15px;
+    margin:15px 0;
+    border-radius:8px;
+}
+
+.example{
+    background:#f0fff4;
+    border-left:5px solid #28a745;
+    padding:18px;
+    margin:15px 0;
+    border-radius:8px;
+}
+
+.warning{
+    background:#fff0f0;
+    border-left:5px solid #dc3545;
+    padding:15px;
+    margin:15px 0;
+    border-radius:8px;
+}
+
+.diagram{
+    background:#f8f9fa;
+    border:2px dashed #2a5298;
+    padding:20px;
+    margin:18px 0;
+    border-radius:12px;
+    text-align:center;
+    font-size:18px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin:18px 0;
+}
+
+th,td{
+    border:1px solid #ddd;
+    padding:12px;
+    text-align:center;
+}
+
+th{
+    background:#1e3c72;
+    color:white;
+}
+
+tr:nth-child(even){
+    background:#f7f9fc;
+}
+
+ul,ol{
+    padding-left:25px;
+    margin:10px 0;
+}
+
+li{
+    margin:5px 0;
+}
+
+.question{
+    background:#f8f9fa;
+    border:1px solid #ddd;
+    padding:15px;
+    border-radius:10px;
+    margin:10px 0;
+}
+
+.answer{
+    color:#18752b;
+    font-weight:bold;
+    margin-top:6px;
+}
+
+.mcq{
+    background:#f5f8ff;
+    padding:15px;
+    border-radius:10px;
+    margin:12px 0;
+}
+
+.badge{
+    display:inline-block;
+    background:#2a5298;
+    color:white;
+    padding:5px 10px;
+    border-radius:20px;
+    margin:3px;
+    font-size:14px;
+}
+
+.back{
+    text-align:center;
+    margin:30px 0;
+}
+
+.back a{
+    text-decoration:none;
+    background:#1e3c72;
+    color:white;
+    padding:12px 22px;
+    border-radius:25px;
+    display:inline-block;
+}
+
+footer{
+    background:#1e3c72;
+    color:white;
+    text-align:center;
+    padding:25px 15px;
+    margin-top:40px;
+}
+
+.hidden{
+    display:none;
+}
+
+@media(max-width:700px){
+
+    header h1{
+        font-size:25px;
+        padding-top:30px;
+    }
+
+    header p{
+        font-size:14px;
+    }
+
+    .language{
+        position:static;
+        margin-top:15px;
+    }
+
+    .section{
+        padding:18px;
+    }
+
+    table{
+        font-size:13px;
+    }
+
+    th,td{
+        padding:8px 5px;
+    }
+
+    .formula{
+        font-size:16px;
+    }
+
+    .diagram{
+        font-size:15px;
+        overflow-x:auto;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="language">
+<button onclick="showEnglish()">English</button>
+<button onclick="showHindi()">हिन्दी</button>
+</div>
+
+<h1>Applications of Trigonometry</h1>
+<p>Class 10 Mathematics | Chapter 9</p>
+
+</header>
+
+
+<div class="container">
+
+
+<!-- ================= ENGLISH ================= -->
+
+<div id="english">
+
+
+<div class="section">
+
+<h2>1. Introduction</h2>
+
+<p>
+Trigonometry is not only used for finding ratios in a triangle.
+It can also be used to calculate heights and distances that are
+difficult to measure directly.
+</p>
+
+<p>
+For example, trigonometry can help us find:
+</p>
+
+<ul>
+<li>Height of a tower</li>
+<li>Height of a building</li>
+<li>Distance of an object</li>
+<li>Height of a tree</li>
+<li>Distance across a river</li>
+<li>Angle of elevation</li>
+<li>Angle of depression</li>
+</ul>
+
+<div class="note">
+<strong>Main idea:</strong>
+Convert the real-life situation into a right-angled triangle and
+then use an appropriate trigonometric ratio.
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>2. Heights and Distances</h2>
+
+<p>
+The application of trigonometry to calculate unknown heights and
+distances is called the study of <strong>heights and distances</strong>.
+</p>
+
+<p>
+Most problems are solved by forming a right-angled triangle.
+</p>
+
+<div class="diagram">
+
+<strong>Basic Idea</strong>
+
+<br><br>
+
+Object / Tower
+<br>
+│
+<br>
+│ Height
+<br>
+│
+<br>
+└────────────── Ground
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Distance
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>3. Line of Sight</h2>
+
+<p>
+The straight line joining the observer's eye to the object being
+observed is called the <strong>line of sight</strong>.
+</p>
+
+<div class="diagram">
+
+Eye 👁️
+<br>
+&nbsp;&nbsp;╲
+<br>
+&nbsp;&nbsp;&nbsp;╲ Line of Sight
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;╲
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Object
+
+</div>
+
+<div class="note">
+The line of sight is important when identifying the angle of
+elevation or angle of depression.
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>4. Angle of Elevation</h2>
+
+<p>
+When an observer looks upward at an object, the angle made by the
+line of sight with the horizontal line is called the
+<strong>angle of elevation</strong>.
+</p>
+
+<div class="diagram">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Object
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ●
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ╱
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;╱ θ
+<br>
+Observer ●──────────── Ground
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Horizontal
+
+</div>
+
+<div class="note">
+<strong>Object is above the observer → Angle of Elevation</strong>
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>5. Angle of Depression</h2>
+
+<p>
+When an observer looks downward at an object, the angle made by the
+line of sight with the horizontal line is called the
+<strong>angle of depression</strong>.
+</p>
+
+<div class="diagram">
+
+Observer ●──────────── Horizontal
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;╲
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;╲ θ
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;╲
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● Object
+
+</div>
+
+<div class="note">
+<strong>Object is below the observer → Angle of Depression</strong>
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>6. Important Trigonometric Ratios</h2>
+
+<table>
+
+<tr>
+<th>Ratio</th>
+<th>Formula</th>
+<th>Usually useful for</th>
+</tr>
+
+<tr>
+<td>sin θ</td>
+<td>P/H</td>
+<td>Height and Hypotenuse</td>
+</tr>
+
+<tr>
+<td>cos θ</td>
+<td>B/H</td>
+<td>Distance and Hypotenuse</td>
+</tr>
+
+<tr>
+<td>tan θ</td>
+<td>P/B</td>
+<td>Height and Distance</td>
+</tr>
+
+</table>
+
+<div class="formula">
+tan θ = Height / Distance
+</div>
+
+<div class="note">
+In many height-and-distance problems, <strong>tan θ</strong> is the
+most convenient ratio because it directly connects height and distance.
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>7. Choosing the Correct Ratio</h2>
+
+<p>
+First identify the sides involved in the question.
+</p>
+
+<table>
+
+<tr>
+<th>Known sides</th>
+<th>Useful ratio</th>
+</tr>
+
+<tr>
+<td>Height and Distance</td>
+<td>tan θ</td>
+</tr>
+
+<tr>
+<td>Height and Hypotenuse</td>
+<td>sin θ</td>
+</tr>
+
+<tr>
+<td>Distance and Hypotenuse</td>
+<td>cos θ</td>
+</tr>
+
+</table>
+
+<div class="note">
+<strong>Shortcut:</strong>
+If the question gives height and distance and asks for an angle,
+think about <strong>tan θ</strong>.
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>8. Solved Example — Finding Height</h2>
+
+<div class="example">
+
+<h3>Question</h3>
+
+<p>
+A person stands 20 m away from a tower. The angle of elevation of
+the top of the tower is 45°. Find the height of the tower.
+</p>
+
+<h3>Solution</h3>
+
+<p>
+Let the height of the tower be h.
+</p>
+
+<p>
+Distance = 20 m
+</p>
+
+<p>
+Angle = 45°
+</p>
+
+<div class="formula">
+tan 45° = h / 20
+</div>
+
+<p>
+We know:
+</p>
+
+<div class="formula">
+tan 45° = 1
+</div>
+
+<p>
+Therefore:
+</p>
+
+<div class="formula">
+1 = h / 20
+<br><br>
+h = 20 m
+</div>
+
+<p class="answer">
+Answer: Height of the tower = 20 m
+</p>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>9. Solved Example — Finding Distance</h2>
+
+<div class="example">
+
+<h3>Question</h3>
+
+<p>
+A tower is 15 m high. If the angle of elevation of its top from a
+point on the ground is 30°, find the distance of the point from the tower.
+</p>
+
+<h3>Solution</h3>
+
+<p>
+Height = 15 m
+</p>
+
+<p>
+Distance = x
+</p>
+
+<div class="formula">
+tan 30° = 15/x
+</div>
+
+<p>
+Since:
+</p>
+
+<div class="formula">
+tan 30° = 1/√3
+</div>
+
+<p>
+Therefore:
+</p>
+
+<div class="formula">
+1/√3 = 15/x
+</div>
+
+<p>
+x = 15√3 m
+</p>
+
+<p class="answer">
+Answer: Distance = 15√3 m
+</p>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>10. Solved Example — Finding Angle</h2>
+
+<div class="example">
+
+<h3>Question</h3>
+
+<p>
+A pole is 10 m high and its base is 10 m away from an observer.
+Find the angle of elevation of the top of the pole.
+</p>
+
+<h3>Solution</h3>
+
+<div class="formula">
+tan θ = Height / Distance
+</div>
+
+<div class="formula">
+tan θ = 10/10 = 1
+</div>
+
+<p>
+We know:
+</p>
+
+<div class="formula">
+tan 45° = 1
+</div>
+
+<p class="answer">
+Therefore, θ = 45°
+</p>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>11. Angle of Depression and Elevation</h2>
+
+<p>
+When two horizontal lines are parallel, the angle of depression
+and the corresponding angle of elevation can be equal because of
+alternate interior angles.
+</p>
+
+<div class="diagram">
+
+Upper Horizontal Line
+<br>
+────────────────────────
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;╲ θ
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;╲
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;╲
+<br>
+────────────────────────
+<br>
+Lower Horizontal Line
+
+</div>
+
+<div class="note">
+Remember: Draw the horizontal lines carefully before identifying
+the angles.
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>12. Solved Example — Angle of Depression</h2>
+
+<div class="example">
+
+<h3>Question</h3>
+
+<p>
+From the top of a 20 m high building, the angle of depression of
+an object on the ground is 45°. Find the distance of the object
+from the building.
+</p>
+
+<h3>Solution</h3>
+
+<p>
+Height = 20 m
+</p>
+
+<p>
+Angle of depression = 45°
+</p>
+
+<p>
+Corresponding angle of elevation = 45°
+</p>
+
+<div class="formula">
+tan 45° = 20/x
+</div>
+
+<div class="formula">
+1 = 20/x
+</div>
+
+<p>
+Therefore:
+</p>
+
+<div class="formula">
+x = 20 m
+</div>
+
+<p class="answer">
+Answer: Distance = 20 m
+</p>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>13. Standard Values Used in Applications</h2>
+
+<table>
+
+<tr>
+<th>Angle</th>
+<th>sin</th>
+<th>cos</th>
+<th>tan</th>
+</tr>
+
+<tr>
+<td>0°</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>30°</td>
+<td>1/2</td>
+<td>√3/2</td>
+<td>1/√3</td>
+</tr>
+
+<tr>
+<td>45°</td>
+<td>1/√2</td>
+<td>1/√2</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>60°</td>
+<td>√3/2</td>
+<td>1/2</td>
+<td>√3</td>
+</tr>
+
+<tr>
+<td>90°</td>
+<td>1</td>
+<td>0</td>
+<td>Not defined</td>
+</tr>
+
+</table>
+
+</div>
+
+
+<div class="section">
+
+<h2>14. Step-by-Step Method</h2>
+
+<ol>
+
+<li>Read the question carefully.</li>
+
+<li>Draw a rough diagram.</li>
+
+<li>Mark the known height and distance.</li>
+
+<li>Mark the given angle.</li>
+
+<li>Identify the unknown quantity.</li>
+
+<li>Choose sin, cos or tan.</li>
+
+<li>Substitute the values.</li>
+
+<li>Solve the equation.</li>
+
+<li>Write the final answer with correct unit.</li>
+
+</ol>
+
+<div class="note">
+<strong>Golden Rule:</strong>
+Diagram → Ratio → Substitution → Calculation → Answer
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>15. Solved Example — Tree Problem</h2>
+
+<div class="example">
+
+<h3>Question</h3>
+
+<p>
+A person standing 10 m away from a tree observes the top of the
+tree at an angle of elevation of 60°. Find the height of the tree.
+</p>
+
+<h3>Solution</h3>
+
+<p>
+Let height = h.
+</p>
+
+<div class="formula">
+tan 60° = h/10
+</div>
+
+<p>
+tan 60° = √3
+</p>
+
+<div class="formula">
+√3 = h/10
+<br><br>
+h = 10√3 m
+</div>
+
+<p class="answer">
+Answer: Height = 10√3 m
+</p>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>16. Solved Example — Shadow Problem</h2>
+
+<div class="example">
+
+<h3>Question</h3>
+
+<p>
+A pole 10 m high casts a shadow of length 10 m.
+Find the angle of elevation of the sun.
+</p>
+
+<h3>Solution</h3>
+
+<p>
+Height = 10 m
+</p>
+
+<p>
+Shadow = 10 m
+</p>
+
+<div class="formula">
+tan θ = Height / Shadow
+</div>
+
+<div class="formula">
+tan θ = 10/10 = 1
+</div>
+
+<p>
+Since tan 45° = 1:
+</p>
+
+<p class="answer">
+θ = 45°
+</p>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>17. Important Formula Sheet</h2>
+
+<div class="formula">
+tan θ = Height / Distance
+</div>
+
+<div class="formula">
+Height = Distance × tan θ
+</div>
+
+<div class="formula">
+Distance = Height / tan θ
+</div>
+
+<div class="formula">
+sin θ = Height / Hypotenuse
+</div>
+
+<div class="formula">
+cos θ = Distance / Hypotenuse
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>18. Common Mistakes</h2>
+
+<div class="warning">
+
+<ul>
+<li>Do not confuse angle of elevation with angle of depression.</li>
+<li>Always draw the diagram first.</li>
+<li>Do not use the wrong side as the hypotenuse.</li>
+<li>Keep units consistent.</li>
+<li>Do not forget the degree symbol when needed.</li>
+<li>Write the final answer with units such as m or cm.</li>
+<li>Check whether the answer is reasonable.</li>
+</ul>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>19. MCQ Practice</h2>
+
+<div class="mcq">
+
+<strong>1. If tan θ = 1, then θ is:</strong>
+
+<p>
+A) 30° &nbsp;&nbsp;
+B) 45° &nbsp;&nbsp;
+C) 60° &nbsp;&nbsp;
+D) 90°
+</p>
+
+<p class="answer">
+Answer: B) 45°
+</p>
+
+</div>
+
+
+<div class="mcq">
+
+<strong>2. The angle made when an observer looks upward at an object is called:</strong>
+
+<p>
+A) Angle of depression<br>
+B) Angle of elevation<br>
+C) Right angle<br>
+D) Reflex angle
+</p>
+
+<p class="answer">
+Answer: B) Angle of elevation
+</p>
+
+</div>
+
+
+<div class="mcq">
+
+<strong>3. Which ratio directly relates height and distance?</strong>
+
+<p>
+A) sin θ<br>
+B) cos θ<br>
+C) tan θ<br>
+D) sec θ
+</p>
+
+<p class="answer">
+Answer: C) tan θ
+</p>
+
+</div>
+
+
+<div class="mcq">
+
+<strong>4. What is tan 60°?</strong>
+
+<p>
+A) 1/√3<br>
+B) 1<br>
+C) √3<br>
+D) 0
+</p>
+
+<p class="answer">
+Answer: C) √3
+</p>
+
+</div>
+
+
+<div class="mcq">
+
+<strong>5. If the height and distance are equal, the angle of elevation is:</strong>
+
+<p>
+A) 30°<br>
+B) 45°<br>
+C) 60°<br>
+D) 90°
+</p>
+
+<p class="answer">
+Answer: B) 45°
+</p>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>20. Practice Questions</h2>
+
+<div class="question">
+<strong>1.</strong>
+A person stands 20 m from a tower. The angle of elevation is 45°.
+Find the height of the tower.
+</div>
+
+<div class="question">
+<strong>2.</strong>
+A tower is 15 m high and the angle of elevation is 30°.
+Find the distance from the tower.
+</div>
+
+<div class="question">
+<strong>3.</strong>
+A pole is 12 m high and casts a shadow of 12√3 m.
+Find the angle of elevation of the sun.
+</div>
+
+<div class="question">
+<strong>4.</strong>
+From the top of a 30 m high building, the angle of depression
+of an object is 45°. Find the distance of the object.
+</div>
+
+<div class="question">
+<strong>5.</strong>
+A person observes the top of a tree at an angle of elevation of 60°.
+If the person is 10 m from the tree, find its height.
+</div>
+
+<div class="question">
+<strong>6.</strong>
+Explain the difference between angle of elevation and angle of depression.
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>21. Quick Revision</h2>
+
+<div class="formula">
+Angle of Elevation → Looking Up
+<br><br>
+Angle of Depression → Looking Down
+</div>
+
+<div class="formula">
+tan θ = Height / Distance
+</div>
+
+<div class="formula">
+Height = Distance × tan θ
+</div>
+
+<div class="formula">
+Distance = Height / tan θ
+</div>
+
+<div class="note">
+<strong>Exam Formula:</strong>
+Most basic height-and-distance questions can be solved quickly
+after drawing the correct right-angled triangle.
+</div>
+
+</div>
+
+
+</div>
+
+
+<!-- ================= HINDI ================= -->
+
+<div id="hindi" class="hidden">
+
+
+<div class="section">
+
+<h2>1. परिचय</h2>
+
+<p>
+त्रिकोणमिति का उपयोग केवल त्रिभुज के अनुपात निकालने में ही नहीं,
+बल्कि ऐसी ऊँचाइयों और दूरियों को ज्ञात करने में भी किया जाता है
+जिन्हें सीधे मापना कठिन होता है।
+</p>
+
+<p>इससे हम ज्ञात कर सकते हैं:</p>
+
+<ul>
+<li>टावर की ऊँचाई</li>
+<li>इमारत की ऊँचाई</li>
+<li>पेड़ की ऊँचाई</li>
+<li>किसी वस्तु की दूरी</li>
+<li>Angle of Elevation</li>
+<li>Angle of Depression</li>
+</ul>
+
+<div class="note">
+<strong>मुख्य विचार:</strong>
+वास्तविक स्थिति को समकोण त्रिभुज में बदलकर सही त्रिकोणमितीय
+अनुपात का उपयोग करना है।
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>2. ऊँचाई और दूरी</h2>
+
+<p>
+त्रिकोणमिति की सहायता से अज्ञात ऊँचाई और दूरी ज्ञात करने को
+<strong>Heights and Distances</strong> कहा जाता है।
+</p>
+
+<div class="diagram">
+
+वस्तु / टावर
+<br>
+│
+<br>
+│ ऊँचाई
+<br>
+│
+<br>
+└────────────── जमीन
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; दूरी
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>3. दृष्टि रेखा — Line of Sight</h2>
+
+<p>
+देखने वाले व्यक्ति की आँख और देखी जा रही वस्तु को जोड़ने वाली
+सीधी रेखा को <strong>Line of Sight</strong> कहते हैं।
+</p>
+
+<div class="diagram">
+
+आँख 👁️
+<br>
+&nbsp;&nbsp;╲
+<br>
+&nbsp;&nbsp;&nbsp;╲ दृष्टि रेखा
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;╲
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; वस्तु
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>4. Angle of Elevation</h2>
+
+<p>
+जब कोई व्यक्ति किसी वस्तु को ऊपर की ओर देखता है, तो दृष्टि रेखा
+और क्षैतिज रेखा के बीच बने कोण को <strong>Angle of Elevation</strong>
+कहते हैं।
+</p>
+
+<div class="diagram">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; वस्तु
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ●
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ╱
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;╱ θ
+<br>
+व्यक्ति ●──────────── जमीन
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; क्षैतिज
+
+</div>
+
+<div class="note">
+<strong>ऊपर देखना → Angle of Elevation</strong>
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>5. Angle of Depression</h2>
+
+<p>
+जब कोई व्यक्ति किसी वस्तु को नीचे की ओर देखता है, तो दृष्टि रेखा
+और क्षैतिज रेखा के बीच बने कोण को <strong>Angle of Depression</strong>
+कहते हैं।
+</p>
+
+<div class="diagram">
+
+व्यक्ति ●──────────── क्षैतिज
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;╲
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;╲ θ
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;╲
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;● वस्तु
+
+</div>
+
+<div class="note">
+<strong>नीचे देखना → Angle of Depression</strong>
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>6. महत्वपूर्ण त्रिकोणमितीय अनुपात</h2>
+
+<table>
+
+<tr>
+<th>अनुपात</th>
+<th>सूत्र</th>
+<th>उपयोग</th>
+</tr>
+
+<tr>
+<td>sin θ</td>
+<td>P/H</td>
+<td>लंब और कर्ण</td>
+</tr>
+
+<tr>
+<td>cos θ</td>
+<td>B/H</td>
+<td>आधार और कर्ण</td>
+</tr>
+
+<tr>
+<td>tan θ</td>
+<td>P/B</td>
+<td>ऊँचाई और दूरी</td>
+</tr>
+
+</table>
+
+<div class="formula">
+tan θ = ऊँचाई / दूरी
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>7. सही Ratio कैसे चुनें?</h2>
+
+<table>
+
+<tr>
+<th>दिए गए भाग</th>
+<th>उपयोगी Ratio</th>
+</tr>
+
+<tr>
+<td>ऊँचाई और दूरी</td>
+<td>tan θ</td>
+</tr>
+
+<tr>
+<td>ऊँचाई और कर्ण</td>
+<td>sin θ</td>
+</tr>
+
+<tr>
+<td>दूरी और कर्ण</td>
+<td>cos θ</td>
+</tr>
+
+</table>
+
+</div>
+
+
+<div class="section">
+
+<h2>8. हल किया हुआ उदाहरण — ऊँचाई</h2>
+
+<div class="example">
+
+<h3>प्रश्न</h3>
+
+<p>
+एक व्यक्ति टावर से 20 m दूर खड़ा है। टावर के शीर्ष का
+Angle of Elevation 45° है। टावर की ऊँचाई ज्ञात कीजिए।
+</p>
+
+<h3>हल</h3>
+
+<p>
+मान लें टावर की ऊँचाई = h
+</p>
+
+<div class="formula">
+tan 45° = h/20
+</div>
+
+<p>
+tan 45° = 1
+</p>
+
+<div class="formula">
+1 = h/20
+<br><br>
+h = 20 m
+</div>
+
+<p class="answer">
+उत्तर: टावर की ऊँचाई = 20 m
+</p>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>9. हल किया हुआ उदाहरण — दूरी</h2>
+
+<div class="example">
+
+<h3>प्रश्न</h3>
+
+<p>
+एक टावर की ऊँचाई 15 m है और किसी बिंदु से उसके शीर्ष का
+Angle of Elevation 30° है। टावर से उस बिंदु की दूरी ज्ञात कीजिए।
+</p>
+
+<h3>हल</h3>
+
+<div class="formula">
+tan 30° = 15/x
+</div>
+
+<div class="formula">
+1/√3 = 15/x
+</div>
+
+<div class="formula">
+x = 15√3 m
+</div>
+
+<p class="answer">
+उत्तर: दूरी = 15√3 m
+</p>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>10. कोण ज्ञात करने का उदाहरण</h2>
+
+<div class="example">
+
+<h3>प्रश्न</h3>
+
+<p>
+एक खंभे की ऊँचाई 10 m है और व्यक्ति खंभे से 10 m दूर है।
+Angle of Elevation ज्ञात कीजिए।
+</p>
+
+<div class="formula">
+tan θ = 10/10 = 1
+</div>
+
+<p>
+tan 45° = 1
+</p>
+
+<p class="answer">
+अतः θ = 45°
+</p>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>11. Angle of Depression और Elevation</h2>
+
+<p>
+जब दो horizontal lines समानांतर होती हैं, तो corresponding
+Angle of Elevation और Angle of Depression बराबर हो सकते हैं।
+</p>
+
+<div class="note">
+Diagram बनाते समय horizontal lines को सही तरीके से दिखाना बहुत
+महत्वपूर्ण है।
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>12. Angle of Depression का उदाहरण</h2>
+
+<div class="example">
+
+<h3>प्रश्न</h3>
+
+<p>
+20 m ऊँची इमारत के शीर्ष से जमीन पर एक वस्तु का Angle of Depression
+45° है। वस्तु की इमारत से दूरी ज्ञात कीजिए।
+</p>
+
+<p>
+Angle of Elevation = 45°
+</p>
+
+<div class="formula">
+tan 45° = 20/x
+</div>
+
+<div class="formula">
+1 = 20/x
+<br><br>
+x = 20 m
+</div>
+
+<p class="answer">
+उत्तर: दूरी = 20 m
+</p>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>13. Standard Values</h2>
+
+<table>
+
+<tr>
+<th>θ</th>
+<th>sin θ</th>
+<th>cos θ</th>
+<th>tan θ</th>
+</tr>
+
+<tr>
+<td>0°</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+
+<tr>
+<td>30°</td>
+<td>1/2</td>
+<td>√3/2</td>
+<td>1/√3</td>
+</tr>
+
+<tr>
+<td>45°</td>
+<td>1/√2</td>
+<td>1/√2</td>
+<td>1</td>
+</tr>
+
+<tr>
+<td>60°</td>
+<td>√3/2</td>
+<td>1/2</td>
+<td>√3</td>
+</tr>
+
+<tr>
+<td>90°</td>
+<td>1</td>
+<td>0</td>
+<td>परिभाषित नहीं</td>
+</tr>
+
+</table>
+
+</div>
+
+
+<div class="section">
+
+<h2>14. Step-by-Step तरीका</h2>
+
+<ol>
+<li>प्रश्न को ध्यान से पढ़ें।</li>
+<li>Rough diagram बनाएँ।</li>
+<li>ऊँचाई और दूरी को mark करें।</li>
+<li>Angle को mark करें।</li>
+<li>Unknown quantity पहचानें।</li>
+<li>sin, cos या tan चुनें।</li>
+<li>Values रखें।</li>
+<li>Equation solve करें।</li>
+<li>सही unit के साथ answer लिखें।</li>
+</ol>
+
+<div class="note">
+<strong>Golden Rule:</strong>
+Diagram → Ratio → Substitution → Calculation → Answer
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>15. पेड़ की ऊँचाई का उदाहरण</h2>
+
+<div class="example">
+
+<p>
+एक व्यक्ति पेड़ से 10 m दूर है और पेड़ के शीर्ष का Angle of Elevation
+60° है। पेड़ की ऊँचाई ज्ञात कीजिए।
+</p>
+
+<div class="formula">
+tan 60° = h/10
+<br><br>
+√3 = h/10
+<br><br>
+h = 10√3 m
+</div>
+
+<p class="answer">
+उत्तर: पेड़ की ऊँचाई = 10√3 m
+</p>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>16. Shadow Problem</h2>
+
+<div class="example">
+
+<p>
+10 m ऊँचे खंभे की छाया की लंबाई 10 m है।
+सूर्य का Angle of Elevation ज्ञात कीजिए।
+</p>
+
+<div class="formula">
+tan θ = ऊँचाई / छाया
+<br><br>
+tan θ = 10/10 = 1
+</div>
+
+<p class="answer">
+अतः θ = 45°
+</p>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>17. Important Formula Sheet</h2>
+
+<div class="formula">
+tan θ = ऊँचाई / दूरी
+</div>
+
+<div class="formula">
+ऊँचाई = दूरी × tan θ
+</div>
+
+<div class="formula">
+दूरी = ऊँचाई / tan θ
+</div>
+
+<div class="formula">
+sin θ = ऊँचाई / कर्ण
+</div>
+
+<div class="formula">
+cos θ = दूरी / कर्ण
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>18. सामान्य गलतियाँ</h2>
+
+<div class="warning">
+
+<ul>
+<li>Elevation और Depression को confuse न करें।</li>
+<li>पहले diagram बनाएँ।</li>
+<li>कर्ण को गलत न पहचानें।</li>
+<li>Units एक जैसी रखें।</li>
+<li>Final answer में unit जरूर लिखें।</li>
+<li>Calculation के बाद answer check करें।</li>
+</ul>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>19. MCQ Practice</h2>
+
+<div class="mcq">
+<strong>1. tan θ = 1 हो तो θ कितना होगा?</strong>
+<p>A) 30° &nbsp; B) 45° &nbsp; C) 60° &nbsp; D) 90°</p>
+<p class="answer">उत्तर: B) 45°</p>
+</div>
+
+<div class="mcq">
+<strong>2. ऊपर की ओर देखने पर कौन सा कोण बनता है?</strong>
+<p>A) Depression &nbsp; B) Elevation &nbsp; C) Right angle &nbsp; D) Reflex</p>
+<p class="answer">उत्तर: B) Elevation</p>
+</div>
+
+<div class="mcq">
+<strong>3. ऊँचाई और दूरी के लिए कौन सा ratio उपयोगी है?</strong>
+<p>A) sin &nbsp; B) cos &nbsp; C) tan &nbsp; D) sec</p>
+<p class="answer">उत्तर: C) tan</p>
+</div>
+
+<div class="mcq">
+<strong>4. tan 60° का मान क्या है?</strong>
+<p>A) 1/√3 &nbsp; B) 1 &nbsp; C) √3 &nbsp; D) 0</p>
+<p class="answer">उत्तर: C) √3</p>
+</div>
+
+<div class="mcq">
+<strong>5. यदि ऊँचाई और दूरी बराबर हैं तो angle कितना होगा?</strong>
+<p>A) 30° &nbsp; B) 45° &nbsp; C) 60° &nbsp; D) 90°</p>
+<p class="answer">उत्तर: B) 45°</p>
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>20. Practice Questions</h2>
+
+<div class="question">
+1. एक व्यक्ति टावर से 20 m दूर है और Angle of Elevation 45° है।
+टावर की ऊँचाई ज्ञात करें।
+</div>
+
+<div class="question">
+2. 15 m ऊँचे टावर का Angle of Elevation 30° है।
+दूरी ज्ञात करें।
+</div>
+
+<div class="question">
+3. 12 m ऊँचा खंभा 12√3 m की छाया डालता है।
+सूर्य का Angle of Elevation ज्ञात करें।
+</div>
+
+<div class="question">
+4. 30 m ऊँची इमारत से किसी वस्तु का Angle of Depression 45° है।
+वस्तु की दूरी ज्ञात करें।
+</div>
+
+<div class="question">
+5. एक व्यक्ति पेड़ से 10 m दूर है और शीर्ष का Angle of Elevation 60° है।
+पेड़ की ऊँचाई ज्ञात करें।
+</div>
+
+<div class="question">
+6. Angle of Elevation और Angle of Depression में अंतर समझाइए।
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>21. Quick Revision</h2>
+
+<div class="formula">
+Angle of Elevation → ऊपर देखना
+<br><br>
+Angle of Depression → नीचे देखना
+</div>
+
+<div class="formula">
+tan θ = ऊँचाई / दूरी
+</div>
+
+<div class="formula">
+ऊँचाई = दूरी × tan θ
+</div>
+
+<div class="formula">
+दूरी = ऊँचाई / tan θ
+</div>
+
+<div class="note">
+<strong>Exam Tip:</strong>
+सबसे पहले सही diagram बनाना सीखें। इसके बाद सही ratio चुनना
+बहुत आसान हो जाता है।
+</div>
+
+</div>
+
+
+</div>
+
+
+<div class="back">
+<a href="class10.html">← Back to Class 10</a>
+</div>
+
+</div>
+
+
+<footer>
+<p>© 2026 Golu Coaching Center</p>
+<p>Learn • Practice • Succeed</p>
+</footer>
+
+
+<script>
+
+function showHindi(){
+
+    document.getElementById("english").classList.add("hidden");
+    document.getElementById("hindi").classList.remove("hidden");
+
+}
+
+function showEnglish(){
+
+    document.getElementById("hindi").classList.add("hidden");
+    document.getElementById("english").classList.remove("hidden");
+
+}
+
+</script>
+
+</body>
+</html>
+

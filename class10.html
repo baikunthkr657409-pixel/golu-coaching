@@ -1,0 +1,778 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Class 10 | Golu Coaching</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #222;
+        }
+
+        /* HEADER */
+        header {
+            background: linear-gradient(135deg, #1565c0, #42a5f5);
+            color: white;
+            text-align: center;
+            padding: 40px 15px;
+        }
+
+        header h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        .back {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 18px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .back:hover {
+            background: rgba(255, 255, 255, 0.35);
+        }
+
+        /* MAIN CONTAINER */
+        .container {
+            width: 92%;
+            max-width: 1150px;
+            margin: auto;
+            padding: 30px 0;
+        }
+
+        /* SECTION TITLE */
+        .section-title {
+            text-align: center;
+            margin: 35px 0 25px;
+        }
+
+        .section-title h2 {
+            font-size: 32px;
+            color: #1565c0;
+            margin-bottom: 8px;
+        }
+
+        .section-title p {
+            color: #666;
+            font-size: 16px;
+        }
+
+        /* CHAPTER GRID */
+        .chapters {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 22px;
+        }
+
+        /* CHAPTER CARD */
+        .chapter {
+            background: white;
+            padding: 24px;
+            border-radius: 15px;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+            border-left: 5px solid #1565c0;
+            transition: 0.3s;
+        }
+
+        .chapter:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 9px 25px rgba(0, 0, 0, 0.14);
+        }
+
+        .chapter h3 {
+            color: #1565c0;
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+
+        .chapter p {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 17px;
+        }
+
+        /* BUTTON */
+        .btn {
+            display: inline-block;
+            padding: 10px 18px;
+            background: #1565c0;
+            color: white;
+            text-decoration: none;
+            border-radius: 7px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #0d47a1;
+            transform: scale(1.03);
+        }
+
+        /* MATHS SECTION */
+        .math-section {
+            margin-top: 60px;
+        }
+
+        .math-section .section-title h2 {
+            color: #7b1fa2;
+        }
+
+        .math-section .chapter {
+            border-left-color: #7b1fa2;
+        }
+
+        .math-section .chapter h3 {
+            color: #7b1fa2;
+        }
+
+        .math-section .btn {
+            background: #7b1fa2;
+        }
+
+        .math-section .btn:hover {
+            background: #4a148c;
+        }
+
+        /* STUDY NOTE */
+        .note {
+            margin-top: 40px;
+            padding: 18px;
+            background: #fff3cd;
+            border-left: 5px solid #ffb300;
+            border-radius: 8px;
+            line-height: 1.7;
+        }
+
+        /* FOOTER */
+        footer {
+            margin-top: 50px;
+            padding: 25px 15px;
+            background: #0d47a1;
+            color: white;
+            text-align: center;
+        }
+
+        /* MOBILE */
+        @media (max-width: 700px) {
+
+            header {
+                padding: 30px 15px;
+            }
+
+            header h1 {
+                font-size: 30px;
+            }
+
+            header p {
+                font-size: 16px;
+            }
+
+            .chapters {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title h2 {
+                font-size: 27px;
+            }
+
+            .chapter {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+
+        <h1>Class 10</h1>
+
+        <p>Complete Chapter-wise Study Material</p>
+
+        <a href="courses.html" class="back">
+            ← Back to Courses
+        </a>
+
+    </header>
+
+
+    <div class="container">
+
+
+        <!-- ============================= -->
+        <!-- SCIENCE -->
+        <!-- ============================= -->
+
+        <div class="section-title">
+
+            <h2>🔬 Class 10 Science</h2>
+
+            <p>Chapter-wise Science Topics</p>
+
+        </div>
+
+
+        <div class="chapters">
+
+
+            <!-- SCIENCE 1 -->
+            <div class="chapter">
+
+                <h3>1. Chemical Reactions and Equations</h3>
+
+                <p>
+                    Learn chemical reactions, chemical equations,
+                    balancing and different types of reactions.
+                </p>
+
+                <a href="chemical-reactions-and-equations.html" class="btn">
+                    View Topics
+                </a>
+
+            </div>
+
+
+            <!-- SCIENCE 2 -->
+            <div class="chapter">
+
+                <h3>2. Acids, Bases and Salts</h3>
+
+                <p>
+                    Learn acids, bases, indicators, pH scale
+                    and important salts.
+                </p>
+
+                <a href="acids-bases-and-salts.html" class="btn">
+                    View Topics
+                </a>
+
+            </div>
+
+
+            <!-- SCIENCE 3 -->
+            <div class="chapter">
+
+                <h3>3. Metals and Non-metals</h3>
+
+                <p>
+                    Learn physical and chemical properties,
+                    reactivity series and extraction of metals.
+                </p>
+
+                <a href="metals-and-non-metals.html" class="btn">
+                    View Topics
+                </a>
+
+            </div>
+
+
+            <!-- SCIENCE 4 -->
+            <div class="chapter">
+
+                <h3>4. Carbon and Its Compounds</h3>
+
+                <p>
+                    Learn carbon bonding, hydrocarbons,
+                    functional groups and important reactions.
+                </p>
+
+                <a href="carbon-and-its-compounds.html" class="btn">
+                    View Topics
+                </a>
+
+            </div>
+
+
+            <!-- SCIENCE 5 -->
+            <div class="chapter">
+
+                <h3>5. Life Processes</h3>
+
+                <p>
+                    Learn nutrition, respiration,
+                    transportation and excretion.
+                </p>
+
+                <a href="life-processes.html" class="btn">
+                    View Topics
+                </a>
+
+            </div>
+
+
+            <!-- SCIENCE 6 -->
+            <div class="chapter">
+
+                <h3>6. Control and Coordination</h3>
+
+                <p>
+                    Learn nervous system, hormones,
+                    plant movements and coordination.
+                </p>
+
+                <a href="control-and-coordination.html" class="btn">
+                    View Topics
+                </a>
+
+            </div>
+
+
+            <!-- SCIENCE 7 -->
+            <div class="chapter">
+
+                <h3>7. How do Organisms Reproduce?</h3>
+
+                <p>
+                    Learn reproduction in plants and animals
+                    and basic reproductive processes.
+                </p>
+
+                <a href="how-do-organisms-reproduce.html" class="btn">
+                    View Topics
+                </a>
+
+            </div>
+
+
+            <!-- SCIENCE 8 -->
+            <div class="chapter">
+
+                <h3>8. Heredity</h3>
+
+                <p>
+                    Learn heredity, variation,
+                    Mendel's experiments and evolution.
+                </p>
+
+                <a href="heredity.html" class="btn">
+                    View Topics
+                </a>
+
+            </div>
+
+
+            <!-- SCIENCE 9 -->
+            <div class="chapter">
+
+                <h3>9. Light – Reflection and Refraction</h3>
+
+                <p>
+                    Learn mirrors, lenses, ray diagrams,
+                    formulas and numerical problems.
+                </p>
+
+                <a href="light-reflection-and-refraction.html" class="btn">
+                    View Topics
+                </a>
+
+            </div>
+
+
+            <!-- SCIENCE 10 -->
+            <div class="chapter">
+
+                <h3>10. Human Eye and the Colourful World</h3>
+
+                <p>
+                    Learn human eye, defects of vision,
+                    correction and atmospheric effects.
+                </p>
+
+                <a href="human-eye-and-colourful-world.html" class="btn">
+                    View Topics
+                </a>
+
+            </div>
+
+
+            <!-- SCIENCE 11 -->
+            <div class="chapter">
+
+                <h3>11. Electricity</h3>
+
+                <p>
+                    Learn electric current, potential difference,
+                    resistance, power and electrical energy.
+                </p>
+
+                <a href="electricity.html" class="btn">
+                    View Topics
+                </a>
+
+            </div>
+
+
+            <!-- SCIENCE 12 -->
+            <div class="chapter">
+
+                <h3>12. Magnetic Effects of Electric Current</h3>
+
+                <p>
+                    Learn magnetic field, electromagnetic effects,
+                    electric motor and generator.
+                </p>
+
+                <a href="magnetic-effects-of-electric-current.html" class="btn">
+                    View Topics
+                </a>
+
+            </div>
+
+
+            <!-- SCIENCE 13 -->
+            <div class="chapter">
+
+                <h3>13. Our Environment</h3>
+
+                <p>
+                    Learn ecosystem, food chain,
+                    food web and environmental balance.
+                </p>
+
+                <a href="our-environment.html" class="btn">
+                    View Topics
+                </a>
+
+            </div>
+
+
+            <!-- SCIENCE 14 -->
+            <div class="chapter">
+
+                <h3>14. Sustainable Management of Natural Resources</h3>
+
+                <p>
+                    Learn sustainable development,
+                    forests, wildlife and natural resources.
+                </p>
+
+                <a href="sustainable-management-of-natural-resources.html" class="btn">
+                    View Topics
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- ============================= -->
+        <!-- MATHEMATICS -->
+        <!-- ============================= -->
+
+        <div class="math-section">
+
+
+            <div class="section-title">
+
+                <h2>📐 Class 10 Mathematics</h2>
+
+                <p>Chapter-wise Mathematics Topics</p>
+
+            </div>
+
+
+            <div class="chapters">
+
+
+                <!-- MATH 1 -->
+                <div class="chapter">
+
+                    <h3>1. Real Numbers</h3>
+
+                    <p>
+                        Learn Euclid's division algorithm,
+                        HCF, LCM and irrational numbers.
+                    </p>
+
+                    <a href="real-numbers.html" class="btn">
+                        View Topics
+                    </a>
+
+                </div>
+
+
+                <!-- MATH 2 -->
+                <div class="chapter">
+
+                    <h3>2. Polynomials</h3>
+
+                    <p>
+                        Learn zeros of polynomials,
+                        relationships and graphs.
+                    </p>
+
+                    <a href="polynomials.html" class="btn">
+                        View Topics
+                    </a>
+
+                </div>
+
+
+                <!-- MATH 3 -->
+                <div class="chapter">
+
+                    <h3>3. Pair of Linear Equations in Two Variables</h3>
+
+                    <p>
+                        Learn graphical and algebraic methods
+                        for solving linear equations.
+                    </p>
+
+                    <a href="pair-of-linear-equations.html" class="btn">
+                        View Topics
+                    </a>
+
+                </div>
+
+
+                <!-- MATH 4 -->
+                <div class="chapter">
+
+                    <h3>4. Quadratic Equations</h3>
+
+                    <p>
+                        Learn quadratic equations,
+                        roots, discriminant and solving methods.
+                    </p>
+
+                    <a href="quadratic-equations.html" class="btn">
+                        View Topics
+                    </a>
+
+                </div>
+
+
+                <!-- MATH 5 -->
+                <div class="chapter">
+
+                    <h3>5. Arithmetic Progressions</h3>
+
+                    <p>
+                        Learn arithmetic progression,
+                        nth term and sum of terms.
+                    </p>
+
+                    <a href="arithmetic-progressions.html" class="btn">
+                        View Topics
+                    </a>
+
+                </div>
+
+
+                <!-- MATH 6 -->
+                <div class="chapter">
+
+                    <h3>6. Triangles</h3>
+
+                    <p>
+                        Learn similarity of triangles
+                        and important theorems.
+                    </p>
+
+                    <a href="triangles.html" class="btn">
+                        View Topics
+                    </a>
+
+                </div>
+
+
+                <!-- MATH 7 -->
+                <div class="chapter">
+
+                    <h3>7. Coordinate Geometry</h3>
+
+                    <p>
+                        Learn distance formula,
+                        section formula and area of triangle.
+                    </p>
+
+                    <a href="coordinate-geometry.html" class="btn">
+                        View Topics
+                    </a>
+
+                </div>
+
+
+                <!-- MATH 8 -->
+                <div class="chapter">
+
+                    <h3>8. Introduction to Trigonometry</h3>
+
+                    <p>
+                        Learn trigonometric ratios,
+                        identities and standard values.
+                    </p>
+
+                    <a href="introduction-to-trigonometry.html" class="btn">
+                        View Topics
+                    </a>
+
+                </div>
+
+
+                <!-- MATH 9 -->
+                <div class="chapter">
+
+                    <h3>9. Some Applications of Trigonometry</h3>
+
+                    <p>
+                        Learn heights and distances
+                        using trigonometric ratios.
+                    </p>
+
+                    <a href="applications-of-trigonometry.html" class="btn">
+                        View Topics
+                    </a>
+
+                </div>
+
+
+                <!-- MATH 10 -->
+                <div class="chapter">
+
+                    <h3>10. Circles</h3>
+
+                    <p>
+                        Learn tangents, properties of circles
+                        and important theorems.
+                    </p>
+
+                    <a href="circles.html" class="btn">
+                        View Topics
+                    </a>
+
+                </div>
+
+
+                <!-- MATH 11 -->
+                <div class="chapter">
+
+                    <h3>11. Areas Related to Circles</h3>
+
+                    <p>
+                        Learn circumference, area of circles,
+                        sectors and segments.
+                    </p>
+
+                    <a href="areas-related-to-circles.html" class="btn">
+                        View Topics
+                    </a>
+
+                </div>
+
+
+                <!-- MATH 12 -->
+                <div class="chapter">
+
+                    <h3>12. Surface Areas and Volumes</h3>
+
+                    <p>
+                        Learn surface areas and volumes
+                        of different three-dimensional shapes.
+                    </p>
+
+                    <a href="surface-areas-and-volumes.html" class="btn">
+                        View Topics
+                    </a>
+
+                </div>
+
+
+                <!-- MATH 13 -->
+                <div class="chapter">
+
+                    <h3>13. Statistics</h3>
+
+                    <p>
+                        Learn mean, median, mode
+                        and graphical representation of data.
+                    </p>
+
+                    <a href="statistics.html" class="btn">
+                        View Topics
+                    </a>
+
+                </div>
+
+
+                <!-- MATH 14 -->
+                <div class="chapter">
+
+                    <h3>14. Probability</h3>
+
+                    <p>
+                        Learn probability, outcomes,
+                        events and probability formulas.
+                    </p>
+
+                    <a href="probability.html" class="btn">
+                        View Topics
+                    </a>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+        <!-- STUDY NOTE -->
+
+        <div class="note">
+
+            <strong>📚 Study Tip:</strong>
+
+            <br>
+
+            हर chapter को ध्यान से पढ़ें।
+            पहले concepts समझें, फिर formulas याद करें
+            और उसके बाद practice questions तथा MCQs करें।
+
+        </div>
+
+
+    </div>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 Golu Coaching Center | Class 10
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
+
